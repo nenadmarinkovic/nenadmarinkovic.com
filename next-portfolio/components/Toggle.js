@@ -6,7 +6,6 @@ const ToggleContainer = styled.button`
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   border-radius: 30px;
   cursor: pointer;
-  margin: 0 auto;
   outline: none;
   width: 80px;
   height: 30px;

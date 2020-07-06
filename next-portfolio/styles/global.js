@@ -16,6 +16,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +26,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .container {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    
     height: 200px;
+    width: 960px;
+    margin: 0 auto;
   }
 
   `;
