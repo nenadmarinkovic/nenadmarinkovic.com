@@ -1,0 +1,222 @@
+@import "variables";
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("../public/fonts/NeuePlak-Regular.woff2") format("woff2"),
+    url("../public/fonts/NeuePlak-Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("../public/fonts/NeuePlak-ExtraBlack.woff2") format("woff2"),
+    url("../public/fonts/NeuePlak-ExtraBlack.woff") format("woff");
+  font-weight: 900;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../public/fonts/ProximaNova-Black.woff2") format("woff2"),
+    url("../public/fonts/ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../public/fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("../public/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("../public/fonts/Wotfard-Regular.woff2") format("woff2"),
+    url("../public/fonts/Wotfard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Wotfard";
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.full-container {
+  width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+// Themes
+
+.dark-theme {
+  background: $linear-blue;
+  color: $white;
+}
+
+.light-theme {
+  background: $yellow;
+  color: $gray;
+
+}
+
+.dark-theme .homelink {
+  color: $white;
+}
+
+.light-theme .homelink {
+  color: $gray
+}
+
+
+// Toggle
+
+.toggle {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"].checkbox {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+}
+
+input[type="checkbox"].checkbox:checked + label {
+  left: 30px;
+}
+
+input[type="checkbox"].checkbox:focus-visible {
+  outline: solid 2px white;
+}
+
+input[type="checkbox"].checkbox + label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  opacity: 0.9;
+  background-color: cyan;
+}
+
+.toggle-container {
+  display: flex;
+}
+
+.toggle-container > span {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+.toggle-container > span:last-child {
+  margin-top: 5px;
+}
