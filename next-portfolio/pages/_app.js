@@ -4,3 +4,5 @@ import '../styles/global.scss'
 export default function Global({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
+
+
