@@ -1,20 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
-import Toggle from './Toggle'
-import styles from '../styles/Header.module.scss'
-
+import Toggle from "./Toggle";
 
 function Header(props) {
     return (
-        <div className="full-container">
-            <div className={styles.header}>
-                <Link href="/">
-                    <a className="homelink">
-                        Nenad Marinković
-                     </a>
-                </Link>
-                <Toggle setTheme={props.setTheme} theme={props.theme}  />
-            </div>
+        <div className="container">
+           <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
         </div>
     )
 }

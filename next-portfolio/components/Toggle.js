@@ -1,24 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
-function Toggle(props) {
-  return (
-    <div className="toggle-container">
-       <span style={{ color: props.theme ? "white" : "grey" }}>☾</span>
-      <span className="toggle">
-        <input
-          checked={props.theme}
-          onChange={() => props.setTheme((prevMode) => !prevMode)}
-          id="checkbox"
-          className="checkbox"
-          type="checkbox"
-        />
-        <label htmlFor="checkbox" />
-      </span>
-      <span style={{ color: props.theme ? "yellow" : "white" }}>☀︎</span>
-     
-  
-    </div>
-  );
-}
+const ToggleContainer = styled.button`
+  background: ${({ theme }) => theme.gradient};
+  border: 2px solid ${({ theme }) => theme.toggleBorder};
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  outline: none;
+  width: 80px;
+  height: 30px;
+`;
+
+const Toggle = ({ toggleTheme }) => {
+  return <ToggleContainer onClick={toggleTheme}></ToggleContainer>;
+};
 
 export default Toggle;
