@@ -402,7 +402,7 @@ function Illustration() {
                 width="101"
                 height="102"
               >
-                <g id="moon 1">
+                <g id="moon">
                   <g id="XMLID 1">
                     <path
                       id="XMLID 4"
@@ -444,7 +444,7 @@ function Illustration() {
                 fill="url(#paint11_linear)"
               />
               <g id="list7">
-                <g id="Group 1">
+                <g id="Group">
                   <path
                     id="Path_2"
                     d="M716.04 508.348C716.04 508.348 713.288 479.495 685.367 469.214C657.446 458.933 637 487.794 637 487.794C637 487.794 653.511 496.489 666.096 497.678C678.688 498.86 709.361 502.419 716.04 508.348Z"

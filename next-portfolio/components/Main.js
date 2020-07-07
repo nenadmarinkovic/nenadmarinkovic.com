@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { useDarkMode } from "../hooks/useDarkMode";
+import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { GlobalStyles } from "../styles/global";
 
@@ -8,7 +8,7 @@ import Banner from "./Banner";
 
 function Main() {
     
-  const [theme, toggleTheme, componentMounted] = useDarkMode();
+  const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   if (!componentMounted) {
