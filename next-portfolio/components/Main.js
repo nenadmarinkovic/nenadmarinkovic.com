@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { GlobalStyles } from "../styles/global";
-
 import Banner from "./Banner";
 
 function Main() {
@@ -19,7 +18,7 @@ function Main() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-        <Banner toggleTheme={toggleTheme}  />
+        <Banner toggleTheme={toggleTheme} theme={theme}  />
       </>
     </ThemeProvider>
   );

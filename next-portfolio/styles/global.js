@@ -72,9 +72,31 @@ export const GlobalStyles = createGlobalStyle`
     width: 1124px;
     max-width: 100%;
     margin: 0 auto;
+    padding-top: 20px;
   }
 
+  h1 {
+    padding: 10px 0 10px;
+    margin: 0;
+    font-size: 38px
+  }
 
-  
+  h6 {
+    padding: 10px 0 15px;
+    margin: 0;
+    font-size: 21px;
+    color: #33aadd;
+  }
+
+.checked {
+  transform: translateX(26px);
+}
+ 
+
+input:checked + .slider:before + .checked {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
   
   `;
