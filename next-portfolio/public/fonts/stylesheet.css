@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Steradian';
+    src: url('SteradianBold.woff2') format('woff2'),
+        url('SteradianBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steradian';
+    src: url('SteradianRegular.woff2') format('woff2'),
+        url('SteradianRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steradian';
+    src: url('SteradianBlack.woff2') format('woff2'),
+        url('SteradianBlack.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steradian';
+    src: url('SteradianLight.woff2') format('woff2'),
+        url('SteradianLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steradian';
+    src: url('SteradianMedium.woff2') format('woff2'),
+        url('SteradianMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
