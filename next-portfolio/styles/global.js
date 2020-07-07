@@ -68,17 +68,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .container {
-    height: 430px;
-    width: 1124px;
+    height: 450px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 20px;
-
-    @media only screen and (max-width: 1200px) {
-      margin-left: 20px;
-      margin-right: 20px
-    }
-
+    padding: 20px 15px 0 15px;
   }
 
   .title {
@@ -90,5 +84,6 @@ export const GlobalStyles = createGlobalStyle`
   // #flower {
   //   display: none
   // }
-  
+
+
   `;

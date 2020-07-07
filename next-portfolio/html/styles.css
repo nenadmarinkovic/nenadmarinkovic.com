@@ -1,0 +1,163 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.banner {
+    height: 700px;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   z-index: 0;
+   /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(34,79,142,1) 61%); */
+  
+   background-color: #FEE399;
+}
+p {
+    color: #2997ff;
+    color: #2f3337; */
+    font-size: 40px;
+}
+
+.svg-main {
+    margin-top: 170px;
+}
+
+
+h2 {
+    width: 880px;
+    /* color: #e6e8eb; */
+    color: #2f3337;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 220px;
+}
+
+#night {
+    display: none;
+}
+
+#light {
+    visibility: hidden;
+    animation: reveal 5s forwards 1.3s;
+    display: none;
+    
+  }
+  
+  @keyframes reveal {
+    from {
+        visibility: unset;
+      clip-path: inset(0 0 0 100%);
+    }
+    to {
+        visibility: unset;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  #moon {
+      display: none;
+  }
+
+  #star1,
+  #star2,
+  #star3,
+  #star4,
+  #star5,
+  #star6 {
+    display: none;
+   visibility: hidden;
+   animation: op 5s 1.3s forwards; 
+  }
+ 
+  @keyframes op {
+    0%   { visibility: unset; opacity: 0; transform: scale(0.4); }
+    100% { visibility: unset; opacity: 1; transform: scale(1); }
+  }
+
+  #cloud {
+    display: none;
+    animation: slidein 3s forwards 3s infinite alternate;
+  }
+
+  @keyframes slidein {
+    from { transform: translateX(0); }
+    to { transform: translateX(15px); }
+    to { transform: translateX(0); }
+    to { transform: translateX(-15px); }
+  }
+
+  #flower {
+      /* display: none; */
+    visibility: hidden;
+    animation: slidePop 3s forwards 3s alternate;
+  }
+
+  #list1,
+  #list2,
+  #list3,
+  #list4,
+ 
+  #list6,
+  #list7 {
+    animation: slidein 3s forwards 3s infinite alternate;
+  }
+
+  #list5 {
+    animation: slideAlone 3s forwards 3s infinite alternate;
+  }
+
+  @keyframes slidePop {
+    from { visibility: unset; transform: skewY(20deg); }
+    to { visibility: unset; transform: skewY(0); }
+  }
+
+
+  @keyframes slidein {
+    from { transform: skewY(-0.3deg); }
+    to { transform: skewY(-1deg); }
+    to { transform: skewY(-1deg); }
+  }
+
+  @keyframes slideAlone {
+    from { transform: skewY(-0.3deg); }
+
+  }
+
+#wave {
+    filter: invert(3%) sepia(92%) saturate(7409%) hue-rotate(258deg) brightness(38%) contrast(107%);
+}
+
+
+  .banner-down {
+ 
+  }
+
+  #banner-shape {
+      
+  }
+
+  .wave {
+    filter: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(4,0,29,1) 100%);
+      
+  }
+
+  /* .deMlsM {
+    position: absolute;
+    left: -3%;
+    right: -3%;
+    bottom: 0px;
+    width: 106%;
+    min-width: 600px;
+    fill: hsl(0deg, 0%, 100%);
+    transition: fill 350ms ease 0s;
+} */
+
+.banner-svg {
+    position: absolute;
+    z-index: -10;
+  
+}

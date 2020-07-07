@@ -31,13 +31,14 @@ const Home = styled.a`
 `;
 
 const Info = styled.div`
-  padding-top: 150px;
+  padding-top: 140px;
+  width: 45%;
 `;
 
 const Subtitle = styled.h6`
   padding: 10px 0 15px;
   margin: 0;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.6;
   transition: 0.3s;
   color: ${({ theme }) => theme.subtitleText};
@@ -91,11 +92,10 @@ function Banner(props) {
           <BannerContainer>
             <Info>
               <h1 className="title">
-                Migas letterpress bottle post-ironic gentrify.
+              Hi. I'm Nenad, a web developer.
               </h1>
               <Subtitle>
-                Quinoa meggings heirloom selfies brooklyn tilde hashtag iceland
-                disrupt slow-carb.{" "}
+              I enjoy creating websites and web applications, exploring web technologies, and playing with design.{" "}
               </Subtitle>
               <ContactButton />
             </Info>

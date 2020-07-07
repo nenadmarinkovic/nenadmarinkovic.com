@@ -26,6 +26,7 @@ const Slider = styled.span`
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
+  
 
   :before {
     position: absolute;
@@ -34,7 +35,7 @@ const Slider = styled.span`
     width: 16px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #fefefe;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 50%;
@@ -42,6 +43,7 @@ const Slider = styled.span`
 `;
 
 const SwitchInput = styled.input`
+
 margin-right: 10px;
   :checked + ${Slider} {
     background-color: #0e90db;
@@ -49,12 +51,16 @@ margin-right: 10px;
 
   :focus + ${Slider} {
     box-shadow: 0 0 1px #2196f3;
+    
   }
 
   :checked + ${Slider}:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+    background-color: #fefefe;
+
+    
   }
 `;
 
@@ -67,8 +73,10 @@ const Toggle = (props) => {
         className="slider"
         defaultChecked={props.theme == "dark" ? "on" : null}
       />
-      <Slider />
+      <Slider/>
     </ToggleContainer>
+
+    
   );
 };
 
