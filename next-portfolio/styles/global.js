@@ -73,6 +73,12 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     margin: 0 auto;
     padding-top: 20px;
+
+    @media only screen and (max-width: 1200px) {
+      margin-left: 20px;
+      margin-right: 20px
+    }
+
   }
 
   .title {
@@ -81,16 +87,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 38px
   }
 
-  .subtitle {
-    padding: 10px 0 15px;
-    margin: 0;
-    font-size: 21px;
-    color: #33aadd;
-    line-height: 1.6;
-  }
-
-  #flower {
-    display: none
-  }
+  // #flower {
+  //   display: none
+  // }
   
   `;
