@@ -75,17 +75,18 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 20px;
   }
 
-  h1 {
+  .title {
     padding: 10px 0 10px;
     margin: 0;
     font-size: 38px
   }
 
-  h6 {
+  .subtitle {
     padding: 10px 0 15px;
     margin: 0;
     font-size: 21px;
     color: #33aadd;
+    line-height: 1.6;
   }
 
   #flower {

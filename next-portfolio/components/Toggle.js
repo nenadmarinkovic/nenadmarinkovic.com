@@ -6,6 +6,7 @@ const ToggleContainer = styled.label`
   display: inline-block;
   width: 50px;
   height: 24px;
+  margin-left: 25px;
 
   input {
     opacity: 0;
@@ -41,8 +42,9 @@ const Slider = styled.span`
 `;
 
 const SwitchInput = styled.input`
+margin-right: 10px;
   :checked + ${Slider} {
-    background-color: #2196f3;
+    background-color: #0e90db;
   }
 
   :focus + ${Slider} {
