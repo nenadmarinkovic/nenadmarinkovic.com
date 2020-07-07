@@ -12,6 +12,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
+  transition: 0.3s;
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 `;
@@ -25,6 +26,7 @@ const BannerContainer = styled.div`
 const Home = styled.a`
   text-decoration: none;
   font-size: 17px;
+  transition: 0.3s;
   color: ${({ theme }) => theme.text};
 `;
 
@@ -37,6 +39,7 @@ const Subtitle = styled.h6`
   margin: 0;
   font-size: 21px;
   line-height: 1.6;
+  transition: 0.3s;
   color: ${({ theme }) => theme.subtitleText};
 `;
 
@@ -50,6 +53,7 @@ const HeaderLink = styled.div`
   a {
     text-decoration: none;
     font-size: 17px;
+    transition: 0.3s;
     color: ${({ theme }) => theme.text};
   }
 `;
