@@ -1,11 +1,10 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { useDarkMode } from "../hooks/useDarkMode";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { GlobalStyles } from "../styles/global";
-import { useDarkMode } from "../hooks/useDarkMode";
 
-
-import Header from "./Header";
+import Banner from "./Banner";
 
 function Main() {
     
@@ -20,8 +19,7 @@ function Main() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-        <Header toggleTheme={toggleTheme}  />
-        
+        <Banner toggleTheme={toggleTheme}  />
       </>
     </ThemeProvider>
   );

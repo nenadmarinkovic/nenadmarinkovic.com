@@ -1,5 +1,3 @@
-// Source: https://github.com/maximakymenko/react-day-night-toggle-app/blob/master/src/global.js#L23-L41
-
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -7,7 +5,6 @@ export const GlobalStyles = createGlobalStyle`
   *::after,
   *::before {
     box-sizing: border-box;
-  
   }
 
   html {
@@ -16,8 +13,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,10 +21,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .container {
-    
-    height: 200px;
-    width: 960px;
+    height: 430px;
+    width: 1124px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
+
+  
+  
   `;
