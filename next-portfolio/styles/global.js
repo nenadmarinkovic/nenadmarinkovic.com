@@ -88,15 +88,8 @@ export const GlobalStyles = createGlobalStyle`
     color: #33aadd;
   }
 
-.checked {
-  transform: translateX(26px);
-}
- 
-
-input:checked + .slider:before + .checked {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
+  #flower {
+    display: none
+  }
   
   `;

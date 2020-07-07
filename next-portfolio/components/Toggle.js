@@ -4,8 +4,8 @@ import styled from "styled-components";
 const ToggleContainer = styled.label`
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
 
   input {
     opacity: 0;
@@ -21,7 +21,7 @@ const Slider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #363537;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
@@ -29,8 +29,8 @@ const Slider = styled.span`
   :before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: white;

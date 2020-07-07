@@ -50,9 +50,10 @@ function Banner(props) {
           </Container>
           <BannerContainer>
             <Info>
-              <h1>A simpler way of making interactive map charts. </h1>
+              <h1>Migas letterpress bottle post-ironic gentrify.</h1>
               <Subtitle>
-                A simpler way of making interactive map charts.{" "}
+                Quinoa meggings heirloom selfies brooklyn tilde hashtag iceland
+                disrupt slow-carb.{" "}
               </Subtitle>
               <ContactButton />
             </Info>
