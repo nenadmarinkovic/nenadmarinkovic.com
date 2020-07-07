@@ -56,7 +56,7 @@ export const GlobalStyles = createGlobalStyle`
   html {
     margin: 0;
     padding: 0;
-    font-family: 'Steradian'
+    font-family: 'Steradian', -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
   }
 
   body {
