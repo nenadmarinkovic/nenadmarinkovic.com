@@ -27,7 +27,7 @@ function Banner(props) {
       <Wrapper>
         <div className="container">
           <Container>
-            <Link href="/">Nenad Marinkovic</Link>
+            <Link href="/"><a>Nenad Marinković</a></Link>
             <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
           </Container>
           <BannerContainer>

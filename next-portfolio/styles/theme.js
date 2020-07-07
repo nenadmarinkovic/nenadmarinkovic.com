@@ -1,5 +1,6 @@
 export const lightTheme = {
-    body: '#FEE399',
+    // body: '#FEE399',
+    body: 'linear-gradient(0deg, rgba(254,227,153,1) 0%, rgba(170,211,242,1) 73%)',
     text: '#363537',
     toggleBorder: '#FFF',
     gradient: 'linear-gradient(#39598A, #79D7ED)',
