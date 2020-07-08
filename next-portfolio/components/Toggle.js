@@ -26,7 +26,6 @@ const Slider = styled.span`
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
-  
 
   :before {
     position: absolute;
@@ -51,7 +50,6 @@ margin-right: 10px;
 
   :focus + ${Slider} {
     box-shadow: 0 0 1px #2196f3;
-    
   }
 
   :checked + ${Slider}:before {
@@ -59,8 +57,6 @@ margin-right: 10px;
     -ms-transform: translateX(26px);
     transform: translateX(26px);
     background-color: #fefefe;
-
-    
   }
 `;
 

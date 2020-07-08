@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
-  padding: 10px 15px;
+  padding: 8px 15px;
   margin-top: 10px;
   color: ${({ theme }) => theme.buttonColor};
   border: ${({ theme }) => theme.buttonBorder};
@@ -12,10 +12,6 @@ const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   border-radius: 18px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 7px;
-  padding-bottom: 7px;
   font-family: "Steradian";
 `;
 

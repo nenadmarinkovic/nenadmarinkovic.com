@@ -1,15 +1,9 @@
 import React from "react";
-import Link from "next/link";
-import Toggle from "./Toggle";
 import Wave from "./Wave";
 import ContactButton from "./ContactButton";
 import Illustration from "./Illustration";
+import Header from "./Header";
 import styled from "styled-components";
-
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
 
 const Wrapper = styled.div`
   transition: 0.3s;
@@ -23,20 +17,21 @@ const BannerContainer = styled.div`
   width: 100%;
 `;
 
-const Home = styled.a`
-  text-decoration: none;
-  font-size: 17px;
-  transition: 0.3s;
-  color: ${({ theme }) => theme.text};
+const BannerWrapper = styled.div`
+  height: 450px;
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 15px 0 15px;
 `;
 
 const Info = styled.div`
   padding-top: 140px;
-  width: 45%;
+  width: 47%;
 `;
 
 const Subtitle = styled.h6`
-  padding: 10px 0 15px;
+  padding: 8px 0 15px;
   margin: 0;
   font-size: 19px;
   line-height: 1.6;
@@ -44,64 +39,24 @@ const Subtitle = styled.h6`
   color: ${({ theme }) => theme.subtitleText};
 `;
 
-const HeaderLinks = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const HeaderLink = styled.div`
-  padding: 0 25px;
-  a {
-    text-decoration: none;
-    font-size: 17px;
-    transition: 0.3s;
-    color: ${({ theme }) => theme.text};
-  }
-`;
-
 function Banner(props) {
   return (
     <>
       <Wrapper>
-        <div className="container">
-          <Container>
-            <Link prefetch href={"/"} passHref>
-              <Home>Nenad Marinković</Home>
-            </Link>
-            <HeaderLinks>
-              <HeaderLink>
-                <Link prefetch href={"/work"} passHref>
-                  <a>Work</a>
-                </Link>
-              </HeaderLink>
-              <HeaderLink>
-                {" "}
-                <Link prefetch href={"/blog"} passHref>
-                  <a>Blog</a>
-                </Link>
-              </HeaderLink>
-              <HeaderLink>
-                {" "}
-                <Link prefetch href={"/contact"} passHref>
-                  <a>Contact</a>
-                </Link>
-              </HeaderLink>
-              <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
-            </HeaderLinks>
-          </Container>
+        <BannerWrapper>
+          <Header theme={props.theme} toggleTheme={props.toggleTheme} />
           <BannerContainer>
             <Info>
-              <h1 className="title">
-              Hi. I'm Nenad, a web developer.
-              </h1>
+              <h1 className="title">Hi. I'm Nenad, a web developer.</h1>
               <Subtitle>
-              I enjoy creating websites and web applications, exploring web technologies, and playing with design.{" "}
+                I enjoy creating websites and web applications, exploring web
+                technologies, and playing with design.{" "}
               </Subtitle>
               <ContactButton />
             </Info>
             <Illustration />
           </BannerContainer>
-        </div>
+        </BannerWrapper>
       </Wrapper>
       <Wave />
     </>

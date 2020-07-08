@@ -67,14 +67,6 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  .container {
-    height: 450px;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px 15px 0 15px;
-  }
-
   .title {
     padding: 10px 0 10px;
     margin: 0;
