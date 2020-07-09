@@ -17,9 +17,50 @@ const reveal = keyframes`
   `;
 
 const Light = styled.g`
-  display: ${({ theme }) => theme.display};
+  display: ${({ theme }) => theme.displaySky};
   visibility: hidden;
   animation: ${reveal} 5s forwards 1.3s;
+`;
+
+const animatedStars = keyframes`
+  0%   { visibility: unset; opacity: 0; transform: scale(0.4); }
+  100% { visibility: unset; opacity: 1; transform: scale(1); }
+}
+`;
+
+const Star = styled.g`
+  display: ${({ theme }) => theme.displaySky};
+  visibility: hidden;
+  animation: op 5s 1.3s forwards;
+  animation: ${animatedStars} 5s forwards 1.3s;
+`;
+
+const opacity = keyframes`
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+`;
+
+const Night = styled.g`
+  display: ${({ theme }) => theme.displaySky};
+  animation: ${opacity} ease 10s;
+`;
+
+const Cloud = styled.g`
+  display: ${({ theme }) => theme.displaySky};
+  animation: ${opacity} ease 10s;
+`;
+
+const animatedFlower = keyframes`
+from { visibility: unset; transform: skewY(20deg); }
+to { visibility: unset; transform: skewY(0); }
+}
+`;
+
+const Flower = styled.g`
+  display: ${({ theme }) => theme.displayFlower};
+  visibility: hidden;
+  animation: ${animatedFlower} 3s forwards 1s alternate;
 `;
 
 function Illustration() {
@@ -348,51 +389,51 @@ function Illustration() {
                 />
               </g>
             </g>
-            <g id="night">
+            <Night>
               <g id="Group 2">
                 <g id="Group 3">
-                  <g id="star6">
+                  <Star>
                     <path
                       id="Vector 49"
                       d="M298.09 116.943C298.09 117.577 297.605 118.088 297.003 118.088C296.402 118.088 295.908 117.577 295.908 116.943C295.908 116.31 296.394 115.798 297.003 115.798C297.612 115.798 298.09 116.302 298.09 116.943Z"
                       fill="white"
                     />
-                  </g>
-                  <g id="star5">
+                  </Star>
+                  <Star>
                     <path
                       id="Vector 50"
                       d="M184.178 54.376C184.178 55.0088 183.692 55.5208 183.091 55.5208C182.491 55.5208 182.005 55.0088 182.005 54.376C182.005 53.7424 182.491 53.2224 183.091 53.2224C183.692 53.2304 184.178 53.7424 184.178 54.376Z"
                       fill="white"
                     />
-                  </g>
-                  <g id="star4">
+                  </Star>
+                  <Star>
                     <path
                       id="Vector 51"
                       d="M405.449 189.855C405.449 190.488 404.963 191 404.362 191C403.761 191 403.266 190.488 403.266 189.855C403.266 189.222 403.753 188.71 404.362 188.71C404.971 188.71 405.449 189.222 405.449 189.855Z"
                       fill="white"
                     />
-                  </g>
-                  <g id="star3">
+                  </Star>
+                  <Star>
                     <path
                       id="Vector 52"
                       d="M421.219 76.6712L422.38 79.152L424.973 79.5424L423.096 81.476L423.541 84.2L421.219 82.916L418.897 84.2L419.334 81.476L417.457 79.5424L420.058 79.152L421.219 76.6712Z"
                       fill="white"
                     />
-                  </g>
-                  <g id="star2">
+                  </Star>
+                  <Star>
                     <path
                       id="Vector 53"
                       d="M140.066 12.6624L141.515 15.759L144.759 16.2534L142.413 18.6648L142.964 22.0737L140.066 20.4603L137.159 22.0737L137.711 18.6648L135.365 16.2534L138.608 15.759L140.066 12.6624Z"
                       fill="white"
                     />
-                  </g>
-                  <g id="star1">
+                  </Star>
+                  <Star>
                     <path
                       id="Vector 54"
                       d="M465.228 164.302L466.686 167.398L469.929 167.893L467.583 170.304L468.134 173.713L465.228 172.099L462.33 173.713L462.882 170.304L460.535 167.893L463.779 167.398L465.228 164.302Z"
                       fill="white"
                     />
-                  </g>
+                  </Star>
                 </g>
                 <mask
                   id="mask0"
@@ -425,7 +466,7 @@ function Illustration() {
                   </g>
                 </g>
               </g>
-            </g>
+            </Night>
             <Light>
               <path
                 id="Vector 55"
@@ -433,15 +474,15 @@ function Illustration() {
                 fill="url(#paint9_linear)"
               />
             </Light>
-            <g id="cloud">
+            <Cloud>
               <path
                 id="Vector 56"
                 opacity="0.2"
                 d="M286.85 44.6384C283.974 44.6384 281.283 45.4528 278.985 46.8752C278.437 38.5688 271.759 32.0116 263.607 32.0116C261.618 32.0116 259.72 32.403 257.977 33.1138C255.757 25.4146 248.87 19.8 240.712 19.8C230.763 19.8 222.689 28.1541 222.689 38.4648C222.689 38.7288 222.696 38.992 222.712 39.2472C222.704 39.2472 222.696 39.2472 222.689 39.2472C212.741 39.2472 204.667 47.6016 204.667 57.912C204.667 68.2152 212.733 76.5776 222.689 76.5776C223.313 76.5776 223.923 76.5456 224.532 76.4816H285.169C285.724 76.5456 286.28 76.5776 286.85 76.5776C295.364 76.5776 302.266 69.4288 302.266 60.612C302.266 51.7864 295.364 44.6384 286.85 44.6384Z"
                 fill="url(#paint10_linear)"
               />
-            </g>
-            <g id="flower">
+            </Cloud>
+            <Flower>
               <g id="Group 4">
                 <path
                   id="Path"
@@ -512,7 +553,7 @@ function Illustration() {
                   />
                 </g>
               </g>
-            </g>
+            </Flower>
           </g>
         </g>
         <defs>
