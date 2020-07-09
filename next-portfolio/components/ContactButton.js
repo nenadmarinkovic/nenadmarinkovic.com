@@ -16,7 +16,7 @@ const Button = styled.button`
 `;
 
 function ContactButton() {
-  return <Button>Contact me</Button>;
+  return <Button>Contact</Button>;
 }
 
 export default ContactButton;
