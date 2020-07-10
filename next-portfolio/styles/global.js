@@ -69,16 +69,4 @@ export const GlobalStyles = createGlobalStyle`
             -webkit-transform-origin: 50% 50%;
   }
 
-  .title {
-    padding: 10px 0 10px;
-    margin: 0;
-    font-size: 38px
-  }
-
-  // #flower {
-  //   display: none
-  // }
-
-
-
   `;

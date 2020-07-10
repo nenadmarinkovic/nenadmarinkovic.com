@@ -1,34 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Toggle from "./Toggle";
-import styled from "styled-components";
-
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const HeaderLinks = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const HeaderLink = styled.div`
-  padding: 0 25px;
-  a {
-    text-decoration: none;
-    font-size: 17px;
-    transition: 0.3s;
-    color: ${({ theme }) => theme.text};
-  }
-`;
-
-const Home = styled.a`
-  text-decoration: none;
-  font-size: 17px;
-  transition: 0.3s;
-  color: ${({ theme }) => theme.text};
-`;
+import {
+  Container,
+  HeaderLinks,
+  HeaderLink,
+  Home,
+} from "../styles/components/Header";
 
 function Header(props) {
   return (
