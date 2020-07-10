@@ -1,95 +1,22 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
 
-const Wrapper = styled.div`
-  margin-top: 50px;
-`;
-
-const reveal = keyframes`
-  from {
-    visibility: unset;
-    clip-path: inset(0 0 0 100%);
-  }
-  to {
-      visibility: unset;
-    clip-path: inset(0 0 0 0);
-  }
-  `;
-
-const revealStripes = keyframes`
-from {
-  visibility: unset;
-  clip-path: inset(0 100% 0 0);
-}
-to {
-    visibility: unset;
-  clip-path: inset(0 0 0 0);
-}
-  `;
-
-const Light = styled.g`
-  display: ${({ theme }) => theme.displaySky};
-  visibility: hidden;
-  animation: ${reveal} 5s forwards 1.3s;
-`;
-
-const animatedStars = keyframes`
-  0%   { visibility: unset; opacity: 0; transform: scale(0.4); }
-  100% { visibility: unset; opacity: 1; transform: scale(1); }
-}
-`;
-
-const Star = styled.g`
-  display: ${({ theme }) => theme.displaySky};
-  
-visibility: hidden;
-  animation: ${animatedStars} 5s forwards 1.3s;
-`;
-
-const opacity = keyframes`
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-`;
-
-const Night = styled.g`
-  display: ${({ theme }) => theme.displaySky};
-  animation: ${opacity} ease 10s;
-`;
-
-const Cloud = styled.g`
-  display: none;
-`;
-
-const Flower = styled.g``;
-
-const Stripe1 = styled.g``;
-const Stripe2 = styled.g`
-display: inline-block;
-  animation: ${revealStripes} 5s 1.3s infinite;
-`;
-const Stripe3 = styled.g`
-display: inline-block;
-  animation: ${revealStripes} 5s 2.3s infinite;
-`;
-const Stripe4 = styled.g`
-display: inline-block;
-  animation: ${revealStripes} 5s 3.3s infinite;
-`;
-const Stripe5 = styled.g`
-display: inline-block;
-animation: ${revealStripes} 5s 2.3s infinite;`;
-const Stripe6 = styled.g`
-animation: ${revealStripes} 5s .3s infinite;`;
-const Stripe7 = styled.g`
-animation: ${revealStripes} 5s 6.3s infinite;`;
-const Stripe8 = styled.g`
-animation: ${revealStripes} 5s 2.3s infinite;
-  visibility: hidden;
-`;
-const Stripe9 = styled.g`
-  visibility: hidden;
-`;
+import {
+  Wrapper,
+  Star,
+  Light,
+  Night,
+  Cloud,
+  Flower,
+  Stripe1,
+  Stripe2,
+  Stripe3,
+  Stripe4,
+  Stripe5,
+  Stripe6,
+  Stripe7,
+  Stripe8,
+  Stripe9,
+} from "../styles/components/Illustration";
 
 function Illustration() {
   return (
@@ -350,7 +277,6 @@ function Illustration() {
                 fill="#BCD8FA"
               />
               <Stripe1>
-                 
                 <path
                   id="Vector 40"
                   fill-rule="evenodd"
