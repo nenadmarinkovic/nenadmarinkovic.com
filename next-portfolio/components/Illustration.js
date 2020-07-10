@@ -16,6 +16,17 @@ const reveal = keyframes`
   }
   `;
 
+const revealStripes = keyframes`
+from {
+  visibility: unset;
+  clip-path: inset(0 100% 0 0);
+}
+to {
+    visibility: unset;
+  clip-path: inset(0 0 0 0);
+}
+  `;
+
 const Light = styled.g`
   display: ${({ theme }) => theme.displaySky};
   visibility: hidden;
@@ -30,8 +41,8 @@ const animatedStars = keyframes`
 
 const Star = styled.g`
   display: ${({ theme }) => theme.displaySky};
-  visibility: hidden;
-  animation: op 5s 1.3s forwards;
+  
+visibility: hidden;
   animation: ${animatedStars} 5s forwards 1.3s;
 `;
 
@@ -47,20 +58,37 @@ const Night = styled.g`
 `;
 
 const Cloud = styled.g`
-  display: ${({ theme }) => theme.displaySky};
-  animation: ${opacity} ease 10s;
+  display: none;
 `;
 
-const animatedFlower = keyframes`
-from { visibility: unset; transform: skewY(20deg); }
-to { visibility: unset; transform: skewY(0); }
-}
-`;
+const Flower = styled.g``;
 
-const Flower = styled.g`
-  display: ${({ theme }) => theme.displayFlower};
+const Stripe1 = styled.g``;
+const Stripe2 = styled.g`
+display: inline-block;
+  animation: ${revealStripes} 5s 1.3s infinite;
+`;
+const Stripe3 = styled.g`
+display: inline-block;
+  animation: ${revealStripes} 5s 2.3s infinite;
+`;
+const Stripe4 = styled.g`
+display: inline-block;
+  animation: ${revealStripes} 5s 3.3s infinite;
+`;
+const Stripe5 = styled.g`
+display: inline-block;
+animation: ${revealStripes} 5s 2.3s infinite;`;
+const Stripe6 = styled.g`
+animation: ${revealStripes} 5s .3s infinite;`;
+const Stripe7 = styled.g`
+animation: ${revealStripes} 5s 6.3s infinite;`;
+const Stripe8 = styled.g`
+animation: ${revealStripes} 5s 2.3s infinite;
   visibility: hidden;
-  animation: ${animatedFlower} 3s forwards 1s alternate;
+`;
+const Stripe9 = styled.g`
+  visibility: hidden;
 `;
 
 function Illustration() {
@@ -321,56 +349,74 @@ function Illustration() {
                 d="M120.302 167.997C120.495 165.457 122.23 158.309 122.23 158.309C122.23 158.309 150.432 156.32 157.142 159.578C158.19 160.09 164.706 170.033 164.706 170.033C146.923 166.694 131.708 166.535 120.302 167.997Z"
                 fill="#BCD8FA"
               />
-              <path
-                id="Vector 40"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M263.155 176.942H344.784L344.267 179.569L262.614 179.729L263.155 176.942Z"
-                fill="#1E8191"
-              />
-              <path
-                id="Vector 41"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M332.907 186.078C332.907 186.478 332.599 186.797 332.213 186.797H267.674C267.288 186.797 266.98 186.478 266.98 186.078C266.98 185.679 267.288 185.359 267.674 185.359H332.213C332.599 185.359 332.907 185.679 332.907 186.078Z"
-                fill="#1E8191"
-              />
-              <path
-                id="Vector 42"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M320.229 190.159C320.229 190.558 319.974 190.878 319.658 190.878H266.749C266.432 190.878 266.178 190.558 266.178 190.159C266.178 189.76 266.432 189.441 266.749 189.441H319.658C319.974 189.441 320.229 189.768 320.229 190.159Z"
-                fill="#1E8191"
-              />
-              <path
-                id="Vector 43"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M319.442 195.207C319.442 195.606 319.188 195.926 318.872 195.926H265.962C265.646 195.926 265.391 195.606 265.391 195.207C265.391 194.808 265.646 194.488 265.962 194.488H318.872C319.188 194.488 319.442 194.808 319.442 195.207Z"
-                fill="#1E8191"
-              />
-              <path
-                id="Vector 44"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M330.278 199.624C330.278 200.023 329.969 200.342 329.584 200.342H264.974C264.589 200.342 264.281 200.023 264.281 199.624C264.281 199.224 264.589 198.905 264.974 198.905H329.584C329.969 198.905 330.278 199.232 330.278 199.624Z"
-                fill="#1E8191"
-              />
-              <path
-                id="Vector 45"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M327.887 210.142C327.887 210.542 327.578 210.861 327.193 210.861H262.584C262.198 210.861 261.89 210.542 261.89 210.142C261.89 209.742 262.198 209.423 262.584 209.423H327.193C327.571 209.423 327.887 209.742 327.887 210.142Z"
-                fill="#1E8191"
-              />
-              <path
-                id="Vector 46"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M304.497 204.615C304.497 205.014 304.304 205.334 304.066 205.334H263.849C263.61 205.334 263.417 205.014 263.417 204.615C263.417 204.216 263.61 203.897 263.849 203.897H304.066C304.304 203.897 304.497 204.216 304.497 204.615Z"
-                fill="#1E8191"
-              />
-              <g id="stripe2">
+              <Stripe1>
+                 
+                <path
+                  id="Vector 40"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M263.155 176.942H344.784L344.267 179.569L262.614 179.729L263.155 176.942Z"
+                  fill="#1E8191"
+                />
+              </Stripe1>
+              <Stripe2>
+                <path
+                  id="Vector 41"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M332.907 186.078C332.907 186.478 332.599 186.797 332.213 186.797H267.674C267.288 186.797 266.98 186.478 266.98 186.078C266.98 185.679 267.288 185.359 267.674 185.359H332.213C332.599 185.359 332.907 185.679 332.907 186.078Z"
+                  fill="#1E8191"
+                  height="30px"
+                />
+              </Stripe2>
+              <Stripe3>
+                <path
+                  id="Vector 42"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M320.229 190.159C320.229 190.558 319.974 190.878 319.658 190.878H266.749C266.432 190.878 266.178 190.558 266.178 190.159C266.178 189.76 266.432 189.441 266.749 189.441H319.658C319.974 189.441 320.229 189.768 320.229 190.159Z"
+                  fill="#1E8191"
+                  height="30px"
+                />
+              </Stripe3>
+              <Stripe4>
+                <path
+                  id="Vector 43"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M319.442 195.207C319.442 195.606 319.188 195.926 318.872 195.926H265.962C265.646 195.926 265.391 195.606 265.391 195.207C265.391 194.808 265.646 194.488 265.962 194.488H318.872C319.188 194.488 319.442 194.808 319.442 195.207Z"
+                  fill="#1E8191"
+                  height="30px"
+                />
+              </Stripe4>
+              <Stripe5>
+                <path
+                  id="Vector 44"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M330.278 199.624C330.278 200.023 329.969 200.342 329.584 200.342H264.974C264.589 200.342 264.281 200.023 264.281 199.624C264.281 199.224 264.589 198.905 264.974 198.905H329.584C329.969 198.905 330.278 199.232 330.278 199.624Z"
+                  fill="#1E8191"
+                />
+              </Stripe5>
+              <Stripe6>
+                <path
+                  id="Vector 45"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M327.887 210.142C327.887 210.542 327.578 210.861 327.193 210.861H262.584C262.198 210.861 261.89 210.542 261.89 210.142C261.89 209.742 262.198 209.423 262.584 209.423H327.193C327.571 209.423 327.887 209.742 327.887 210.142Z"
+                  fill="#1E8191"
+                />
+              </Stripe6>
+              <Stripe7>
+                <path
+                  id="Vector 46"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M304.497 204.615C304.497 205.014 304.304 205.334 304.066 205.334H263.849C263.61 205.334 263.417 205.014 263.417 204.615C263.417 204.216 263.61 203.897 263.849 203.897H304.066C304.304 203.897 304.497 204.216 304.497 204.615Z"
+                  fill="#1E8191"
+                />
+              </Stripe7>
+              <Stripe8>
                 <path
                   id="Vector 47"
                   fill-rule="evenodd"
@@ -378,8 +424,8 @@ function Illustration() {
                   d="M291.056 214.726C291.056 215.126 290.917 215.446 290.747 215.446H261.713C261.543 215.446 261.404 215.126 261.404 214.726C261.404 214.327 261.543 214.007 261.713 214.007H290.739C290.917 214.007 291.056 214.327 291.056 214.726Z"
                   fill="#1E8191"
                 />
-              </g>
-              <g id="stripe1">
+              </Stripe8>
+              <Stripe9>
                 <path
                   id="Vector 48"
                   fill-rule="evenodd"
@@ -387,7 +433,7 @@ function Illustration() {
                   d="M313.219 220.269C313.219 220.669 312.972 220.988 312.664 220.988H260.687C260.379 220.988 260.131 220.669 260.131 220.269C260.131 219.87 260.386 219.55 260.687 219.55H312.664C312.965 219.55 313.219 219.87 313.219 220.269Z"
                   fill="#1E8191"
                 />
-              </g>
+              </Stripe9>
             </g>
             <Night>
               <g id="Group 2">

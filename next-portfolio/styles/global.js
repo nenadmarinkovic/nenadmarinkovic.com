@@ -65,6 +65,8 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     margin: 0;
     padding: 0;
+    -webkit-backface-visibility: initial !important;
+            -webkit-transform-origin: 50% 50%;
   }
 
   .title {
