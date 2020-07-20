@@ -1,4 +1,4 @@
-import React from "react";
+oimport React from "react";
 import Link from "next/link";
 import Toggle from "./Toggle";
 import {
@@ -23,7 +23,7 @@ function Header(props) {
         <HeaderLink>
           {" "}
           <Link prefetch href={"/blog"} passHref>
-            <a>Blog</a>
+            <a>Technology</a>
           </Link>
         </HeaderLink>
         <HeaderLink>
