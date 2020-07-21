@@ -29,7 +29,7 @@ to {
 export const Light = styled.g`
   display: ${({ theme }) => theme.displaySky};
   visibility: hidden;
-  animation: ${revealLight} 5s forwards 1.3s;
+  animation: ${revealLight} 5s forwards 3.5s;
 `;
 
 export const animatedStars = keyframes`

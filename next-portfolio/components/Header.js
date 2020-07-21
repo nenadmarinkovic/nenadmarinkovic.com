@@ -7,13 +7,18 @@ import {
   HeaderLink,
   Home,
 } from "../styles/components/Header";
+import Fade from "react-reveal/Fade";
+
 
 function Header(props) {
   return (
     <Container>
+       <Fade>
       <Link prefetch href={"/"} passHref>
         <Home>Nenad Marinković</Home>
       </Link>
+      </Fade>
+      <Fade>
       <HeaderLinks>
         <HeaderLink>
           <Link prefetch href={"/work"} passHref>
@@ -34,6 +39,7 @@ function Header(props) {
         </HeaderLink>
         <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
       </HeaderLinks>
+      </Fade>
     </Container>
   );
 }
