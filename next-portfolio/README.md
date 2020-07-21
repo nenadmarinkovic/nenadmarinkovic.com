@@ -3,7 +3,7 @@ This is a  personal portfolio website created with [Next.js](https://nextjs.org/
 #### Structure
 
 - Banner with header
-- Services
+- Work
 - Portfolio
 - Technologies
 - Footer with contact form
