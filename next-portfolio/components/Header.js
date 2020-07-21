@@ -28,7 +28,7 @@ function Header(props) {
         <HeaderLink>
           {" "}
           <Link prefetch href={"/blog"} passHref>
-            <a>Blog</a>
+            <a>Technology</a>
           </Link>
         </HeaderLink>
         <HeaderLink>
