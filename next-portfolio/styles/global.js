@@ -69,4 +69,11 @@ export const GlobalStyles = createGlobalStyle`
             -webkit-transform-origin: 50% 50%;
   }
 
+  .container {
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 15px 0 15px;
+  }
+
   `;

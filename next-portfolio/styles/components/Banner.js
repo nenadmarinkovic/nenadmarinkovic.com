@@ -14,7 +14,7 @@ export const BannerContainer = styled.div`
 
 export const BannerWrapper = styled.div`
   height: 450px;
-  width: 1120px;
+  width: 1160px;
   max-width: 100%;
   margin: 0 auto;
   padding: 20px 15px 0 15px;
@@ -22,13 +22,14 @@ export const BannerWrapper = styled.div`
 
 export const Info = styled.div`
   padding-top: 140px;
-  width: 47%;
+  width: 50%;
 `;
 
 export const Subtitle = styled.h6`
   padding: 8px 0 15px;
   margin: 0;
-  font-size: 19px;
+  font-size: 21px;
+  font-weight: 400;
   line-height: 1.6;
   transition: 0.3s;
   color: ${({ theme }) => theme.subtitleText};
