@@ -8,7 +8,6 @@ function Work() {
       <div className="container">
       <Fade bottom delay={2500}>
           <CenterMain>Work I do</CenterMain>
-
           <CenterSecond>
             Portfolio websites, small to medium size company websites, content
             management systems, e-commerce platforms, and more.
