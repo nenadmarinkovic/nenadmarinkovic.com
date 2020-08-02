@@ -65,8 +65,6 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     margin: 0;
     padding: 0;
-    -webkit-backface-visibility: initial !important;
-            -webkit-transform-origin: 50% 50%;
   }
 
   .container {
@@ -76,4 +74,34 @@ export const GlobalStyles = createGlobalStyle`
     padding: 20px 15px 0 15px;
   }
 
-  `;
+  .css-icon {
+    width: 60px;
+    filter: invert(6%) sepia(73%) saturate(2050%) hue-rotate(227deg) brightness(90%) contrast(110%);
+  }
+
+  .slick-div {
+    outline: none;
+    pointer-events: none;
+    border: none;
+  }
+  
+  .slick-list:before,
+  .slick-list:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: 0;
+    height: 100%;
+  }
+
+  .slick-list:after {
+    left: 0;
+    background: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0.1))}
+  }
+
+  .slick-list:before {
+    right: 0;
+    background: linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0.1))
+  }
+`;

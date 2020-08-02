@@ -38,5 +38,6 @@ export const Subtitle = styled.h6`
 export const Title = styled.h1`
   padding: 10px 0 10px;
   margin: 0;
-  font-size: 38px;
+  font-size: 2.35rem;
+  font-weight: 700;
 `;

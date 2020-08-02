@@ -1,13 +1,13 @@
 export const lightTheme = {
   background:
     "linear-gradient(0deg, rgba(254,227,153,1) 0%, rgba(170,211,242,1) 70%)",
-  text: "#363537",
-  subtitleText: "#363537",
+  text: "#040428",
+  subtitleText: "#040428",
   wave: "#FEE399",
   displaySky: "none",
   displayFlower: "unset",
-  buttonBorder: "1.5px solid #363537",
-  buttonColor: "#363537",
+  buttonBorder: "1.5px solid #040428",
+  buttonColor: "#040428",
 };
 
 export const darkTheme = {

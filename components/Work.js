@@ -1,6 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { WorkSection, CenterMain, CenterSecond } from "../styles/components/Work";
+import Technology from "./Technology";
 
 function Work() {
   return (
@@ -14,6 +15,7 @@ function Work() {
           </CenterSecond>
         </Fade>
       </div>
+      <Technology />
     </WorkSection>
   );
 }

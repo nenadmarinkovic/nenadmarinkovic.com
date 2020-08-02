@@ -21,7 +21,7 @@ export const Slider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #363537;
+  background-color: #040428;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
