@@ -5,13 +5,14 @@ import {
   Container,
   HeaderLinks,
   HeaderLink,
-  Home,
+  Home
 } from "../styles/components/Header";
 import Fade from "react-reveal/Fade";
 
 
 function Header(props) {
   return (
+    
     <Container>
        <Fade>
       <Link prefetch href={"/"} passHref>
@@ -41,6 +42,7 @@ function Header(props) {
       </HeaderLinks>
       </Fade>
     </Container>
+   
   );
 }
 

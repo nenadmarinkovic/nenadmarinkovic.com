@@ -104,4 +104,9 @@ export const GlobalStyles = createGlobalStyle`
     right: 0;
     background: linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0.1))
   }
+
+.fill {
+  filter: invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%);
+}
+  
 `;

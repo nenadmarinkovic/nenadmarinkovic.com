@@ -8,6 +8,9 @@ export const lightTheme = {
   displayFlower: "unset",
   buttonBorder: "1.5px solid #040428",
   buttonColor: "#040428",
+  footerBackground: "#FDE39C",
+  filterWave:
+    "invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%)",
 };
 
 export const darkTheme = {
@@ -20,4 +23,7 @@ export const darkTheme = {
   displayFlower: "none",
   buttonBorder: "1.5px solid #FAFAFA",
   buttonColor: "#FAFAFA",
+  footerBackground: "#01001B",
+  filterWave:
+    "invert(3%) sepia(71%) saturate(5224%) hue-rotate(253deg) brightness(74%) contrast(110%)",
 };
