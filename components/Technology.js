@@ -16,7 +16,7 @@ class Technology extends React.Component {
         <Slider {...settings}>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-              className="css-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-             className="css-icon"
+             className="technology-icon"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -115,7 +115,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-             className="css-icon"
+             className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"

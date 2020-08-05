@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   position: relative;
-  height: 300px;
   top: 120px;
   bottom: 0;
   background: ${({ theme }) => theme.footerBackground};

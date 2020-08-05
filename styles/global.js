@@ -74,7 +74,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 20px 15px 0 15px;
   }
 
-  .css-icon {
+  .technology-icon {
     width: 60px;
     filter: invert(6%) sepia(73%) saturate(2050%) hue-rotate(227deg) brightness(90%) contrast(110%);
   }
@@ -105,8 +105,20 @@ export const GlobalStyles = createGlobalStyle`
     background: linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0.1))
   }
 
-.fill {
-  filter: invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%);
-}
+
+
+.launch {
   
+  position: relative;
+  animation: example forwards 10s linear ;
+  opacity: 0
+}
+
+@keyframes example {
+  0%   {top:0px; opacity: 1}
+  10% {top: 20px; opacity: 1}
+  100% {top: -7000px; opacity: 1}
+  
+}
+
 `;
