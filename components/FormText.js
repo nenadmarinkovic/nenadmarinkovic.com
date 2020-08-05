@@ -4,14 +4,14 @@ import Rocket from "./Rocket";
 
 function FormText() {
   const [lunch, setLunch] = useState(false);
-  console.log(lunch);
+  
   return (
     <Text>
       <div>
         Ready to{" "}
         <Button
           style={
-            lunch ? { color: "white", cursor: "auto" } : { display: "blue" }
+            lunch ? { color: "unset", cursor: "auto" } : { color: "#2196f3" } 
           }
           onClick={(e) => setLunch(true)}
         >
