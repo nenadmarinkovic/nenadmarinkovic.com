@@ -11,7 +11,7 @@ export const lightTheme = {
   footerBackground: "#FDE39C",
   filterWave:
     "invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%)",
-  formBorder: "2px solid #040428"
+  formBorder: "2px solid #040428",
 };
 
 export const darkTheme = {
@@ -27,5 +27,5 @@ export const darkTheme = {
   footerBackground: "#01001B",
   filterWave:
     "invert(3%) sepia(71%) saturate(5224%) hue-rotate(253deg) brightness(74%) contrast(110%)",
-    formBorder: "2px solid #FFF"
+  formBorder: "2px solid #FFF",
 };

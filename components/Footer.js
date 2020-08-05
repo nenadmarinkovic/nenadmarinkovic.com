@@ -5,7 +5,6 @@ import ContactForm from "./ContactForm";
 function Footer() {
   return (
     <>
-    
       <Wave>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -20,7 +19,6 @@ function Footer() {
           <ContactForm />
         </div>
       </FooterContainer>
-      
     </>
   );
 }
