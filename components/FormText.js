@@ -11,7 +11,7 @@ function FormText() {
       <div onMouseOver={() => {!launch ? setText("the rocket with me?") : ''}
       } onMouseLeave={() => setText("a new project with me?")}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-      <br></br>
+      
         Ready to{" "}
         <Button
           style={
