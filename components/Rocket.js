@@ -2,10 +2,9 @@ import React from "react";
 import { RocketWrap } from "../styles/components/Rocket";
 
 function Rocket(props) {
-  console.log(props);
   return (
     <>
-      <RocketWrap className={props.lunch ? "launch" : "stay"}>
+      <RocketWrap className={props.launch ? "launch" : "stay"}>
         <svg
           width="97px"
           height="142px"

@@ -3,23 +3,21 @@ import { Text, Button } from "../styles/components/FormText";
 import Rocket from "./Rocket";
 
 function FormText() {
-  const [lunch, setLunch] = useState(false);
-  
+  const [launch, setlaunch] = useState(false);
+
   return (
     <Text>
       <div>
         Ready to{" "}
         <Button
           style={
-            lunch ? { color: "unset", cursor: "auto" } : { color: "#2196f3" } 
+            launch
+              ? { color: "unset", cursor: "auto", transition: ".3s" }
+              : { color: "#2196f3", transition: ".3s" }
           }
-          onClick={(e) => setLunch(true)}
-        >
-          launch
-        </Button>{" "}
-        a new project with me?
+          onClick={(e) => setlaunch(true)}>launch</Button> a new project with me?
       </div>
-      <Rocket lunch={lunch} />
+      <Rocket launch={launch} />
     </Text>
   );
 }

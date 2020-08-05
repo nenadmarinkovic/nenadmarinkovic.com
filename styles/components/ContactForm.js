@@ -28,6 +28,7 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
   margin: 0;
   border: ${({ theme }) => theme.formBorder};
+  color: ${({ theme }) => theme.text};
   border-radius: 5px;
   padding: 0.5em;
   vertical-align: middle;
@@ -82,7 +83,7 @@ export const Message = styled.p`
 `;
 
 export const Copyright = styled.span`
-  margin-top: 120px;
+  margin-top: 75px;
   display: block;
   text-align: center;
   padding: 20px 0;
