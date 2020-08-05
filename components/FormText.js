@@ -3,11 +3,13 @@ import { Text, Button } from "../styles/components/FormText";
 import Rocket from "./Rocket";
 
 function FormText() {
-  const [launch, setlaunch] = useState(false);
+  const [launch, setLaunch] = useState(false);
+  const [text, setText] = useState("a new project with me?")
 
   return (
     <Text>
-      <div>
+      <div onMouseOver={() => {!launch ? setText("the rocket with me?") : ''}
+      } onMouseLeave={() => setText("a new project with me?")}>
         Ready to{" "}
         <Button
           style={
@@ -15,7 +17,7 @@ function FormText() {
               ? { color: "unset", cursor: "auto", transition: ".3s" }
               : { color: "#2196f3", transition: ".3s" }
           }
-          onClick={(e) => setlaunch(true)}>launch</Button> a new project with me?
+          onClick={(e) => setLaunch(true)}>launch</Button> {text}
       </div>
       <Rocket launch={launch} />
     </Text>

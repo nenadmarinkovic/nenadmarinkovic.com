@@ -143,12 +143,4 @@ export const GlobalStyles = createGlobalStyle`
   }
 }
 
-.active {
-  color: blue
-}
-
-.not {
-  color: white
-}
-
 `;

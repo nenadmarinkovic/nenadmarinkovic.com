@@ -2,6 +2,7 @@ import React from "react";
 import { RocketWrap } from "../styles/components/Rocket";
 
 function Rocket(props) {
+  
   return (
     <>
       <RocketWrap className={props.launch ? "launch" : "stay"}>
