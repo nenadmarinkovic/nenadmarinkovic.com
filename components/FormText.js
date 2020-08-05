@@ -1,16 +1,23 @@
 import React, { useState } from "react";
-import { Text } from "../styles/components/FormText";
+import { Text, Button } from "../styles/components/FormText";
 import Rocket from "./Rocket";
 
 function FormText() {
   const [lunch, setLunch] = useState(false);
-
+  console.log(lunch);
   return (
     <Text>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna{" "}
-        <button onClick={(e) => setLunch(true)}>LUNCH</button>.
+        Ready to{" "}
+        <Button
+          style={
+            lunch ? { color: "white", cursor: "auto" } : { display: "blue" }
+          }
+          onClick={(e) => setLunch(true)}
+        >
+          launch
+        </Button>{" "}
+        a new project with me?
       </div>
       <Rocket lunch={lunch} />
     </Text>

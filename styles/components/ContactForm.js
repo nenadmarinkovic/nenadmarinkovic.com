@@ -18,7 +18,7 @@ export const FormContainer = styled.form`
   grid-row-gap: 1em;
 `;
 export const FormLabel = styled.label`
-  color: white;
+  color: ${({ theme }) => theme.text};
   font-size: 14px;
   font-weight: 500;
   text-align: left;
@@ -27,7 +27,7 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
   margin: 0;
-  border: 1px solid #d1d1d1;
+  border: ${({ theme }) => theme.formBorder};
   border-radius: 5px;
   padding: 0.5em;
   vertical-align: middle;
@@ -37,12 +37,14 @@ export const FormInput = styled.input`
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.2s ease;
+  
 `;
 
-export const TextArea = styled.input`
+export const TextArea = styled.textarea`
   margin: 0;
-  border: 1px solid #d1d1d1;
+  border: ${({ theme }) => theme.formBorder};
   border-radius: 5px;
+  color: ${({ theme }) => theme.text};
   padding: 0.5em;
   vertical-align: middle;
   white-space: normal;
@@ -56,7 +58,7 @@ export const TextArea = styled.input`
 
 export const Button = styled.button`
   padding: 0.65em 1em;
-  background: #0076ff;
+  background: #2196f3;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   color: #fff;

@@ -105,20 +105,50 @@ export const GlobalStyles = createGlobalStyle`
     background: linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0.1))
   }
 
-
+.stay {
+  animation: updown 2s ease infinite;
+}
 
 .launch {
   
   position: relative;
-  animation: example forwards 10s linear ;
+  animation: example 10s;
   opacity: 0
+
 }
 
 @keyframes example {
   0%   {top:0px; opacity: 1}
-  10% {top: 20px; opacity: 1}
+  10% {top: 55px; opacity: 1}
   100% {top: -7000px; opacity: 1}
+}
+
+#Fire {
+  position: relative;
+  animation: updown 2s ease infinite;
   
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.active {
+  color: blue
+}
+
+.not {
+  color: white
 }
 
 `;

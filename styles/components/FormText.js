@@ -10,3 +10,15 @@ export const Text = styled.main`
   flex-direction: column;
   justify-content: space-between;
 `;
+
+export const Button = styled.button`
+  border: none;
+  color: #2196f3;
+  outline: none;
+  background: transparent;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0;
+  cursor: pointer;
+`;
