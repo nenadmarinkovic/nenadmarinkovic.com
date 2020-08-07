@@ -27,8 +27,7 @@ function Banner(props) {
               </Fade>
               <Fade bottom delay={1000}>
                 <Subtitle>
-                  I enjoy creating websites and web applications, exploring web
-                  technologies, and playing with design.
+                  I create websites and web applications that are fast, clean, and enjoyable.
                 </Subtitle>
               </Fade>
               <Fade bottom delay={1500}>
