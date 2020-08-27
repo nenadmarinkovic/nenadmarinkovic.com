@@ -567,7 +567,7 @@ function ComputerIllustration() {
               <g
                 id="ScreenSmall"
                 transform="translate(90.000000, 27.000000)"
-                fill="#446C89"
+                fill="#6CC4FF"
               >
                 <polygon
                   id="Vector_100"
