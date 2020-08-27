@@ -23,7 +23,9 @@ function Work() {
       </div>
       <div className="container">
         <WorkWrap>
-          <ComputerIllustration />
+          <Fade>
+            <ComputerIllustration />
+          </Fade>
           <WorkDetails>
             <Fade bottom delay={500}>
               <ListItem>

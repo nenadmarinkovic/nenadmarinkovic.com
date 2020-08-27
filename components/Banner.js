@@ -3,7 +3,7 @@ import Wave from "./Wave";
 import ContactButton from "./ContactButton";
 import Illustration from "./Illustration";
 import Header from "./Header";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 
 import {
   Wrapper,
@@ -22,14 +22,18 @@ function Banner(props) {
           <Header theme={props.theme} toggleTheme={props.toggleTheme} />
           <BannerContainer>
             <Info>
-              <Title>Hi. I'm Nenad, a web developer.</Title>
-
-              <Subtitle>
-                I create websites and web applications that are fast, clean, and
-                enjoyable.
-              </Subtitle>
-
-              <ContactButton />
+              <Fade>
+                <Title>Hi. I'm Nenad, a web developer.</Title>
+              </Fade>
+              <Fade>
+                <Subtitle>
+                  I create websites and web applications that are fast, clean,
+                  and enjoyable.
+                </Subtitle>
+              </Fade>
+              <Fade>
+                <ContactButton />
+              </Fade>
             </Info>
             <Illustration />
           </BannerContainer>
