@@ -12,7 +12,7 @@ export const lightTheme = {
   filterWave:
     "invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%)",
   formBorder: "2px solid #040428",
-  screenBackground: "#DAE0E9",
+  screenBackground: "#b5d5e8",
 };
 
 export const darkTheme = {
@@ -29,5 +29,5 @@ export const darkTheme = {
   filterWave:
     "invert(3%) sepia(71%) saturate(5224%) hue-rotate(253deg) brightness(74%) contrast(110%)",
   formBorder: "2px solid #FFF",
-  screenBackground: "#0a143d",
+  screenBackground: "#122656",
 };

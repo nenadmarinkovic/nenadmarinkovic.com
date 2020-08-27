@@ -19,6 +19,7 @@ export const CenterSecond = styled.div`
   margin: 0 auto;
   padding-top: 20px;
   line-height: 1.5;
+  width: 50%;
 `;
 
 export const WorkWrap = styled.div`

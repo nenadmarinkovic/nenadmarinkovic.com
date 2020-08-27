@@ -20,8 +20,8 @@ function ComputerIllustration() {
   return (
     <Wrapper>
       <svg
-        width="478px"
-        height="405px"
+        width="498px"
+        height="425px"
         viewBox="0 0 378 305"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"

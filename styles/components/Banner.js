@@ -10,10 +10,11 @@ export const BannerContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 30px;
 `;
 
 export const BannerWrapper = styled.div`
-  height: 450px;
+  height: 480px;
   width: 1160px;
   max-width: 100%;
   margin: 0 auto;
