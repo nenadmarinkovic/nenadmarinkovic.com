@@ -20,3 +20,25 @@ export const CenterSecond = styled.div`
   padding-top: 20px;
   line-height: 1.5;
 `;
+
+export const WorkWrap = styled.div`
+  text-align: start;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+`;
+
+export const WorkDetails = styled.div`
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  width: 55%;
+`;
+
+export const ListItem = styled.div`
+  list-style: none;
+  line-height: 1.8;
+`;

@@ -93,6 +93,6 @@ export const Stripe8 = styled.g`
 `;
 
 export const Stripe9 = styled.g`
-animation: ${revealStripes} 5s 5.3s infinite;
-visibility: hidden;
+  animation: ${revealStripes} 5s 5.3s infinite;
+  visibility: hidden;
 `;

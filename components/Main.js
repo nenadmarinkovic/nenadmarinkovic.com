@@ -17,10 +17,11 @@ function Main() {
 
   return (
     <ThemeProvider theme={themeMode}>
-        <GlobalStyles />
-        <Banner toggleTheme={toggleTheme} theme={theme} />
-        <Work/>
-        <Footer/>
+      <GlobalStyles />
+      <Banner toggleTheme={toggleTheme} theme={theme} />
+
+      <Work />
+      <Footer />
     </ThemeProvider>
   );
 }
