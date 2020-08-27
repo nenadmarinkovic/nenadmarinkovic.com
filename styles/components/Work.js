@@ -35,7 +35,7 @@ export const WorkDetails = styled.div`
   flex-direction: column;
   justify-content: space-between;
   font-size: 18px;
-  width: 55%;
+  width: 50%;
 `;
 
 export const ListItem = styled.div`

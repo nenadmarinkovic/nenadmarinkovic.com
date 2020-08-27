@@ -11,6 +11,7 @@ import {
   Lay8,
   Lay9,
   LayDivs,
+  Screen,
   ScreenSmall,
   SmallScreenLines,
 } from "../styles/components/ComputerIllustration";
@@ -572,11 +573,10 @@ function ComputerIllustration() {
                   id="Vector-98"
                   fill="#2E5078"
                 ></path>
-                <polygon
+                <Screen
                   id="Vector-99"
-                  fill="#3F2758"
                   points="16.7348 66.9002 17.2076 167.803 161.425 112.203 160.908 14.8645"
-                ></polygon>
+                ></Screen>
               </g>
               <ScreenSmall
                 id="ScreenSmall"

@@ -15,6 +15,7 @@ import {
   Stripe7,
   Stripe8,
   Stripe9,
+  Screen,
 } from "../styles/components/Illustration";
 
 function Illustration() {
@@ -108,12 +109,11 @@ function Illustration() {
                 d="M312.17 239.366H229.701V244.365H312.17V239.366Z"
                 fill="#431CA3"
               />
-              <path
+              <Screen
                 id="Vector 15"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M263.155 176.942L251.695 235.595H333.324L344.784 176.942H263.155Z"
-                fill="#3F2759"
               />
               <path
                 id="Vector 16"

@@ -61,6 +61,11 @@ export const Cloud = styled.g`
 `;
 
 export const Flower = styled.g``;
+
+export const Screen = styled.path`
+  fill: ${({ theme }) => theme.screenBackground};
+`;
+
 export const Stripe1 = styled.g``;
 
 export const Stripe2 = styled.g`

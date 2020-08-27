@@ -24,23 +24,31 @@ function Work() {
         </Fade>
       </div>
       <div className="container">
-        <WorkWrap>
-          <ComputerIllustration />
-          <WorkDetails>
-            <ListItem>
-              Portfolio websites, small to medium size company websites, content
-              management systems, e-commerce platforms, and more.
-            </ListItem>
-            <ListItem>
-              Portfolio websites, small to medium size company websites, content
-              management systems, e-commerce platforms, and more.
-            </ListItem>
-            <ListItem>
-              Portfolio websites, small to medium size company websites, content
-              management systems, e-commerce platforms, and more.
-            </ListItem>
-          </WorkDetails>
-        </WorkWrap>
+        <Fade bottom>
+          <WorkWrap>
+            <ComputerIllustration />
+            <WorkDetails>
+              <Fade bottom delay={500}>
+                <ListItem>
+                  Portfolio websites, small to medium size company websites,
+                  content management systems, e-commerce platforms, and more.
+                </ListItem>
+              </Fade>
+              <Fade bottom delay={1000}>
+                <ListItem>
+                  Portfolio websites, small to medium size company websites,
+                  content management systems, e-commerce platforms, and more.
+                </ListItem>
+              </Fade>
+              <Fade bottom delay={1500}>
+                <ListItem>
+                  Portfolio websites, small to medium size company websites,
+                  content management systems, e-commerce platforms, and more.
+                </ListItem>
+              </Fade>
+            </WorkDetails>
+          </WorkWrap>
+        </Fade>
       </div>
       <Technology />
     </WorkSection>
