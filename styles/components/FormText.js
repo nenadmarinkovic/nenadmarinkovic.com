@@ -15,7 +15,6 @@ export const Button = styled.button`
   margin-top: 20px;
   border: none;
   color: #2196f3;
-  outline: none;
   background: transparent;
   font-size: 21px;
   font-weight: 400;
