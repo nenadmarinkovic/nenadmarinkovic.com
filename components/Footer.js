@@ -14,7 +14,7 @@ function Footer() {
         </svg>
       </Wave>
 
-      <FooterContainer>
+      <FooterContainer id="contact">
         <div className="container">
           <ContactForm />
         </div>

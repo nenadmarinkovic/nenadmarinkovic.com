@@ -5,44 +5,44 @@ import {
   Container,
   HeaderLinks,
   HeaderLink,
-  Home
+  Home,
+  Button,
 } from "../styles/components/Header";
 import Fade from "react-reveal/Fade";
-
+import ScrollIntoView from "react-scroll-into-view";
 
 function Header(props) {
   return (
-    
     <Container>
-       <Fade>
-      <Link prefetch href={"/"} passHref>
-        <Home>Nenad Marinković</Home>
-      </Link>
+      <Fade>
+        <Link prefetch href={"/"} passHref>
+          <Home>Nenad Marinković</Home>
+        </Link>
       </Fade>
       <Fade>
-      <HeaderLinks>
-        <HeaderLink>
-          <Link prefetch href={"/work"} passHref>
-            <a>Work</a>
-          </Link>
-        </HeaderLink>
-        <HeaderLink>
-          {" "}
-          <Link prefetch href={"/blog"} passHref>
-            <a>Technology</a>
-          </Link>
-        </HeaderLink>
-        <HeaderLink>
-          {" "}
-          <Link prefetch href={"/contact"} passHref>
-            <a>Contact</a>
-          </Link>
-        </HeaderLink>
-        <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
-      </HeaderLinks>
+        <HeaderLinks>
+          <HeaderLink>
+            <ScrollIntoView selector="#work">
+              {" "}
+              <Button>Work </Button>
+            </ScrollIntoView>
+          </HeaderLink>
+          <HeaderLink>
+            <ScrollIntoView selector="#technology">
+              {" "}
+              <Button>Technology </Button>
+            </ScrollIntoView>
+          </HeaderLink>
+          <HeaderLink>
+            <ScrollIntoView selector="#contact">
+              {" "}
+              <Button>Contact </Button>
+            </ScrollIntoView>
+          </HeaderLink>
+          <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
+        </HeaderLinks>
       </Fade>
     </Container>
-   
   );
 }
 

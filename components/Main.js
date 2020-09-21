@@ -7,6 +7,7 @@ import Banner from "./Banner";
 import Work from "./Work";
 import Footer from "./Footer";
 
+
 function Main() {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -19,7 +20,6 @@ function Main() {
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Banner toggleTheme={toggleTheme} theme={theme} />
-
       <Work />
       <Footer />
     </ThemeProvider>

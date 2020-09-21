@@ -13,7 +13,7 @@ import ComputerIllustration from "./ComputerIllustration";
 
 function Work() {
   return (
-    <WorkSection>
+    <WorkSection id="work">
       <div className="container">
         <CenterMain>Work I do</CenterMain>
         <CenterSecond>
@@ -46,9 +46,11 @@ function Work() {
               </ListItem>
             </Fade>
           </WorkDetails>
+         
         </WorkWrap>
       </div>
       <Technology />
+      
     </WorkSection>
   );
 }

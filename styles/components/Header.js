@@ -26,3 +26,15 @@ export const Home = styled.a`
   transition: 0.3s;
   color: ${({ theme }) => theme.text};
 `;
+
+export const Button = styled.button`
+ background: transparent;
+ color: white;
+ border: none;
+ paddig: 5px;
+ text-decoration: none;
+ font-size: 17px;
+ transition: 0.3s;
+ cursor: pointer;
+ color: ${({ theme }) => theme.text};
+`;
