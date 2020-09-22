@@ -7,10 +7,15 @@ export const ToggleContainer = styled.label`
   height: 24px;
   margin-left: 25px;
 
+
   input {
     opacity: 0;
     width: 0;
     height: 0;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 65px
   }
 `;
 
