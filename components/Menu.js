@@ -6,7 +6,7 @@ const StyledMenu = styled.nav`
   flex-direction: column;
   background: #effffa;
   display: ${({ open }) => (open ? "" : "none")};
-  height: 40vh;
+  height: 300px;
   text-align: right;
   padding: 2rem;
   position: absolute;
