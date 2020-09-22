@@ -19,11 +19,25 @@ export const BannerWrapper = styled.div`
   max-width: 100%;
   margin: 0 auto;
   padding: 20px 15px 0 15px;
+
+  @media (max-width: 960px) {
+    height: 380px;
+  }
+
+  @media (max-width: 460px) {
+    height: 430px;
+  }
 `;
 
 export const Info = styled.div`
   padding-top: 140px;
   width: 50%;
+
+  @media (max-width: 960px) {
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const Subtitle = styled.h6`

@@ -3,14 +3,21 @@ import styled from "styled-components";
 export const FlexContainer = styled.main`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const MainForm = styled.main`
   width: 50%;
-  max-width: 640px;
   margin: 0;
   font-size: 21px;
   line-height: 1.65;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const FormContainer = styled.form`
@@ -46,7 +53,6 @@ export const FormInput = styled.input`
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
   }
-  
 `;
 
 export const TextArea = styled.textarea`

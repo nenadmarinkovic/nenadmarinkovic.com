@@ -15,7 +15,7 @@ function FormText() {
         onMouseLeave={() => setText("a new project with me?")}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor. Ready to{" "}
+        tempor. <br></br> Ready to{" "}
         <Button
           style={
             launch

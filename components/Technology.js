@@ -9,6 +9,15 @@ class Technology extends React.Component {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
     return (
       <div class="container" id="technology">
@@ -104,7 +113,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-             className="technology-icon"
+              className="technology-icon"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -115,7 +124,7 @@ class Technology extends React.Component {
           </div>
           <div className="slick-div">
             <svg
-             className="technology-icon"
+              className="technology-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"

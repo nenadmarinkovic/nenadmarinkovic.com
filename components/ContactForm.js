@@ -76,7 +76,7 @@ export default () => {
     <>
       <FlexContainer>
         <FormText />
-        <MainForm>
+        <MainForm id="contact">
           <FormContainer onSubmit={handleOnSubmit}>
             <FormLabel htmlFor="email">Email</FormLabel>
             <FormInput

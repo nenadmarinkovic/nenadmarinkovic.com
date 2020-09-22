@@ -2,6 +2,11 @@ import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 50px;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+
 `;
 
 export const revealLight = keyframes`

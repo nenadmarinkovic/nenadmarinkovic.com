@@ -9,6 +9,11 @@ export const Text = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+   width: 100%;
+   text-align: center;
+  }
 `;
 
 export const Button = styled.button`

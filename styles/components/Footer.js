@@ -6,6 +6,14 @@ export const FooterContainer = styled.div`
   bottom: 0;
   background: ${({ theme }) => theme.footerBackground};
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 960px) {
+    top: 40px;
+  }
+
+  @media (max-width: 460px) {
+    top: 0px;
+  }
 `;
 
 export const Wave = styled.div`

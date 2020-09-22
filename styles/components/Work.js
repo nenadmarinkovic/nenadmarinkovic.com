@@ -9,17 +9,24 @@ export const CenterMain = styled.div`
   font-size: 2rem;
   font-weight: 700;
   color: #040428;
+
+  @media (max-width: 960px) {
+    margin-top: 0;
+  }
 `;
 
 export const CenterSecond = styled.div`
   font-size: 21px;
   font-weight: 400;
   color: #040428;
-  width: 680px;
   margin: 0 auto;
   padding-top: 20px;
   line-height: 1.5;
   width: 50%;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const WorkWrap = styled.div`
@@ -28,6 +35,14 @@ export const WorkWrap = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  
 `;
 
 export const WorkDetails = styled.div`
@@ -37,6 +52,10 @@ export const WorkDetails = styled.div`
   justify-content: space-between;
   font-size: 18px;
   width: 50%;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const ListItem = styled.div`
