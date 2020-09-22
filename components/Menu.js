@@ -6,16 +6,18 @@ const StyledMenu = styled.nav`
   flex-direction: column;
   background: #effffa;
   display: ${({ open }) => (open ? "" : "none")};
-  height: 100vh;
+  height: 40vh;
   text-align: right;
   padding: 2rem;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
   transition: transform 0.3s ease-in-out;
+  border-bottom-left-radius: 23px;
+  overflow: hidden;
 
-  @media (max-width: 576px) {
-    width: 100%;
+  @media (min-width: 768px) {
+    display: none;
   }
 
   a {
@@ -44,11 +46,11 @@ export const HeaderLinks = styled.div`
   align-items: center;
 `;
 
-export const HeaderLink = styled.div`
+export const HeaderLink = styled.a`
   padding: 0 25px;
   a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
     transition: 0.3s;
     color: ${({ theme }) => theme.text};
   }
@@ -56,7 +58,7 @@ export const HeaderLink = styled.div`
 
 export const Home = styled.a`
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19px;
   transition: 0.3s;
   color: ${({ theme }) => theme.text};
 
@@ -69,11 +71,12 @@ export const Home = styled.a`
 
 export const Button = styled.button`
   background: transparent;
+  margin-top: 20px;
   color: white;
   border: none;
   paddig: 5px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19px;
   transition: 0.3s;
   cursor: pointer;
   color: black;
@@ -89,26 +92,26 @@ export const MenuLinks = styled.div`
   margin-top: 40px;
 `;
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
       <MenuLinks>
-        <HeaderLink>
+        <HeaderLink onClick={console.log("hhe")}>
           <ScrollIntoView selector="#work">
             {" "}
-            <Button>Work </Button>
+            <Button onClick={() => setOpen(!open)}>Work</Button>
           </ScrollIntoView>
         </HeaderLink>
         <HeaderLink>
           <ScrollIntoView selector="#technology">
             {" "}
-            <Button>Technology </Button>
+            <Button onClick={() => setOpen(!open)}>Technology </Button>
           </ScrollIntoView>
         </HeaderLink>
         <HeaderLink>
           <ScrollIntoView selector="#contact">
             {" "}
-            <Button>Contact </Button>
+            <Button onClick={() => setOpen(!open)}>Contact </Button>
           </ScrollIntoView>
         </HeaderLink>
       </MenuLinks>

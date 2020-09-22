@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState } from "react";
 import Link from "next/link";
 import Toggle from "./Toggle";
 import {
@@ -8,14 +8,15 @@ import {
   Home,
   Button,
 } from "../styles/components/Header";
-import Fade from "react-reveal/Fade";
 import ScrollIntoView from "react-scroll-into-view";
+import Fade from "react-reveal/Fade";
 import Menu from "./Menu";
 import Burger from "./Burger";
 
 function Header(props) {
   const [open, setOpen] = React.useState(false);
-  const node = React.useRef();
+ 
+
   return (
     <>
       <Container>
@@ -50,7 +51,7 @@ function Header(props) {
         </Fade>
       </Container>
 
-      <div ref={node}>
+      <div>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
@@ -58,4 +59,5 @@ function Header(props) {
   );
 }
 
-export default Header;
+
+export default Header
