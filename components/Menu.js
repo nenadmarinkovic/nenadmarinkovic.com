@@ -15,6 +15,7 @@ const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   border-bottom-left-radius: 23px;
   overflow: hidden;
+  z-index: 10;
 
   @media (min-width: 768px) {
     display: none;
