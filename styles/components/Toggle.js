@@ -38,6 +38,8 @@ export const Slider = styled.span`
     transition: 0.4s;
     border-radius: 50%;
   }
+
+ 
 `;
 
 export const SwitchInput = styled.input`
@@ -47,7 +49,10 @@ export const SwitchInput = styled.input`
   }
 
   :focus + ${Slider} {
-    box-shadow: 0 0 1px #2196f3;
+    
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    
   }
 
   :checked + ${Slider}:before {
@@ -56,4 +61,6 @@ export const SwitchInput = styled.input`
     transform: translateX(26px);
     background-color: #fefefe;
   }
+
+
 `;

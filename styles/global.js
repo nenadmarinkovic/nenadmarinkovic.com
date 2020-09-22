@@ -51,7 +51,7 @@ export const GlobalStyles = createGlobalStyle`
   *::after,
   *::before {
     box-sizing: border-box;
-   outline: none;
+   
   }
 
   html {
@@ -84,6 +84,14 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     pointer-events: none;
     border: none;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-prev {
+    display: none !important;
   }
   
   .slick-list:before,

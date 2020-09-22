@@ -25,6 +25,11 @@ export const Home = styled.a`
   font-size: 17px;
   transition: 0.3s;
   color: ${({ theme }) => theme.text};
+
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
 `;
 
 export const Button = styled.button`
@@ -37,4 +42,9 @@ export const Button = styled.button`
  transition: 0.3s;
  cursor: pointer;
  color: ${({ theme }) => theme.text};
+
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
 `;

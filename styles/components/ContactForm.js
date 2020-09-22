@@ -23,6 +23,10 @@ export const FormLabel = styled.label`
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
 `;
 
 export const FormInput = styled.input`
@@ -38,6 +42,10 @@ export const FormInput = styled.input`
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.2s ease;
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
   
 `;
 
@@ -55,6 +63,10 @@ export const TextArea = styled.textarea`
   font-family: inherit;
   transition: all 0.2s ease;
   height: 180px;
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
 `;
 
 export const Button = styled.button`
@@ -69,6 +81,10 @@ export const Button = styled.button`
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.2s ease;
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
 `;
 
 export const Error = styled.div`
