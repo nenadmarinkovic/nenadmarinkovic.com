@@ -25,5 +25,6 @@ export const Button = styled.button`
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    border-radius: 5px;
   }
 `;
