@@ -18,14 +18,10 @@ function Header(props) {
   const node = useRef();
   const handleClickOutside = (e) => {
     if (node.current.contains(e.target)) {
+      setOpen(false);
       return;
     }
 
-    setOpen(false);
-  };
-
-  const handleChange = (selectedValue) => {
-    onChange(selectedValue);
     setOpen(false);
   };
 
