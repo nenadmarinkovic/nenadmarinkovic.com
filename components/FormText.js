@@ -9,14 +9,14 @@ function FormText() {
   return (
     <Text>
       <div
-     
         onTouchEnd={() => {
           !launch
             ? setText("the rocket with me?")
             : setText("a new project with me?");
         }}
         onMouseLeave={() => setText("a new project with me?")}
-        onTouchEnd={() => setText("a new project with me?")}
+
+        onTouchEnd={() => {setTimeout(() => {setText("a new project with me?")}, 2500)}}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}
