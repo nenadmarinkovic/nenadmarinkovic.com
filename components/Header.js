@@ -71,12 +71,11 @@ function Header(props) {
           </HeaderLinks>
         </Fade>
       </Container>
-      <Fade>
-        <div ref={node}>
-          <Burger open={open} setOpen={setOpen} />
-          <Menu open={open} setOpen={setOpen} />
-        </div>
-      </Fade>
+
+      <div ref={node}>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+      </div>
     </>
   );
 }
