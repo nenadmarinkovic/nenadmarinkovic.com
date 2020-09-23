@@ -21,7 +21,7 @@ class Technology extends React.Component {
     };
     return (
       <div class="container" id="technology">
-        <h2> Technologies I like to use </h2>
+        <h2>Technologies I like to use </h2>
         <Slider {...settings}>
           <div className="slick-div">
             <svg

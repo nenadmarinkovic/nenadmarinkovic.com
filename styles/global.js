@@ -83,6 +83,8 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     pointer-events: none;
     border: none;
+    margin-top: 20px;
+    padding-bottom: 50px;
   }
 
   .slick-next {
