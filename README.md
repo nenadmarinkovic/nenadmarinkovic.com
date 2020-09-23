@@ -18,4 +18,4 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:1500](http://localhost:1500) with your browser to see the result.
+Open [http://localhost:2500](http://localhost:2500) with your browser to see the result.
