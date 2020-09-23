@@ -51,13 +51,12 @@ export const GlobalStyles = createGlobalStyle`
   *::after,
   *::before {
     box-sizing: border-box;
-    -webkit-overflow-scrolling: touch;
   }
 
   html {
     margin: 0;
     padding: 0;
-    font-family: 'Steradian', -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+    font-family: 'Steradian', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
   }
 
   body {
