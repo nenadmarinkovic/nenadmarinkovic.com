@@ -13,7 +13,8 @@ export const lightTheme = {
     "invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%)",
   formBorder: "2px solid #040428",
   screenBackground: "#b5d5e8",
- menuColor: "#040428"
+  menuColor: "#040428",
+  menuShadow: "rgba(0, 0, 0, 0.12) 0px 5px 10px",
 };
 
 export const darkTheme = {
@@ -31,5 +32,6 @@ export const darkTheme = {
     "invert(3%) sepia(71%) saturate(5224%) hue-rotate(253deg) brightness(74%) contrast(110%)",
   formBorder: "2px solid #FFF",
   screenBackground: "#122656",
-  menuColor: "#0e90db"
+  menuColor: "#0e90db",
+  menuShadow: "0 -2px 10px rgba(0, 0, 0, 1);",
 };

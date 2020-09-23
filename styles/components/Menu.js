@@ -14,7 +14,7 @@ export const StyledMenu = styled.nav`
   overflow: hidden;
   z-index: 10;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  box-shadow: ${({ theme }) => theme.menuShadow};
 
   @media (min-width: 768px) {
     display: none;
