@@ -1,14 +1,17 @@
 import React from "react";
 import { Button } from "../styles/components/ContactButton";
 import ScrollIntoView from "react-scroll-into-view";
+import Fade from "react-reveal/Fade";
 
 function ContactButton() {
   return (
-    <a style={{display: "inline-block"}}>
-      <ScrollIntoView selector="#contact">
-        <Button>Contact me</Button>
-      </ScrollIntoView>
-    </a>
+    <Fade delay={300}>
+      <a style={{ display: "inline-block" }}>
+        <ScrollIntoView selector="#contact">
+          <Button>Contact me</Button>
+        </ScrollIntoView>
+      </a>
+    </Fade>
   );
 }
 
