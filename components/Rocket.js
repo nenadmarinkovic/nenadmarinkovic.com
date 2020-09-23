@@ -27,11 +27,11 @@ function Rocket(props) {
               y2="99.9614495%"
               id="linearGradient-1"
             >
-              <stop stop-color="#88AEDA" offset="0%"></stop>
-              <stop stop-color="#8EAED4" offset="4%"></stop>
-              <stop stop-color="#CBA895" offset="50%"></stop>
-              <stop stop-color="#F1A56D" offset="83%"></stop>
-              <stop stop-color="#FFA45E" offset="100%"></stop>
+              <stop stopColor="#88AEDA" offset="0%"></stop>
+              <stop stopColor="#8EAED4" offset="4%"></stop>
+              <stop stopColor="#CBA895" offset="50%"></stop>
+              <stop stopColor="#F1A56D" offset="83%"></stop>
+              <stop stopColor="#FFA45E" offset="100%"></stop>
             </linearGradient>
             <linearGradient
               x1="0.0263019463%"
@@ -40,11 +40,11 @@ function Rocket(props) {
               y2="50%"
               id="linearGradient-2"
             >
-              <stop stop-color="#88CFDA" offset="0%"></stop>
-              <stop stop-color="#8ED0D4" offset="4%"></stop>
-              <stop stop-color="#CBD995" offset="50%"></stop>
-              <stop stop-color="#F1DF6D" offset="83%"></stop>
-              <stop stop-color="#FFE15E" offset="100%"></stop>
+              <stop stopColor="#88CFDA" offset="0%"></stop>
+              <stop stopColor="#8ED0D4" offset="4%"></stop>
+              <stop stopColor="#CBD995" offset="50%"></stop>
+              <stop stopColor="#F1DF6D" offset="83%"></stop>
+              <stop stopColor="#FFE15E" offset="100%"></stop>
             </linearGradient>
             <linearGradient
               x1="0.0879507476%"
@@ -53,13 +53,13 @@ function Rocket(props) {
               y2="50%"
               id="linearGradient-3"
             >
-              <stop stop-color="#A1BAFF" offset="0%"></stop>
-              <stop stop-color="#B5C9FF" offset="8%"></stop>
-              <stop stop-color="#D0DDFF" offset="21%"></stop>
-              <stop stop-color="#E5ECFF" offset="35%"></stop>
-              <stop stop-color="#F4F7FF" offset="51%"></stop>
-              <stop stop-color="#FCFDFF" offset="70%"></stop>
-              <stop stop-color="#FFFFFF" offset="100%"></stop>
+              <stop stopColor="#A1BAFF" offset="0%"></stop>
+              <stop stopColor="#B5C9FF" offset="8%"></stop>
+              <stop stopColor="#D0DDFF" offset="21%"></stop>
+              <stop stopColor="#E5ECFF" offset="35%"></stop>
+              <stop stopColor="#F4F7FF" offset="51%"></stop>
+              <stop stopColor="#FCFDFF" offset="70%"></stop>
+              <stop stopColor="#FFFFFF" offset="100%"></stop>
             </linearGradient>
             <linearGradient
               x1="-43.0111124%"
@@ -68,8 +68,8 @@ function Rocket(props) {
               y2="72.3428299%"
               id="linearGradient-4"
             >
-              <stop stop-color="#3D00BA" offset="0%"></stop>
-              <stop stop-color="#CE00FF" offset="75%"></stop>
+              <stop stopColor="#3D00BA" offset="0%"></stop>
+              <stop stopColor="#CE00FF" offset="75%"></stop>
             </linearGradient>
             <linearGradient
               x1="120.186215%"
@@ -78,8 +78,8 @@ function Rocket(props) {
               y2="64.197525%"
               id="linearGradient-5"
             >
-              <stop stop-color="#3D00BA" offset="0%"></stop>
-              <stop stop-color="#CE00FF" offset="75%"></stop>
+              <stop stopColor="#3D00BA" offset="0%"></stop>
+              <stop stopColor="#CE00FF" offset="75%"></stop>
             </linearGradient>
             <linearGradient
               x1="-0.26642984%"
@@ -88,8 +88,8 @@ function Rocket(props) {
               y2="50%"
               id="linearGradient-6"
             >
-              <stop stop-color="#3D00BA" offset="0%"></stop>
-              <stop stop-color="#CE00FF" offset="75%"></stop>
+              <stop stopColor="#3D00BA" offset="0%"></stop>
+              <stop stopColor="#CE00FF" offset="75%"></stop>
             </linearGradient>
             <linearGradient
               x1="-0.000732890284%"
@@ -98,11 +98,11 @@ function Rocket(props) {
               y2="50.0152873%"
               id="linearGradient-7"
             >
-              <stop stop-color="#A1BAFF" offset="0%"></stop>
-              <stop stop-color="#A9C0FF" offset="4%"></stop>
-              <stop stop-color="#E7EDFF" offset="37%"></stop>
-              <stop stop-color="#FFFFFF" offset="52%"></stop>
-              <stop stop-color="#CEDBFF" offset="100%"></stop>
+              <stop stopColor="#A1BAFF" offset="0%"></stop>
+              <stop stopColor="#A9C0FF" offset="4%"></stop>
+              <stop stopColor="#E7EDFF" offset="37%"></stop>
+              <stop stopColor="#FFFFFF" offset="52%"></stop>
+              <stop stopColor="#CEDBFF" offset="100%"></stop>
             </linearGradient>
             <linearGradient
               x1="0.0704812159%"
@@ -111,22 +111,22 @@ function Rocket(props) {
               y2="49.9302133%"
               id="linearGradient-8"
             >
-              <stop stop-color="#7633FF" offset="0%"></stop>
-              <stop stop-color="#4E53FF" offset="22%"></stop>
-              <stop stop-color="#2C6DFF" offset="44%"></stop>
-              <stop stop-color="#1480FF" offset="65%"></stop>
-              <stop stop-color="#058CFF" offset="84%"></stop>
-              <stop stop-color="#0090FF" offset="100%"></stop>
+              <stop stopColor="#7633FF" offset="0%"></stop>
+              <stop stopColor="#4E53FF" offset="22%"></stop>
+              <stop stopColor="#2C6DFF" offset="44%"></stop>
+              <stop stopColor="#1480FF" offset="65%"></stop>
+              <stop stopColor="#058CFF" offset="84%"></stop>
+              <stop stopColor="#0090FF" offset="100%"></stop>
             </linearGradient>
           </defs>
           <g
             id="Page-1"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
             fill="none"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           >
-            <g id="start-up" fill-rule="nonzero">
+            <g id="start-up" fillRule="nonzero">
               <path
                 d="M131.717238,267 L85.2521741,267 C75.8174215,277.074351 71.1013227,290.199959 72.1418294,303.488049 C74.502999,301.005499 77.0885037,298.713112 79.8703623,296.635698 C80.1507516,296.43349 80.5381688,296.415214 80.839386,296.589984 C81.1406038,296.764754 81.2911001,297.095134 81.2158148,297.416345 C80.4022855,302.302622 81.2158148,317.019275 108.50035,342 C135.878755,317.019275 136.660995,302.302622 135.753596,297.416345 C135.70005,297.094238 135.860737,296.773867 136.161329,296.603424 C136.461921,296.432981 136.843807,296.4457 137.130339,296.635698 C139.904026,298.721669 142.488788,301.013397 144.858872,303.488049 C145.897767,290.195151 141.169367,277.066641 131.717238,267 L131.717238,267 Z"
                 id="Fire"
@@ -146,14 +146,14 @@ function Rocket(props) {
                 d="M76,257 L79.3081998,263.5 C80.7201465,266.259979 83.5162249,267.993167 86.5678603,268 L130.432139,268 C133.485715,268.000222 136.285097,266.264986 137.6918,263.5 L141,257 L76,257 Z"
                 id="Path"
                 stroke="#424242"
-                stroke-width="3.46"
+                strokeWidth="3.46"
                 fill="#949494"
               ></path>
               <path
                 d="M67,246 L71.3215067,253.0837 C73.1657201,256.102893 76.8334446,257.99826 80.8350399,258 L138.164959,258 C142.166555,257.99826 145.83428,256.102893 147.678493,253.0837 L152,246 L67,246 Z"
                 id="Path"
                 stroke="#424242"
-                stroke-width="3.46"
+                strokeWidth="3.46"
                 fill="#4D4D4D"
               ></path>
               <path
@@ -185,7 +185,7 @@ function Rocket(props) {
                 d="M125.768303,136.015226 C135.134226,127.795149 135.443239,114.185057 126.458503,105.616234 C117.473768,97.0474108 102.59762,96.7646964 93.2316973,104.984774 C83.8657748,113.204851 83.5567611,126.814943 92.5414966,135.383766 C101.526232,143.952589 116.40238,144.235304 125.768303,136.015226 Z"
                 id="Oval"
                 stroke="#424242"
-                stroke-width="3.46"
+                strokeWidth="3.46"
                 fill="#7C7C7C"
               ></path>
               <path
@@ -199,7 +199,7 @@ function Rocket(props) {
                 transform="translate(85.000000, 98.000000)"
                 fill="#000000"
                 stroke="#424242"
-                stroke-width="3.46"
+                strokeWidth="3.46"
               >
                 <path
                   d="M24.5907905,3.96101073 C33.4529386,3.95681887 41.5330136,8.6005493 45.3749138,15.9059327 C43.089081,8.15104614 36.1915966,2.25396163 27.5791573,0.691243741 C18.966718,-0.871474153 10.1308372,2.17080807 4.78226889,8.54044064 C-0.56629951,14.9100732 -1.50128349,23.503955 2.36997674,30.712963 C1.8044704,28.8885313 1.51444382,27.0019108 1.50796242,25.1055669 C1.50795025,13.4391468 11.8373339,3.97712457 24.5907905,3.96101073 L24.5907905,3.96101073 Z"

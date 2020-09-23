@@ -14,8 +14,12 @@ function FormText() {
             ? setText("the rocket with me?")
             : setText("a new project with me?");
         }}
+        onMouseUp={() => {
+          setTimeout(() => {
+            setText("a new project with me?");
+          }, 2000);
+        }}
       
-        onTouchEnd={() => {setTimeout(() => {setText("a new project with me?")}, 2500)}}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}

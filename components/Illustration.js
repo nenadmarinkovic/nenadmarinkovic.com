@@ -32,15 +32,15 @@ function Illustration() {
           <g id="illustration">
             <path
               id="Vector"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M167.907 420.199V419.513H210.375L167.907 420.199Z"
               fill="white"
             />
             <path
               id="Vector 2"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M154.65 420.199L118.112 419.513H154.65V420.199Z"
               fill="white"
             />
@@ -87,15 +87,15 @@ function Illustration() {
               />
               <path
                 id="Vector 11"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M263.155 179.402L349.649 173.092L351.03 176.23L339.686 240.324H335.699L250.207 245.754L263.155 179.402Z"
                 fill="url(#paint0_linear)"
               />
               <path
                 id="Vector 12"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M260.131 173.092H349.341L336.393 239.485H247.176L260.131 173.092Z"
                 fill="black"
               />
@@ -111,84 +111,84 @@ function Illustration() {
               />
               <Screen
                 id="Vector 15"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M263.155 176.942L251.695 235.595H333.324L344.784 176.942H263.155Z"
               />
               <path
                 id="Vector 16"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M278.177 244.373C280.938 244.724 286.76 243.814 290.902 241.042C295.004 238.263 298.258 235.627 298.258 235.627C298.258 235.627 307.196 236.834 307.767 234.717C308.014 231.89 296.184 228.543 294.541 228.344C292.853 228.144 278.987 230.165 277.568 231.634C276.149 233.096 278.177 244.373 278.177 244.373Z"
                 fill="white"
               />
               <path
                 id="Vector 17"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M231.96 236.314C234.721 236.674 240.544 235.763 244.647 232.984C248.749 230.205 252.659 226.155 252.659 226.155C252.659 226.155 261.589 227.026 261.397 226.155C261.165 225.325 249.976 220.477 248.286 220.285C246.636 220.086 232.732 222.114 231.313 223.584C229.894 225.037 231.96 236.314 231.96 236.314Z"
                 fill="white"
               />
               <path
                 id="Vector 18"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M248.171 225.125C249.05 226.275 254.649 230.604 253.577 232.265C252.505 233.974 249.937 234.685 247.137 232.585C244.338 230.484 242.58 228.016 243.343 227.186C244.115 226.355 248.171 225.125 248.171 225.125Z"
                 fill="white"
               />
               <path
                 id="Vector 19"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M129.032 167.933C120.527 171.502 122.554 188.49 126.426 200.678C130.258 212.866 169.997 241.634 181.765 244.812C193.533 247.951 239.171 233.183 239.171 233.183C242.272 226.634 239.596 219.686 233.958 221.195C233.958 221.195 189.469 228.415 182.798 220.445C177.431 214.047 138.04 164.162 129.032 167.933Z"
                 fill="url(#paint2_linear)"
               />
               <path
                 id="Vector 20"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M165.054 145.866C151.141 174.873 122.554 165.193 115.815 137.455C109.066 109.75 107.308 85.8216 130.76 81.6128C156.239 77.044 179.004 116.85 165.054 145.866Z"
                 fill="url(#paint3_linear)"
               />
               <path
                 id="Vector 21"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M121.521 146.504C124.166 155.114 123.356 178.211 123.356 178.211C123.356 178.211 160.99 189.561 159.841 184.321C155.244 163.085 152.908 144.516 148.689 140.626C145.204 137.447 136.62 148.126 121.521 146.504Z"
                 fill="white"
               />
               <path
                 id="Vector 22"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M198.199 407.964C198.199 407.964 206.281 418.083 216.745 422.611C227.21 427.14 231.922 429.081 230.234 431.86C228.544 434.639 215.134 433.33 205.016 433.689C194.936 434.048 188.12 434.839 187.773 431.509C187.425 428.218 189.037 409.921 189.037 409.921L198.199 407.964Z"
                 fill="black"
               />
               <path
                 id="Vector 23"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M183.485 329.223C183.871 340.572 187.588 425.686 187.588 425.686C190.186 428.793 207.368 422.412 208.571 418.091C208.571 418.091 215.944 323.345 213.067 322.906C210.237 322.514 183.485 329.223 183.485 329.223Z"
                 fill="url(#paint4_linear)"
               />
               <path
                 id="Vector 24"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M286.498 408.363C286.498 408.363 294.587 418.482 305.006 423.05C315.471 427.579 320.183 429.48 318.494 432.299C316.805 435.078 303.394 433.729 293.315 434.088C283.198 434.447 276.38 435.238 276.033 431.948C275.687 428.618 277.298 410.32 277.298 410.32L286.498 408.363Z"
                 fill="black"
               />
               <path
                 id="Vector 25"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M127.729 294.969C126.503 303.818 113.508 317.674 129.34 331.523C145.165 345.372 247.068 333.664 248.371 335.533C249.675 337.362 274.892 427.156 274.892 427.156C274.892 427.156 296.708 426.445 295.567 417.197C287.146 393.109 288.534 316.205 271.484 307.787C254.456 299.377 127.729 294.969 127.729 294.969Z"
                 fill="url(#paint5_linear)"
               />
               <path
                 id="Vector 26"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M169.496 170.233C154.897 166.223 111.265 162.989 105.419 175.911C91.8466 205.917 102.651 321.213 121.545 323.114C133.69 324.343 193.98 322.434 196.009 299.777C198.661 269.97 172.025 226.866 169.496 170.233Z"
                 fill="url(#paint6_linear)"
               />
@@ -204,29 +204,29 @@ function Illustration() {
               />
               <path
                 id="Vector 29"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M169.496 170.233C160.99 173.802 162.979 190.83 166.85 203.018C170.722 215.166 210.46 243.934 222.229 247.112C233.996 250.251 281.054 244.102 281.054 244.102C284.123 237.552 281.478 230.604 275.802 232.114C275.802 232.114 229.894 230.724 223.223 222.745C217.903 216.348 178.464 166.463 169.496 170.233Z"
                 fill="url(#paint7_linear)"
               />
               <path
                 id="Vector 30"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M154.705 109.27C151.983 105.701 159.417 120.619 157.157 126.889C157.195 120.18 141.486 112.082 147.54 130.299C148.273 132.52 149.183 142.016 149.183 142.016C149.029 145.93 129.703 157.75 123.326 153.197C117.542 149.707 108.38 135.658 102.519 119.901C96.6198 104.143 106.962 96.444 106.962 96.444C106.962 96.444 105.542 92.4344 110.215 84.8952C113.856 78.9448 168.123 67.1568 165.208 93.1056C164.591 98.4728 159.154 103.121 154.705 109.27Z"
                 fill="#503501"
               />
               <path
                 id="Vector 31"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M90.9135 202.347H147.201C151.273 202.347 154.635 207.027 154.635 212.746V256.241C154.635 261.959 151.273 266.64 147.201 266.64H90.9135C86.8108 266.64 83.4559 261.959 83.4559 256.241V212.746C83.4559 207.027 86.8108 202.347 90.9135 202.347Z"
                 fill="white"
               />
               <path
                 id="Vector 32"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M85.384 202.475H141.672C145.744 202.475 149.106 207.155 149.106 212.874V256.369C149.106 262.087 145.744 266.767 141.672 266.767H85.384C81.2813 266.767 77.9264 262.087 77.9264 256.369V212.874C77.9188 207.155 81.2813 202.475 85.384 202.475Z"
                 fill="black"
               />
@@ -242,44 +242,44 @@ function Illustration() {
               />
               <path
                 id="Vector 35"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M208.263 433.601C212.173 433.601 215.311 430.342 215.311 426.341C215.311 422.292 212.173 419.042 208.263 419.042C204.391 419.042 201.253 422.292 201.253 426.341C201.245 430.35 204.391 433.601 208.263 433.601Z"
                 fill="black"
               />
               <path
                 id="Vector 36"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M160.427 433.442C164.337 433.442 167.475 430.182 167.475 426.182C167.475 422.132 164.329 418.882 160.427 418.882C156.555 418.882 153.416 422.132 153.416 426.182C153.409 430.182 156.555 433.442 160.427 433.442Z"
                 fill="black"
               />
               <path
                 id="Vector 37"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M114.295 433.601C118.167 433.601 121.344 430.342 121.344 426.341C121.344 422.292 118.167 419.042 114.295 419.042C110.424 419.042 107.246 422.292 107.246 426.341C107.246 430.35 110.424 433.601 114.295 433.601Z"
                 fill="black"
               />
               <path
                 id="Vector 38"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M99.1028 331.523H223.416C228.128 331.523 231.96 335.493 231.96 340.333C231.96 345.213 228.128 349.182 223.416 349.182H99.1028C94.4299 349.182 90.5974 345.213 90.5974 340.333C90.5974 335.493 94.4299 331.523 99.1028 331.523Z"
                 fill="black"
               />
               <path
                 id="Vector 39"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M120.302 167.997C120.495 165.457 122.23 158.309 122.23 158.309C122.23 158.309 150.432 156.32 157.142 159.578C158.19 160.09 164.706 170.033 164.706 170.033C146.923 166.694 131.708 166.535 120.302 167.997Z"
                 fill="#BCD8FA"
               />
               <Stripe1>
                 <path
                   id="Vector 40"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M263.155 176.942H344.784L344.267 179.569L262.614 179.729L263.155 176.942Z"
                   fill="#1E8191"
                 />
@@ -287,8 +287,8 @@ function Illustration() {
               <Stripe2>
                 <path
                   id="Vector 41"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M332.907 186.078C332.907 186.478 332.599 186.797 332.213 186.797H267.674C267.288 186.797 266.98 186.478 266.98 186.078C266.98 185.679 267.288 185.359 267.674 185.359H332.213C332.599 185.359 332.907 185.679 332.907 186.078Z"
                   fill="#1E8191"
                   height="30px"
@@ -297,8 +297,8 @@ function Illustration() {
               <Stripe3>
                 <path
                   id="Vector 42"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M320.229 190.159C320.229 190.558 319.974 190.878 319.658 190.878H266.749C266.432 190.878 266.178 190.558 266.178 190.159C266.178 189.76 266.432 189.441 266.749 189.441H319.658C319.974 189.441 320.229 189.768 320.229 190.159Z"
                   fill="#1E8191"
                   height="30px"
@@ -307,8 +307,8 @@ function Illustration() {
               <Stripe4>
                 <path
                   id="Vector 43"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M319.442 195.207C319.442 195.606 319.188 195.926 318.872 195.926H265.962C265.646 195.926 265.391 195.606 265.391 195.207C265.391 194.808 265.646 194.488 265.962 194.488H318.872C319.188 194.488 319.442 194.808 319.442 195.207Z"
                   fill="#1E8191"
                   height="30px"
@@ -317,8 +317,8 @@ function Illustration() {
               <Stripe5>
                 <path
                   id="Vector 44"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M330.278 199.624C330.278 200.023 329.969 200.342 329.584 200.342H264.974C264.589 200.342 264.281 200.023 264.281 199.624C264.281 199.224 264.589 198.905 264.974 198.905H329.584C329.969 198.905 330.278 199.232 330.278 199.624Z"
                   fill="#1E8191"
                 />
@@ -326,8 +326,8 @@ function Illustration() {
               <Stripe6>
                 <path
                   id="Vector 45"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M327.887 210.142C327.887 210.542 327.578 210.861 327.193 210.861H262.584C262.198 210.861 261.89 210.542 261.89 210.142C261.89 209.742 262.198 209.423 262.584 209.423H327.193C327.571 209.423 327.887 209.742 327.887 210.142Z"
                   fill="#1E8191"
                 />
@@ -335,8 +335,8 @@ function Illustration() {
               <Stripe7>
                 <path
                   id="Vector 46"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M304.497 204.615C304.497 205.014 304.304 205.334 304.066 205.334H263.849C263.61 205.334 263.417 205.014 263.417 204.615C263.417 204.216 263.61 203.897 263.849 203.897H304.066C304.304 203.897 304.497 204.216 304.497 204.615Z"
                   fill="#1E8191"
                 />
@@ -344,8 +344,8 @@ function Illustration() {
               <Stripe8>
                 <path
                   id="Vector 47"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M291.056 214.726C291.056 215.126 290.917 215.446 290.747 215.446H261.713C261.543 215.446 261.404 215.126 261.404 214.726C261.404 214.327 261.543 214.007 261.713 214.007H290.739C290.917 214.007 291.056 214.327 291.056 214.726Z"
                   fill="#1E8191"
                 />
@@ -353,8 +353,8 @@ function Illustration() {
               <Stripe9>
                 <path
                   id="Vector 48"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M313.219 220.269C313.219 220.669 312.972 220.988 312.664 220.988H260.687C260.379 220.988 260.131 220.669 260.131 220.269C260.131 219.87 260.386 219.55 260.687 219.55H312.664C312.965 219.55 313.219 219.87 313.219 220.269Z"
                   fill="#1E8191"
                 />
@@ -536,8 +536,8 @@ function Illustration() {
             y2="209.424"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#A1BAFF" />
-            <stop offset="0.4332" stop-color="white" />
+            <stop stopColor="#A1BAFF" />
+            <stop offset="0.4332" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint1_linear"
@@ -547,8 +547,8 @@ function Illustration() {
             y2="241.87"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#A1BAFF" />
-            <stop offset="0.4332" stop-color="white" />
+            <stop stopColor="#A1BAFF" />
+            <stop offset="0.4332" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint2_linear"
@@ -558,14 +558,14 @@ function Illustration() {
             y2="206.485"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#311341" />
-            <stop offset="0.2299" stop-color="#3113C2" />
-            <stop offset="0.3479" stop-color="#2F18C5" />
-            <stop offset="0.4931" stop-color="#2927CC" />
-            <stop offset="0.6524" stop-color="#1F40D8" />
-            <stop offset="0.8219" stop-color="#1263E9" />
-            <stop offset="0.9978" stop-color="#008FFF" />
-            <stop offset="1" stop-color="#0090FF" />
+            <stop stopColor="#311341" />
+            <stop offset="0.2299" stopColor="#3113C2" />
+            <stop offset="0.3479" stopColor="#2F18C5" />
+            <stop offset="0.4931" stopColor="#2927CC" />
+            <stop offset="0.6524" stopColor="#1F40D8" />
+            <stop offset="0.8219" stopColor="#1263E9" />
+            <stop offset="0.9978" stopColor="#008FFF" />
+            <stop offset="1" stopColor="#0090FF" />
           </linearGradient>
           <linearGradient
             id="paint3_linear"
@@ -575,9 +575,9 @@ function Illustration() {
             y2="168.369"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#A1BAFF" />
-            <stop offset="0.0001" stop-color="white" />
-            <stop offset="0.4332" stop-color="white" />
+            <stop stopColor="#A1BAFF" />
+            <stop offset="0.0001" stopColor="white" />
+            <stop offset="0.4332" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint4_linear"
@@ -587,8 +587,8 @@ function Illustration() {
             y2="419.707"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.0414" stop-color="#100022" />
-            <stop offset="1" stop-color="#090E96" />
+            <stop offset="0.0414" stopColor="#100022" />
+            <stop offset="1" stopColor="#090E96" />
           </linearGradient>
           <linearGradient
             id="paint5_linear"
@@ -598,8 +598,8 @@ function Illustration() {
             y2="420.887"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.0414" stop-color="#10003B" />
-            <stop offset="1" stop-color="#090E96" />
+            <stop offset="0.0414" stopColor="#10003B" />
+            <stop offset="1" stopColor="#090E96" />
           </linearGradient>
           <linearGradient
             id="paint6_linear"
@@ -609,12 +609,12 @@ function Illustration() {
             y2="245.043"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#7633FF" />
-            <stop offset="0.1585" stop-color="#7137FF" />
-            <stop offset="0.3535" stop-color="#6243FF" />
-            <stop offset="0.5676" stop-color="#4957FF" />
-            <stop offset="0.7937" stop-color="#2672FF" />
-            <stop offset="1" stop-color="#0090FF" />
+            <stop stopColor="#7633FF" />
+            <stop offset="0.1585" stopColor="#7137FF" />
+            <stop offset="0.3535" stopColor="#6243FF" />
+            <stop offset="0.5676" stopColor="#4957FF" />
+            <stop offset="0.7937" stopColor="#2672FF" />
+            <stop offset="1" stopColor="#0090FF" />
           </linearGradient>
           <linearGradient
             id="paint7_linear"
@@ -624,12 +624,12 @@ function Illustration() {
             y2="236.223"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#7633FF" />
-            <stop offset="0.0967" stop-color="#7137FF" />
-            <stop offset="0.2157" stop-color="#6243FF" />
-            <stop offset="0.3464" stop-color="#4957FF" />
-            <stop offset="0.4844" stop-color="#2672FF" />
-            <stop offset="0.6103" stop-color="#0090FF" />
+            <stop stopColor="#7633FF" />
+            <stop offset="0.0967" stopColor="#7137FF" />
+            <stop offset="0.2157" stopColor="#6243FF" />
+            <stop offset="0.3464" stopColor="#4957FF" />
+            <stop offset="0.4844" stopColor="#2672FF" />
+            <stop offset="0.6103" stopColor="#0090FF" />
           </linearGradient>
           <linearGradient
             id="paint8_linear"
@@ -639,11 +639,11 @@ function Illustration() {
             y2="81.534"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#4D4D4D" />
-            <stop offset="0.2928" stop-color="#898989" />
-            <stop offset="0.6276" stop-color="#C8C8C8" />
-            <stop offset="0.8728" stop-color="#F0F0F0" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#4D4D4D" />
+            <stop offset="0.2928" stopColor="#898989" />
+            <stop offset="0.6276" stopColor="#C8C8C8" />
+            <stop offset="0.8728" stopColor="#F0F0F0" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint9_linear"
@@ -653,14 +653,14 @@ function Illustration() {
             y2="200.925"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.00411293" stop-color="#7633FF" stop-opacity="0" />
-            <stop offset="0.0919" stop-color="#7051FF" stop-opacity="0.0882" />
-            <stop offset="0.2626" stop-color="#6685FF" stop-opacity="0.2596" />
-            <stop offset="0.4302" stop-color="#5EB1FF" stop-opacity="0.4279" />
-            <stop offset="0.591" stop-color="#57D3FF" stop-opacity="0.5893" />
-            <stop offset="0.7432" stop-color="#53EBFF" stop-opacity="0.7421" />
-            <stop offset="0.8833" stop-color="#50FAFF" stop-opacity="0.8829" />
-            <stop offset="1" stop-color="#4FFFFF" />
+            <stop offset="0.00411293" stopColor="#7633FF" stopOpacity="0" />
+            <stop offset="0.0919" stopColor="#7051FF" stopOpacity="0.0882" />
+            <stop offset="0.2626" stopColor="#6685FF" stopOpacity="0.2596" />
+            <stop offset="0.4302" stopColor="#5EB1FF" stopOpacity="0.4279" />
+            <stop offset="0.591" stopColor="#57D3FF" stopOpacity="0.5893" />
+            <stop offset="0.7432" stopColor="#53EBFF" stopOpacity="0.7421" />
+            <stop offset="0.8833" stopColor="#50FAFF" stopOpacity="0.8829" />
+            <stop offset="1" stopColor="#4FFFFF" />
           </linearGradient>
           <linearGradient
             id="paint10_linear"
@@ -670,11 +670,11 @@ function Illustration() {
             y2="48.1904"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#A1BAFF" />
-            <stop offset="0.0888" stop-color="#ACC2FF" />
-            <stop offset="0.4988" stop-color="#D9E3FF" />
-            <stop offset="0.816" stop-color="#F5F7FF" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#A1BAFF" />
+            <stop offset="0.0888" stopColor="#ACC2FF" />
+            <stop offset="0.4988" stopColor="#D9E3FF" />
+            <stop offset="0.816" stopColor="#F5F7FF" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint11_linear"
@@ -684,10 +684,10 @@ function Illustration() {
             y2="345.842"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.0399" stop-color="#00A198" />
-            <stop offset="0.671" stop-color="#007A7B" />
-            <stop offset="1" stop-color="#006B70" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.0399" stopColor="#00A198" />
+            <stop offset="0.671" stopColor="#007A7B" />
+            <stop offset="1" stopColor="#006B70" />
           </linearGradient>
           <linearGradient
             id="paint12_linear"
@@ -697,10 +697,10 @@ function Illustration() {
             y2="363.617"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.4118" stop-color="#007477" />
-            <stop offset="0.799" stop-color="#004C5A" />
-            <stop offset="1" stop-color="#003D4F" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.4118" stopColor="#007477" />
+            <stop offset="0.799" stopColor="#004C5A" />
+            <stop offset="1" stopColor="#003D4F" />
           </linearGradient>
           <linearGradient
             id="paint13_linear"
@@ -710,10 +710,10 @@ function Illustration() {
             y2="376.061"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.4118" stop-color="#007477" />
-            <stop offset="0.799" stop-color="#004C5A" />
-            <stop offset="1" stop-color="#003D4F" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.4118" stopColor="#007477" />
+            <stop offset="0.799" stopColor="#004C5A" />
+            <stop offset="1" stopColor="#003D4F" />
           </linearGradient>
           <linearGradient
             id="paint14_linear"
@@ -723,14 +723,14 @@ function Illustration() {
             y2="411.312"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#311341" />
-            <stop offset="0.2299" stop-color="#3113C2" />
-            <stop offset="0.3479" stop-color="#2F18C5" />
-            <stop offset="0.4931" stop-color="#2927CC" />
-            <stop offset="0.6524" stop-color="#1F40D8" />
-            <stop offset="0.8219" stop-color="#1263E9" />
-            <stop offset="0.9978" stop-color="#008FFF" />
-            <stop offset="1" stop-color="#0090FF" />
+            <stop stopColor="#311341" />
+            <stop offset="0.2299" stopColor="#3113C2" />
+            <stop offset="0.3479" stopColor="#2F18C5" />
+            <stop offset="0.4931" stopColor="#2927CC" />
+            <stop offset="0.6524" stopColor="#1F40D8" />
+            <stop offset="0.8219" stopColor="#1263E9" />
+            <stop offset="0.9978" stopColor="#008FFF" />
+            <stop offset="1" stopColor="#0090FF" />
           </linearGradient>
           <linearGradient
             id="paint15_linear"
@@ -740,12 +740,12 @@ function Illustration() {
             y2="382.375"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#7633FF" />
-            <stop offset="0.1585" stop-color="#7137FF" />
-            <stop offset="0.3535" stop-color="#6243FF" />
-            <stop offset="0.5676" stop-color="#4957FF" />
-            <stop offset="0.7937" stop-color="#2672FF" />
-            <stop offset="1" stop-color="#0090FF" />
+            <stop stopColor="#7633FF" />
+            <stop offset="0.1585" stopColor="#7137FF" />
+            <stop offset="0.3535" stopColor="#6243FF" />
+            <stop offset="0.5676" stopColor="#4957FF" />
+            <stop offset="0.7937" stopColor="#2672FF" />
+            <stop offset="1" stopColor="#0090FF" />
           </linearGradient>
           <linearGradient
             id="paint16_linear"
@@ -755,8 +755,8 @@ function Illustration() {
             y2="313.6"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#8E00A9" />
-            <stop offset="0.729167" stop-color="#8E00A9" stop-opacity="0.71" />
+            <stop stopColor="#8E00A9" />
+            <stop offset="0.729167" stopColor="#8E00A9" stopOpacity="0.71" />
           </linearGradient>
           <linearGradient
             id="paint17_linear"
@@ -766,10 +766,10 @@ function Illustration() {
             y2="344.856"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.0399" stop-color="#00A198" />
-            <stop offset="0.671" stop-color="#007A7B" />
-            <stop offset="1" stop-color="#006B70" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.0399" stopColor="#00A198" />
+            <stop offset="0.671" stopColor="#007A7B" />
+            <stop offset="1" stopColor="#006B70" />
           </linearGradient>
           <linearGradient
             id="paint18_linear"
@@ -779,10 +779,10 @@ function Illustration() {
             y2="356.95"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.0399" stop-color="#00A198" />
-            <stop offset="0.671" stop-color="#007A7B" />
-            <stop offset="1" stop-color="#006B70" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.0399" stopColor="#00A198" />
+            <stop offset="0.671" stopColor="#007A7B" />
+            <stop offset="1" stopColor="#006B70" />
           </linearGradient>
           <linearGradient
             id="paint19_linear"
@@ -792,10 +792,10 @@ function Illustration() {
             y2="324.492"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.0399" stop-color="#00A198" />
-            <stop offset="0.671" stop-color="#007A7B" />
-            <stop offset="1" stop-color="#006B70" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.0399" stopColor="#00A198" />
+            <stop offset="0.671" stopColor="#007A7B" />
+            <stop offset="1" stopColor="#006B70" />
           </linearGradient>
           <linearGradient
             id="paint20_linear"
@@ -805,10 +805,10 @@ function Illustration() {
             y2="324.334"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00A49A" />
-            <stop offset="0.0399" stop-color="#00A198" />
-            <stop offset="0.671" stop-color="#007A7B" />
-            <stop offset="1" stop-color="#006B70" />
+            <stop stopColor="#00A49A" />
+            <stop offset="0.0399" stopColor="#00A198" />
+            <stop offset="0.671" stopColor="#007A7B" />
+            <stop offset="1" stopColor="#006B70" />
           </linearGradient>
         </defs>
       </svg>

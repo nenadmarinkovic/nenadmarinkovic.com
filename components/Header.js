@@ -42,7 +42,7 @@ function Header(props) {
     <>
       <Container>
         <Fade>
-          <Link prefetch href={"/"} passHref>
+          <Link href={"/"} passHref>
             <Home>Nenad Marinković</Home>
           </Link>
         </Fade>

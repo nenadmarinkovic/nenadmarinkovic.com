@@ -26,6 +26,7 @@ export const Button = styled.button`
   line-height: 1.5;
   padding: 0;
   cursor: pointer;
+  font-family: "Steradian";
 
   :focus {
     outline: none;
