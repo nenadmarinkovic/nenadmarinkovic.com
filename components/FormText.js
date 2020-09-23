@@ -9,12 +9,12 @@ function FormText() {
   return (
     <Text>
       <div
+        onMouseDown={() => setText("a new project with me?")}
         onMouseOver={() => {
           !launch
             ? setText("the rocket with me?")
             : setText("a new project with me?");
         }}
-        onMouseDown={() => setText("a new project with me?")}
         onMouseLeave={() => setText("a new project with me?")}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
