@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Toggle from "./Toggle";
 import {
@@ -15,8 +15,31 @@ import Burger from "./Burger";
 
 function Header(props) {
   const [open, setOpen] = React.useState(false);
- 
+  const node = useRef();
+  const handleClickOutside = (e) => {
+    if (node.current.contains(e.target)) {
+      return;
+    }
 
+    setOpen(false);
+  };
+
+  const handleChange = (selectedValue) => {
+    onChange(selectedValue);
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
   return (
     <>
       <Container>
@@ -51,7 +74,7 @@ function Header(props) {
         </Fade>
       </Container>
 
-      <div>
+      <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
@@ -59,5 +82,4 @@ function Header(props) {
   );
 }
 
-
-export default Header
+export default Header;

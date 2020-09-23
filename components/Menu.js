@@ -1,3 +1,4 @@
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import ScrollIntoView from "react-scroll-into-view";
 
@@ -94,10 +95,12 @@ export const MenuLinks = styled.div`
 `;
 
 const Menu = ({ open, setOpen }) => {
+
   return (
+    
     <StyledMenu open={open}>
       <MenuLinks>
-        <HeaderLink onClick={console.log("hhe")}>
+        <HeaderLink>
           <ScrollIntoView selector="#work">
             {" "}
             <Button onClick={() => setOpen(!open)}>Work</Button>
@@ -117,6 +120,7 @@ const Menu = ({ open, setOpen }) => {
         </HeaderLink>
       </MenuLinks>
     </StyledMenu>
+    
   );
 };
 
