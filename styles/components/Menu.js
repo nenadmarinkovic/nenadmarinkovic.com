@@ -1,0 +1,58 @@
+import styled from "styled-components";
+
+export const StyledMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  background: #e8f3fb;
+  display: ${({ open }) => (open ? "" : "none")};
+  height: 350px;
+  padding: 2rem;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom-left-radius: 23px;
+  overflow: hidden;
+  z-index: 10;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HeaderLink = styled.a`
+  padding: 0 25px;
+  a {
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.3s;
+    color: ${({ theme }) => theme.text};
+  }
+`;
+
+export const Button = styled.button`
+  background: transparent;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  paddig: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+
+  :focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    border-radius: 5px;
+  }
+`;
+
+export const MenuLinks = styled.div`
+  margin-top: 40px;
+`;
