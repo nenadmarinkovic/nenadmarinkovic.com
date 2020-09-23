@@ -1,11 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
+import Fade from "react-reveal/Fade";
+
 import styled from "styled-components";
 import ScrollIntoView from "react-scroll-into-view";
 
 const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  background: #effffa;
+  background: #e8f3fb;
   display: ${({ open }) => (open ? "" : "none")};
   height: 300px;
   text-align: right;
@@ -13,7 +15,6 @@ const StyledMenu = styled.nav`
   position: absolute;
   top: 0px;
   right: 0px;
-  transition: transform 0.3s ease-in-out;
   border-bottom-left-radius: 23px;
   overflow: hidden;
   z-index: 10;
@@ -23,23 +24,14 @@ const StyledMenu = styled.nav`
   }
 
   a {
-    font-size: 2rem;
+    font-size: 21px;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #0d0c1d;
+    color: #040428;
     text-decoration: none;
-    transition: color 0.3s linear;
-
-    @media (max-width: 576px) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    &:hover {
-      color: #343078;
-    }
+    text-align: center;
   }
 `;
 
@@ -95,32 +87,37 @@ export const MenuLinks = styled.div`
 `;
 
 const Menu = ({ open, setOpen }) => {
-
   return (
-    
     <StyledMenu open={open}>
-      <MenuLinks>
-        <HeaderLink>
-          <ScrollIntoView selector="#work">
-            {" "}
-            <Button onClick={() => setOpen(!open)}>Work</Button>
-          </ScrollIntoView>
-        </HeaderLink>
-        <HeaderLink>
-          <ScrollIntoView selector="#technology">
-            {" "}
-            <Button onClick={() => setOpen(!open)}>Technology </Button>
-          </ScrollIntoView>
-        </HeaderLink>
-        <HeaderLink>
-          <ScrollIntoView selector="#contact">
-            {" "}
-            <Button onClick={() => setOpen(!open)}>Contact </Button>
-          </ScrollIntoView>
-        </HeaderLink>
-      </MenuLinks>
+      <Fade>
+        <MenuLinks>
+          <HeaderLink>
+            <ScrollIntoView selector="#work">
+              {" "}
+              <Fade right delay={100}>
+                <Button onClick={() => setOpen(!open)}>Work</Button>
+              </Fade>
+            </ScrollIntoView>
+          </HeaderLink>
+          <HeaderLink>
+            <ScrollIntoView selector="#technology">
+              {" "}
+              <Fade right delay={300}>
+                <Button onClick={() => setOpen(!open)}>Technology </Button>
+              </Fade>
+            </ScrollIntoView>
+          </HeaderLink>
+          <HeaderLink>
+            <ScrollIntoView selector="#contact">
+              {" "}
+              <Fade right delay={500}>
+                <Button onClick={() => setOpen(!open)}>Contact </Button>
+              </Fade>
+            </ScrollIntoView>
+          </HeaderLink>
+        </MenuLinks>
+      </Fade>
     </StyledMenu>
-    
   );
 };
 

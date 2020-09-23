@@ -6,7 +6,7 @@ export const lightTheme = {
   wave: "#FEE399",
   displaySky: "none",
   displayFlower: "unset",
-  buttonBorder: "1.5px solid #040428",
+  buttonBorder: "2px solid #040428",
   buttonColor: "#040428",
   footerBackground: "#FDE39C",
   filterWave:
@@ -24,7 +24,7 @@ export const darkTheme = {
   wave: "linear-gradient(180deg, rgba(1, 0, 27, 1) 90%, rgba(0, 0, 0, 1) 10%);",
   displaySky: "unset",
   displayFlower: "none",
-  buttonBorder: "1.5px solid #FAFAFA",
+  buttonBorder: "2px solid #FAFAFA",
   buttonColor: "#FAFAFA",
   footerBackground: "#01001B",
   filterWave:
