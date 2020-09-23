@@ -4,18 +4,19 @@ import Rocket from "./Rocket";
 
 function FormText() {
   const [launch, setLaunch] = useState(false);
-  const [text, setText] = useState("a new project with me?");
+  const [text, setText] = useState("the rocket with me?");
 
   return (
-    <Text onMouseDown={() => setText("a new project with me?")}>
+    <Text>
       <div
-        
-        onMouseOver={() => {
+     
+        onTouchEnd={() => {
           !launch
             ? setText("the rocket with me?")
             : setText("a new project with me?");
         }}
         onMouseLeave={() => setText("a new project with me?")}
+        onTouchEnd={() => setText("a new project with me?")}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}
