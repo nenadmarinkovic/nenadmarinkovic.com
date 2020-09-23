@@ -31,9 +31,7 @@ function Banner(props) {
                   and enjoyable.
                 </Subtitle>
               </Fade>
-              <Fade>
-                <ContactButton />
-              </Fade>
+              <ContactButton />
             </Info>
             <Illustration />
           </BannerContainer>

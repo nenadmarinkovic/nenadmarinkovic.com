@@ -41,18 +41,18 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.h1`
-  padding: 10px 0 10px;
-  margin: 0;
   font-size: 2.35rem;
   font-weight: 700;
+  padding: 10px 0 10px;
+  margin: 0;
 `;
 
 export const Subtitle = styled.h6`
-  padding: 8px 0 15px;
-  margin: 0;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.6;
   transition: 0.3s;
   color: ${({ theme }) => theme.subtitleText};
+  padding: 8px 0 15px;
+  margin: 0;
 `;
