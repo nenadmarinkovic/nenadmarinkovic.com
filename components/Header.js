@@ -14,11 +14,10 @@ import Menu from "./Menu";
 import Burger from "./Burger";
 
 function Header(props) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const node = useRef();
   const handleClickOutside = (e) => {
     if (node.current.contains(e.target)) {
-      setOpen(false);
       return;
     }
 
