@@ -119,14 +119,15 @@ export const GlobalStyles = createGlobalStyle`
 
 .launch {
   position: relative;
+  
   animation: example 10s;
   opacity: 0
 }
 
 @keyframes example {
-  0%   {top:0px; opacity: 1}
-  10% {top: 55px; opacity: 1}
-  100% {top: -7000px; opacity: 1}
+  0%   {top:0px; opacity: 1};
+  10% {top: 55px; opacity: 1};
+  100% {top: -7000px; opacity: 1};
 }
 
 #Fire {

@@ -26,10 +26,4 @@ export const Button = styled.button`
   line-height: 1.5;
   padding: 0;
   cursor: pointer;
-
-  :focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-    border-radius: 5px;
-  }
 `;

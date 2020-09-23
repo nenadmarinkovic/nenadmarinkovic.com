@@ -4,7 +4,14 @@ import { RocketWrap } from "../styles/components/Rocket";
 function Rocket(props) {
   return (
     <>
-      <RocketWrap className={props.launch ? "launch" : "stay"}>
+      <RocketWrap
+        className={props.launch ? "launch" : "stay"}
+        style={
+          props.launch
+            ? { marginTop: "-100px", transition: " 2s 2s" }
+            : { marginTop: "40px" }
+        }
+      >
         <svg
           width="97px"
           height="142px"
