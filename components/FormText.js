@@ -9,28 +9,25 @@ function FormText() {
   return (
     <Text>
       <div
-      
         onMouseOver={() => {
           !launch ? setText("the rocket with me?") : "";
         }}
         onMouseLeave={() => setText("a new project with me?")}
       >
-       
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor. <br></br> Ready to{" "}
-          <Button
-            style={
-              launch
-                ? { color: "unset", cursor: "auto", transition: ".3s" }
-                : { color: "#2196f3", transition: ".3s" }
-            }
-            onClick={(e) => setLaunch(true)}
-          >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor. <br></br> Ready to{" "}
+        <Button
+          style={
             launch
-          </Button>{" "}
-          {text}
-        </div>
-     
+              ? { color: "unset", cursor: "auto", transition: ".3s" }
+              : { color: "#2196f3", transition: ".3s", outline: "none" }
+          }
+          onClick={(e) => setLaunch(true)}
+        >
+          launch
+        </Button>{" "}
+        {text}
+      </div>
       <Rocket launch={launch} />
     </Text>
   );

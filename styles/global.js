@@ -119,7 +119,6 @@ export const GlobalStyles = createGlobalStyle`
 
 .launch {
   position: relative;
-  
   animation: example 10s;
   opacity: 0
 }
