@@ -7,9 +7,9 @@ function FormText() {
   const [text, setText] = useState("a new project with me?");
 
   return (
-    <Text>
+    <Text onMouseDown={() => setText("a new project with me?")}>
       <div
-        onMouseDown={() => setText("a new project with me?")}
+        
         onMouseOver={() => {
           !launch
             ? setText("the rocket with me?")
