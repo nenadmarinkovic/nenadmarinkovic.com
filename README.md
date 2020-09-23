@@ -1,4 +1,4 @@
-This is a  personal portfolio website created with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [styled-components](https://styled-components.com/).
+### 👨‍💻 Personal portfolio website created with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [styled-components](https://styled-components.com/).
 
 #### Structure
 
@@ -18,4 +18,4 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:1500](http://localhost:1500) with your browser to see the result.
+Open [http://localhost:2500](http://localhost:2500) with your browser to see the result.
