@@ -10,10 +10,12 @@ function FormText() {
     <Text>
       <div
         onMouseOver={() => {
-          !launch ? setText("the rocket with me?") : setText("a new project with me?")}}
-      
+          !launch
+            ? setText("the rocket with me?")
+            : setText("a new project with me?");
+        }}
+        onMouseDown={() => setText("a new project with me?")}
         onMouseLeave={() => setText("a new project with me?")}
-       
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}
@@ -21,7 +23,7 @@ function FormText() {
           style={
             launch
               ? { color: "unset", cursor: "auto", transition: ".3s" }
-              : { color: "#2196f3", transition: ".3s", outline: "none" }
+              : { color: "#2196f3", transition: ".3s" }
           }
           onClick={(e) => setLaunch(true)}
         >
