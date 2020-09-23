@@ -14,7 +14,7 @@ function FormText() {
         }}
       
         onMouseLeave={() => setText("a new project with me?")}
-        onTouchCancel={() => setText("a new project with me?")}
+        onTouchEnd={() => { launch ? setText("a new project with me?") : setText("the rocket with me?")} }
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}
