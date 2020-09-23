@@ -12,11 +12,9 @@ function FormText() {
         onMouseOver={() => {
           !launch ? setText("the rocket with me?") : "";
         }}
-        onTouchMove={() => {
-          !launch ? setText("the rocket with me?") : "";
-        }}
+      
         onMouseLeave={() => setText("a new project with me?")}
-        onTouchEnd={() => setText("a new project with me?")}
+        onTouchCancel={() => setText("a new project with me?")}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}
