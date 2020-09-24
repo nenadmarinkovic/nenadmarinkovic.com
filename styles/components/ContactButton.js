@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   padding: 8px 15px;
+  margin-top: 20px;
   width: 130px;
   color: ${({ theme }) => theme.buttonColor};
   border: ${({ theme }) => theme.buttonBorder};
@@ -9,7 +10,7 @@ export const Button = styled.button`
   font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 18px;
+  border-radius: 18px;s
   font-family: "Steradian";
 
   :focus {

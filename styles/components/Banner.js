@@ -62,10 +62,6 @@ export const Subtitle = styled.h6`
   line-height: 1.6;
   transition: 0.3s;
   color: ${({ theme }) => theme.subtitleText};
-  padding: 8px 0 15px;
+  padding: 10px 0 15px;
   margin: 0;
-
-  @media (max-width: 960px) {
-    margin-bottom: 20px;
-  }
 `;

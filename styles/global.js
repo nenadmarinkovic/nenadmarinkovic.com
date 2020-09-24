@@ -58,15 +58,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    margin: 0;
-    padding: 0;
     font-family: 'Steradian', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   body {
-  
     margin: 0;
     padding: 0;
+    transition: "3s 3s";
   }
 
   .container {
