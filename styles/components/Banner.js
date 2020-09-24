@@ -11,6 +11,10 @@ export const BannerContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: 30px;
+
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
 `;
 
 export const BannerWrapper = styled.div`
@@ -31,7 +35,7 @@ export const BannerWrapper = styled.div`
 
 export const Info = styled.div`
   padding-top: 140px;
-  width: 50%;
+  width: 90%;
 
   @media (max-width: 960px) {
     padding-top: 40px;
@@ -55,4 +59,8 @@ export const Subtitle = styled.h6`
   color: ${({ theme }) => theme.subtitleText};
   padding: 8px 0 15px;
   margin: 0;
+
+  @media (max-width: 960px) {
+    margin-bottom: 20px;
+  }
 `;

@@ -21,17 +21,16 @@ function Banner(props) {
         <BannerWrapper>
           <Header theme={props.theme} toggleTheme={props.toggleTheme} />
           <BannerContainer>
-            <Info>
-              <Fade>
+            <Fade>
+              <Info>
                 <Title>Hi. I'm Nenad, a web developer.</Title>
                 <Subtitle>
                   I create websites and web applications that are fast, clean,
                   and enjoyable.
                 </Subtitle>
                 <ContactButton />
-              </Fade>
-            </Info>
-
+              </Info>
+            </Fade>
             <Illustration />
           </BannerContainer>
         </BannerWrapper>
