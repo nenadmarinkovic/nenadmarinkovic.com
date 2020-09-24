@@ -34,10 +34,7 @@ export const BannerWrapper = styled.div`
 `;
 
 export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 380px;
+  display: block;
   padding-top: 140px;
   width: 90%;
 
@@ -50,6 +47,7 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.h1`
+  display: block;
   font-size: 2.35rem;
   font-weight: 700;
   padding: 10px 0 10px;
@@ -57,6 +55,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h6`
+  display: block;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.6;

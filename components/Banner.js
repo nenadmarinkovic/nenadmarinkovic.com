@@ -1,18 +1,18 @@
 import React from "react";
 import Wave from "./Wave";
-import ContactButton from "./ContactButton";
 import Illustration from "./Illustration";
 import Header from "./Header";
 import Fade from "react-reveal/Fade";
 
 import {
-  Subtitle,
+  Info,
   Title,
+  Subtitle,
   Wrapper,
   BannerContainer,
   BannerWrapper,
-  Info,
 } from "../styles/components/Banner";
+import ContactButton from "./ContactButton";
 
 function Banner(props) {
   return (

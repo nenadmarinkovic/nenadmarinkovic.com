@@ -6,9 +6,12 @@ function ContactButton() {
   return (
     <ScrollIntoView
       selector="#contact"
-      style={{ display: "inline-block", marginTop: "20px" }}
+      style={{ display: "inline-block" }}
     >
+      <a>
       <Button>Contact me</Button>
+      </a>
+     
     </ScrollIntoView>
   );
 }
