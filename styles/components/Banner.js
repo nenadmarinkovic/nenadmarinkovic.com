@@ -47,8 +47,7 @@ export const Info = styled.div`
 export const Title = styled.h1`
   font-size: 38px;
   font-weight: 700;
-  padding: 10px 0 10px;
-  margin: 0;
+  margin: 10px 0 10px;
 `;
 
 export const Subtitle = styled.h6`
@@ -56,6 +55,5 @@ export const Subtitle = styled.h6`
   font-weight: 400;
   line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
-  padding: 10px 0 15px;
-  margin: 0;
+  margin: 10px 0 15px;
 `;
