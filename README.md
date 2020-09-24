@@ -1,4 +1,4 @@
-### 👨‍💻 Personal portfolio website created with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [styled-components](https://styled-components.com/).
+## 👨‍💻 Personal portfolio website created with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [styled-components](https://styled-components.com/).
 
 #### Structure
 
