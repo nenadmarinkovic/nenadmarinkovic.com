@@ -64,9 +64,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  
     margin: 0;
     padding: 0;
   }

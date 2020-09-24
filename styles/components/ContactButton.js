@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   padding: 8px 15px;
-  width: 120px;
+  width: 130px;
   color: ${({ theme }) => theme.buttonColor};
   border: ${({ theme }) => theme.buttonBorder};
   background: transparent;
@@ -11,11 +11,6 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 18px;
   font-family: "Steradian";
-
-  @media (max-width: 460px) {
-    width: 135px;
-    height: 40px;
-  }
 
   :focus {
     outline: none;
