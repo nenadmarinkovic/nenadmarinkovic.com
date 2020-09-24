@@ -17,13 +17,11 @@ export const HeaderLink = styled.div`
     font-size: 17px;
     transition: 0.3s;
     color: ${({ theme }) => theme.text};
-
   }
 
   @media (max-width: 768px) {
-    display: none
+    display: none;
   }
-
 `;
 
 export const Home = styled.a`

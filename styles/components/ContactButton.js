@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+display: inline-block;
   margin-top: 10px;
   padding: 8px 15px;
   width: 130px;
@@ -12,7 +13,6 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 18px;
   font-family: "Steradian";
-  transition: all 1s ease;
 
   :focus {
     outline: none;

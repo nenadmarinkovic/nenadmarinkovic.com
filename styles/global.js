@@ -79,7 +79,6 @@ export const GlobalStyles = createGlobalStyle`
 
   .button-contact {
     display: inline-block;
-    transition: all 1s ease;
     
   }
 

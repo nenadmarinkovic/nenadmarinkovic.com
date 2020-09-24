@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
-
 `;
 
 export const BannerContainer = styled.div`
@@ -33,9 +32,14 @@ export const BannerWrapper = styled.div`
   }
 `;
 
+export const FlexWrap = styled.div`
+display: flex;
+flex-direction: column;
+`;
+
 export const Info = styled.div`
   margin-top: 140px;
-  width: 50%;
+  width: 90%;
   position: relative;
 
   @media (max-width: 960px) {
@@ -46,16 +50,18 @@ export const Info = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.h1`
+  margin: 15px 0;
   font-size: 38px;
   font-weight: 700;
-  margin: 10px 0 10px;
 `;
 
-export const Subtitle = styled.div`
+export const Subtitle = styled.h4`
+  margin: 15px 0;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
-  margin: 10px 0 15px;
 `;
+
+

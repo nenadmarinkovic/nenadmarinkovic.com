@@ -6,7 +6,6 @@ export const ToggleContainer = styled.label`
   width: 50px;
   height: 24px;
   margin-left: 25px;
-  transition-delay: 1s;
 
   input {
     opacity: 0;
@@ -15,7 +14,7 @@ export const ToggleContainer = styled.label`
   }
 
   @media (max-width: 768px) {
-    margin-right: 65px
+    margin-right: 65px;
   }
 `;
 
@@ -30,7 +29,6 @@ export const Slider = styled.span`
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
-  transition-delay: 1s;
 
   :before {
     position: absolute;
@@ -44,8 +42,6 @@ export const Slider = styled.span`
     transition: 0.4s;
     border-radius: 50%;
   }
-
- 
 `;
 
 export const SwitchInput = styled.input`
@@ -55,10 +51,8 @@ export const SwitchInput = styled.input`
   }
 
   :focus + ${Slider} {
-    
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-    
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
   }
 
   :checked + ${Slider}:before {
@@ -67,6 +61,4 @@ export const SwitchInput = styled.input`
     transform: translateX(26px);
     background-color: #fefefe;
   }
-
-
 `;
