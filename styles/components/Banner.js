@@ -33,12 +33,16 @@ export const BannerWrapper = styled.div`
 `;
 
 export const FlexWrap = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
 `;
 
 export const Info = styled.div`
-  margin-top: 140px;
+  padding-top: 140px;
   width: 90%;
   position: relative;
 
@@ -63,5 +67,3 @@ export const Subtitle = styled.h4`
   line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
 `;
-
-
