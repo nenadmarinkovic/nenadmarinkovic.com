@@ -76,4 +76,8 @@ export const Info = styled.div`
     text-align: center;
     height: unset;
   }
+
+  @media (max-width: 460px) {
+    padding-top: 20px;
+  }
 `;
