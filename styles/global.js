@@ -62,12 +62,12 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     margin: 0;
     padding: 0;
-
   }
 
   body {
     margin: 0;
     padding: 0;
+    
   }
 
   .container {
@@ -75,6 +75,12 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     margin: 0 auto;
     padding: 20px 15px 0 15px;
+  }
+
+  .button-contact {
+    display: inline-block;
+    transition: all 1s ease;
+    
   }
 
   .technology-icon {

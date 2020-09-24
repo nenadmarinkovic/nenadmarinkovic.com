@@ -4,7 +4,7 @@ import ScrollIntoView from "react-scroll-into-view";
 
 function ContactButton() {
   return (
-    <ScrollIntoView selector="#contact" style={{ display: "inline-block" }}>
+    <ScrollIntoView selector="#contact" className="button-contact">
       <Button>Contact me</Button>
     </ScrollIntoView>
   );

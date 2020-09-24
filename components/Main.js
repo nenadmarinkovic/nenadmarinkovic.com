@@ -19,7 +19,7 @@ function Main() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
-      <Banner toggleTheme={toggleTheme} theme={theme} />
+      <Banner toggleTheme={toggleTheme} theme={theme} style={{transitionDelay: "1s"}} />
       <Work />
       <Footer />
     </ThemeProvider>

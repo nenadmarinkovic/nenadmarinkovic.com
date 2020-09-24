@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
+
 `;
 
 export const BannerContainer = styled.div`
@@ -33,8 +34,9 @@ export const BannerWrapper = styled.div`
 `;
 
 export const Info = styled.div`
-  padding-top: 140px;
-  width: 90%;
+  margin-top: 140px;
+  width: 50%;
+  position: relative;
 
   @media (max-width: 960px) {
     padding-top: 40px;
@@ -44,13 +46,13 @@ export const Info = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.div`
   font-size: 38px;
   font-weight: 700;
   margin: 10px 0 10px;
 `;
 
-export const Subtitle = styled.h6`
+export const Subtitle = styled.div`
   font-size: 21px;
   font-weight: 400;
   line-height: 1.8;

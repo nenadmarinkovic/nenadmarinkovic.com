@@ -12,6 +12,7 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 18px;
   font-family: "Steradian";
+  transition: all 1s ease;
 
   :focus {
     outline: none;
