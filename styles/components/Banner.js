@@ -10,7 +10,6 @@ export const Subtitle = styled.h4`
   margin: 15px 0;
   font-size: 21px;
   font-weight: 400;
-  line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
 `;
 
@@ -59,6 +58,7 @@ export const Info = styled.div`
   padding-top: 140px;
   width: 90%;
   position: relative;
+  line-height: 1.6;
 
   @media (max-width: 960px) {
     padding-top: 40px;
