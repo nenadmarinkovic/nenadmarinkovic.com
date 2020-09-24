@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  transition: 0.3s;
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 `;
@@ -34,9 +33,8 @@ export const BannerWrapper = styled.div`
 `;
 
 export const Info = styled.div`
-  display: block;
   padding-top: 140px;
-  width: 90%;
+  width: 48%;
 
   @media (max-width: 960px) {
     padding-top: 40px;
@@ -47,19 +45,16 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.h1`
-  display: block;
-  font-size: 2.35rem;
+  font-size: 38px;
   font-weight: 700;
   padding: 10px 0 10px;
   margin: 0;
 `;
 
 export const Subtitle = styled.h6`
-  display: block;
   font-size: 21px;
   font-weight: 400;
-  line-height: 1.6;
-  transition: 0.3s;
+  line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
   padding: 10px 0 15px;
   margin: 0;
