@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const Title = styled.h1`
+  margin: 15px 0;
+  font-size: 38px;
+  font-weight: 700;
+`;
+
+export const Subtitle = styled.h4`
+  margin: 15px 0;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: ${({ theme }) => theme.subtitleText};
+`;
+
 export const Wrapper = styled.div`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
@@ -52,18 +66,4 @@ export const Info = styled.div`
     text-align: center;
     height: unset;
   }
-`;
-
-export const Title = styled.h1`
-  margin: 15px 0;
-  font-size: 38px;
-  font-weight: 700;
-`;
-
-export const Subtitle = styled.h4`
-  margin: 15px 0;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 1.8;
-  color: ${({ theme }) => theme.subtitleText};
 `;
