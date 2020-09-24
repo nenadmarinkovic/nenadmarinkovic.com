@@ -34,7 +34,7 @@ export const BannerWrapper = styled.div`
 
 export const Info = styled.div`
   padding-top: 140px;
-  width: 48%;
+  width: 90%;
 
   @media (max-width: 960px) {
     padding-top: 40px;
