@@ -31,7 +31,7 @@ function Banner(props) {
                   </Subtitle>
                 </Fade>
               </Info>
-              <Fade delay={200}>
+              <Fade>
                 <ContactButton />
               </Fade>
             </FlexWrap>

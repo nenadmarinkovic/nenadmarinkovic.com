@@ -77,9 +77,8 @@ export const GlobalStyles = createGlobalStyle`
     padding: 20px 15px 0 15px;
   }
 
-  .button-contact {
+  .contact-button {
     display: inline-block;
-    
   }
 
   .technology-icon {

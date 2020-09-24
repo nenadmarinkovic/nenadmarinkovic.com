@@ -4,13 +4,23 @@ export const Title = styled.h1`
   margin: 15px 0;
   font-size: 38px;
   font-weight: 700;
+  line-height: 1.4;
+
+  @media (max-width: 460px) {
+    font-size: 32px;
+  }
 `;
 
 export const Subtitle = styled.h4`
   margin: 15px 0;
   font-size: 21px;
   font-weight: 400;
+  line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
+
+  @media (max-width: 460px) {
+    font-size: 18px;
+  }
 `;
 
 export const Wrapper = styled.div`
