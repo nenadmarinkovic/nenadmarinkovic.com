@@ -28,11 +28,8 @@ function Banner(props) {
                   I create websites and web applications that are fast, clean,
                   and enjoyable.
                 </Subtitle>
-              
                 <ContactButton />
-               
               </Info>
-            
             </Fade>
             <Illustration />
           </BannerContainer>
