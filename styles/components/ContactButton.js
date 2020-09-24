@@ -12,12 +12,12 @@ export const Button = styled.button`
   border-radius: 18px;
   font-family: "Steradian";
 
+  @media (max-width: 460px) {
+    width: 135px;
+  }
+
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-  }
-
-  @media (max-width: 460px) {
-    width: 135px;
   }
 `;
