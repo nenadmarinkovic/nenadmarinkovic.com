@@ -28,7 +28,9 @@ function Banner(props) {
                   I create websites and web applications that are fast, clean,
                   and enjoyable.
                 </Subtitle>
+                <Fade delay={300}>
                 <ContactButton />
+                </Fade>
               </Info>
             
             </Fade>

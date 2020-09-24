@@ -45,6 +45,7 @@ export const Info = styled.div`
     padding-top: 40px;
     width: 100%;
     text-align: center;
+    height: unset;
   }
 `;
 
