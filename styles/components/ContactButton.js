@@ -14,6 +14,7 @@ export const Button = styled.button`
 
   @media (max-width: 460px) {
     width: 135px;
+    height: 40px;
   }
 
   :focus {
