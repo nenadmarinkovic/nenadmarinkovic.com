@@ -30,6 +30,7 @@ function Banner(props) {
                 </Subtitle>
                 <ContactButton />
               </Info>
+            
             </Fade>
             <Illustration />
           </BannerContainer>

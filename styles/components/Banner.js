@@ -34,6 +34,10 @@ export const BannerWrapper = styled.div`
 `;
 
 export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 380px;
   padding-top: 140px;
   width: 90%;
 
