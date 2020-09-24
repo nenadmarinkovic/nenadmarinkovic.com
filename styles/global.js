@@ -53,10 +53,14 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::selection {
+    background: #d1fffd;
+  }
+
   html {
     margin: 0;
     padding: 0;
-    font-family: 'Steradian', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+    font-family: 'Steradian', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   body {
