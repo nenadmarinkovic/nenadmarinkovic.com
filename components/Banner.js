@@ -6,12 +6,12 @@ import Header from "./Header";
 import Fade from "react-reveal/Fade";
 
 import {
+  Subtitle,
+  Title,
   Wrapper,
   BannerContainer,
   BannerWrapper,
   Info,
-  Subtitle,
-  Title,
 } from "../styles/components/Banner";
 
 function Banner(props) {
@@ -21,18 +21,16 @@ function Banner(props) {
         <BannerWrapper>
           <Header theme={props.theme} toggleTheme={props.toggleTheme} />
           <BannerContainer>
-            <Info>
-              <Fade>
+            <Fade>
+              <Info>
                 <Title>Hi. I'm Nenad, a web developer.</Title>
-              </Fade>
-              <Fade>
                 <Subtitle>
                   I create websites and web applications that are fast, clean,
                   and enjoyable.
                 </Subtitle>
-              </Fade>
-              <ContactButton />
-            </Info>
+                <ContactButton />
+              </Info>
+            </Fade>
             <Illustration />
           </BannerContainer>
         </BannerWrapper>
