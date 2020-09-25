@@ -19,7 +19,6 @@ function FormText() {
             setText("a new project with me?");
           }, 2000);
         }}
-      
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor. <br></br> Ready to{" "}

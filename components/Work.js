@@ -46,11 +46,9 @@ function Work() {
               </ListItem>
             </Fade>
           </WorkDetails>
-         
         </WorkWrap>
       </div>
       <Technology />
-      
     </WorkSection>
   );
 }

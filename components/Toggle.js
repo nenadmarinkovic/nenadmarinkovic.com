@@ -7,11 +7,11 @@ import {
 
 const Toggle = (props) => {
   return (
-    <ToggleContainer for="phrase">
+    <ToggleContainer for="lab">
       .
       <SwitchInput
-        name="phrase"
-        id="phrase"
+        name="lab"
+        id="lab"
         type="checkbox"
         onClick={props.toggleTheme}
         className="slider"

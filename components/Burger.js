@@ -1,4 +1,3 @@
-
 import { StyledBurger } from "../styles/components/StyledBurger";
 
 const Burger = ({ open, setOpen }) => {
@@ -9,7 +8,5 @@ const Burger = ({ open, setOpen }) => {
     </StyledBurger>
   );
 };
-
-
 
 export default Burger;
