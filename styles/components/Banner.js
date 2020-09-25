@@ -11,7 +11,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Subtitle = styled.h4`
+export const Subtitle = styled.div`
   margin: 15px 0;
   font-size: 21px;
   font-weight: 400;
