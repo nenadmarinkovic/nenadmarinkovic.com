@@ -78,7 +78,7 @@ export default () => {
         <FormText />
         <MainForm id="contact">
           <FormContainer onSubmit={handleOnSubmit}>
-            <FormLabel htmlFor="email">Email</FormLabel>
+            <FormLabel htmlFor="email">Your Email</FormLabel>
             <FormInput
               id="email"
               type="email"
@@ -87,7 +87,7 @@ export default () => {
               required
               value={inputs.email}
             />
-            <FormLabel htmlFor="message">Message</FormLabel>
+            <FormLabel htmlFor="message">Your Message</FormLabel>
             <TextArea
               id="message"
               name="message"
