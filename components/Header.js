@@ -50,22 +50,25 @@ function Header(props) {
         <Fade>
           <HeaderLinks>
             <HeaderLink>
-              <ScrollIntoView selector="#work" rel="nofollow">
-                {" "}
-                <Button>Work </Button>
-              </ScrollIntoView>
+              <Link href={"/"} passHref>
+                <ScrollIntoView selector="#work">
+                  <Button>Work</Button>
+                </ScrollIntoView>
+              </Link>
             </HeaderLink>
             <HeaderLink>
-              <ScrollIntoView selector="#technology" rel="nofollow">
-                {" "}
-                <Button href="javascript:void(0)">Technology </Button>
-              </ScrollIntoView>
+              <Link href={"/"} passHref>
+                <ScrollIntoView selector="#technology">
+                  <Button>Technology</Button>
+                </ScrollIntoView>
+              </Link>
             </HeaderLink>
             <HeaderLink>
-              <ScrollIntoView selector="#contact" rel="nofollow">
-                {" "}
-                <Button href="javascript:void(0)">Contact </Button>
-              </ScrollIntoView>
+              <Link href={"/"} passHref>
+                <ScrollIntoView selector="#contact">
+                  <Button>Contact</Button>
+                </ScrollIntoView>
+              </Link>
             </HeaderLink>
             <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
           </HeaderLinks>
