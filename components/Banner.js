@@ -25,10 +25,7 @@ function Banner(props) {
               <Info>
                 <Fade>
                   <Title>Hi. I'm Nenad, a web developer.</Title>
-                  <Subtitle>
-                    I create websites and web applications that are fast, clean,
-                    and enjoyable.
-                  </Subtitle>
+                
                 </Fade>
               </Info>
               <Fade>
