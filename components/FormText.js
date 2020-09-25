@@ -27,7 +27,7 @@ function FormText() {
           style={
             launch
               ? { color: "unset", cursor: "auto", transition: ".3s" }
-              : { color: "#0c83e1", transition: ".3s" }
+              : { color: "#0b55c9", transition: ".3s", fontWeight: "600" }
           }
           onClick={(e) => setLaunch(true)}
         >

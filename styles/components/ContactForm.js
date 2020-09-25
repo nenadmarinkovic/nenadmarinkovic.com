@@ -77,15 +77,16 @@ export const TextArea = styled.textarea`
 
 export const Button = styled.button`
   padding: 0.65em 1em;
-  background: #0c83e1;
+  background: #0b55c9;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
-  color: #fff;
+  color: white;
   border: none;
   cursor: pointer;
   line-height: 1;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.6px;
   transition: all 0.2s ease;
   :focus {
     outline: none;
