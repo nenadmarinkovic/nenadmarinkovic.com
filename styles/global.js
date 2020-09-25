@@ -155,6 +155,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 }
 
+a:hover{ cursor: pointer; }
+
 // Slick slider
 
 .slick-list,
