@@ -12,7 +12,7 @@ function Main() {
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   if (!componentMounted) {
-    return <div>Loading...</div>;
+    return <div />;
   }
 
   return (
