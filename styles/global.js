@@ -58,17 +58,16 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    font-family: 'Steradian', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Steradian', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    
   }
 
   .container {
@@ -76,6 +75,10 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     margin: 0 auto;
     padding: 20px 15px 0 15px;
+  }
+
+  .contact-button {
+    display: inline-block;
   }
 
   .technology-icon {

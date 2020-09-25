@@ -1,18 +1,18 @@
 import React from "react";
 import Wave from "./Wave";
-import ContactButton from "./ContactButton";
 import Illustration from "./Illustration";
 import Header from "./Header";
 import Fade from "react-reveal/Fade";
-
 import {
-  Subtitle,
-  Title,
   Wrapper,
   BannerContainer,
   BannerWrapper,
+  FlexWrap,
   Info,
+  Title,
+  Subtitle,
 } from "../styles/components/Banner";
+import ContactButton from "./ContactButton";
 
 function Banner(props) {
   return (
@@ -21,16 +21,20 @@ function Banner(props) {
         <BannerWrapper>
           <Header theme={props.theme} toggleTheme={props.toggleTheme} />
           <BannerContainer>
-            <Fade>
+            <FlexWrap>
               <Info>
-                <Title>Hi. I'm Nenad, a web developer.</Title>
-                <Subtitle>
-                  I create websites and web applications that are fast, clean,
-                  and enjoyable.
-                </Subtitle>
-                <ContactButton />
+                <Fade>
+                  <Title>Hi. I'm Nenad, a web developer.</Title>
+                  <Subtitle>
+                    I create websites and web applications that are fast, clean,
+                    and enjoyable.
+                  </Subtitle>
+                </Fade>
               </Info>
-            </Fade>
+              <Fade>
+                <ContactButton />
+              </Fade>
+            </FlexWrap>
             <Illustration />
           </BannerContainer>
         </BannerWrapper>
