@@ -8,7 +8,7 @@ import {
 const Toggle = (props) => {
   return (
     <ToggleContainer>
-      
+      {" "}
       <SwitchInput
         type="checkbox"
         onClick={props.toggleTheme}
