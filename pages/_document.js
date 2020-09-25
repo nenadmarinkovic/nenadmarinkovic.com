@@ -10,11 +10,16 @@ class WebSite extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charset="UTF-8" />
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <meta name="Personal Web Development and Design Portfolio"></meta>
+          <meta
+            name="description"
+            content="Personal Web Development and Design Portfolio"
+          />
+          <meta name="author" content="Nenad Marinković" />
         </Head>
         <body>
           <Main />
