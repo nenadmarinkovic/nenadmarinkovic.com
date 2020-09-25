@@ -46,29 +46,22 @@ function Header(props) {
             <Home>Nenad Marinković</Home>
           </Link>
         </Fade>
-
         <Fade>
           <HeaderLinks>
             <HeaderLink>
-              <Link href={"/"} passHref>
-                <ScrollIntoView selector="#work">
-                  <Button>Work</Button>
-                </ScrollIntoView>
-              </Link>
+              <ScrollIntoView selector="#work">
+                <Button>Work</Button>
+              </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
-              <Link href={"/"} passHref>
-                <ScrollIntoView selector="#technology">
-                  <Button>Technology</Button>
-                </ScrollIntoView>
-              </Link>
+              <ScrollIntoView selector="#technology">
+                <Button>Technology</Button>
+              </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
-              <Link href={"/"} passHref>
-                <ScrollIntoView selector="#contact">
-                  <Button>Contact</Button>
-                </ScrollIntoView>
-              </Link>
+              <ScrollIntoView selector="#contact">
+                <Button>Contact</Button>
+              </ScrollIntoView>
             </HeaderLink>
             <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
           </HeaderLinks>

@@ -21,7 +21,7 @@ export const StyledMenu = styled.nav`
   }
 `;
 
-export const HeaderLink = styled.a`
+export const HeaderLink = styled.div`
   padding: 0 25px;
   a {
     text-decoration: none;
@@ -50,7 +50,6 @@ export const Button = styled.button`
     background: #c6e1f5;
     border-radius: 10px;
   }
-  
 
   :focus {
     outline: none;
