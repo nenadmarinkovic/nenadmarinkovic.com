@@ -8,12 +8,8 @@ import Work from "./Work";
 import Footer from "./Footer";
 
 function Main() {
-  const [theme, toggleTheme, componentMounted] = useTheme();
+  const [theme, toggleTheme] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
-
-  if (!componentMounted) {
-    return <div />;
-  }
 
   return (
     <ThemeProvider theme={themeMode}>
