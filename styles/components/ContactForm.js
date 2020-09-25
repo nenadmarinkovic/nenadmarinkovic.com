@@ -77,7 +77,7 @@ export const TextArea = styled.textarea`
 
 export const Button = styled.button`
   padding: 0.65em 1em;
-  background: #2196f3;
+  background: #0c83e1;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   color: #fff;
