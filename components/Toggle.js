@@ -8,7 +8,7 @@ import {
 const Toggle = (props) => {
   return (
     <ToggleContainer for="lab">
-      .
+      -
       <SwitchInput
         name="lab"
         id="lab"

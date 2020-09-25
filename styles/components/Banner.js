@@ -7,13 +7,13 @@ export const Title = styled.h1`
   line-height: 1.4;
 
   @media (max-width: 460px) {
-    font-size: 32px;
+    font-size: 35px;
   }
 `;
 
 export const Subtitle = styled.div`
   margin: 15px 0;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 400;
   line-height: 1.8;
   color: ${({ theme }) => theme.subtitleText};
