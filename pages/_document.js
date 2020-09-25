@@ -10,7 +10,7 @@ class WebSite extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charset="UTF-8" />
+          <meta charSet="UTF-8" />
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
