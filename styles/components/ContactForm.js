@@ -80,13 +80,12 @@ export const Button = styled.button`
   background: #0c83e1;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
-  color: white;
+  color: #fff;
   border: none;
   cursor: pointer;
   line-height: 1;
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.6px;
+  font-weight: 500;
   transition: all 0.2s ease;
   :focus {
     outline: none;
