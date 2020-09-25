@@ -50,19 +50,19 @@ function Header(props) {
         <Fade>
           <HeaderLinks>
             <HeaderLink>
-              <ScrollIntoView selector="#work" href="#">
+              <ScrollIntoView selector="#work" href="javascript:void(0)">
                 {" "}
                 <Button>Work </Button>
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
-              <ScrollIntoView selector="#technology" href="#">
+              <ScrollIntoView selector="#technology" href="javascript:void(0)">
                 {" "}
                 <Button>Technology </Button>
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
-              <ScrollIntoView selector="#contact" href="#">
+              <ScrollIntoView selector="#contact" href="javascript:void(0)">
                 {" "}
                 <Button>Contact </Button>
               </ScrollIntoView>
