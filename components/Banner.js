@@ -23,17 +23,13 @@ function Banner(props) {
           <BannerContainer>
             <FlexWrap>
               <Info>
-                <Fade>
-                  <Title>Hi. I'm Nenad, a web developer.</Title>
-                  <Subtitle>
-                    I create websites and web applications that are fast, clean,
-                    and enjoyable.
-                  </Subtitle>
-                </Fade>
+                <Title>Hi. I'm Nenad, a web developer.</Title>
+                <Subtitle>
+                  I create websites and web applications that are fast, clean,
+                  and enjoyable.
+                </Subtitle>
               </Info>
-              <Fade>
-                <ContactButton />
-              </Fade>
+              <ContactButton />
             </FlexWrap>
             <Illustration />
           </BannerContainer>
