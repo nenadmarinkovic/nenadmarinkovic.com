@@ -25,8 +25,8 @@ function FormText() {
         <Button
           style={
             launch
-              ? { color: "unset", cursor: "auto", transition: ".3s" }
-              : { color: "#2366ce", transition: ".3s" }
+              ? { color: "unset", cursor: "auto", transition: ".3s", fontWeight: "normal" }
+              : { color: "#2366ce", transition: ".3s", fontWeight: "700" }
           }
           onClick={(e) => setLaunch(true)}
         >
