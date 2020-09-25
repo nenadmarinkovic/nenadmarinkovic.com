@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   display: inline-block;
+  margin-top: 10px;
   padding: 8px 15px;
   height: 40px;
   width: 130px;
@@ -16,7 +17,7 @@ export const Button = styled.button`
   @media (max-width: 460px) {
     width: 135px;
   }
-  
+
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
