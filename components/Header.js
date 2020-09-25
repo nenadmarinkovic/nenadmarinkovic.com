@@ -52,26 +52,19 @@ function Header(props) {
             <HeaderLink>
               <ScrollIntoView selector="#work">
                 {" "}
-                <Button>
-                  {" "}
-                  <a href="javascript:void(0)">Work</a>{" "}
-                </Button>
+                <Button>Work </Button>
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
               <ScrollIntoView selector="#technology">
                 {" "}
-                <Button>
-                  <a href="javascript:void(0)">Technology</a>{" "}
-                </Button>
+                <Button>Technology </Button>
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
               <ScrollIntoView selector="#contact">
                 {" "}
-                <Button>
-                  <a href="javascript:void(0)">Contact</a>{" "}
-                </Button>
+                <Button>Contact </Button>
               </ScrollIntoView>
             </HeaderLink>
             <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
