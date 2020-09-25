@@ -31,7 +31,7 @@ export const Home = styled.a`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   background: transparent;
   color: white;
   border: none;
