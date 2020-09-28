@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import * as smoothscroll from "smoothscroll-polyfill";
+smoothscroll.polyfill();
 
 class WebSite extends Document {
   static async getInitialProps(ctx) {
