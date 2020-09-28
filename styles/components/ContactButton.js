@@ -12,6 +12,7 @@ export const Button = styled.button`
   font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
+  font-family: "Steradian";
   border-radius: 18px;
   transition: 0.3s;
 
