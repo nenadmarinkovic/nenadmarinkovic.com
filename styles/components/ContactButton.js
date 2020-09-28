@@ -6,9 +6,9 @@ export const Button = styled.button`
   padding: 8px 15px;
   height: 40px;
   width: 130px;
-  color: ${({ theme }) => theme.buttonColor};
-  border: ${({ theme }) => theme.buttonBorder};
-  background: transparent;
+  color: white;
+  border: 0;
+  background: #0e90db;
   font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;

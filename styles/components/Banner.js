@@ -65,13 +65,13 @@ export const FlexWrap = styled.div`
 `;
 
 export const Info = styled.div`
-  padding-top: 140px;
+  padding-top: 130px;
   width: 90%;
   position: relative;
   line-height: 1.6;
 
   @media (max-width: 960px) {
-    padding-top: 40px;
+    padding-top: 20px;
     width: 100%;
     text-align: center;
     height: unset;
