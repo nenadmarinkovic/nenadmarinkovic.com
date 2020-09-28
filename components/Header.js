@@ -49,17 +49,17 @@ function Header(props) {
         <Fade>
           <HeaderLinks>
             <HeaderLink>
-              <ScrollIntoView selector="#work">
+              <ScrollIntoView selector="#work" smooth={true}>
                 <Button>Work</Button>
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
-              <ScrollIntoView selector="#technology">
+              <ScrollIntoView selector="#technology" smooth={true}>
                 <Button>Technology</Button>
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
-              <ScrollIntoView selector="#contact">
+              <ScrollIntoView selector="#contact" smooth={true}>
                 <Button>Contact</Button>
               </ScrollIntoView>
             </HeaderLink>

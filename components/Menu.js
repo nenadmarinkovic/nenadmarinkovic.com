@@ -15,7 +15,7 @@ const Menu = ({ open, setOpen }) => {
       <Fade>
         <MenuLinks>
           <HeaderLink>
-            <ScrollIntoView selector="#work">
+            <ScrollIntoView selector="#work" smooth={true}>
               {" "}
               <Fade right delay={100}>
                 <Button onClick={() => setOpen(!open)}>Work</Button>
@@ -23,7 +23,7 @@ const Menu = ({ open, setOpen }) => {
             </ScrollIntoView>
           </HeaderLink>
           <HeaderLink>
-            <ScrollIntoView selector="#technology">
+            <ScrollIntoView selector="#technology" smooth={true}>
               {" "}
               <Fade right delay={300}>
                 <Button onClick={() => setOpen(!open)}>Technology </Button>
@@ -31,7 +31,7 @@ const Menu = ({ open, setOpen }) => {
             </ScrollIntoView>
           </HeaderLink>
           <HeaderLink>
-            <ScrollIntoView selector="#contact">
+            <ScrollIntoView selector="#contact" smooth={true}>
               {" "}
               <Fade right delay={500}>
                 <Button onClick={() => setOpen(!open)}>Contact </Button>
