@@ -10,7 +10,7 @@ export const FlexContainer = styled.main`
 `;
 
 export const MainForm = styled.main`
-  width: 45%;
+  width: 48%;
   margin: 0;
   font-size: 21px;
   line-height: 1.65;
