@@ -15,7 +15,6 @@
     "react-reveal": "1.2.2",
     "react-scroll-into-view": "1.8.2",
     "react-slick": "0.27.1",
-    "scroll-into-view-if-needed": "^2.2.26",
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "5.1.1"
   }

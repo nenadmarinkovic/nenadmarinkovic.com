@@ -5,8 +5,8 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   background: #e8f3fb;
   display: ${({ open }) => (open ? "" : "none")};
-  height: 380px;
-  padding: 2rem;
+  height: 320px;
+  padding: 1.2rem;
   position: absolute;
   top: 0px;
   right: 0px;
