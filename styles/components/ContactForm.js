@@ -76,6 +76,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const Button = styled.button`
+  font-family: "Steradian";
   padding: 0.65em 1em;
   color: ${({ theme }) => theme.text};
   border: ${({ theme }) => theme.buttonBorder};
