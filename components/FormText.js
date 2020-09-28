@@ -9,6 +9,8 @@ function FormText() {
   return (
     <Text>
       <div
+      style={{paddingTop: "10px"}}
+        id="contact"
         onTouchEnd={() => {
           !launch
             ? setText("the rocket with me?")
