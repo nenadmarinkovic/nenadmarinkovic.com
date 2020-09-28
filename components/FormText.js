@@ -31,7 +31,7 @@ function FormText() {
                   cursor: "auto",
                   transition: ".3s",
                 }
-              : { color: "#0c81c5", transition: ".3s", fontWeight: "normal" }
+              : { color: "#0D6AA1", transition: ".3s", fontWeight: "normal" }
           }
           onClick={(e) => setLaunch(true)}
         >
