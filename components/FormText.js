@@ -26,12 +26,12 @@ function FormText() {
           style={
             launch
               ? {
+                  fontWeight: "normal",
                   color: "unset",
                   cursor: "auto",
                   transition: ".3s",
-                  fontWeight: "normal",
                 }
-              : { color: "#2366ce", transition: ".3s", fontWeight: "700" }
+              : { color: "#0c81c5", transition: ".3s", fontWeight: "normal" }
           }
           onClick={(e) => setLaunch(true)}
         >

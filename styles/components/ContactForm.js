@@ -10,7 +10,7 @@ export const FlexContainer = styled.main`
 `;
 
 export const MainForm = styled.main`
-  width: 50%;
+  width: 45%;
   margin: 0;
   font-size: 21px;
   line-height: 1.65;
@@ -77,17 +77,23 @@ export const TextArea = styled.textarea`
 
 export const Button = styled.button`
   padding: 0.65em 1em;
-  background: #2366ce;
-  border: 1px solid #d1d1d1;
-  border-radius: 5px;
-  color: white;
-  border: none;
+  color: ${({ theme }) => theme.text};
+  border: ${({ theme }) => theme.buttonBorder};
+  border-radius: 18px;
   cursor: pointer;
   line-height: 1;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.6px;
   transition: all 0.2s ease;
+  background: transparent;
+
+  :hover {
+    background: ${({ theme }) => theme.subtitleText};
+    border: 2px solid ${({ theme }) => theme.subtitleText};
+    color: white;
+  }
+
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);

@@ -13,6 +13,7 @@ export const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   border-radius: 18px;
+  transition: 0.3s;
 
   @media (max-width: 460px) {
     width: 135px;
@@ -21,5 +22,11 @@ export const Button = styled.button`
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
+
+  :hover {
+    background: ${({ theme }) => theme.subtitleText};
+    border: 2px solid ${({ theme }) => theme.subtitleText};
+    color: white;
   }
 `;

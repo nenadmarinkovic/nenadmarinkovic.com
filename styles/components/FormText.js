@@ -21,8 +21,8 @@ export const Button = styled.button`
   border: none;
   color: ${({ theme }) => theme.text};
   background: transparent;
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 23px;
+  font-weight: 500;
   line-height: 1.5;
   padding: 0;
   cursor: pointer;
