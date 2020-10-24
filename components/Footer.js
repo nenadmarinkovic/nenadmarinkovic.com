@@ -1,6 +1,12 @@
 import React from "react";
-import { FooterContainer, Wave, Copyright } from "../styles/components/Footer";
+import { FooterContainer, Wave } from "../styles/components/Footer";
 import ContactForm from "./ContactForm";
+
+import {
+  PortfolioIntro,
+  PortfolioIntroMain,
+  PortfolioIntroSecond,
+} from "../styles/components/Portfolio";
 
 function Footer() {
   return (
@@ -15,6 +21,13 @@ function Footer() {
       </Wave>
 
       <FooterContainer>
+        <PortfolioIntro>
+          <PortfolioIntroMain id="contact">Contact</PortfolioIntroMain>
+          <PortfolioIntroSecond>
+            Portfolio websites, small to medium size company websites, content
+            management systems, e-commerce platforms, and more.
+          </PortfolioIntroSecond>
+        </PortfolioIntro>
         <div className="container">
           <ContactForm />
         </div>

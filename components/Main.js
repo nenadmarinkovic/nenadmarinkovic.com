@@ -6,6 +6,8 @@ import { GlobalStyles } from "../styles/global";
 import Banner from "./Banner";
 import Work from "./Work";
 import Footer from "./Footer";
+import Portfolio from "./Portfolio";
+import Technology from "./Technology";
 
 function Main() {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -19,7 +21,9 @@ function Main() {
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Banner toggleTheme={toggleTheme} theme={theme} />
-      <Work />
+      <Work theme={theme} />
+      <Portfolio theme={theme}/>
+      <Technology />
       <Footer />
     </ThemeProvider>
   );

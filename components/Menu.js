@@ -23,6 +23,14 @@ const Menu = ({ open, setOpen }) => {
             </ScrollIntoView>
           </HeaderLink>
           <HeaderLink>
+            <ScrollIntoView selector="#project" smooth={true}>
+              {" "}
+              <Fade right delay={100}>
+                <Button onClick={() => setOpen(!open)}>Project</Button>
+              </Fade>
+            </ScrollIntoView>
+          </HeaderLink>
+          <HeaderLink>
             <ScrollIntoView selector="#technology" smooth={true}>
               {" "}
               <Fade right delay={300}>

@@ -12,9 +12,12 @@ export const lightTheme = {
   filterWave:
     "invert(80%) sepia(76%) saturate(207%) hue-rotate(344deg) brightness(101%) contrast(98%)",
   formBorder: "2px solid #040428",
-  screenBackground: "#b5d5e8",
+  screenBackground: "#E3F0FA",
   menuColor: "#040428",
   menuShadow: "rgba(0, 0, 0, 0.12) 0px 5px 10px",
+  portfolioBackground: "#E3F0FA",
+  cardShadow: "rgba(0, 0, 0, 0.12) 0px 5px 10px",
+  hoverHeader: "#E3F0FA"
 };
 
 export const darkTheme = {
@@ -31,7 +34,10 @@ export const darkTheme = {
   filterWave:
     "invert(3%) sepia(71%) saturate(5224%) hue-rotate(253deg) brightness(74%) contrast(110%)",
   formBorder: "2px solid #FFF",
-  screenBackground: "#122656",
+  screenBackground: "#18346E",
   menuColor: "#0e90db",
   menuShadow: "0 -2px 10px rgba(0, 0, 0, 1);",
+  portfolioBackground: "#18346E",
+  cardShadow: "rgba(0, 0, 0, 0.3) 3px 8px 10px 2px",
+  hoverHeader: "#E3F0FA"
 };

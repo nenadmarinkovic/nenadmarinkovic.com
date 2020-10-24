@@ -16,7 +16,7 @@ import {
   SmallScreenLines,
 } from "../styles/components/ComputerIllustration";
 
-function ComputerIllustration() {
+function ComputerIllustration(props) {
   return (
     <Wrapper>
       <svg
@@ -38,7 +38,7 @@ function ComputerIllustration() {
             <path
               d="M317.83,39.3452 C357.48,51.3336 385.402,90.8247 375.071,123.734 C364.74,156.643 316.155,183.206 283.207,203.892 C250.259,224.577 232.668,239.857 205.304,260.778 C177.941,281.699 140.525,308.496 111.486,304.5 C82.4471,300.504 62.064,265.714 41.1224,232.57 C20.1808,199.19 -1.59838,167.456 0.356168,135.957 C2.31071,104.223 27.7198,72.9597 60.9471,60.031 C94.1744,47.1024 135.162,40.836 181.234,35.8996 C227.305,30.9632 278.46,27.3568 317.83,39.3452 Z"
               id="Vector"
-              fill="#E8F3FB"
+              fill="#E3F0FA"
               fillRule="nonzero"
             ></path>
             <g id="Group" transform="translate(33.000000, 0.000000)">

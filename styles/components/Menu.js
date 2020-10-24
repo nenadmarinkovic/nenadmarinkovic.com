@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   background: #e8f3fb;
   display: ${({ open }) => (open ? "" : "none")};
-  height: 320px;
+  height: 370px;
   padding: 1.2rem;
   position: absolute;
   top: 0px;

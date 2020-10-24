@@ -9,8 +9,7 @@ function FormText() {
   return (
     <Text>
       <div
-      style={{paddingTop: "10px"}}
-        id="contact"
+        style={{ paddingTop: "10px" }}
         onTouchEnd={() => {
           !launch
             ? setText("the rocket with me?")
@@ -33,7 +32,7 @@ function FormText() {
                   cursor: "auto",
                   transition: ".3s",
                 }
-              : { color: "#A015CF", transition: ".3s", fontWeight: "normal" }
+              : { color: "#0e90db", transition: ".3s", fontWeight: "normal" }
           }
           onClick={(e) => setLaunch(true)}
         >

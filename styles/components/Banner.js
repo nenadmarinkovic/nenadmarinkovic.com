@@ -32,7 +32,7 @@ export const BannerContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 35px;
 
   @media (max-width: 960px) {
     justify-content: center;
@@ -40,7 +40,7 @@ export const BannerContainer = styled.div`
 `;
 
 export const BannerWrapper = styled.div`
-  height: 480px;
+  height: 500px;
   width: 1160px;
   max-width: 100%;
   margin: 0 auto;
@@ -65,7 +65,7 @@ export const FlexWrap = styled.div`
 `;
 
 export const Info = styled.div`
-  padding-top: 130px;
+  padding-top: 115px;
   width: 90%;
   position: relative;
   line-height: 1.6;

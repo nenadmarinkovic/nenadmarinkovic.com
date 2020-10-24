@@ -5,10 +5,11 @@ export const WorkSection = styled.div`
 `;
 
 export const CenterMain = styled.div`
-  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
   color: #040428;
+  padding-top: 20px;
 
   @media (max-width: 960px) {
     margin-top: 0;
@@ -23,6 +24,7 @@ export const CenterSecond = styled.div`
   padding-top: 20px;
   line-height: 1.5;
   width: 50%;
+  text-align: center;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -41,8 +43,6 @@ export const WorkWrap = styled.div`
     text-align: center;
     margin-top: 0;
   }
-
-  
 `;
 
 export const WorkDetails = styled.div`

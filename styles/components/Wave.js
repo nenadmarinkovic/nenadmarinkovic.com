@@ -4,6 +4,7 @@ export const WaveWrapper = styled.div`
   width: 100%;
   height: 100px;
   overflow: hidden;
+  margin-bottom: 70px;
 `;
 
 export const WaveShape = styled.div`

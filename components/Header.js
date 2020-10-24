@@ -54,6 +54,11 @@ function Header(props) {
               </ScrollIntoView>
             </HeaderLink>
             <HeaderLink>
+              <ScrollIntoView selector="#projects" smooth={true}>
+                <Button>Projects</Button>
+              </ScrollIntoView>
+            </HeaderLink>
+            <HeaderLink>
               <ScrollIntoView selector="#technology" smooth={true}>
                 <Button>Technology</Button>
               </ScrollIntoView>
