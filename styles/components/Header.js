@@ -25,7 +25,7 @@ export const Home = styled.a`
   font-size: 17px;
   transition: 0.3s;
   margin-left: -15px;
-  padding: 5px 15px;
+  padding: 7px 15px;
   border-radius: 18px;
   color: ${({ theme }) => theme.text};
 
@@ -45,7 +45,7 @@ export const Button = styled.button`
   background: transparent;
   color: white;
   border: none;
-  padding: 5px 15px;
+  padding: 7px 15px;
   border-radius: 18px;
   text-decoration: none;
   font-size: 17px;

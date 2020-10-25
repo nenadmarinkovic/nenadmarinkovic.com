@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  background: #e8f3fb;
+  background: #E3F0FA;
   display: ${({ open }) => (open ? "" : "none")};
   height: 380px;
   padding: 1rem;
@@ -19,7 +19,7 @@ export const StyledMenu = styled.nav`
 `;
 
 export const HeaderLink = styled.div`
-  padding: 0 25px;
+  padding: 0 15px;
   a {
     text-decoration: none;
     font-size: 19px;
@@ -30,10 +30,10 @@ export const HeaderLink = styled.div`
 
 export const Button = styled.button`
   background: transparent;
-  margin-top: 20px;
+  margin-top: 25px;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
   font-size: 17px;
   transition: 0.3s;
@@ -41,17 +41,17 @@ export const Button = styled.button`
   color: black;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 18px;
 
   :hover {
     background: #c6e1f5;
-    border-radius: 10px;
+    border-radius: 18px;
   }
 
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-    border-radius: 5px;
+    border-radius: 18px;
   }
 `;
 

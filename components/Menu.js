@@ -1,5 +1,4 @@
 import Fade from "react-reveal/Fade";
-import Toggle from "./Toggle";
 import {
   StyledMenu,
   HeaderLink,
@@ -22,21 +21,21 @@ const Menu = ({ open, setOpen }) => {
         </HeaderLink>
         <HeaderLink>
           <ScrollIntoView selector="#projects" smooth={true}>
-            <Fade right delay={100}>
+            <Fade right delay={300}>
               <Button onClick={() => setOpen(!open)}>Projects</Button>
             </Fade>
           </ScrollIntoView>
         </HeaderLink>
         <HeaderLink>
           <ScrollIntoView selector="#technology" smooth={true}>
-            <Fade right delay={300}>
+            <Fade right delay={500}>
               <Button onClick={() => setOpen(!open)}>Technology </Button>
             </Fade>
           </ScrollIntoView>
         </HeaderLink>
         <HeaderLink>
           <ScrollIntoView selector="#contact" smooth={true}>
-            <Fade right delay={500}>
+            <Fade right delay={700}>
               <Button onClick={() => setOpen(!open)}>Contact </Button>
             </Fade>
           </ScrollIntoView>
