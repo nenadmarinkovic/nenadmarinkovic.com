@@ -1,11 +1,13 @@
 import styled, { keyframes } from "styled-components";
 
+export const SVG = styled.svg`
+ width: 100%;
+ 
+`;
+
 export const Wrapper = styled.div`
   margin-top: 20px;
-  
-  @media (max-width: 520px) {
-    display: none;
-  }
+ 
 `;
 
 export const fadeIn = keyframes`

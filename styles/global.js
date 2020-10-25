@@ -289,6 +289,12 @@ a:hover {
   z-index: 2;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+  @media (max-width: 960px) {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 70px;
+  }
 }
 
 .slideshow--out .slide-info-text {
@@ -313,6 +319,10 @@ a:hover {
   opacity: 1;
   transform: translateY(0) scale(1);
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 }
 
 .slideshow--out .slide-info-image {
@@ -361,6 +371,12 @@ a:hover {
 
 .slide-arrows-arrow--disabled:hover {
   transform: scale(1);
+}
+
+.slide-count {
+  @media (max-width: 960px) {
+    text-align: center;
+  }
 }
 
 

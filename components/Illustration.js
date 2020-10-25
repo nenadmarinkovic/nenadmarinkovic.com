@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Wrapper,
+  SVG,
   Star,
   Light,
   Night,
@@ -16,12 +17,13 @@ import {
   Stripe8,
   Stripe9,
   Screen,
+  Moon
 } from "../styles/components/Illustration";
 
 function Illustration() {
   return (
     <Wrapper>
-      <svg
+      <SVG
         width="533"
         height="435"
         viewBox="0 0 533 435"
@@ -428,13 +430,13 @@ function Illustration() {
                   </g>
                 </mask>
                 <g mask="url(#mask0)">
-                  <g id="Group_2">
+                  <Moon id="Group_2">
                     <path
                       id="moon 2"
                       d="M328.799 69.0784C343.701 84.8472 367.906 84.9168 382.881 69.2256C397.849 53.5344 397.915 28.0241 383.022 12.2547C368.129 -3.51464 343.915 -3.584 328.948 12.1073C313.972 27.7986 313.906 53.3088 328.799 69.0784Z"
                       fill="white"
                     />
-                  </g>
+                  </Moon>
                 </g>
               </g>
             </Night>
@@ -811,7 +813,7 @@ function Illustration() {
             <stop offset="1" stopColor="#006B70" />
           </linearGradient>
         </defs>
-      </svg>
+      </SVG>
     </Wrapper>
   );
 }

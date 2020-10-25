@@ -52,9 +52,11 @@ export const WorkDetails = styled.div`
   justify-content: space-between;
   font-size: 18px;
   width: 50%;
+  margin-left: 30px;
 
   @media (max-width: 960px) {
     width: 100%;
+    margin-left: 0;
   }
 `;
 

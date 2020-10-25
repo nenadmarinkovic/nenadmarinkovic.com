@@ -36,6 +36,7 @@ export const BannerContainer = styled.div`
 
   @media (max-width: 960px) {
     justify-content: center;
+    flex-direction: column;
   }
 `;
 
@@ -46,12 +47,16 @@ export const BannerWrapper = styled.div`
   margin: 0 auto;
   padding: 20px 15px 0 15px;
 
-  @media (max-width: 960px) {
-    height: 380px;
+  @media (max-width: 1044px) {
+    height: 520px;
   }
 
-  @media (max-width: 460px) {
-    height: 430px;
+  @media (max-width: 960px) {
+    height: 670px;
+  }
+
+  @media (max-width: 462px) {
+    height: 550px;
   }
 `;
 

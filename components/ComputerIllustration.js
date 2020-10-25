@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Wrapper,
+  SVG,
   Lay1,
   Lay2,
   Lay3,
@@ -19,7 +20,7 @@ import {
 function ComputerIllustration(props) {
   return (
     <Wrapper>
-      <svg
+      <SVG
         width="498px"
         height="425px"
         viewBox="0 0 378 305"
@@ -751,7 +752,7 @@ function ComputerIllustration(props) {
             </g>
           </g>
         </g>
-      </svg>
+      </SVG>
     </Wrapper>
   );
 }

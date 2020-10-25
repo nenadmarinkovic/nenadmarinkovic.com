@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
           title: "Raika",
           imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
           description:
-            "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. ",
+            "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
           details: {
             temperature: "70 degrees F day 65 degrees F night",
             water: "Summer: 2 litres Winter: 1 litre",
@@ -57,7 +57,9 @@ class Portfolio extends React.Component {
         {
           title: "Another Plant",
           imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
-          description: "This is another nice plant.",
+          description:
+            "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
+
           details: {
             temperature: "75 degrees F day 62 degrees F night",
             water: "Summer: 3 litres Winter: 1.5 litre",

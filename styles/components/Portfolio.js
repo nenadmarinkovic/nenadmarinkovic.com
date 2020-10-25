@@ -17,12 +17,21 @@ export const PortfolioIntro = styled.div`
   margin-top: -120px;
   padding-bottom: 60px;
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 960px) {
+   margin-top: 0;
+  }
 `;
 
 export const PortfolioInfo = styled.div`
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
+
+  @media (max-width: 960px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 
 export const PortfolioIntroMain = styled.div`
@@ -66,6 +75,12 @@ export const SlideInfo = styled.div`
   flex-direction: row;
   overflow: hidden;
   justify-content: space-between;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
 `;
 
 export const SlideInfoTitle = styled.h1`
@@ -83,6 +98,10 @@ export const SlideInfoDescription = styled.p`
 export const SlideCountTitle = styled.p`
   font-weight: 700;
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 960px) {
+    display: none;
+   }
 `;
 
 export const SlideCount = styled.span`
@@ -124,6 +143,10 @@ export const SlideDetailsDescription = styled.p`
 export const SlideArrows = styled.div`
   text-align: center;
   margin-top: 40px;
+  
+  @media (max-width: 960px) {
+    margin-top: 0;
+   }
 `;
 
 export const PrevArrow = styled.svg`
