@@ -14,8 +14,8 @@ export const FlexWrap = styled.div`
 `;
 
 export const PortfolioIntro = styled.div`
-  position: relative;
-  top: -100px;
+  margin-top: -120px;
+  padding-bottom: 60px;
   color: ${({ theme }) => theme.text};
 `;
 
@@ -26,7 +26,7 @@ export const PortfolioInfo = styled.div`
 `;
 
 export const PortfolioIntroMain = styled.div`
-margin-top: 80px;
+margin-top: 105px;
 font-size: 2rem;
 font-weight: 700;
 text-align: center;
@@ -98,7 +98,7 @@ export const SlideDetails = styled.div`
   background: white;
   border-radius: 18px;
   color: #040428;
-  padding: 30px;
+  padding: 40px;
   box-shadow: ${({ theme }) => theme.cardShadow};
 `;
 
@@ -123,7 +123,7 @@ export const SlideDetailsDescription = styled.p`
 
 export const SlideArrows = styled.div`
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 `;
 
 export const PrevArrow = styled.svg`

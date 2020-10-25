@@ -5,20 +5,17 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   background: #e8f3fb;
   display: ${({ open }) => (open ? "" : "none")};
-  height: 370px;
-  padding: 1.2rem;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  height: 380px;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
   border-bottom-left-radius: 23px;
   overflow: hidden;
   z-index: 10;
   text-align: center;
   box-shadow: ${({ theme }) => theme.menuShadow};
 
-  @media (min-width: 768px) {
-    display: none;
-  }
 `;
 
 export const HeaderLink = styled.div`

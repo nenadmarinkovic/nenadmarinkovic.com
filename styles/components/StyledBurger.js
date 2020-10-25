@@ -13,7 +13,7 @@ export const StyledBurger = styled.div`
   border: none;
   cursor: pointer;
   padding: 0;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 12;
 
   :hover {

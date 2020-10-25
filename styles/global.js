@@ -64,7 +64,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    
   }
 
   .container {
@@ -81,6 +80,20 @@ export const GlobalStyles = createGlobalStyle`
   .technology-icon {
     width: 60px;
     filter: invert(6%) sepia(73%) saturate(2050%) hue-rotate(227deg) brightness(90%) contrast(110%);
+  }
+  
+  .menu-fixed {
+    position: fixed;
+    top: 16px;
+    right: 2rem;
+  
+    @media (min-width: 768px) {
+      display: flex;
+     }
+  }
+
+  .menu-close {
+    display: none;
   }
 
   .slick-div {
@@ -400,11 +413,6 @@ a:hover {
 
 .slide-three {
   transition-delay: 0.05s;
-}
-
-.slide__details__block__description {
-  font-size: 0.8em;
-  line-height: 1.3em;
 }
 
 `;

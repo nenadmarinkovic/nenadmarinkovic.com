@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
 import Fade from "react-reveal/Fade";
+import Toggle from "./Toggle";
 import {
   StyledMenu,
   HeaderLink,
@@ -12,42 +12,36 @@ import ScrollIntoView from "react-scroll-into-view";
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <Fade>
-        <MenuLinks>
-          <HeaderLink>
-            <ScrollIntoView selector="#work" smooth={true}>
-              {" "}
-              <Fade right delay={100}>
-                <Button onClick={() => setOpen(!open)}>Work</Button>
-              </Fade>
-            </ScrollIntoView>
-          </HeaderLink>
-          <HeaderLink>
-            <ScrollIntoView selector="#project" smooth={true}>
-              {" "}
-              <Fade right delay={100}>
-                <Button onClick={() => setOpen(!open)}>Project</Button>
-              </Fade>
-            </ScrollIntoView>
-          </HeaderLink>
-          <HeaderLink>
-            <ScrollIntoView selector="#technology" smooth={true}>
-              {" "}
-              <Fade right delay={300}>
-                <Button onClick={() => setOpen(!open)}>Technology </Button>
-              </Fade>
-            </ScrollIntoView>
-          </HeaderLink>
-          <HeaderLink>
-            <ScrollIntoView selector="#contact" smooth={true}>
-              {" "}
-              <Fade right delay={500}>
-                <Button onClick={() => setOpen(!open)}>Contact </Button>
-              </Fade>
-            </ScrollIntoView>
-          </HeaderLink>
-        </MenuLinks>
-      </Fade>
+      <MenuLinks>
+        <HeaderLink>
+          <ScrollIntoView selector="#work" smooth={true}>
+            <Fade right delay={100}>
+              <Button onClick={() => setOpen(!open)}>Work</Button>
+            </Fade>
+          </ScrollIntoView>
+        </HeaderLink>
+        <HeaderLink>
+          <ScrollIntoView selector="#projects" smooth={true}>
+            <Fade right delay={100}>
+              <Button onClick={() => setOpen(!open)}>Projects</Button>
+            </Fade>
+          </ScrollIntoView>
+        </HeaderLink>
+        <HeaderLink>
+          <ScrollIntoView selector="#technology" smooth={true}>
+            <Fade right delay={300}>
+              <Button onClick={() => setOpen(!open)}>Technology </Button>
+            </Fade>
+          </ScrollIntoView>
+        </HeaderLink>
+        <HeaderLink>
+          <ScrollIntoView selector="#contact" smooth={true}>
+            <Fade right delay={500}>
+              <Button onClick={() => setOpen(!open)}>Contact </Button>
+            </Fade>
+          </ScrollIntoView>
+        </HeaderLink>
+      </MenuLinks>
     </StyledMenu>
   );
 };

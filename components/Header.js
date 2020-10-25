@@ -28,6 +28,7 @@ function Header(props) {
     if (open) {
       document.addEventListener("mousedown", handleClickOutside);
       document.addEventListener("touchstart", handleClickOutside);
+      document.addEventListener("scroll", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("touchstart", handleClickOutside);

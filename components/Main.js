@@ -20,9 +20,10 @@ function Main() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
+
       <Banner toggleTheme={toggleTheme} theme={theme} />
       <Work theme={theme} />
-      <Portfolio theme={theme}/>
+      <Portfolio theme={theme} />
       <Technology />
       <Footer />
     </ThemeProvider>

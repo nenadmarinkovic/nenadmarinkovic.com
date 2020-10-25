@@ -27,14 +27,16 @@ class Technology extends React.Component {
       <>
         <div className="container">
           <TechWrap>
-            <div style={{ marginTop: "-280px", paddingBottom: "40px" }}>
-              <CenterMain id="technology" style={{ paddingTop: "20px" }}>
-                Technologies
-              </CenterMain>
-              <CenterSecond>
-                Portfolio websites, small to medium size company websites,
-                content management systems, e-commerce platforms, and more.
-              </CenterSecond>
+            <div tabIndex={0}>
+              <div style={{ paddingBottom: "40px" }}>
+                <CenterMain id="technology" style={{ paddingTop: "20px" }}>
+                  Technologies
+                </CenterMain>
+                <CenterSecond>
+                  Portfolio websites, small to medium size company websites,
+                  content management systems, e-commerce platforms, and more.
+                </CenterSecond>
+              </div>
             </div>
           </TechWrap>
           <Slider {...settings}>
