@@ -66,6 +66,13 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  @media (focus:none), 
+  (focus:on-demand) {
+  a:focus { 
+    box-shadow: none;
+  }
+}
+
   .container {
     width: 1160px;
     max-width: 100%;

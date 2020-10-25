@@ -34,11 +34,6 @@ export const Home = styled.a`
     padding: 0;
   }
 
-  :hover {
-    background: ${({ theme }) => theme.subtitleText};
-    color: white;
-  }
-
   :focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
