@@ -29,6 +29,10 @@ export const Home = styled.a`
   border-radius: 18px;
   color: ${({ theme }) => theme.text};
 
+  @media (max-width: 360px) {
+    font-size: 15.5px;
+  }
+
   :hover {
     background: ${({ theme }) => theme.subtitleText};
     color: white;
@@ -39,6 +43,7 @@ export const Home = styled.a`
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
     border-radius: 18px;
   }
+
 `;
 
 export const Button = styled.button`
