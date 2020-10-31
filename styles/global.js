@@ -435,4 +435,11 @@ a:hover {
   transition-delay: 0.05s;
 }
 
+.about-me {
+  width: 280px;
+  margin: 30px;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+}
+
 `;
