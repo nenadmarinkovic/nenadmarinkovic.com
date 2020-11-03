@@ -10,7 +10,6 @@ export const FlexWrap = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  
 `;
 
 export const PortfolioIntro = styled.div`
@@ -19,7 +18,7 @@ export const PortfolioIntro = styled.div`
   color: ${({ theme }) => theme.text};
 
   @media (max-width: 960px) {
-   margin-top: 0;
+    margin-top: 0;
   }
 `;
 
@@ -35,32 +34,31 @@ export const PortfolioInfo = styled.div`
 `;
 
 export const PortfolioIntroMain = styled.div`
-margin-top: 105px;
-font-size: 2rem;
-font-weight: 700;
-text-align: center;
-color: ${({ theme }) => theme.text};
-padding-top: 20px;
+  margin-top: 105px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: ${({ theme }) => theme.text};
+  padding-top: 20px;
 
-@media (max-width: 960px) {
-  margin-top: 0;
-}
+  @media (max-width: 960px) {
+    margin-top: 0;
+  }
 `;
-  
 
 export const PortfolioIntroSecond = styled.div`
-font-size: 21px;
-font-weight: 400;
-color: ${({ theme }) => theme.text};
-margin: 0 auto;
-padding-top: 20px;
-line-height: 1.5;
-width: 50%;
-text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text};
+  margin: 0 auto;
+  padding-top: 20px;
+  line-height: 1.5;
+  width: 50%;
+  text-align: center;
 
-@media (max-width: 960px) {
-  width: 100%;
-}
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const SlideContainer = styled.div`
@@ -80,7 +78,6 @@ export const SlideInfo = styled.div`
     flex-direction: column;
     align-items: center;
   }
-
 `;
 
 export const SlideInfoTitle = styled.h1`
@@ -101,7 +98,7 @@ export const SlideCountTitle = styled.p`
 
   @media (max-width: 960px) {
     display: none;
-   }
+  }
 `;
 
 export const SlideCount = styled.span`
@@ -124,15 +121,22 @@ export const SlideDetails = styled.div`
 export const SlideDetailsTitle = styled.p`
   width: 100%;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 23px;
   margin: 0;
+  padding-bottom: 20px;
 `;
 
 export const SlideSubtitle = styled.h3`
-  color: #8d8d8d;
-  font-size: 0.8em;
+  color: rgb(14, 144, 219);
+  text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 1em;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+`;
+
+export const FlexDiv = styled.h3`
+ display: flex;
+ justify-content: space-between;
 `;
 
 export const SlideDetailsDescription = styled.p`
@@ -143,10 +147,10 @@ export const SlideDetailsDescription = styled.p`
 export const SlideArrows = styled.div`
   text-align: center;
   margin-top: 40px;
-  
+
   @media (max-width: 960px) {
     margin-top: 0;
-   }
+  }
 `;
 
 export const PrevArrow = styled.svg`

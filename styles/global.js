@@ -206,7 +206,6 @@ a:hover {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-  padding-bottom: 80px;
 }
 
 .slick-list {
@@ -349,7 +348,7 @@ a:hover {
 
 
 .slideshow {
-  margin-top: 120px;
+  
 }
 
 .slide-arrows-arrow {
@@ -398,9 +397,8 @@ a:hover {
 
 .slide-details-block {
   display: inline-block;
-  width: 25%;
   opacity: 1;
-  padding-right: 0.5em;
+  padding-right: 45px;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 

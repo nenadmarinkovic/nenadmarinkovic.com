@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
-import { TechWrap } from "../styles/components/Technology";
+import { TechWrap, TechTitle } from "../styles/components/Technology";
 
-import { CenterMain, CenterSecond } from "../styles/components/Work";
+import { CenterSecond } from "../styles/components/Work";
 
 class Technology extends React.Component {
   render() {
@@ -29,9 +29,9 @@ class Technology extends React.Component {
           <TechWrap>
             <div tabIndex={0}>
               <div style={{ paddingBottom: "40px" }}>
-                <CenterMain id="technology" style={{ paddingTop: "20px" }}>
+                <TechTitle>
                   Technologies
-                </CenterMain>
+                </TechTitle>
                 <CenterSecond>
                   Portfolio websites, small to medium size company websites,
                   content management systems, e-commerce platforms, and more.

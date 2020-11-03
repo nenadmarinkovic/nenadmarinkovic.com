@@ -17,7 +17,11 @@ export const Text = styled.div`
 `;
 
 export const Social = styled.div`
-  margin-left: 0;
+  color: rgb(14, 144, 219);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 14px;
   display: flex;
   justify-content: flex-end;
   margin-top: 30px;

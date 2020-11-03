@@ -38,9 +38,9 @@ class Portfolio extends React.Component {
           description:
             "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
           details: {
-            temperature: "70 degrees F day 65 degrees F night",
-            water: "Summer: 2 litres Winter: 1 litre",
-            nutrition: "Garden loam, perlite, peat moss",
+            technology: "React, Gatsby, CSS, styled-components",
+            provider: "Vercel",
+            link: "reuse.codes",
           },
         },
         {
@@ -49,9 +49,9 @@ class Portfolio extends React.Component {
           description:
             "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
           details: {
-            temperature: "75 degrees F day 62 degrees F night",
-            water: "Summer: 3 litres Winter: 1.5 litre",
-            nutrition: "A thing, something, other thing",
+            technology: "React, Gatsby, CSS, styled-components",
+            provider: "Geroku",
+            link: "draft.network",
           },
         },
         {
@@ -61,9 +61,9 @@ class Portfolio extends React.Component {
             "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
 
           details: {
-            temperature: "75 degrees F day 62 degrees F night",
-            water: "Summer: 3 litres Winter: 1.5 litre",
-            nutrition: "A thing, something, other thing",
+            technology: "React, Gatsby, CSS, styled-components",
+            provider: "Geroku",
+            link: "flickschuh.wien",
           },
         },
       ],
@@ -207,23 +207,23 @@ class Slide extends React.Component {
                       <SlideDetailsTitle>Project details</SlideDetailsTitle>
 
                       <div className="slide-details-block slide-one">
-                        <SlideSubtitle>Temperature</SlideSubtitle>
+                        <SlideSubtitle>Technologies</SlideSubtitle>
                         <SlideDetailsDescription>
-                          {this.props.details.temperature}
+                          {this.props.details.technology}
                         </SlideDetailsDescription>
                       </div>
 
                       <div className="slide-details-block slide-two">
-                        <SlideSubtitle> Water</SlideSubtitle>
+                        <SlideSubtitle> Deployed on</SlideSubtitle>
                         <SlideDetailsDescription>
-                          {this.props.details.water}
+                          {this.props.details.provider}
                         </SlideDetailsDescription>
                       </div>
 
                       <div className="slide-details-block slide-three">
-                        <SlideSubtitle>Nutrition </SlideSubtitle>
+                        <SlideSubtitle>Website's link</SlideSubtitle>
                         <SlideDetailsDescription>
-                          {this.props.details.nutrition}
+                          {this.props.details.link}
                         </SlideDetailsDescription>
                       </div>
                     </SlideDetails>

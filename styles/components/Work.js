@@ -31,6 +31,7 @@ export const CenterSecond = styled.div`
   }
 `;
 
+
 export const WorkWrap = styled.div`
   text-align: start;
   margin-top: 80px;

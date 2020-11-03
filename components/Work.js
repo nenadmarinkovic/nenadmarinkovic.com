@@ -21,6 +21,7 @@ function Work(props) {
             Portfolio websites, small to medium size company websites, content
             management systems, e-commerce platforms, and more.
           </CenterSecond>
+     
         </div>
         <div className="container">
           <WorkWrap>
