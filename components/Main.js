@@ -8,6 +8,7 @@ import Work from "./Work";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 import Technology from "./Technology";
+import AboutMe from "./AboutMe";
 
 function Main() {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -24,6 +25,7 @@ function Main() {
       <Banner toggleTheme={toggleTheme} theme={theme} />
       <Work theme={theme} />
       <Portfolio theme={theme} />
+      <AboutMe/>
       <Technology />
       <Footer />
     </ThemeProvider>
