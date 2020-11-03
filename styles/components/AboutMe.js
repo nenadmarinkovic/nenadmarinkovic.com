@@ -35,6 +35,7 @@ export const Image = styled.img`
   position: relative;
   background: #e3f0fa;
   padding-right: 10px;
+  pointer-events: none;
 `;
 
 export const CenterMain = styled.div`
