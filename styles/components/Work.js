@@ -4,7 +4,18 @@ export const WorkSection = styled.div`
   text-align: center;
 `;
 
-export const WorkItem = styled.div``;
+export const SVG = styled.svg`
+  @media (max-width: 960px) {
+    display: none;
+  }
+`;
+
+export const WorkItem = styled.div`
+  @media (max-width: 960px) {
+    margin-bottom: 40px;
+  }
+`;
+
 export const ItemText = styled.div`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
@@ -13,12 +24,19 @@ export const ItemText = styled.div`
   font-size: 14px;
   margin-left: 10px;
 
+  @media (max-width: 960px) {
+    margin-left: 0;
+  }
 `;
 
 export const ItemTitle = styled.div`
   padding-bottom: 10px;
   display: flex;
   align-center: center;
+
+  @media (max-width: 960px) {
+    display: block;
+  }
 `;
 
 export const CenterMain = styled.div`
@@ -74,6 +92,7 @@ export const WorkDetails = styled.div`
   @media (max-width: 960px) {
     width: 100%;
     margin-left: 0;
+    padding-top: 40px;
   }
 `;
 

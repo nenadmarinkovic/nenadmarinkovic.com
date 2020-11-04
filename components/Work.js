@@ -10,6 +10,7 @@ import {
   WorkItem,
   ItemTitle,
   ItemText,
+  SVG
 } from "../styles/components/Work";
 
 import ComputerIllustration from "./ComputerIllustration";
@@ -35,7 +36,7 @@ function Work(props) {
               <Fade bottom delay={500} duration={500}>
                 <WorkItem>
                   <ItemTitle>
-                    <svg
+                    <SVG
                       height="20px"
                       viewBox="0 0 512 512"
                       width="20px"
@@ -49,7 +50,7 @@ function Work(props) {
                         d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
                         fill="#fafafa"
                       />
-                    </svg>
+                    </SVG>
                     <ItemText>Fast and optimized websites</ItemText>
                   </ItemTitle>
                   <ListItem>
@@ -61,7 +62,7 @@ function Work(props) {
               <Fade bottom delay={800} duration={500}>
                 <WorkItem>
                   <ItemTitle>
-                    <svg
+                    <SVG
                       height="20px"
                       viewBox="0 0 512 512"
                       width="20px"
@@ -75,7 +76,7 @@ function Work(props) {
                         d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
                         fill="#fafafa"
                       />
-                    </svg>
+                    </SVG>
                     <ItemText>Clean and well organized design</ItemText>
                   </ItemTitle>
                   <ListItem>
@@ -87,7 +88,7 @@ function Work(props) {
               <Fade bottom delay={1000} duration={500}>
                 <WorkItem>
                   <ItemTitle>
-                    <svg
+                    <SVG
                       height="20px"
                       viewBox="0 0 512 512"
                       width="20px"
@@ -101,7 +102,7 @@ function Work(props) {
                         d="m385.75 201.75-138.667969 138.664062c-4.160156 4.160157-9.621093 6.253907-15.082031 6.253907s-10.921875-2.09375-15.082031-6.253907l-69.332031-69.332031c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339843-8.34375 21.820312-8.34375 30.164062 0l54.25 54.25 123.585938-123.582031c8.339843-8.34375 21.820312-8.34375 30.164062 0 8.339844 8.339843 8.339844 21.820312 0 30.164062zm0 0"
                         fill="#fafafa"
                       />
-                    </svg>
+                    </SVG>
                     <ItemText>Enjoyable user experience</ItemText>
                   </ItemTitle>
                   <ListItem>

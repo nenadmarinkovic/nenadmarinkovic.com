@@ -117,6 +117,10 @@ export const SlideDetails = styled.div`
   color: #040428;
   padding: 40px;
   box-shadow: ${({ theme }) => theme.cardShadow};
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const ImageWrapper = styled.div`

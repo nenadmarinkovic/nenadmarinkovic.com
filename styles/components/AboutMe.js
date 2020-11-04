@@ -7,6 +7,11 @@ export const Flex = styled.div`
   padding: 20px;
   border-radius: 18px;
   margin-bottom: 80px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 
 export const Text = styled.div`
@@ -14,13 +19,18 @@ export const Text = styled.div`
   line-height: 1.8;
   width: 55%;
   margin-left: 30px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 
 export const Social = styled.div`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-size: 14px;
   display: flex;
   justify-content: flex-end;
@@ -40,6 +50,14 @@ export const Image = styled.img`
   background: #e3f0fa;
   padding-right: 10px;
   pointer-events: none;
+
+  @media (max-width: 960px) {
+    width: 260px;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const CenterMain = styled.div`

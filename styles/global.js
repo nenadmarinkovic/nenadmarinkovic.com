@@ -212,6 +212,10 @@ a:hover {
   overflow: hidden;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 560px) {
+    margin-bottom: 40px;
+  }
 }
 
 .slick-list:focus {
@@ -414,7 +418,6 @@ a:hover {
 @media screen and (max-width: 775px) {
   .slide-details-block {
     width: 100%;
-    margin: 0 auto 2em;
   }
 }
 
