@@ -19,15 +19,16 @@ function Footer() {
           ></path>
         </svg>
       </Wave>
-
       <FooterContainer>
-        <PortfolioIntro>
-          <PortfolioIntroMain id="contact">Contact</PortfolioIntroMain>
-          <PortfolioIntroSecond>
-            Portfolio websites, small to medium size company websites, content
-            management systems, e-commerce platforms, and more.
-          </PortfolioIntroSecond>
-        </PortfolioIntro>
+        <div className="container">
+          <PortfolioIntro>
+            <PortfolioIntroMain id="contact">Contact</PortfolioIntroMain>
+            <PortfolioIntroSecond>
+              Portfolio websites, small to medium size company websites, content
+              management systems, e-commerce platforms, and more.
+            </PortfolioIntroSecond>
+          </PortfolioIntro>
+        </div>
         <div className="container">
           <ContactForm />
         </div>

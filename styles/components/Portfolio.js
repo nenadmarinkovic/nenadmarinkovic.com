@@ -89,6 +89,7 @@ export const SlideInfoTitle = styled.h1`
 
 export const SlideInfoDescription = styled.p`
   line-height: 1.7em;
+  font-size: 17px;
   color: ${({ theme }) => theme.text};
 `;
 
@@ -124,7 +125,7 @@ export const SlideDetails = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-text-align: end;
+  text-align: end;
 `;
 
 export const SlideDetailsTitle = styled.p`
@@ -161,6 +162,10 @@ export const SlideArrows = styled.div`
 
   @media (max-width: 960px) {
     margin-top: 0;
+  }
+
+  @media (max-width: 560px) {
+    margin-top: -5px;
   }
 `;
 

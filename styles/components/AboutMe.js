@@ -53,10 +53,12 @@ export const Image = styled.img`
 
   @media (max-width: 960px) {
     width: 260px;
+    padding-right: 0;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 480px) {
     width: 100%;
+    padding-right: 0;
   }
 `;
 

@@ -1,13 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
 export const SVG = styled.svg`
- width: 100%;
- 
+  width: 100%;
+  height: 100%;
 `;
 
 export const Wrapper = styled.div`
   margin-top: 20px;
- 
 `;
 
 export const fadeIn = keyframes`
@@ -38,7 +37,7 @@ export const fade = keyframes`
   `;
 
 export const Lay9 = styled.g`
-  animation: ${fade} 5s 6.5s ease infinite ;
+  animation: ${fade} 5s 6.5s ease infinite;
   animation-fill-mode: forwards;
   visibility: hidden;
 `;

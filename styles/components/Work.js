@@ -5,7 +5,7 @@ export const WorkSection = styled.div`
 `;
 
 export const SVG = styled.svg`
-  @media (max-width: 960px) {
+   @media (max-width: 960px) {
     display: none;
   }
 `;
@@ -63,6 +63,7 @@ export const CenterSecond = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
+    font-size: 18px;
   }
 `;
 
