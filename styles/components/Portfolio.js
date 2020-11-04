@@ -58,6 +58,8 @@ export const PortfolioIntroSecond = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
+    font-size: 20px;
+    line-height: 1.7;
   }
 `;
 
@@ -162,10 +164,6 @@ export const SlideArrows = styled.div`
 
   @media (max-width: 960px) {
     margin-top: 0;
-  }
-
-  @media (max-width: 560px) {
-    margin-top: -5px;
   }
 `;
 

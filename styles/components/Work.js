@@ -63,7 +63,8 @@ export const CenterSecond = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.7;
   }
 `;
 
