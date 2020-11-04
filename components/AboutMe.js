@@ -21,7 +21,6 @@ function AboutMe() {
       </div>
       <Flex>
         <Image src="/Portfolio.png" />
-
         <Text>
           Portfolio websites, small to medium size company websites, content
           management systems, e-commerce platforms, and more. Portfolio

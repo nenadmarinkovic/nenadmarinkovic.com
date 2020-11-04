@@ -23,7 +23,7 @@ function Work(props) {
           <CenterSecond>
             State of the art websites and web applications, small to large size
             company websites, content management systems, web shops. Designed
-            and developed for the user in mind.
+            and developed with the user in mind.
           </CenterSecond>
         </div>
         <div className="container">
@@ -54,7 +54,7 @@ function Work(props) {
                   </ItemTitle>
                   <ListItem>
                     Your website builds trust and credibility by being fast,
-                    optimized, and fully functional. And thus your brand.
+                    optimized, and fully functional.
                   </ListItem>
                 </WorkItem>
               </Fade>
@@ -79,8 +79,8 @@ function Work(props) {
                     <ItemText>Clean and well organized design</ItemText>
                   </ItemTitle>
                   <ListItem>
-                    Well organized design, attention to details, feeling of
-                    transparency, are what turn your visitors into customers.
+                    Convince your visitors with well organized design, attention
+                    to details, and full transparency.
                   </ListItem>
                 </WorkItem>
               </Fade>
@@ -106,7 +106,7 @@ function Work(props) {
                   </ItemTitle>
                   <ListItem>
                     Subtle animations, relevant images, well-thought typos and
-                    color palettes, makes your website pleasurable and fun to
+                    color palettes make your website pleasurable and fun to
                     use.
                   </ListItem>
                 </WorkItem>
