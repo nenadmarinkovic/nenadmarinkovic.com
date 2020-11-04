@@ -16,5 +16,5 @@ export const TechTitle = styled.div`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
 `;

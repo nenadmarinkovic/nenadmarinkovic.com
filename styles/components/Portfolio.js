@@ -111,6 +111,7 @@ export const SlideCount = styled.span`
 `;
 
 export const SlideDetails = styled.div`
+  width: 780px;
   background: white;
   border-radius: 18px;
   color: #040428;
@@ -130,7 +131,7 @@ export const SlideSubtitle = styled.h3`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   font-size: 13px;
   padding-bottom: 5px;
 `;
@@ -143,6 +144,7 @@ export const FlexDiv = styled.h3`
 export const SlideDetailsDescription = styled.p`
   font-size: 0.8em;
   line-height: 1.3em;
+  font-size: 16px;
 `;
 
 export const SlideArrows = styled.div`

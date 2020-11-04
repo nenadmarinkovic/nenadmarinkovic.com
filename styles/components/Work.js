@@ -5,14 +5,20 @@ export const WorkSection = styled.div`
 `;
 
 export const WorkItem = styled.div``;
-
-export const ItemTitle = styled.div`
+export const ItemText = styled.div`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  margin-left: 10px;
+
+`;
+
+export const ItemTitle = styled.div`
   padding-bottom: 10px;
+  display: flex;
+  align-center: center;
 `;
 
 export const CenterMain = styled.div`
