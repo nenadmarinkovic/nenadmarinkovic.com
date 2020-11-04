@@ -284,7 +284,6 @@ a:hover {
 }
 
 .slide-info-text {
-  width: 50%;
   z-index: 2;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -313,7 +312,7 @@ a:hover {
 }
 
 .slide-info-image {
-  width: 42%;
+  width: 90%;
   right: 0;
   opacity: 1;
   transform: translateY(0) scale(1);

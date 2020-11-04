@@ -17,9 +17,11 @@ import {
   PortfolioIntro,
   PortfolioIntroMain,
   PortfolioIntroSecond,
+  ImageWrapper
 } from "../styles/components/Portfolio";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
+import Fade from "react-reveal/Fade";
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -179,54 +181,66 @@ class Slide extends React.Component {
               <SlideContainer>
                 <SlideInfo>
                   <div className="slide-info-text">
-                    <SlideInfoTitle>{this.props.title}</SlideInfoTitle>
-                    <SlideInfoDescription>
-                      {this.props.description}
-                    </SlideInfoDescription>
-                  </div>
-                  <img
-                    src={this.props.image}
-                    alt={this.props.title}
-                    className="slide-info-image"
-                  />
-                </SlideInfo>
-
-                <PortfolioInfo>
-                  <div className="slide-count">
-                    <SlideCountTitle>Project</SlideCountTitle>
-                    <SlideCount>
-                      0
-                      <span className="slide-count-num">
-                        {this.props.count}
-                      </span>
-                    </SlideCount>
+                    <Fade bottom delay={500} duration={500}>
+                      <SlideInfoTitle>{this.props.title}</SlideInfoTitle>
+                      <SlideInfoDescription>
+                        {this.props.description}
+                      </SlideInfoDescription>
+                    </Fade>
                   </div>
 
                   <div>
-                    <SlideDetails>
-                      <SlideDetailsTitle>Project details</SlideDetailsTitle>
+                    <Fade bottom delay={800} duration={500}>
+                      <ImageWrapper>
+                        <img
+                          src={this.props.image}
+                          alt={this.props.title}
+                          className="slide-info-image"
+                        />
+                      </ImageWrapper>
+                    </Fade>
+                  </div>
+                </SlideInfo>
 
-                      <div className="slide-details-block slide-one">
-                        <SlideSubtitle>Technologies</SlideSubtitle>
-                        <SlideDetailsDescription>
-                          {this.props.details.technology}
-                        </SlideDetailsDescription>
-                      </div>
+                <PortfolioInfo>
+                  <Fade bottom delay={1100} duration={500}>
+                    <div className="slide-count">
+                      <SlideCountTitle>Project</SlideCountTitle>
+                      <SlideCount>
+                        0
+                        <span className="slide-count-num">
+                          {this.props.count}
+                        </span>
+                      </SlideCount>
+                    </div>
+                  </Fade>
+                  <div>
+                    <Fade bottom delay={1400} duration={500}>
+                      <SlideDetails>
+                        <SlideDetailsTitle>Project details</SlideDetailsTitle>
 
-                      <div className="slide-details-block slide-two">
-                        <SlideSubtitle> Deployed on</SlideSubtitle>
-                        <SlideDetailsDescription>
-                          {this.props.details.provider}
-                        </SlideDetailsDescription>
-                      </div>
+                        <div className="slide-details-block slide-one">
+                          <SlideSubtitle>Technologies</SlideSubtitle>
+                          <SlideDetailsDescription>
+                            {this.props.details.technology}
+                          </SlideDetailsDescription>
+                        </div>
 
-                      <div className="slide-details-block slide-three">
-                        <SlideSubtitle>Website's link</SlideSubtitle>
-                        <SlideDetailsDescription>
-                          {this.props.details.link}
-                        </SlideDetailsDescription>
-                      </div>
-                    </SlideDetails>
+                        <div className="slide-details-block slide-two">
+                          <SlideSubtitle> Deployed on</SlideSubtitle>
+                          <SlideDetailsDescription>
+                            {this.props.details.provider}
+                          </SlideDetailsDescription>
+                        </div>
+
+                        <div className="slide-details-block slide-three">
+                          <SlideSubtitle>Website's link</SlideSubtitle>
+                          <SlideDetailsDescription>
+                            {this.props.details.link}
+                          </SlideDetailsDescription>
+                        </div>
+                      </SlideDetails>
+                    </Fade>
                   </div>
                 </PortfolioInfo>
               </SlideContainer>

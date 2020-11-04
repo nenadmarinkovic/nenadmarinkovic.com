@@ -119,6 +119,10 @@ export const SlideDetails = styled.div`
   box-shadow: ${({ theme }) => theme.cardShadow};
 `;
 
+export const ImageWrapper = styled.div`
+text-align: end;
+`;
+
 export const SlideDetailsTitle = styled.p`
   width: 100%;
   font-weight: 700;
