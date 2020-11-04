@@ -131,12 +131,13 @@ export const SlideSubtitle = styled.h3`
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.5px;
-  font-size: 14px;
+  font-size: 13px;
+  padding-bottom: 5px;
 `;
 
 export const FlexDiv = styled.h3`
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const SlideDetailsDescription = styled.p`

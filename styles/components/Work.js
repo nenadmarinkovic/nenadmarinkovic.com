@@ -4,6 +4,17 @@ export const WorkSection = styled.div`
   text-align: center;
 `;
 
+export const WorkItem = styled.div``;
+
+export const ItemTitle = styled.div`
+  color: rgb(14, 144, 219);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  padding-bottom: 10px;
+`;
+
 export const CenterMain = styled.div`
   font-size: 2rem;
   font-weight: 700;
@@ -22,15 +33,14 @@ export const CenterSecond = styled.div`
   color: #040428;
   margin: 0 auto;
   padding-top: 20px;
-  line-height: 1.5;
-  width: 50%;
+  line-height: 1.9;
+  width: 60%;
   text-align: center;
 
   @media (max-width: 960px) {
     width: 100%;
   }
 `;
-
 
 export const WorkWrap = styled.div`
   text-align: start;

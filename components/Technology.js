@@ -1,8 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-
 import { TechWrap, TechTitle } from "../styles/components/Technology";
-
+import Fade from "react-reveal/Fade";
 import { CenterSecond } from "../styles/components/Work";
 
 class Technology extends React.Component {
@@ -29,13 +28,14 @@ class Technology extends React.Component {
           <TechWrap>
             <div tabIndex={0}>
               <div style={{ paddingBottom: "40px" }}>
-                <TechTitle>
-                  Technologies
-                </TechTitle>
+              <Fade bottom delay={300} duration={500}>
+                <TechTitle>Technologies</TechTitle>
                 <CenterSecond>
-                  Portfolio websites, small to medium size company websites,
-                  content management systems, e-commerce platforms, and more.
+                  Modern approach with JavaScript, React, static-site generators like
+                  Next.js and Gatsby, Headless CMS, CSS in JS. Or more
+                  traditional approach with PHP, Wordpress, Sass. Based on your needs.
                 </CenterSecond>
+                </Fade>
               </div>
             </div>
           </TechWrap>

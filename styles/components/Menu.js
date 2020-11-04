@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   background: #E3F0FA;
   display: ${({ open }) => (open ? "" : "none")};
-  height: 380px;
+  height: 350px;
   padding: 1rem;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ export const Button = styled.button`
   border: none;
   padding: 10px 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   transition: 0.3s;
   cursor: pointer;
   color: black;

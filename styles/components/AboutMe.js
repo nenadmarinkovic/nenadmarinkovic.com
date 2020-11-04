@@ -21,7 +21,7 @@ export const Social = styled.div`
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.5px;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   justify-content: flex-end;
   margin-top: 30px;

@@ -33,7 +33,7 @@ class Portfolio extends React.Component {
       currentSlide: 0,
       slides: [
         {
-          title: "Raika",
+          title: "Reuse",
           imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
           description:
             "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
@@ -44,7 +44,7 @@ class Portfolio extends React.Component {
           },
         },
         {
-          title: "Another Plant",
+          title: "Flickschuh Wien",
           imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
           description:
             "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
@@ -55,7 +55,7 @@ class Portfolio extends React.Component {
           },
         },
         {
-          title: "Another Plant",
+          title: "Draft  Network",
           imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
           description:
             "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
