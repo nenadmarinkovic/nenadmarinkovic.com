@@ -17,7 +17,7 @@ import {
   PortfolioIntro,
   PortfolioIntroMain,
   PortfolioIntroSecond,
-  ImageWrapper
+  ImageWrapper,
 } from "../styles/components/Portfolio";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
@@ -175,13 +175,14 @@ class Slide extends React.Component {
               <PortfolioIntro>
                 <PortfolioIntroMain id="projects">Projects</PortfolioIntroMain>
                 <PortfolioIntroSecond>
-                  Showcase of professional and personal websites and web applications.
+                  Showcase of professional and personal websites and web
+                  applications.
                 </PortfolioIntroSecond>
               </PortfolioIntro>
               <SlideContainer>
                 <SlideInfo>
                   <div className="slide-info-text">
-                    <Fade bottom delay={500} duration={500}>
+                    <Fade bottom delay={400} duration={400}>
                       <SlideInfoTitle>{this.props.title}</SlideInfoTitle>
                       <SlideInfoDescription>
                         {this.props.description}
@@ -190,7 +191,7 @@ class Slide extends React.Component {
                   </div>
 
                   <div>
-                    <Fade bottom delay={800} duration={500}>
+                    <Fade bottom delay={650} duration={400}>
                       <ImageWrapper>
                         <img
                           src={this.props.image}
@@ -203,7 +204,7 @@ class Slide extends React.Component {
                 </SlideInfo>
 
                 <PortfolioInfo>
-                  <Fade bottom delay={1100} duration={500}>
+                  <Fade bottom delay={900} duration={400}>
                     <div className="slide-count">
                       <SlideCountTitle>Project</SlideCountTitle>
                       <SlideCount>
@@ -215,7 +216,7 @@ class Slide extends React.Component {
                     </div>
                   </Fade>
                   <div>
-                    <Fade bottom delay={1400} duration={500}>
+                    <Fade bottom delay={1150} duration={400}>
                       <SlideDetails>
                         <SlideDetailsTitle>Project details</SlideDetailsTitle>
 

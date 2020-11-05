@@ -33,7 +33,7 @@ function Work(props) {
               <ComputerIllustration theme={props.theme} />
             </Fade>
             <WorkDetails>
-              <Fade bottom delay={500} duration={500}>
+              <Fade bottom delay={300} duration={350}>
                 <WorkItem>
                   <ItemTitle>
                     <SVG
@@ -59,7 +59,7 @@ function Work(props) {
                   </ListItem>
                 </WorkItem>
               </Fade>
-              <Fade bottom delay={800} duration={500}>
+              <Fade bottom delay={500} duration={350}>
                 <WorkItem>
                   <ItemTitle>
                     <SVG
@@ -85,7 +85,7 @@ function Work(props) {
                   </ListItem>
                 </WorkItem>
               </Fade>
-              <Fade bottom delay={1000} duration={500}>
+              <Fade bottom delay={700} duration={350}>
                 <WorkItem>
                   <ItemTitle>
                     <SVG
