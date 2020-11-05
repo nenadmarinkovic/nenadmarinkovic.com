@@ -21,8 +21,9 @@ function FormText() {
           }, 2000);
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor. <br></br> Ready to{" "}
+        From your idea and project's goals, to implementation and global
+        deployment.
+        <br></br> Ready to{" "}
         <Button
           style={
             launch

@@ -34,7 +34,7 @@ export const Social = styled.div`
   font-size: 14px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 20px;
 `;
 
 export const SocialLink = styled.a`
@@ -43,7 +43,7 @@ export const SocialLink = styled.a`
 `;
 
 export const Image = styled.img`
-  width: 200px;
+  width: 205px;
   margin: 30px;
   border-radius: 18px;
   position: relative;

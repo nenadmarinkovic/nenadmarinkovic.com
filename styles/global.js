@@ -218,6 +218,11 @@ a:hover {
   }
 }
 
+.a-link {
+  color: rgb(14,144,219);
+  text-decoration: none
+}
+
 .slick-list:focus {
   outline: 0;
 }

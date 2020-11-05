@@ -24,8 +24,12 @@ function Footer() {
           <PortfolioIntro>
             <PortfolioIntroMain id="contact">Contact</PortfolioIntroMain>
             <PortfolioIntroSecond>
-              Portfolio websites, small to medium size company websites, content
-              management systems, e-commerce platforms, and more.
+              If you'd like to contact me, you can send me an email to {""}
+              <a className="a-link" href="mailto:nenadmarinkovic@protonmail.com">
+                nenadmarinkovic@protonmail.com
+              </a>
+              <br />
+              Or use the form below.
             </PortfolioIntroSecond>
           </PortfolioIntro>
         </div>

@@ -175,7 +175,7 @@ class Slide extends React.Component {
               <PortfolioIntro>
                 <PortfolioIntroMain id="projects">Projects</PortfolioIntroMain>
                 <PortfolioIntroSecond>
-                  Portfolio websites, small to medium size company websites.
+                  Showcase of professional and personal websites and web applications.
                 </PortfolioIntroSecond>
               </PortfolioIntro>
               <SlideContainer>

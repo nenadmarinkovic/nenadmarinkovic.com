@@ -21,7 +21,6 @@ export const Wrapper = styled.div`
   @media (max-width: 462px) {
     margin-top: -85px;
   }
-  
 `;
 
 export const Moon = styled.g`
