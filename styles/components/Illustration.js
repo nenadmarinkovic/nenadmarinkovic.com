@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Moon = styled.g`
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     display: none;
   }
 `;
