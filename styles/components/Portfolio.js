@@ -20,6 +20,10 @@ export const PortfolioIntro = styled.div`
   @media (max-width: 960px) {
     margin-top: 0;
   }
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const PortfolioInfo = styled.div`
@@ -61,6 +65,10 @@ export const PortfolioIntroSecond = styled.div`
     font-size: 20px;
     line-height: 1.7;
   }
+
+  @media (max-width: 360px) {
+    font-size: 18px;
+  }
 `;
 
 export const SlideContainer = styled.div`
@@ -69,7 +77,6 @@ export const SlideContainer = styled.div`
 `;
 
 export const SlideInfo = styled.div`
-  margin-top: -30px;
   display: flex;
   position: relative;
   flex-direction: row;

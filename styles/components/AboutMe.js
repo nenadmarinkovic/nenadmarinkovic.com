@@ -71,7 +71,7 @@ export const CenterMain = styled.div`
   margin-top: -200px;
 
   @media (max-width: 960px) {
-    margin-top: 0;
+    margin-top: -80px;
   }
 `;
 
@@ -88,5 +88,9 @@ export const CenterSecond = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 18px;
   }
 `;

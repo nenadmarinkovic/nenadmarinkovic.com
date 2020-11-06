@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, Button } from "../styles/components/FormText";
+import { Text, Button, RocketText } from "../styles/components/FormText";
 import Rocket from "./Rocket";
 
 function FormText() {
@@ -8,8 +8,7 @@ function FormText() {
 
   return (
     <Text>
-      <div
-        style={{ paddingTop: "10px" }}
+      <RocketText
         onTouchEnd={() => {
           !launch
             ? setText("the rocket with me?")
@@ -21,8 +20,7 @@ function FormText() {
           }, 2000);
         }}
       >
-        From your idea and project's goals, to building and global
-        deployment.
+        From your idea and project's goals, to building and global deployment.
         <br></br> Ready to{" "}
         <Button
           style={
@@ -40,7 +38,7 @@ function FormText() {
           launch
         </Button>{" "}
         {text}
-      </div>
+      </RocketText>
       <Rocket launch={launch} />
     </Text>
   );

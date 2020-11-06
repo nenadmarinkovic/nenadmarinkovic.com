@@ -11,8 +11,8 @@ export const Text = styled.main`
   justify-content: space-between;
 
   @media (max-width: 768px) {
-   width: 100%;
-   text-align: center;
+    width: 100%;
+    text-align: center;
   }
 `;
 
@@ -32,5 +32,17 @@ export const Button = styled.button`
     outline: none;
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
     border-radius: 5px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 18px;
+  }
+`;
+
+export const RocketText = styled.div`
+  padding-top: 10px;
+
+  @media (max-width: 360px) {
+    font-size: 18px;
   }
 `;
