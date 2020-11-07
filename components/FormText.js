@@ -20,7 +20,7 @@ function FormText() {
           }, 2000);
         }}
       >
-        From your idea and project's goals, to building and global deployment.
+        From idea and goals, to design and global deployment.
         <br></br> Ready to{" "}
         <Button
           style={

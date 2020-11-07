@@ -38,7 +38,7 @@ export const PortfolioInfo = styled.div`
 `;
 
 export const PortfolioIntroMain = styled.div`
-  margin-top: 105px;
+  margin-top: 95px;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -125,7 +125,7 @@ export const SlideDetails = styled.div`
   background: white;
   border-radius: 18px;
   color: #040428;
-  padding: 40px;
+  padding: 30px;
   box-shadow: ${({ theme }) => theme.cardShadow};
 
   @media (max-width: 960px) {
