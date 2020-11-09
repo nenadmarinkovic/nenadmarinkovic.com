@@ -391,6 +391,7 @@ a:hover {
   display: inline-block;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   opacity: 1;
+  width: 40px;
 }
 
 .slideshow--out .slide-count-num  {
