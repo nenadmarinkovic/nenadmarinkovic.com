@@ -48,7 +48,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Flickschuh Wien",
-          imageUrl: "https://i.ibb.co/NshSTm2/flickschuh.png",
+          imageUrl: "https://i.ibb.co/h9dskFk/flickschuh.png",
           description:
             "Flickschuh Wien is bike service from Vienna, Austria. It's a small project created with the help of Nextjs and styled-components, Leaflet Map, and nicely SVG illustrations.",
           details: {
