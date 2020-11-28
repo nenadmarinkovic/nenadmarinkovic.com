@@ -226,6 +226,7 @@ class Slide extends React.Component {
                           <SlideSubtitle>Website's link</SlideSubtitle>
                           <SlideDetailsDescription>
                             <WebLink
+                              target="_blank"
                               href={`https://${this.props.details.link}`}
                             >
                               {this.props.details.link}
