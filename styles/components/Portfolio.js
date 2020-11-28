@@ -82,10 +82,12 @@ export const SlideInfo = styled.div`
   flex-direction: row;
   overflow: hidden;
   justify-content: space-between;
+  margin-bottom: -10px;
 
   @media (max-width: 960px) {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
   }
 `;
 
@@ -100,6 +102,12 @@ export const SlideInfoDescription = styled.p`
   line-height: 1.7em;
   font-size: 17px;
   color: ${({ theme }) => theme.text};
+  width: 600px;
+
+  @media (max-width: 960px) {
+   width: 100%;
+  }
+
 `;
 
 export const SlideCountTitle = styled.p`
@@ -172,6 +180,11 @@ export const SlideArrows = styled.div`
   @media (max-width: 960px) {
     margin-top: 0;
   }
+`;
+
+export const WebLink = styled.a`
+  text-decoration: none;
+  color: #040428;
 `;
 
 export const PrevArrow = styled.svg`

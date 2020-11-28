@@ -18,6 +18,7 @@ import {
   PortfolioIntroMain,
   PortfolioIntroSecond,
   ImageWrapper,
+  WebLink,
 } from "../styles/components/Portfolio";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
@@ -36,35 +37,23 @@ class Portfolio extends React.Component {
       slides: [
         {
           title: "Reuse",
-          imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
+          imageUrl: "https://i.ibb.co/wW9zvhB/reuse.png",
           description:
-            "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
+            "Reuse is web application aimed at solving my personal need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data from Github, Gatsby for interface, and Emotion, a CSS-in-JS solution for styling components. Reuse is an ongoing project, free and open-source.",
           details: {
-            technology: "React, Gatsby, CSS, styled-components",
+            technology: "React, GraphQL, Gatsby, Emotion, MDX",
             provider: "Vercel",
             link: "reuse.codes",
           },
         },
         {
           title: "Flickschuh Wien",
-          imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
+          imageUrl: "https://i.ibb.co/NshSTm2/flickschuh.png",
           description:
-            "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
+            "Flickschuh Wien is bike service from Vienna, Austria. It's a small project created with the help of Nextjs and styled-components, Leaflet Map, and nicely SVG illustrations.",
           details: {
-            technology: "React, Gatsby, CSS, styled-components",
-            provider: "Geroku",
-            link: "draft.network",
-          },
-        },
-        {
-          title: "Draft  Network",
-          imageUrl: "https://i.ibb.co/1JFVKvL/smartmockups-kgkkuo79.png",
-          description:
-            "Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more. Portfolio websites, small to medium size company websites, content management systems, e-commerce platforms, and more.",
-
-          details: {
-            technology: "React, Gatsby, CSS, styled-components",
-            provider: "Geroku",
+            technology: "React, Nextjs, styled-components, Leaflet Map",
+            provider: "Vercel",
             link: "flickschuh.wien",
           },
         },
@@ -189,7 +178,6 @@ class Slide extends React.Component {
                       </SlideInfoDescription>
                     </Fade>
                   </div>
-
                   <div>
                     <Fade bottom delay={650} duration={400}>
                       <ImageWrapper>
@@ -237,7 +225,11 @@ class Slide extends React.Component {
                         <div className="slide-details-block slide-three">
                           <SlideSubtitle>Website's link</SlideSubtitle>
                           <SlideDetailsDescription>
-                            {this.props.details.link}
+                            <WebLink
+                              href={`https://${this.props.details.link}`}
+                            >
+                              {this.props.details.link}
+                            </WebLink>
                           </SlideDetailsDescription>
                         </div>
                       </SlideDetails>
