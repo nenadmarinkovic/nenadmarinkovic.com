@@ -4,8 +4,9 @@
 
 - Banner with header
 - Work
-- Portfolio
 - Technologies
+- Portfolio
+- About
 - Footer with contact form
 
 ## Getting Started
