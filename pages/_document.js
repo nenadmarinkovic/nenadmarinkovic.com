@@ -12,10 +12,6 @@ class WebSite extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <meta
             name="description"
             content="Personal Web Development and Design Website."
           />
