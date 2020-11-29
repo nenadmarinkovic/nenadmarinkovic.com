@@ -17,7 +17,7 @@ class WebSite extends Document {
           />
           <meta
             name="description"
-            content="Personal Web Development and Design Portfolio"
+            content="Personal Web Development and Design Website."
           />
           <meta name="author" content="Nenad Marinković" />
         </Head>

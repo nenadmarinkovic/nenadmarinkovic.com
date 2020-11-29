@@ -14,7 +14,7 @@ import {
   Copyright,
 } from "../styles/components/ContactForm";
 
-export default () => {
+export default function ContactForm() {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,

@@ -20,6 +20,7 @@ import {
   ImageWrapper,
   WebLink,
 } from "../styles/components/Portfolio";
+import Image from "next/image";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
 import Fade from "react-reveal/Fade";
@@ -37,7 +38,7 @@ class Portfolio extends React.Component {
       slides: [
         {
           title: "Reuse",
-          imageUrl: "https://i.ibb.co/wW9zvhB/reuse.png",
+          imageUrl: "reuse.png",
           description:
             "Reuse is web application aimed at solving my personal need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data from Github, Gatsby for interface, and Emotion, a CSS-in-JS solution for styling components. Reuse is an ongoing project, free and open-source.",
           details: {
@@ -48,11 +49,11 @@ class Portfolio extends React.Component {
         },
         {
           title: "Flickschuh Wien",
-          imageUrl: "https://i.ibb.co/h9dskFk/flickschuh.png",
+          imageUrl: "flickschuh.png",
           description:
-            "Flickschuh Wien is bike service from Vienna, Austria. It's a small project created with the help of Nextjs and styled-components, Leaflet Map, and nicely SVG illustrations.",
+            "Flickschuh Wien is bike service from Vienna, Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nicely SVG illustration.",
           details: {
-            technology: "React, Nextjs, styled-components, Leaflet Map",
+            technology: "React, Next.js, styled-components, Leaflet Map",
             provider: "Vercel",
             link: "flickschuh.wien",
           },
@@ -151,7 +152,6 @@ class Portfolio extends React.Component {
 class Slide extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props.theme);
     this.state = {};
   }
   render() {
@@ -181,9 +181,11 @@ class Slide extends React.Component {
                   <div>
                     <Fade bottom delay={650} duration={400}>
                       <ImageWrapper>
-                        <img
-                          src={this.props.image}
-                          alt={this.props.title}
+                        <Image
+                          src={`/${this.props.image}`}
+                          alt="Picture of the project"
+                          width={430}
+                          height={250}
                           className="slide-info-image"
                         />
                       </ImageWrapper>
