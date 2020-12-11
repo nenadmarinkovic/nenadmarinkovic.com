@@ -48,10 +48,21 @@ class Portfolio extends React.Component {
           },
         },
         {
+          title: "Diversify",
+          imageUrl: "diversify.png",
+          description:
+            "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering.",
+          details: {
+            technology: "React, Gatsby, styled-components, Formspree",
+            provider: "Vercel",
+            link: "diversify.team",
+          },
+        },
+        {
           title: "Flickschuh Wien",
           imageUrl: "flickschuh.png",
           description:
-            "Flickschuh Wien is bike service from Vienna, Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nicely SVG illustration.",
+            "Flickschuh Wien is bike service from Vienna, Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
             technology: "React, Next.js, styled-components, Leaflet Map",
             provider: "Vercel",
