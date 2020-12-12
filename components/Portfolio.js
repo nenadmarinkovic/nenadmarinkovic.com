@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
       slides: [
         {
           title: "Reuse",
-          imageUrl: "reuse.png",
+          imageUrl: "/reuse.png",
           description:
             "Reuse is web application aimed at solving my personal need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data from Github, Gatsby for interface, and Emotion, a CSS-in-JS solution for styling components. Reuse is an ongoing project, free and open-source.",
           details: {
@@ -49,7 +49,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Diversify",
-          imageUrl: "diversify.png",
+          imageUrl: "/diversify.png",
           description:
             "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering.",
           details: {
@@ -60,7 +60,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Flickschuh Wien",
-          imageUrl: "flickschuh.png",
+          imageUrl: "/flickschuh.png",
           description:
             "Flickschuh Wien is bike service from Vienna, Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
@@ -193,7 +193,7 @@ class Slide extends React.Component {
                     <Fade bottom delay={650} duration={400}>
                       <ImageWrapper>
                         <Image
-                          src={`/${this.props.image}`}
+                          src={`${this.props.image}`}
                           alt="Picture of the project"
                           width={430}
                           height={250}
