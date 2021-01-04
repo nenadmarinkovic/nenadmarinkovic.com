@@ -51,7 +51,7 @@ class Portfolio extends React.Component {
           title: "Diversify",
           imageUrl: "/diversify.png",
           description:
-            "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering.",
+            "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering. Diversify is build with Gatsby, and styled with styled-components.",
           details: {
             technology: "React, Gatsby, styled-components, Formspree",
             provider: "Vercel",
@@ -59,10 +59,21 @@ class Portfolio extends React.Component {
           },
         },
         {
+          title: "Melodrom",
+          imageUrl: "/melodrom.png",
+          description:
+            "Melodrom is a piano and solfeggio workshop from Serbia. The workshop wants to bring music to everyone interested, but especially children and young adults. Project is build with Next.js, React, React-Piano, Leaflet Map, styled-components.",
+          details: {
+            technology: "React, Next.js, styled-components, Formspree",
+            provider: "Vercel",
+            link: "melodrom.rs",
+          },
+        },
+        {
           title: "Flickschuh Wien",
           imageUrl: "/flickschuh.png",
           description:
-            "Flickschuh Wien is bike service from Vienna, Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
+            "Flickschuh Wien is bike service from Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
             technology: "React, Next.js, styled-components, Leaflet Map",
             provider: "Vercel",

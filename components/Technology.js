@@ -7,7 +7,8 @@ class Technology extends React.Component {
   render() {
     const settings = {
       infinite: true,
-      slidesToShow: 5,
+      arrows: false,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 1000,
