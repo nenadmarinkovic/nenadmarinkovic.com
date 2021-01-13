@@ -20,7 +20,6 @@ function Header(props) {
     if (node.current.contains(e.target)) {
       return;
     }
-
     setOpen(false);
   };
 
@@ -64,7 +63,7 @@ function Header(props) {
                 <Button>About me</Button>
               </ScrollIntoView>
             </HeaderLink>
-        
+
             <HeaderLink>
               <ScrollIntoView selector="#contact" smooth={true}>
                 <Button>Contact</Button>
