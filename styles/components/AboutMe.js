@@ -17,8 +17,9 @@ export const Flex = styled.div`
 export const Text = styled.div`
   font-size: 18px;
   line-height: 1.8;
-  width: 55%;
+  width: 56%;
   margin-left: 30px;
+  text-align: justify;
 
   @media (max-width: 800px) {
     width: 100%;

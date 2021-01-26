@@ -103,11 +103,11 @@ export const SlideInfoDescription = styled.p`
   font-size: 17px;
   color: ${({ theme }) => theme.text};
   width: 600px;
+  text-align: justify;
 
   @media (max-width: 960px) {
-   width: 100%;
+    width: 100%;
   }
-
 `;
 
 export const SlideCountTitle = styled.p`

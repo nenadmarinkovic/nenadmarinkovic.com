@@ -26,17 +26,9 @@ function AboutMe() {
           Although I graduated from sociology and political sciences, my love
           for computers and the internet led me to the world of web design and
           development. Quickly, I begin to appreciate a well-written code,
-          typography, harmonious and functional design. I started my career at a
-          web agency called{" "}
-          <a
-            className="a-link"
-            href="https://www.popwebdesign.net/index_eng.html"
-            target="_blank"
-            rel="nofollow"
-          >
-            Popart Studio
-          </a>{" "}
-          in Novi Sad, Serbia. Now, I am living with my wife in Vienna, Austria.
+          typography, harmonious and functional design. I started my career at
+          Popart Studio, a web agency from Novi Sad, Serbia. Now, I'm living
+          with my wife in Vienna, Austria, and working at abss interactive GmbH.
           If not coding, I'm probably discovering the city or hiking in the
           beautiful Alps.
           <Fade bottom delay={1200} duration={500}>
