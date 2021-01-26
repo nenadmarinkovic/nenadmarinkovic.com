@@ -17,7 +17,7 @@ export const Flex = styled.div`
 export const Text = styled.div`
   font-size: 18px;
   line-height: 1.8;
-  width: 56%;
+  width: 57%;
   margin-left: 30px;
   text-align: justify;
 
