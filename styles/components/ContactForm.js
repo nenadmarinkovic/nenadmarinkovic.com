@@ -61,8 +61,6 @@ export const TextArea = styled.textarea`
   border-radius: 5px;
   color: ${({ theme }) => theme.text};
   padding: 0.5em;
-  vertical-align: middle;
-  white-space: normal;
   background: none;
   line-height: 1;
   font-size: 1rem;
