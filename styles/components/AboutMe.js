@@ -14,7 +14,7 @@ export const Flex = styled.div`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.div`
   font-size: 18px;
   line-height: 1.8;
   width: 57%;
