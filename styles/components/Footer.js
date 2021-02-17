@@ -17,6 +17,9 @@ export const FooterContainer = styled.div`
 `;
 
 export const Wave = styled.div`
-  filter: ${({ theme }) => theme.filterWave};
   height: 30px;
+`;
+
+export const WaveSVG = styled.svg`
+  fill: ${({ theme }) => theme.filterWave};
 `;
