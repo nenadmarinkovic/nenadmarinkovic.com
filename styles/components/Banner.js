@@ -58,6 +58,10 @@ export const BannerWrapper = styled.div`
   @media (max-width: 462px) {
     height: 550px;
   }
+
+  @media (min-width: 1540px) {
+    width: 1440px;
+  }
 `;
 
 export const FlexWrap = styled.div`

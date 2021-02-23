@@ -78,6 +78,10 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     margin: 0 auto;
     padding: 10px 15px 0 15px;
+
+    @media (min-width: 1540px) {
+      width: 1440px;
+    }
   }
 
   .contact-button {
