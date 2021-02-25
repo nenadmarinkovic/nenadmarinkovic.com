@@ -60,7 +60,7 @@ export const BannerWrapper = styled.div`
   }
 
   @media (min-width: 1540px) {
-    width: 1440px;
+    width: 1280px;
   }
 `;
 

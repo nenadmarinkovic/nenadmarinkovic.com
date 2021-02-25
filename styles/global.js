@@ -80,7 +80,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 10px 15px 0 15px;
 
     @media (min-width: 1540px) {
-      width: 1440px;
+      width: 1280px;
     }
   }
 
