@@ -92,12 +92,6 @@ export const GlobalStyles = createGlobalStyle`
     width: 60px;
     filter: invert(6%) sepia(73%) saturate(2050%) hue-rotate(227deg) brightness(90%) contrast(110%);
   }
-
-  #id {
-    @media (min-width: 1280px) {
-     margin-top: 180px;
-    }
-  }
   
   .menu-fixed {
     position: fixed;

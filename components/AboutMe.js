@@ -7,6 +7,7 @@ import {
   CenterSecond,
   Social,
   SocialLink,
+  TextContainer
 } from "../styles/components/AboutMe";
 import Fade from "react-reveal/Fade";
 
@@ -22,6 +23,7 @@ function AboutMe() {
       </div>
       <Flex>
         <Image src="/Portfolio.png" />
+        <TextContainer>
         <Text>
           Although I graduated from sociology and political sciences, my love
           for computers and the internet led me to the world of web design and
@@ -31,6 +33,7 @@ function AboutMe() {
           with my wife in Vienna, Austria, and working at abss interactive GmbH.
           If not coding, I'm probably discovering the city or hiking in the
           beautiful Alps.
+          </Text>
           <Fade bottom delay={1200} duration={500}>
             <Social>
               Also available on:
@@ -75,7 +78,7 @@ function AboutMe() {
               </SocialLink>
             </Social>
           </Fade>
-        </Text>
+          </TextContainer>
       </Flex>
     </div>
   );

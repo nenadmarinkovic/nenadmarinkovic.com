@@ -14,6 +14,10 @@ export const FooterContainer = styled.div`
   @media (max-width: 460px) {
     top: 0px;
   }
+
+  @media (min-width: 1480px) {
+    top: 180px;
+  }
 `;
 
 export const Wave = styled.div`

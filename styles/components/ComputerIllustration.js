@@ -3,6 +3,14 @@ import styled, { keyframes } from "styled-components";
 export const SVG = styled.svg`
   width: 100%;
   height: 100%;
+
+  @media (max-width: 960px) {
+    width: 50%;
+  }
+
+  @media (max-width: 540px) {
+    width: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`

@@ -17,8 +17,8 @@ export const Flex = styled.div`
 export const Text = styled.p`
   font-size: 18px;
   line-height: 1.8;
-  width: 57%;
-  margin-left: 30px;
+
+  margin-left: 5px;
   text-align: justify;
 
   @media (max-width: 800px) {
@@ -27,7 +27,20 @@ export const Text = styled.p`
   }
 `;
 
-export const Social = styled.div`
+export const TextContainer = styled.div`
+  width: 58%;
+  @media (max-width: 960px) {
+    width: 78%;
+  }
+
+  @media (max-width: 540px) {
+    width: 100%;
+  }
+`;
+
+TextContainer;
+
+export const Social = styled.p`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
   font-weight: 700;
@@ -58,8 +71,12 @@ export const Image = styled.img`
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    width: 70%;
     padding-right: 0;
+  }
+
+  @media (max-width: 340px) {
+    width: 100%;
   }
 `;
 

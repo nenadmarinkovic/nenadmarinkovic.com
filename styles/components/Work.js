@@ -73,7 +73,7 @@ export const WorkWrap = styled.div`
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
+  margin-bottom: 160px;
 
   @media (max-width: 960px) {
     flex-direction: column;
