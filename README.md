@@ -3,11 +3,11 @@
 #### Structure
 
 - Banner with header
-- Work
-- Technologies
-- Portfolio
-- About
-- Footer with contact form
+- Work I do
+- Technologies I use
+- Portfolio with personal and professional projects
+- About me section with short bio
+- Footer with contact form and email address
 
 ## Getting Started
 
