@@ -40,7 +40,7 @@ class Portfolio extends React.Component {
           title: "Reuse",
           imageUrl: "/reuse.png",
           description:
-            "Reuse is web application aimed at solving my personal need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data from Github, Gatsby for interface, and Emotion, a CSS-in-JS solution for styling components. Reuse is an ongoing project, free and open-source.",
+            "Reuse is web application aimed at solving developer's need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data, Gatsby for the front-end, and Emotion for styling components. Reuse is an ongoing project, free and open-source.",
           details: {
             technology: "React, GraphQL, Gatsby, Emotion, MDX",
             provider: "Vercel",
@@ -51,7 +51,7 @@ class Portfolio extends React.Component {
           title: "Diversify",
           imageUrl: "/diversify.png",
           description:
-            "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering. Diversify is build with Gatsby, and styled with styled-components.",
+            "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering. Diversify is build with Gatsby, and styled with styled-components. ",
           details: {
             technology: "React, Gatsby, styled-components, Formspree",
             provider: "Vercel",
@@ -62,7 +62,7 @@ class Portfolio extends React.Component {
           title: "Melodrom",
           imageUrl: "/melodrom.png",
           description:
-            "Melodrom is a piano and solfeggio workshop from Serbia. The workshop wants to bring music to everyone interested, but especially children and young adults. Project is build with Next.js, React, React-Piano, Leaflet Map, styled-components.",
+            "Melodrom is a piano and solfeggio workshop from Lapovo, Serbia. The workshop wants to bring music to everyone interested, but especially children and young adults. Project is build with Next.js, React, React-Piano, Leaflet Map, and styled with styled-components.",
           details: {
             technology: "React, Next.js, styled-components, Formspree",
             provider: "Vercel",
@@ -73,7 +73,7 @@ class Portfolio extends React.Component {
           title: "Flickschuh Wien",
           imageUrl: "/flickschuh.png",
           description:
-            "Flickschuh Wien is bike service from Austria. Its a small project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
+            "Flickschuh Wien is a bike service from Vienna, Austria. Its a small presentational project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
             technology: "React, Next.js, styled-components, Leaflet Map",
             provider: "Vercel",

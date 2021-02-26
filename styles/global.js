@@ -297,15 +297,24 @@ a:hover {
 }
 
 .slide-info-text {
-  height: 320px;
+  height: 280px;
   z-index: 2;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
   @media (max-width: 960px) {
+    height: 240px;
     width: 100%;
     text-align: center;
     padding-bottom: 70px;
+  }
+
+  @media (max-width: 520px) {
+    height: 300px;
+  }
+
+  @media (max-width: 380px) {
+    height: 320px;
   }
 }
 
