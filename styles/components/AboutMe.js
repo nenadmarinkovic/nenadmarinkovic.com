@@ -33,7 +33,7 @@ export const TextContainer = styled.div`
     width: 78%;
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 800px) {
     width: 100%;
   }
 `;
@@ -63,13 +63,27 @@ export const Image = styled.img`
   padding-right: 10px;
   pointer-events: none;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1160px) {
     width: 260px;
+    margin: 0;
+    margin-right: 30px;
     padding-right: 0;
+  }
+
+  @media (max-width: 830px) {
+    width: 280px;
+    margin: 0;
+    margin-right: 30px;
+    padding-right: 0;
+  }
+  
+  @media (max-width: 800px) {
+    margin: 0;
   }
 
   @media (max-width: 480px) {
     width: 70%;
+    margin: 0;
     padding-right: 0;
   }
 
