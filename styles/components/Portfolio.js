@@ -139,6 +139,11 @@ export const SlideDetails = styled.div`
   @media (max-width: 960px) {
     width: 100%;
   }
+
+  @media (max-width: 766px) {
+    width: 100%;
+    height: 420px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -171,6 +176,10 @@ export const SlideDetailsDescription = styled.p`
   font-size: 0.8em;
   line-height: 1.3em;
   font-size: 16px;
+
+  @media (max-width: 766px) {
+    line-height: 1.8;
+  }
 `;
 
 export const SlideArrows = styled.div`
