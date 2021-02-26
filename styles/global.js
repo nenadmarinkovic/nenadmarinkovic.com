@@ -314,7 +314,7 @@ a:hover {
   }
 
   @media (max-width: 380px) {
-    height: 320px;
+    height: 360px;
   }
 }
 
