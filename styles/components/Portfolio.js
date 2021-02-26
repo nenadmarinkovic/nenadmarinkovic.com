@@ -142,12 +142,18 @@ export const SlideDetails = styled.div`
 
   @media (max-width: 766px) {
     width: 100%;
-    height: 420px;
+    height: 400px;
   }
 `;
 
 export const ImageWrapper = styled.div`
   text-align: end;
+`;
+
+export const PortfolioContent = styled.div`
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const SlideDetailsTitle = styled.p`
