@@ -38,8 +38,6 @@ export const TextContainer = styled.div`
   }
 `;
 
-TextContainer;
-
 export const Social = styled.p`
   color: rgb(14, 144, 219);
   text-transform: uppercase;
@@ -88,8 +86,20 @@ export const CenterMain = styled.div`
   padding-top: 20px;
   margin-top: -200px;
 
+  @media (max-width: 1260px) {
+    margin-top: -120px;
+  }
+
   @media (max-width: 960px) {
     margin-top: -80px;
+  }
+
+  @media (max-width: 760px) {
+    margin-top: -20px;
+  }
+
+  @media (min-width: 1860px) {
+    margin-top: -250px;
   }
 `;
 
