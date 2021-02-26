@@ -101,6 +101,10 @@ export const CenterMain = styled.div`
   @media (min-width: 1860px) {
     margin-top: -250px;
   }
+
+  @media (min-width: 2000px) {
+    margin-top: -320px;
+  }
 `;
 
 export const CenterSecond = styled.div`
