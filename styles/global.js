@@ -297,6 +297,7 @@ a:hover {
 }
 
 .slide-info-text {
+  height: 320px;
   z-index: 2;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
