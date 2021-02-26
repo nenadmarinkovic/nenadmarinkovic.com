@@ -45,6 +45,7 @@ export const Social = styled.p`
   letter-spacing: 0.5px;
   font-size: 14px;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   margin-top: 20px;
 `;
