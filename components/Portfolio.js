@@ -21,7 +21,6 @@ import {
   WebLink,
   PortfolioContent
 } from "../styles/components/Portfolio";
-// import Image from "next/image";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
 import Fade from "react-reveal/Fade";
@@ -39,7 +38,7 @@ class Portfolio extends React.Component {
       slides: [
         {
           title: "Reuse",
-          imageUrl: "/reuse-high.png",
+          imageUrl: "/reuse.png",
           description:
             "Reuse is web application aimed at solving developer's need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data, Gatsby for the front-end, and Emotion for styling components. Reuse is an ongoing project, free and open-source.",
           details: {
@@ -50,7 +49,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Diversify",
-          imageUrl: "/diversify-high.png",
+          imageUrl: "/diversify.png",
           description:
             "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering. Diversify is build with Gatsby, and styled with styled-components. ",
           details: {
@@ -61,7 +60,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Melodrom",
-          imageUrl: "/melodrom-high.png",
+          imageUrl: "/melodrom.png",
           description:
             "Melodrom is a piano and solfeggio workshop from Lapovo, Serbia. The workshop wants to bring music to everyone interested, but especially children and young adults. Project is build with Next.js, React, React-Piano, Leaflet Map, and styled with styled-components.",
           details: {
@@ -72,7 +71,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Flickschuh Wien",
-          imageUrl: "/flickschuh-high.png",
+          imageUrl: "/flickschuh.png",
           description:
             "Flickschuh Wien is a bike service from Vienna, Austria. Its a small presentational project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
@@ -207,7 +206,6 @@ class Slide extends React.Component {
                         <img
                           src={`${this.props.image}`}
                           alt="Picture of the project"
-                        
                           className="slide-info-image"
                         />
                       </ImageWrapper>

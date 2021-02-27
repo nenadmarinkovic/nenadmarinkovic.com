@@ -335,7 +335,7 @@ a:hover {
 }
 
 .slide-info-image {
-  width: 90%;
+  width: 95%;
   right: 0;
   opacity: 1;
   transform: translateY(0) scale(1);
