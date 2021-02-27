@@ -39,7 +39,7 @@ class Portfolio extends React.Component {
       slides: [
         {
           title: "Reuse",
-          imageUrl: "/reuse.png",
+          imageUrl: "/reuse-high.png",
           description:
             "Reuse is web application aimed at solving developer's need for managing code patterns. Application uses .mdx format for highlighting code, GraphQL API for quering data, Gatsby for the front-end, and Emotion for styling components. Reuse is an ongoing project, free and open-source.",
           details: {
@@ -50,7 +50,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Diversify",
-          imageUrl: "/diversify.png",
+          imageUrl: "/diversify-high.png",
           description:
             "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering. Diversify is build with Gatsby, and styled with styled-components. ",
           details: {
@@ -61,7 +61,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Melodrom",
-          imageUrl: "/melodrom.png",
+          imageUrl: "/melodrom-high.png",
           description:
             "Melodrom is a piano and solfeggio workshop from Lapovo, Serbia. The workshop wants to bring music to everyone interested, but especially children and young adults. Project is build with Next.js, React, React-Piano, Leaflet Map, and styled with styled-components.",
           details: {
@@ -72,7 +72,7 @@ class Portfolio extends React.Component {
         },
         {
           title: "Flickschuh Wien",
-          imageUrl: "/flickschuh.png",
+          imageUrl: "/flickschuh-high.png",
           description:
             "Flickschuh Wien is a bike service from Vienna, Austria. Its a small presentational project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
