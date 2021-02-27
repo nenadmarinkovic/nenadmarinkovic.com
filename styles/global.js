@@ -300,7 +300,7 @@ a:hover {
   height: 280px;
   z-index: 2;
   opacity: 1;
-  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.35s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
   @media (max-width: 960px) {
     height: 240px;
