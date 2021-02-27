@@ -133,7 +133,7 @@ export const SlideDetails = styled.div`
   background: white;
   border-radius: 18px;
   color: #040428;
-  padding: 30px;
+  padding: 20px 30px;
   box-shadow: ${({ theme }) => theme.cardShadow};
 
   @media (max-width: 960px) {
@@ -161,7 +161,7 @@ export const SlideDetailsTitle = styled.p`
   font-weight: 700;
   font-size: 23px;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 `;
 
 export const SlideSubtitle = styled.h3`
