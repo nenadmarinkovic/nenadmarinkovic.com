@@ -21,7 +21,7 @@ import {
   WebLink,
   PortfolioContent
 } from "../styles/components/Portfolio";
-import Image from "next/image";
+// import Image from "next/image";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
 import Fade from "react-reveal/Fade";
@@ -204,11 +204,10 @@ class Slide extends React.Component {
                   <div >
                     <Fade bottom delay={650} duration={400}>
                       <ImageWrapper>
-                        <Image
+                        <img
                           src={`${this.props.image}`}
                           alt="Picture of the project"
-                          width={430}
-                          height={250}
+                        
                           className="slide-info-image"
                         />
                       </ImageWrapper>
