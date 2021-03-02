@@ -101,6 +101,7 @@ export const SlideInfoTitle = styled.h1`
 export const SlideInfoDescription = styled.p`
   line-height: 1.7em;
   font-size: 17px;
+  font-weight: 300;
   color: ${({ theme }) => theme.text};
   width: 600px;
   text-align: justify;
