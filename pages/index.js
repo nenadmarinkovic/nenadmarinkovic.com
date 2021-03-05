@@ -62,7 +62,7 @@ export default function Home() {
               style={{
                 margin: "0",
                 fontWeight: "600",
-                fontSize: "38px",
+                fontSize: "35px",
                 paddingTop: "50px",
                 width: "100%",
               }}
