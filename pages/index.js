@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Nenad Marinković</title>
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -34,7 +34,7 @@ export default function Home() {
               margin: "0 auto",
               background: "#E3F0FA",
               color: "#2442ad",
-              fontFamily: "Inter",
+              fontFamily: "Nunito",
             }}
           >
             <p
@@ -54,15 +54,15 @@ export default function Home() {
               width: "960px",
               maxWidth: "100%",
               margin: "0 auto",
-              fontFamily: "Inter",
+              fontFamily: "Nunito",
               marginTop: "80px",
             }}
           >
             <p
               style={{
                 margin: "0",
-                fontWeight: "700",
-                fontSize: "32px",
+                fontWeight: "600",
+                fontSize: "38px",
                 paddingTop: "50px",
                 width: "100%",
               }}
@@ -72,7 +72,7 @@ export default function Home() {
             <p
               style={{
                 margin: "0",
-                fontSize: "18px",
+                fontSize: "21px",
                 paddingTop: "20px",
                 lineHeight: "2",
                 width: "100%",
@@ -84,7 +84,7 @@ export default function Home() {
             <div
               style={{
                 marginTop: "30px",
-                fontSize: "16px",
+                fontSize: "18px",
               }}
             >
               <p>Feel free to contact me. 📫</p>
