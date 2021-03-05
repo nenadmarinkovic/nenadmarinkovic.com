@@ -22,10 +22,9 @@ export default function Home() {
           style={{
             margin: "-10px",
             background: "#E3F0FA",
-            height: "100vh",
-            color: "#040428",
+            height: "95vh",
+            color: "#2442ad",
             padding: "20px",
-            paddingBottom: "160px",
           }}
         >
           <div
@@ -34,7 +33,7 @@ export default function Home() {
               maxWidth: "100%",
               margin: "0 auto",
               background: "#E3F0FA",
-              color: "#040428",
+              color: "#2442ad",
               fontFamily: "Inter",
             }}
           >
@@ -47,6 +46,7 @@ export default function Home() {
               }}
             >
               This website works best with JavaScript enabled in your browser.
+              🤷🏻‍♂️
             </p>
           </div>
           <div
@@ -55,14 +55,14 @@ export default function Home() {
               maxWidth: "100%",
               margin: "0 auto",
               fontFamily: "Inter",
-              marginTop: "120px",
+              marginTop: "80px",
             }}
           >
             <p
               style={{
                 margin: "0",
                 fontWeight: "700",
-                fontSize: "52px",
+                fontSize: "32px",
                 paddingTop: "50px",
                 width: "100%",
               }}
@@ -72,7 +72,7 @@ export default function Home() {
             <p
               style={{
                 margin: "0",
-                fontSize: "21px",
+                fontSize: "18px",
                 paddingTop: "20px",
                 lineHeight: "2",
                 width: "100%",
@@ -87,7 +87,7 @@ export default function Home() {
                 fontSize: "16px",
               }}
             >
-              <p>Feel free to contact me.</p>
+              <p>Feel free to contact me. 📫</p>
               <p>nenadmarinkovic@protonmail.com</p>
             </div>
             <div style={{ marginTop: "30px" }}>
@@ -97,7 +97,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/nenad-marinkovic/"
               >
                 <svg
-                  style={{ width: "30px" }}
+                  style={{ width: "30px", fill: "#2442ad" }}
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ export default function Home() {
                 href="https://www.github.com/nenadmarinkovic"
               >
                 <svg
-                  style={{ width: "30px", marginLeft: "15px" }}
+                  style={{ width: "30px", marginLeft: "15px", fill: "#2442ad" }}
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function Home() {
                 href="https://www.t.me/nenadmarinkovic"
               >
                 <svg
-                  style={{ width: "30px", marginLeft: "15px" }}
+                  style={{ width: "30px", marginLeft: "15px", fill: "#2442ad" }}
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
