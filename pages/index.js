@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Nenad Marinković</title>
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -21,9 +21,10 @@ export default function Home() {
         <section
           style={{
             margin: "-10px",
-            background: "#E3F0FA",
-            height: "95vh",
-            color: "#2442ad",
+            background:
+              "linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(34, 79, 142) 61%)",
+            height: "95.5vh",
+            color: "white",
             padding: "20px",
           }}
         >
@@ -32,8 +33,7 @@ export default function Home() {
               width: "960px",
               maxWidth: "100%",
               margin: "0 auto",
-              background: "#E3F0FA",
-              color: "#2442ad",
+              color: "white",
               fontFamily: "Nunito",
             }}
           >
@@ -61,8 +61,8 @@ export default function Home() {
             <p
               style={{
                 margin: "0",
-                fontWeight: "600",
-                fontSize: "35px",
+                fontWeight: "700",
+                fontSize: "38px",
                 paddingTop: "50px",
                 width: "100%",
               }}
@@ -72,8 +72,8 @@ export default function Home() {
             <p
               style={{
                 margin: "0",
-                fontSize: "21px",
-                paddingTop: "20px",
+                fontSize: "23px",
+                paddingTop: "10px",
                 lineHeight: "2",
                 width: "100%",
               }}
@@ -83,7 +83,7 @@ export default function Home() {
             </p>
             <div
               style={{
-                marginTop: "30px",
+                marginTop: "50px",
                 fontSize: "18px",
               }}
             >
@@ -97,7 +97,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/nenad-marinkovic/"
               >
                 <svg
-                  style={{ width: "30px", fill: "#2442ad" }}
+                  style={{ width: "30px", fill: "white" }}
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ export default function Home() {
                 href="https://www.github.com/nenadmarinkovic"
               >
                 <svg
-                  style={{ width: "30px", marginLeft: "15px", fill: "#2442ad" }}
+                  style={{ width: "30px", marginLeft: "15px", fill: "white" }}
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function Home() {
                 href="https://www.t.me/nenadmarinkovic"
               >
                 <svg
-                  style={{ width: "30px", marginLeft: "15px", fill: "#2442ad" }}
+                  style={{ width: "30px", marginLeft: "15px", fill: "white" }}
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
