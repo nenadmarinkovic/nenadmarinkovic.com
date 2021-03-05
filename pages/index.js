@@ -24,6 +24,8 @@ export default function Home() {
             background: "#E3F0FA",
             height: "100vh",
             color: "#040428",
+            padding: "20px",
+            paddingBottom: "160px",
           }}
         >
           <div
