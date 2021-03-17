@@ -22,9 +22,9 @@ export default function Home() {
           style={{
             margin: "-10px",
             background:
-              "linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(34, 79, 142) 61%)",
+              "linear-gradient(0deg, rgb(254, 227, 153) 0%, rgb(170, 211, 242) 70%)",
             height: "95.5vh",
-            color: "white",
+            color: "#040428",
             padding: "20px",
           }}
         >
@@ -33,7 +33,7 @@ export default function Home() {
               width: "960px",
               maxWidth: "100%",
               margin: "0 auto",
-              color: "white",
+              color: "#040428",
               fontFamily: "Nunito",
             }}
           >
@@ -62,7 +62,7 @@ export default function Home() {
               style={{
                 margin: "0",
                 fontWeight: "700",
-                fontSize: "38px",
+                fontSize: "42px",
                 paddingTop: "50px",
                 width: "100%",
               }}
@@ -72,7 +72,7 @@ export default function Home() {
             <p
               style={{
                 margin: "0",
-                fontSize: "23px",
+                fontSize: "21px",
                 paddingTop: "10px",
                 lineHeight: "2",
                 width: "100%",
@@ -97,7 +97,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/nenad-marinkovic/"
               >
                 <svg
-                  style={{ width: "30px", fill: "white" }}
+                  style={{ width: "30px", fill: "#040428" }}
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ export default function Home() {
                 href="https://www.github.com/nenadmarinkovic"
               >
                 <svg
-                  style={{ width: "30px", marginLeft: "15px", fill: "white" }}
+                  style={{ width: "30px", marginLeft: "15px", fill: "#040428" }}
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function Home() {
                 href="https://www.t.me/nenadmarinkovic"
               >
                 <svg
-                  style={{ width: "30px", marginLeft: "15px", fill: "white" }}
+                  style={{ width: "30px", marginLeft: "15px", fill: "#040428" }}
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
