@@ -19,8 +19,8 @@ import {
   PortfolioIntroSecond,
   ImageWrapper,
   WebLink,
+  PortfolioContent
 } from "../styles/components/Portfolio";
-import Image from "next/image";
 import WaveTop from "./WaveTop";
 import WaveBottom from "./WaveBottom";
 import Fade from "react-reveal/Fade";
@@ -53,7 +53,7 @@ class Portfolio extends React.Component {
           description:
             "Diversify is a project by Avuteq company aimed at promoting better inclusion of female professionals in the IT industry, especially in the fields of Product and Engineering. Diversify is build with Gatsby, and styled with styled-components. ",
           details: {
-            technology: "React, Gatsby, styled-components, Formspree",
+            technology: "React, Gatsby, styled-components",
             provider: "Vercel",
             link: "diversify.team",
           },
@@ -64,7 +64,7 @@ class Portfolio extends React.Component {
           description:
             "Melodrom is a piano and solfeggio workshop from Lapovo, Serbia. The workshop wants to bring music to everyone interested, but especially children and young adults. Project is build with Next.js, React, React-Piano, Leaflet Map, and styled with styled-components.",
           details: {
-            technology: "React, Next.js, styled-components, Formspree",
+            technology: "React, Next.js, styled-components",
             provider: "Vercel",
             link: "melodrom.rs",
           },
@@ -75,7 +75,7 @@ class Portfolio extends React.Component {
           description:
             "Flickschuh Wien is a bike service from Vienna, Austria. Its a small presentational project created with Next.js, styled-components, Leaflet Map, and nice SVG illustration.",
           details: {
-            technology: "React, Next.js, styled-components, Leaflet Map",
+            technology: "React, Next.js, Leaflet, styled-components",
             provider: "Vercel",
             link: "flickschuh.wien",
           },
@@ -200,14 +200,12 @@ class Slide extends React.Component {
                       </SlideInfoDescription>
                     </Fade>
                   </div>
-                  <div>
+                  <div >
                     <Fade bottom delay={650} duration={400}>
                       <ImageWrapper>
-                        <Image
+                        <img
                           src={`${this.props.image}`}
                           alt="Picture of the project"
-                          width={430}
-                          height={250}
                           className="slide-info-image"
                         />
                       </ImageWrapper>
@@ -227,7 +225,7 @@ class Slide extends React.Component {
                       </SlideCount>
                     </div>
                   </Fade>
-                  <div>
+                  <PortfolioContent>
                     <Fade bottom delay={1150} duration={400}>
                       <SlideDetails>
                         <SlideDetailsTitle>Project details</SlideDetailsTitle>
@@ -259,7 +257,7 @@ class Slide extends React.Component {
                         </div>
                       </SlideDetails>
                     </Fade>
-                  </div>
+                  </PortfolioContent>
                 </PortfolioInfo>
               </SlideContainer>
               <SlideArrows>

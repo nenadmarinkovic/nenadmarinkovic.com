@@ -98,7 +98,8 @@ export const WorkDetails = styled.div`
   }
 `;
 
-export const ListItem = styled.div`
+export const ListItem = styled.p`
   list-style: none;
   line-height: 1.8;
+  font-weight: 300;
 `;

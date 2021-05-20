@@ -300,7 +300,7 @@ a:hover {
   height: 280px;
   z-index: 2;
   opacity: 1;
-  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.35s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
   @media (max-width: 960px) {
     height: 240px;
@@ -314,7 +314,7 @@ a:hover {
   }
 
   @media (max-width: 380px) {
-    height: 320px;
+    height: 360px;
   }
 }
 
@@ -335,7 +335,7 @@ a:hover {
 }
 
 .slide-info-image {
-  width: 90%;
+  width: 95%;
   right: 0;
   opacity: 1;
   transform: translateY(0) scale(1);
@@ -461,5 +461,4 @@ a:hover {
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
 }
-
 `;

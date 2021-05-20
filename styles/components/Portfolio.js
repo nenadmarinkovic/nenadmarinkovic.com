@@ -101,6 +101,7 @@ export const SlideInfoTitle = styled.h1`
 export const SlideInfoDescription = styled.p`
   line-height: 1.7em;
   font-size: 17px;
+  font-weight: 300;
   color: ${({ theme }) => theme.text};
   width: 600px;
   text-align: justify;
@@ -133,11 +134,16 @@ export const SlideDetails = styled.div`
   background: white;
   border-radius: 18px;
   color: #040428;
-  padding: 30px;
+  padding: 20px 30px;
   box-shadow: ${({ theme }) => theme.cardShadow};
 
   @media (max-width: 960px) {
     width: 100%;
+  }
+
+  @media (max-width: 766px) {
+    width: 100%;
+    height: 400px;
   }
 `;
 
@@ -145,12 +151,18 @@ export const ImageWrapper = styled.div`
   text-align: end;
 `;
 
+export const PortfolioContent = styled.div`
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
 export const SlideDetailsTitle = styled.p`
   width: 100%;
   font-weight: 700;
   font-size: 23px;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 `;
 
 export const SlideSubtitle = styled.h3`
@@ -171,6 +183,10 @@ export const SlideDetailsDescription = styled.p`
   font-size: 0.8em;
   line-height: 1.3em;
   font-size: 16px;
+
+  @media (max-width: 766px) {
+    line-height: 1.8;
+  }
 `;
 
 export const SlideArrows = styled.div`
