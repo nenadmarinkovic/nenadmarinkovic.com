@@ -100,10 +100,13 @@ export const Button = styled.button`
 `;
 
 export const Error = styled.div`
-  background: #ee0000;
+  background: #ff6961;
   color: #fff;
   margin-top: 16px;
   text-align: center;
+  border-radius: 20px;
+  padding: 8px;
+  font-size: 1rem;
 `;
 
 export const Message = styled.p`
