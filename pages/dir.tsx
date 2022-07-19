@@ -84,8 +84,7 @@ const DirectoryPage: NextPage = ({
             <Banner name="Directory" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                Web directory for notes, bookmarks, photos, snippets,
-                AI-generated texts, and the things I’m interested in. Content is{" "}
+                Web directory for notes, bookmarks, resources, and the things I’m interested in. Content is{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
