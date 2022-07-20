@@ -37,6 +37,14 @@ export const TagSpan = styled.span`
     background: #c75216;
   }
 
+  &.teal {
+    background: #168dc7;
+  }
+
+  &.velvet {
+    background: #842C90;
+  }
+
   &.black {
     background: ${({ theme }) => theme.backgroundLightReverse};
     color: ${({ theme }) => theme.colorReverse};

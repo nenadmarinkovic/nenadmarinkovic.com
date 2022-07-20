@@ -51,7 +51,8 @@ const ProjectsPage: NextPage = ({
             <Banner name="Projects" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                An overview of personal web projects I currently work on, including technical details and insights.
+                An overview of personal web projects I currently work on,
+                including technical details and insights.
               </Introduction>
             </Flex>
             <AnimatePresence mode="wait">
@@ -85,12 +86,32 @@ const ProjectsPage: NextPage = ({
                         </a>
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
-                      <TagWrap>
-                        <Tag color="black" text="Next.js" />
-                        <Tag color="green" text="Node.js" />
-                        <Tag color="blue" text="Typescript" />
-                        <Tag color="orange" text="Firebase" />
-                      </TagWrap>
+
+                      {/* TODO: Find better solution */}
+
+                      {index === 0 && (
+                        <TagWrap>
+                          <Tag color="black" text="Next.js" />
+                          <Tag color="velvet" text="Styled-components" />
+                          <Tag color="orange" text="Firebase" />
+                        </TagWrap>
+                      )}
+
+                      {index === 1 && (
+                        <TagWrap>
+                          <Tag color="black" text="Next.js" />
+                          <Tag color="velvet" text="Styled-components" />
+                          <Tag color="green" text="Headless CMS" />
+                        </TagWrap>
+                      )}
+
+                      {index === 2 && (
+                        <TagWrap>
+                          <Tag color="black" text="Next.js" />
+                          <Tag color="blue" text="Typescript" />
+                          <Tag color="velvet" text="Styled-components" />
+                        </TagWrap>
+                      )}
                     </Post>
                   </motion.div>
                 ))}
