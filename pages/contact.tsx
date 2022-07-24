@@ -31,9 +31,10 @@ const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             <Banner name="Contact" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                I write mostly about web development and tech. Use the search
-                below to filter by title. You can contact me through the form or
-                at <a className="a-link">nenadmarinkovic@protonmail.com</a>
+                Feel free to get in touch with me through the form below or by
+                sending an email. I would love to hear from you and discuss any
+                inquiries, collaborations, or opportunities you may have.{" "}
+                <a className="a-link">nenadmarinkovic@protonmail.com</a>
               </Introduction>
             </Flex>
             <ContactForm />
