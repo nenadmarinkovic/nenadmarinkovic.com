@@ -13,8 +13,8 @@ import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
-import rehypeHighlight from 'rehype-highlight'
-import remarkGfm from 'remark-gfm'
+import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
 
 const components = {
   Head,
@@ -50,13 +50,17 @@ const ProjectsPage: NextPage = ({
             <Banner name={frontMatter.title} />
             <Introduction className="full-width">
               {frontMatter.description}
+              <br />
+              <a className="a-link" href={`https: ${frontMatter.link}`}>
+                {frontMatter.link}
+              </a>
             </Introduction>
             <main>
               <MDXRemote {...source} components={components} />
             </main>
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme}  />
+        <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>
   );
