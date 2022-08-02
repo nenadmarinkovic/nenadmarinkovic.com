@@ -42,7 +42,7 @@ export const TagSpan = styled.span`
   }
 
   &.velvet {
-    background: #6539a4;
+    background: #873293;
   }
 
   &.black {
