@@ -87,30 +87,30 @@ const ProjectsPage: NextPage = ({
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
 
-                      {/* TODO: Find better solution */}
+                      {/* TODO: Integrate categories into .mdx files */}
 
                       {index === 0 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
-                          <Tag color="velvet" text="Styled-components" />
                           <Tag color="orange" text="Firebase" />
+                          <Tag color="velvet" text="Styled-components" />
                         </TagWrap>
                       )}
 
                       {index === 1 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
-                          <Tag color="velvet" text="Styled-components" />
                           <Tag color="green" text="Headless CMS" />
+                          <Tag color="velvet" text="Styled-components" />
                         </TagWrap>
                       )}
 
                       {index === 2 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
-                          <Tag color="velvet" text="Styled-components" />
                           <Tag color="blue" text="Typescript" />
                           <Tag color="dark-yellow" text="MDX" />
+                          <Tag color="velvet" text="Styled-components" />
                         </TagWrap>
                       )}
                     </Post>
