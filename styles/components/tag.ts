@@ -45,7 +45,7 @@ export const TagSpan = styled.span`
   }
 
   &.orange {
-    background: #c75216;
+    background: #d76225;
   }
 
   &.teal {
