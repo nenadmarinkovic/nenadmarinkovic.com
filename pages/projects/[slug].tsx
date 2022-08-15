@@ -59,6 +59,8 @@ const ProjectsPage: NextPage = ({
               >
                 {frontMatter.link}
               </a>
+              <br />
+              <br />
             </Introduction>
             <main>
               <MDXRemote {...source} components={components} />
