@@ -5,9 +5,10 @@ export const Main = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 3.5rem;
+  font-size: 3rem;
 `;
 
 export const Text = styled.p`
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  width: 80%;
 `;

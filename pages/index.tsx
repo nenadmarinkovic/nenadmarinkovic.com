@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { GlobalStyles } from "../styles/globals";
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -7,6 +8,7 @@ import Card from "../components/Card";
 const Home: NextPage = () => {
   return (
     <>
+      <GlobalStyles />
       <Head>
         <title>Nenad Marinković</title>
         <meta name="description" content="Web development and design." />
