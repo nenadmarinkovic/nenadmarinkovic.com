@@ -11,10 +11,7 @@ class WebSite extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="UTF-8" />
-          <meta
-            name="description"
-            content="Web development and design."
-          />
+          <meta name="description" content="Web development and design." />
           <meta name="author" content="Nenad Marinković" />
         </Head>
         <body>
