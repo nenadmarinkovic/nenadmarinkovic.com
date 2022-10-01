@@ -22,8 +22,8 @@ export const Text = styled.div`
 
 export const Box = styled.div`
   padding: 1.25rem;
-  height: 300px;
-  width: 40%;
+  height: 350px;
+  width: 350px;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;

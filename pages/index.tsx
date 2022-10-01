@@ -7,6 +7,7 @@ import { ThemeLayout } from "../styles/components/layout";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
+import Panel from "../components/Panel";
 
 const Home: NextPage = () => {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -26,12 +27,15 @@ const Home: NextPage = () => {
       <ThemeProvider theme={themeMode}>
         <ThemeLayout>
           <Header toggleTheme={toggleTheme} theme={theme} />
+
+          {/* TODO: Change */}
+
           <Banner
             name="Nenad"
             surname="Marinković"
-            text="Software developer at DCCS IT Bussiness Solutions in Vienna,
-            Austria. Working mainly with Javascript ( React, Vue, Node) on
-            designing and developing web interafaces and APIs."
+            text="Software developer at Company in Vienna,
+                Austria. Working mainly with Javascript ( React, Vue, Node) on
+                designing and developing web interafaces and APIs."
           />
           <Card
             title="Title"
@@ -57,6 +61,7 @@ const Home: NextPage = () => {
             boxTitle="Deploy"
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />
+          <Panel />
         </ThemeLayout>
       </ThemeProvider>
     </>

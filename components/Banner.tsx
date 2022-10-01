@@ -4,7 +4,7 @@ import { Main, Title, Text } from "../styles/components/banner";
 interface Banner {
   name: string;
   surname: string;
-  text: string;
+  text: any;
 }
 
 function Banner({ name, surname, text }: Banner, theme: any) {
@@ -13,8 +13,8 @@ function Banner({ name, surname, text }: Banner, theme: any) {
       <Container theme={theme}>
         <Main>
           <Title>
-            <span>{name}</span>
-            <span>{surname}</span>
+            {name} <br />
+            {surname}
           </Title>
           <Text>{text}</Text>
         </Main>

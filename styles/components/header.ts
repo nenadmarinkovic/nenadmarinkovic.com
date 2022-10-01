@@ -6,7 +6,7 @@ export const HeaderWrap = styled.div`
   width: 100%;
   padding: 1.5rem 0 1rem;
   border-bottom: ${({ theme }) => theme.headerBorder};
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.headerBackground};
   backdrop-filter: saturate(70%) blur(3px);
 `;
 
