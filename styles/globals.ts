@@ -39,6 +39,7 @@ body {
 
 * {
   box-sizing: border-box;
+  transition: 0.25s;
 }
 
 a {

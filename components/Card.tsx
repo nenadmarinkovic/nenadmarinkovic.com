@@ -32,8 +32,6 @@ function Card({
   const setBoxColor = () =>
     boxColor === "pink" ? "pink" : boxColor === "blue" ? "blue" : "green";
 
-  const handleClick = () => {};
-
   return (
     <Container>
       <Item className={reversed ? "row-reverse" : "row"}>

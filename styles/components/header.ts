@@ -4,7 +4,7 @@ export const HeaderWrap = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0 1rem;
   border-bottom: 1px solid #eaeaea;
   background: hsla(0, 0%, 100%, 0.9);
   backdrop-filter: saturate(70%) blur(3px);
@@ -12,8 +12,10 @@ export const HeaderWrap = styled.div`
 
 export const Top = styled.div`
   width: 100%;
+  position: fixed;
+  top: 0;
   background: #000;
-  height: 0.75rem;
+  height: 0.5rem;
 `;
 
 export const Main = styled.div`

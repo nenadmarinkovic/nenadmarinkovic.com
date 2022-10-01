@@ -11,8 +11,8 @@ import {
 function Header() {
   return (
     <>
-      <Top />
       <HeaderWrap>
+        <Top />
         <Container>
           <Main>
             <Logo>Home</Logo>
