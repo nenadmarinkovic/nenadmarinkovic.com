@@ -9,8 +9,12 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 
 const Home: NextPage = () => {
-  const [theme, toggleTheme] = useTheme();
+  const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />;
+  }
 
   return (
     <>
