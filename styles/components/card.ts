@@ -29,15 +29,15 @@ export const Box = styled.div`
   justify-content: space-between;
 
   &.pink {
-    background: linear-gradient(270.48deg, #FF0080 -4.99%,  #7928CA 99.13%);
+    background: linear-gradient(270.48deg, #ff0080 -4.99%, #7928ca 99.13%);
   }
-  
+
   &.blue {
-    background: linear-gradient(270.48deg, #00DFD8  -4.99%, #007CF0 99.13%);
+    background: linear-gradient(270.48deg, #00dfd8 -4.99%, #007cf0 99.13%);
   }
-  
+
   &.green {
-    background: linear-gradient(270.48deg, #7ec130 -4.99%, #45671F 99.13%);
+    background: linear-gradient(270.48deg, #7ec130 -4.99%, #45671f 99.13%);
   }
 `;
 
@@ -66,5 +66,16 @@ export const BoxText = styled.div`
 `;
 
 export const BoxIcon = styled.div`
-align-self: end;
+  align-self: end;
+  cursor: pointer;
+
+  svg {
+    transition: 0.25s;
+  }
+
+  &.opened-box {
+    svg {
+      transform: rotate(-45deg);
+    }
+  }
 `;

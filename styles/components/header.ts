@@ -13,7 +13,7 @@ export const HeaderWrap = styled.div`
 export const Top = styled.div`
   width: 100%;
   background: #000;
-  height: 1rem;
+  height: 0.75rem;
 `;
 
 export const Main = styled.div`
