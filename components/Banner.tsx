@@ -7,10 +7,10 @@ interface Banner {
   text: string;
 }
 
-function Banner({ name, surname, text }: Banner) {
+function Banner({ name, surname, text }: Banner, theme: any) {
   return (
     <div>
-      <Container>
+      <Container theme={theme}>
         <Main>
           <Title>
             <span>{name}</span>

@@ -17,6 +17,7 @@ export const Item = styled.div`
 export const Text = styled.div`
   margin-top: 1.5rem;
   width: 45%;
+  color: ${({ theme }) => theme.color};
 `;
 
 export const Box = styled.div`
@@ -44,9 +45,11 @@ export const Box = styled.div`
 export const Title = styled.div`
   font-size: 2.3rem;
   font-weight: 900;
+  color: ${({ theme }) => theme.color};
 `;
 
 export const Description = styled.div`
+  color: ${({ theme }) => theme.color};
   font-size: 1rem;
   line-height: 1.8;
   margin-top: 1rem;

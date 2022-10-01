@@ -5,8 +5,8 @@ export const HeaderWrap = styled.div`
   top: 0;
   width: 100%;
   padding: 1.5rem 0 1rem;
-  border-bottom: 1px solid #eaeaea;
-  background: hsla(0, 0%, 100%, 0.9);
+  border-bottom: ${({ theme }) => theme.headerBorder};
+  background: ${({ theme }) => theme.background};
   backdrop-filter: saturate(70%) blur(3px);
 `;
 
@@ -24,7 +24,9 @@ export const Main = styled.div`
   align-items: center;
 `;
 
-export const Logo = styled.a``;
+export const Logo = styled.a`
+  color: ${({ theme }) => theme.color};
+`;
 
 export const Links = styled.div`
   display: flex;
@@ -35,4 +37,6 @@ export const Links = styled.div`
 export const Link = styled.a`
   margin-left: 4.5rem;
   font-size: 0.95rem;
+  cursor: pointer;
+  color: ${({ theme }) => theme.color};
 `;

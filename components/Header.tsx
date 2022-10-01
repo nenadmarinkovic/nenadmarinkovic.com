@@ -8,7 +8,7 @@ import {
   Link,
 } from "../styles/components/header";
 
-function Header() {
+function Header(props: any) {
   return (
     <>
       <HeaderWrap>
@@ -20,7 +20,9 @@ function Header() {
               <Link>Work</Link>
               <Link>Projects</Link>
               <Link>Contact</Link>
-              <Link>Dark mode</Link>
+              <Link onClick={props.toggleTheme}>
+                {props.theme === "light" ? "Dark mode" : "Light mode"}
+              </Link>
             </Links>
           </Main>
         </Container>
