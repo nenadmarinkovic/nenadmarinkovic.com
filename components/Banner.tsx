@@ -13,8 +13,8 @@ function Banner({ name, surname, text }: Banner) {
       <Container>
         <Main>
           <Title>
-            {name} <br />
-            {surname}
+            <span>{name}</span>
+            <span>{surname}</span>
           </Title>
           <Text>{text}</Text>
         </Main>

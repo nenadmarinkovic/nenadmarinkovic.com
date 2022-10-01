@@ -22,8 +22,30 @@ const Home: NextPage = () => {
             Austria. Working mainly with Javascript ( React, Vue, Node) on
             designing and developing web interafaces and APIs."
       />
-      <Card title="Title" text="Text" reversed={false} />
-      <Card title="Title" text="Text" reversed={true} />
+      <Card
+        title="Title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        reversed={false}
+        boxColor="pink"
+        boxTitle="Design"
+        boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
+      <Card
+        title="Title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        reversed={true}
+        boxColor="blue"
+        boxTitle="Develop"
+        boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
+      <Card
+        title="Title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        reversed={false}
+        boxColor="green"
+        boxTitle="Deploy"
+        boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
     </>
   );
 };

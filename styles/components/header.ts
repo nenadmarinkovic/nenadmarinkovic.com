@@ -25,4 +25,5 @@ export const Links = styled.div`
 
 export const Link = styled.a`
   margin-left: 4.5rem;
+  font-size: 0.875rem;
 `;

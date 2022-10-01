@@ -5,16 +5,3 @@ export const Container = styled.div`
   max-width: 48rem;
   width: 100%;
 `;
-
-export const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  &.row-reverse {
-    flex-direction: row-reverse;
-  }
-
-  &.row {
-    flex-direction: row;
-  }
-`;
