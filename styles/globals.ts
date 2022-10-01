@@ -55,16 +55,4 @@ p {
   display: flex;
 }
 
-.pink {
-  background: linear-gradient(270.48deg, #D82B80 -4.99%, #F43F5E 99.13%);
-}
-
-.blue {
-  background: linear-gradient(270.48deg, #2286B2 -4.99%, #1D4AAC 99.13%);
-}
-
-.green {
-  background: linear-gradient(270.48deg, #689F28 -4.99%, #45671F 99.13%);
-}
-
 `;

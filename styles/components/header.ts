@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
-export const Top = styled.div`
-  position: fixed;
+export const HeaderWrap = styled.div`
+  position: sticky;
   top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+  background: hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: saturate(70%) blur(3px);
+`;
+
+export const Top = styled.div`
   width: 100%;
   background: #000;
   height: 1rem;
 `;
 
 export const Main = styled.div`
-  margin-top: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,5 +32,5 @@ export const Links = styled.div`
 
 export const Link = styled.a`
   margin-left: 4.5rem;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
 `;
