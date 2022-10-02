@@ -34,13 +34,10 @@ const Home: NextPage = ({ data }: any) => {
           <Banner
             name="Nenad"
             surname="Marinković"
-            text={
-              <>
-                Software developer at <a href="/">Link to company</a> in Vienna,
+            text="
+                Software developer at Company in Vienna,
                 Austria. Working mainly with Javascript ( React, Vue, Node) on
-                designing and developing web interafaces and APIs.
-              </>
-            }
+                designing and developing web interafaces and APIs."
           />
           <Card
             title="Title"
