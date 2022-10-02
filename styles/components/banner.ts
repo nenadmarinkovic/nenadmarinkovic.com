@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Main = styled.div`
+export const BannerWrap = styled.div`
   padding-top: 1.5rem;
   background: ${({ theme }) => theme.background};
 `;
@@ -17,6 +17,7 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   color: ${({ theme }) => theme.color};
-  font-size: 1.05rem;
-  width: 80%;
+  font-size: 1.15rem;
+  line-height: 2;
+  width: 70%;
 `;

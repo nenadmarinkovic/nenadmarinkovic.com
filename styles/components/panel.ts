@@ -5,13 +5,7 @@ export const PanelWrap = styled.div`
   padding: 200px 100px;
   border-radius: 1rem;
   position: relative;
-
-  background: linear-gradient(
-    227.71deg,
-    #ff0080 9.64%,
-    #60a9fc 50.62%,
-    #7ec130 89.11%
-  );
+  background: linear-gradient( 227.71deg, #ff0080 9.64%, #60a9fc 50.62%, #7ec130 89.11% )
 `;
 
 export const PanelInside = styled.div`

@@ -8,8 +8,10 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Panel from "../components/Panel";
+import Footer from "../components/Footer";
 
-const Home: NextPage = () => {
+
+const Home: NextPage = ({ data }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -33,9 +35,13 @@ const Home: NextPage = () => {
           <Banner
             name="Nenad"
             surname="Marinković"
-            text="Software developer at Company in Vienna,
+            text={
+              <>
+                Software developer at <a href="/">Link to company</a> in Vienna,
                 Austria. Working mainly with Javascript ( React, Vue, Node) on
-                designing and developing web interafaces and APIs."
+                designing and developing web interafaces and APIs.
+              </>
+            }
           />
           <Card
             title="Title"
@@ -62,10 +68,38 @@ const Home: NextPage = () => {
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />
           <Panel />
+          <Footer data={data} />
         </ThemeLayout>
       </ThemeProvider>
     </>
   );
 };
+
+export async function getStaticProps() {
+  let data = [];
+  let error = "";
+
+  const server = "http://localhost:3000/api/playing";
+
+  try {
+    const res = await fetch(server, {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
+
+    data = await res.json();
+  } catch (e: any) {
+    error = e.toString();
+  }
+
+  return {
+    props: { data },
+    revalidate: 10,
+  };
+}
 
 export default Home;

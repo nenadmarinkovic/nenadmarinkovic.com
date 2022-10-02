@@ -1,5 +1,5 @@
 import { Container } from "../styles/components/layout";
-import { Main, Title, Text } from "../styles/components/banner";
+import { BannerWrap, Title, Text } from "../styles/components/banner";
 
 interface Banner {
   name: string;
@@ -11,13 +11,13 @@ function Banner({ name, surname, text }: Banner, theme: any) {
   return (
     <div>
       <Container theme={theme}>
-        <Main>
+        <BannerWrap >
           <Title>
             {name} <br />
             {surname}
           </Title>
           <Text>{text}</Text>
-        </Main>
+        </BannerWrap>
       </Container>
     </div>
   );
