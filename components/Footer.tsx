@@ -9,8 +9,6 @@ import {
 } from "../styles/components/spotify";
 
 function Footer({ data }: any) {
-  console.log(data.artist);
-
   return (
     <FooterWrap>
       <Container>
