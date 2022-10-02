@@ -10,7 +10,7 @@ import Card from "../components/Card";
 import Panel from "../components/Panel";
 import Footer from "../components/Footer";
 
-const Home: NextPage = ({ data }: any) => {
+const Home: NextPage = ({ spotifyData }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -65,7 +65,7 @@ const Home: NextPage = ({ data }: any) => {
           />
           <Panel />
 
-          <Footer data={data} />
+          <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>
     </>
@@ -73,7 +73,7 @@ const Home: NextPage = ({ data }: any) => {
 };
 
 export async function getStaticProps() {
-  let data = [];
+  let spotifyData = [];
   let error = "";
 
   const server = "http://localhost:3000/api/playing";
@@ -88,13 +88,13 @@ export async function getStaticProps() {
       },
     });
 
-    data = await res.json();
+    spotifyData = await res.json();
   } catch (e: any) {
     error = e.toString();
   }
 
   return {
-    props: { data },
+    props: { spotifyData },
     revalidate: 10,
   };
 }

@@ -5,10 +5,9 @@ import {
   Spotify,
   SpotifyIcon,
   SpotifyText,
-  BoldText,
 } from "../styles/components/spotify";
 
-function Footer({ data }: any) {
+function Footer({ spotifyData }: any) {
   return (
     <FooterWrap>
       <Container>
@@ -22,8 +21,8 @@ function Footer({ data }: any) {
             </svg>
           </SpotifyIcon>
           <SpotifyText>
-            {data.isPlaying
-              ? `${data.artist} - ${data.title}`
+            {spotifyData.isPlaying
+              ? `${spotifyData.artist} - ${spotifyData.title}`
               : "Not playing currently."}
           </SpotifyText>
         </Spotify>
