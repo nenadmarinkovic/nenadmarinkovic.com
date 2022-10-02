@@ -10,7 +10,6 @@ import Card from "../components/Card";
 import Panel from "../components/Panel";
 import Footer from "../components/Footer";
 
-
 const Home: NextPage = ({ data }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -68,6 +67,7 @@ const Home: NextPage = ({ data }: any) => {
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />
           <Panel />
+
           <Footer data={data} />
         </ThemeLayout>
       </ThemeProvider>
