@@ -8,6 +8,7 @@ export const HeaderWrap = styled.div`
   border-bottom: ${({ theme }) => theme.headerBorder};
   background: ${({ theme }) => theme.headerBackground};
   backdrop-filter: saturate(70%) blur(3px);
+  z-index: 2;
 `;
 
 export const Top = styled.div`
