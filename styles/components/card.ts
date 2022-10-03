@@ -21,7 +21,7 @@ export const Text = styled.div`
 `;
 
 export const Box = styled.div`
-  padding: 1.25rem;
+  padding: 1.5rem;
   height: 350px;
   width: 350px;
   border-radius: 1.5rem;
