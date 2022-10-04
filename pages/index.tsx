@@ -64,10 +64,9 @@ const Home: NextPage = ({ spotifyData }: any) => {
             boxTitle="Deploy"
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />
-          <Panel />
-          
-          <Projects/>
 
+          <Projects />
+          <Panel />
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>
