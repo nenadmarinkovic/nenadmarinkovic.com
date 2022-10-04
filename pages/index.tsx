@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Panel from "../components/Panel";
+import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
 const Home: NextPage = ({ spotifyData }: any) => {
@@ -64,6 +65,8 @@ const Home: NextPage = ({ spotifyData }: any) => {
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />
           <Panel />
+          
+          <Projects/>
 
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
