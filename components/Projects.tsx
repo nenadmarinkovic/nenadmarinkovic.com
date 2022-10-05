@@ -3,6 +3,11 @@ import { initialTabs as tabs } from "./ingredients";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "../styles/components/layout";
 import { Title } from "../styles/components/panel";
+import Image from 'next/image'
+
+import mypic from '../public/Blac.png'
+
+
 export default function Projects() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
@@ -44,15 +49,20 @@ export default function Projects() {
               {selectedTab ? `${selectedTab.label} ${selectedTab.text} ` : "😋"}
             </motion.div>
             <motion.div
+          
               key={selectedTab ? selectedTab.label : "empty"}
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2, delay: 0.5 }}
             >
-              {selectedTab
-                ? `${selectedTab.label} ${selectedTab.label} `
-                : "😋"}
+               <Image
+          
+            src={mypic}
+            alt="Picture of the author"
+            width={800}
+            height={500}
+          />
             </motion.div>
           </AnimatePresence>
         </main>
@@ -65,3 +75,4 @@ export default function Projects() {
     </Container>
   );
 }
+
