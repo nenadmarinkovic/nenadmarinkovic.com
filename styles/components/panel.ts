@@ -29,7 +29,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: 1rem;
+  font-size: 1.15rem;
   text-align: center;
   color: ${({ theme }) => theme.color};
 `;
