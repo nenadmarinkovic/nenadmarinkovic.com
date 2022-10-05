@@ -30,7 +30,7 @@ function Card({
 }: Card) {
   const [opened, setOpen] = useState(false);
   const setBoxColor = () =>
-    boxColor === "pink" ? "pink" : boxColor === "blue" ? "blue" : "green";
+    boxColor === "orange" ? "orange" : boxColor === "blue" ? "blue" : "green";
 
   return (
     <Container>

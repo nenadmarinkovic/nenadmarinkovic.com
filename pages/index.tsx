@@ -43,7 +43,7 @@ const Home: NextPage = ({ spotifyData }: any) => {
             title="Title"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             reversed={false}
-            boxColor="pink"
+            boxColor="orange"
             boxTitle="Design"
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />

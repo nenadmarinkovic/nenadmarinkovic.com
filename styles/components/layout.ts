@@ -6,6 +6,6 @@ export const ThemeLayout = styled.div`
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 48rem;
+  max-width: 52rem;
   width: 100%;
 `;

@@ -29,10 +29,6 @@ export const Box = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  &.pink {
-    background: linear-gradient(270.48deg, #ff823b -4.99%, #ff0600 99.13%);
-  }
-
   &.blue {
     background: linear-gradient(270.48deg, #00dfd8 -4.99%, #007cf0 99.13%);
   }
@@ -40,6 +36,11 @@ export const Box = styled.div`
   &.green {
     background: linear-gradient(270.48deg, #7ec130 -4.99%, #45671f 99.13%);
   }
+
+  &.orange {
+    background: linear-gradient(270.48deg, #ff823b -4.99%, #ff0600 99.13%);
+  }
+  
 `;
 
 export const Title = styled.div`
@@ -50,8 +51,8 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   color: ${({ theme }) => theme.color};
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 1.15rem;
+  line-height: 2;
   margin-top: 1rem;
 `;
 
