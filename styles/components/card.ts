@@ -38,9 +38,8 @@ export const Box = styled.div`
   }
 
   &.orange {
-    background: linear-gradient(270.48deg, #ffa400 -4.99%, #ff5b00 99.13%)
+    background: linear-gradient(270.48deg, #ffa400 -4.99%, #ff5b00 99.13%);
   }
-
 `;
 
 export const Title = styled.div`
