@@ -40,8 +40,8 @@ const Home: NextPage = ({ spotifyData }: any) => {
                 designing and developing web interafaces and APIs."
           />
           <Card
-            title="Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            title="Starting with the purpose"
+            description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
             reversed={false}
             boxColor="orange"
             boxTitle="Design"

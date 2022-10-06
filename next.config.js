@@ -11,5 +11,3 @@ const nextConfig = {
     defaultLocale: "en",
   },
 };
-
-module.exports = nextConfig;
