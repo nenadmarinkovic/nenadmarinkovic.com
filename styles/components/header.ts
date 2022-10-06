@@ -26,6 +26,7 @@ export const Main = styled.div`
 `;
 
 export const Logo = styled.a`
+  cursor: pointer;
   color: ${({ theme }) => theme.color};
 `;
 
@@ -35,7 +36,7 @@ export const Links = styled.div`
   align-items: center;
 `;
 
-export const Link = styled.a`
+export const LinkWrap = styled.a`
   margin-left: 4.5rem;
   font-size: 0.95rem;
   cursor: pointer;

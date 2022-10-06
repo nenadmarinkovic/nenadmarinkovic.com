@@ -5,8 +5,9 @@ import {
   Main,
   Logo,
   Links,
-  Link,
+  LinkWrap,
 } from "../styles/components/header";
+import Link from "next/link";
 
 function Header({ theme, toggleTheme }: any) {
   return (
@@ -15,14 +16,20 @@ function Header({ theme, toggleTheme }: any) {
         <Top />
         <Container>
           <Main>
-            <Logo>Home</Logo>
+            <Link href="/">
+              <Logo>Home</Logo>
+            </Link>
             <Links>
-              <Link>Work</Link>
-              <Link>Projects</Link>
-              <Link>Contact</Link>
-              <Link onClick={toggleTheme}>
-                {theme === "light" ? "Dark mode" : "Light mode"}
+              <LinkWrap>Work</LinkWrap>
+              <LinkWrap>Projects</LinkWrap>
+              <Link href="/posts">
+                <LinkWrap>Blog</LinkWrap>
               </Link>
+
+              <LinkWrap>Contact</LinkWrap>
+              <LinkWrap onClick={toggleTheme}>
+                {theme === "light" ? "Dark mode" : "Light mode"}
+              </LinkWrap>
             </Links>
           </Main>
         </Container>

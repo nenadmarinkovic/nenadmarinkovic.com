@@ -21,7 +21,7 @@ const Home: NextPage = ({ spotifyData }: any) => {
   return (
     <>
       <Head>
-        <title>Nenad Marinković</title>
+        <title>Nenad Marinković | Home</title>
         <meta name="description" content="Web development and design." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
