@@ -8,9 +8,9 @@ import { lightTheme, darkTheme } from "../styles/theme";
 import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
+import Banner from "../components/Banner";
 import { Container, CustomHeight } from "../styles/components/layout";
 import Header from "../components/Header";
-
 import { postFilePaths, POSTS_PATH } from "../utils/mdx";
 
 export default function Posts({ posts }: any) {
@@ -20,6 +20,7 @@ export default function Posts({ posts }: any) {
   if (!componentMounted) {
     return <div />;
   }
+  
   return (
     <>
       <Head>
@@ -31,12 +32,17 @@ export default function Posts({ posts }: any) {
         <ThemeLayout>
           <Header toggleTheme={toggleTheme} theme={theme} />
           <Container>
+            <Banner
+              name="Blog"
+              text="
+                Collection of posts."
+            />
             <CustomHeight>
               {posts.map((post: any) => (
                 <span key={post.filePath}>
                   <Link
-                    as={`/posts/${post.filePath.replace(/\.mdx?$/, "")}`}
-                    href={`/posts/[slug]`}
+                    as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
+                    href={`/blog/[slug]`}
                   >
                     <a>{post.data.title}</a>
                   </Link>

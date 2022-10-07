@@ -2,7 +2,7 @@ import { BannerWrap, Title, Text } from "../styles/components/banner";
 
 interface Banner {
   name: string;
-  surname: string;
+  surname?: string;
   text: any;
 }
 
