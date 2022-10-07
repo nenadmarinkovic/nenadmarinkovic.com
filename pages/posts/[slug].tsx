@@ -16,7 +16,6 @@ import { ThemeLayout } from "../../styles/components/layout";
 
 const components = {
   a: CustomLink,
-  TestComponent: dynamic(() => import("../../components/TestComponent")),
   Head,
 };
 
