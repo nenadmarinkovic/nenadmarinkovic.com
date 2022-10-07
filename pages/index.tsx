@@ -7,8 +7,10 @@ import { ThemeLayout } from "../styles/components/layout";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
+import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 import Footer from "../components/Footer";
+import { Container } from "../styles/components/layout";
 
 const Home: NextPage = ({ spotifyData }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
@@ -28,42 +30,45 @@ const Home: NextPage = ({ spotifyData }: any) => {
       <ThemeProvider theme={themeMode}>
         <ThemeLayout>
           <Header toggleTheme={toggleTheme} theme={theme} />
-
-          {/* TODO: Change */}
-
-          <Banner
-            name="Nenad"
-            surname="Marinković"
-            text="
+          <Container>
+            <Banner
+              name="Nenad"
+              surname="Marinković"
+              text="
                 Software developer at Company in Vienna,
                 Austria. Working mainly with Javascript ( React, Vue, Node) on
                 designing and developing web interafaces and APIs."
-          />
-          <Card
-            title="Starting with the purpose"
-            description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
-            reversed={false}
-            boxColor="orange"
-            boxTitle="Design"
-            boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
-          <Card
-            title="Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            reversed={true}
-            boxColor="blue"
-            boxTitle="Develop"
-            boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
-          <Card
-            title="Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            reversed={false}
-            boxColor="green"
-            boxTitle="Deploy"
-            boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
-          <Panel />
+            />
+            <Card
+              title="Starting with the purpose"
+              description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
+              reversed={false}
+              boxColor="orange"
+              boxTitle="Design"
+              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            />
+            <Card
+              title="Title"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              reversed={true}
+              boxColor="blue"
+              boxTitle="Develop"
+              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            />
+            <Card
+              title="Title"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              reversed={false}
+              boxColor="green"
+              boxTitle="Deploy"
+              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            />
+            <Tag color="green" text="Node.js" />
+            <Tag color="blue" text="Typescript" />
+            <Tag color="yellow" text="Firebase" />
+            <Tag color="black" text="Next.js" />
+            <Panel />
+          </Container>
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>

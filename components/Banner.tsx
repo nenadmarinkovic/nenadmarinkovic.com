@@ -1,4 +1,3 @@
-import { Container } from "../styles/components/layout";
 import { BannerWrap, Title, Text } from "../styles/components/banner";
 
 interface Banner {
@@ -10,15 +9,13 @@ interface Banner {
 function Banner({ name, surname, text }: Banner, theme: any) {
   return (
     <div>
-      <Container theme={theme}>
-        <BannerWrap >
-          <Title>
-            {name} <br />
-            {surname}
-          </Title>
-          <Text>{text}</Text>
-        </BannerWrap>
-      </Container>
+      <BannerWrap theme={theme}>
+        <Title>
+          {name} <br />
+          {surname}
+        </Title>
+        <Text>{text}</Text>
+      </BannerWrap>
     </div>
   );
 }

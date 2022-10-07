@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { TagWrap } from "../styles/components/tag";
 
 interface Tag {
