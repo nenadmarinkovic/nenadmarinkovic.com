@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import dynamic from "next/dynamic";
 import path from "path";
 import CustomLink from "../../components/CustomLink";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx";
