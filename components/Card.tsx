@@ -9,8 +9,9 @@ import {
   BoxTitle,
   BoxText,
   BoxIcon,
-  Button
 } from "../styles/components/card";
+
+import Tag from "./Tag";
 
 interface Card {
   title: string;
@@ -28,7 +29,6 @@ function Card({
   boxColor,
   boxTitle,
   boxText,
-  
 }: Card) {
   const [opened, setOpen] = useState(false);
   const setBoxColor = () =>
@@ -40,12 +40,12 @@ function Card({
         <Text>
           <Title>{title}</Title>
           <Description>{description}</Description>
-          <Button className="green">Figma</Button>
-          <Button className="blue">Figma</Button>
+          <Tag color="green" text="Firebase" />
         </Text>
         <Box className={setBoxColor()}>
           <div>
             <BoxTitle>{boxTitle}</BoxTitle>
+
             {opened && <BoxText>{boxText}</BoxText>}
           </div>
           <BoxIcon
