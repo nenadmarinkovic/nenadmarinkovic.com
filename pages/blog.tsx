@@ -3,24 +3,26 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { ThemeLayout } from "../styles/components/layout";
+import { PostsWrap, Post, Title, Date, Description } from "../styles/pages/blog";
 import fs from "fs";
 import { lightTheme, darkTheme } from "../styles/theme";
 import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
 import Banner from "../components/Banner";
-import { Container, CustomHeight } from "../styles/components/layout";
+import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx";
+import Footer from "../components/Footer";
 
-export default function Posts({ posts }: any) {
+export default function Posts({ posts }: any, { spotifyData }: any) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   if (!componentMounted) {
     return <div />;
   }
-  
+
   return (
     <>
       <Head>
@@ -35,21 +37,25 @@ export default function Posts({ posts }: any) {
             <Banner
               name="Blog"
               text="
-                Collection of posts."
+              I write mostly about web development and tech. In total, I've written 51 articles on my blog. Use the search below to filter by title."
             />
-            <CustomHeight>
+
+            <PostsWrap>
               {posts.map((post: any) => (
-                <span key={post.filePath}>
+                <Post key={post.filePath}>
                   <Link
                     as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
                     href={`/blog/[slug]`}
                   >
-                    <a>{post.data.title}</a>
+                    <Title>{post.data.title}</Title>
                   </Link>
-                </span>
+                  <Date>{post.data.date}</Date>
+                  <Description>{post.data.description}</Description>
+                </Post>
               ))}
-            </CustomHeight>
+            </PostsWrap>
           </Container>
+          <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>
     </>

@@ -21,7 +21,7 @@ function Footer({ spotifyData }: any) {
             </svg>
           </SpotifyIcon>
           <SpotifyText>
-            {spotifyData.isPlaying
+            {spotifyData?.isPlaying
               ? `${spotifyData.artist} - ${spotifyData.title}`
               : "Not playing currently."}
           </SpotifyText>

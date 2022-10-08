@@ -9,9 +9,3 @@ export const Container = styled.div`
   max-width: 52rem;
   width: 100%;
 `;
-
-// Delete later
-
-export const CustomHeight = styled.div`
-  height: 3000px;
-`;

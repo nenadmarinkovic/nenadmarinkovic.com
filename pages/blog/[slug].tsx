@@ -8,7 +8,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import CustomLink from "../../components/CustomLink";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx";
-import { Container, CustomHeight } from "../../styles/components/layout";
+import { Container } from "../../styles/components/layout";
 import { lightTheme, darkTheme } from "../../styles/theme";
 import Header from "../../components/Header";
 import { ThemeLayout } from "../../styles/components/layout";
@@ -36,12 +36,9 @@ export default function PostPage({ source, frontMatter }: any) {
       <ThemeProvider theme={themeMode}>
         <ThemeLayout>
           <Header toggleTheme={toggleTheme} theme={theme} />
-
           <Container>
-            <CustomHeight>
-              <h1>{frontMatter.title}</h1>
-              {frontMatter.description && <p>{frontMatter.description}</p>}
-            </CustomHeight>
+            <h1>{frontMatter.title}</h1>
+            {frontMatter.description && <p>{frontMatter.description}</p>}
             <main>
               <MDXRemote {...source} components={components} />
             </main>

@@ -20,7 +20,6 @@ export const Text = styled.div`
   color: ${({ theme }) => theme.color};
 `;
 
-
 export const Box = styled.div`
   padding: 1.5rem;
   height: 350px;
@@ -44,7 +43,7 @@ export const Box = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 2.3rem;
+  font-size: 2.05rem;
   font-weight: 900;
   color: ${({ theme }) => theme.color};
 `;
@@ -52,13 +51,13 @@ export const Title = styled.div`
 export const Description = styled.div`
   color: ${({ theme }) => theme.color};
   font-size: 1.15rem;
-  line-height: 2;
+  line-height: 1.9;
   margin-top: 1rem;
 `;
 
 export const BoxTitle = styled.div`
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 1.85rem;
+  font-weight: 700;
   color: #fff;
 `;
 
