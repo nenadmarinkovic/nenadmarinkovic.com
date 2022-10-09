@@ -52,7 +52,7 @@ const Home: NextPage = ({ spotifyData }: any) => {
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               reversed={true}
               boxColor="blue"
-              boxTitle="Develop"
+              boxTitle="Development"
               boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             />
             <Card
@@ -60,7 +60,7 @@ const Home: NextPage = ({ spotifyData }: any) => {
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               reversed={false}
               boxColor="green"
-              boxTitle="Deploy"
+              boxTitle="Maintenance"
               boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             />
             <Tag color="green" text="Node.js" />
