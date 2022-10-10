@@ -21,7 +21,7 @@ function Header({ theme, toggleTheme }: any) {
           <Links>
             <LinkWrap>Work</LinkWrap>
             <LinkWrap>Projects</LinkWrap>
-            <Link href="/posts">
+            <Link href="/blog">
               <LinkWrap>Blog</LinkWrap>
             </Link>
 
