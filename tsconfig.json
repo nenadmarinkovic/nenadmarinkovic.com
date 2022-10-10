@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "incremental": true
   },
+
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -22,5 +23,6 @@
     "pages/_document.js",
     "utils/mdx.js"
   ],
+
   "exclude": ["node_modules"]
 }
