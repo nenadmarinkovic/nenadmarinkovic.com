@@ -19,7 +19,6 @@ function Header({ theme, toggleTheme }: any) {
             <Logo>Home</Logo>
           </Link>
           <Links>
-            <LinkWrap>Work</LinkWrap>
             <LinkWrap>Projects</LinkWrap>
             <Link href="/blog">
               <LinkWrap>Blog</LinkWrap>
