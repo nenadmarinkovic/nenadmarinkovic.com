@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
     "firebase": "^9.11.0",
     "gray-matter": "^4.0.3",
     "next": "12.3.1",

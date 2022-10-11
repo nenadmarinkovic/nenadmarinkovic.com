@@ -26,7 +26,7 @@ export default function Posts({ posts }: any, { spotifyData }: any) {
   return (
     <>
       <Head>
-        <title>Nenad Marinković | Blog</title>
+        <title>Nenad Marinković | Projects</title>
         <meta name="description" content="Web development and design." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -35,7 +35,7 @@ export default function Posts({ posts }: any, { spotifyData }: any) {
           <Header toggleTheme={toggleTheme} theme={theme} />
           <Container>
             <Banner
-              name="Blog"
+              name="Projects"
               text="
               I write mostly about web development and tech. In total, I've written 51 articles on my blog. Use the search below to filter by title."
             />
