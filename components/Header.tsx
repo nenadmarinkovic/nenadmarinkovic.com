@@ -77,8 +77,8 @@ function Header({ theme, toggleTheme }: any) {
         }}
       >
         <ModalInside>
-          <button onClick={closeModal}>close</button>
-          <div>I am a modal</div>
+          <button onClick={closeModal}>Close</button>
+          <div>Model Inside. Change.</div>
         </ModalInside>
       </Modal>
     </>
