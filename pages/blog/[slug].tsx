@@ -29,7 +29,7 @@ export default function PostPage({ source, frontMatter }: any) {
   return (
     <>
       <Head>
-        <title>Nenad Marinković | Home</title>
+        <title> {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

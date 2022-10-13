@@ -1,18 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { GlobalStyle } from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { ThemeLayout } from "../styles/components/layout";
 import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Card from "../components/Card";
-import Tag from "../components/Tag";
-import Panel from "../components/Panel";
 import Footer from "../components/Footer";
-import { Container } from "../styles/components/layout";
+import HomepageContainer from "../containers/homepage-container";
 
-const Home: NextPage = ({ spotifyData }: any) => {
+const Homepage: NextPage = ({ spotifyData }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -28,47 +25,10 @@ const Home: NextPage = ({ spotifyData }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider theme={themeMode}>
+        <GlobalStyle />
         <ThemeLayout>
           <Header toggleTheme={toggleTheme} theme={theme} />
-          <Container>
-            <Banner
-              name="Nenad"
-              surname="Marinković"
-              text="
-                Software developer at Company in Vienna,
-                Austria. Working mainly with Javascript ( React, Vue, Node) on
-                designing and developing web interafaces and APIs."
-            />
-            <Card
-              title="Starting with the purpose"
-              description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
-              reversed={false}
-              boxColor="orange"
-              boxTitle="Design"
-              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            />
-            <Card
-              title="Title"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-              reversed={true}
-              boxColor="blue"
-              boxTitle="Development"
-              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            />
-            <Card
-              title="Title"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-              reversed={false}
-              boxColor="green"
-              boxTitle="Maintenance"
-              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            />
-            <Tag color="green" text="Node.js" />
-            <Tag color="blue" text="Typescript" />
-            <Tag color="yellow" text="Firebase" />
-            <Tag color="black" text="Next.js" />
-            <Panel />
-          </Container>
+          <HomepageContainer />
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>
@@ -103,4 +63,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Home;
+export default Homepage;

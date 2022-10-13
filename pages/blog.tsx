@@ -3,19 +3,17 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../hooks/useTheme";
 import { ThemeLayout } from "../styles/components/layout";
-import { PostsWrap, Post, Title, Date, Description } from "../styles/pages/blog";
 import fs from "fs";
 import { lightTheme, darkTheme } from "../styles/theme";
 import matter from "gray-matter";
-import Link from "next/link";
 import path from "path";
-import Banner from "../components/Banner";
-import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx";
 import Footer from "../components/Footer";
+import BlogContainer from "../containers/blog-container";
+import { GlobalStyle } from "../styles/global";
 
-export default function Posts({ posts }: any, { spotifyData }: any) {
+const BlogPage: NextPage = ({ posts }: any, { spotifyData }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -32,35 +30,15 @@ export default function Posts({ posts }: any, { spotifyData }: any) {
       </Head>
       <ThemeProvider theme={themeMode}>
         <ThemeLayout>
+          <GlobalStyle />
           <Header toggleTheme={toggleTheme} theme={theme} />
-          <Container>
-            <Banner
-              name="Blog"
-              text="
-              I write mostly about web development and tech. In total, I've written 51 articles on my blog. Use the search below to filter by title."
-            />
-
-            <PostsWrap>
-              {posts.map((post: any) => (
-                <Post key={post.filePath}>
-                  <Link
-                    as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
-                    href={`/blog/[slug]`}
-                  >
-                    <Title>{post.data.title}</Title>
-                  </Link>
-                  <Date>{post.data.date}</Date>
-                  <Description>{post.data.description}</Description>
-                </Post>
-              ))}
-            </PostsWrap>
-          </Container>
+          <BlogContainer posts={posts} />
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>
     </>
   );
-}
+};
 
 export function getStaticProps() {
   const posts = postFilePaths.map((filePath) => {
@@ -76,3 +54,5 @@ export function getStaticProps() {
 
   return { props: { posts } };
 }
+
+export default BlogPage;

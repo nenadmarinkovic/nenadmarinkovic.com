@@ -5,6 +5,7 @@ export const lightTheme = {
   color: "#000",
   headerBackground: "hsla(0, 0%, 100%, 0.75)",
   headerBorder: "1px solid #EAEAEA",
+  backgroundModal: "rgb(250, 250, 250, 0.8)",
 };
 
 export const darkTheme = {
@@ -14,4 +15,5 @@ export const darkTheme = {
   color: "#fff",
   headerBackground: "hsl(0deg 0% 0% / 50%)",
   headerBorder: "none",
+  backgroundModal: "rgb(0, 0, 0, 0.8)",
 };
