@@ -64,8 +64,6 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.8;
   }
   
-  /* Modal */
-  
   .body-open {
     overflow: hidden !important;
   }
