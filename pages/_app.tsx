@@ -6,7 +6,7 @@ export default function Website({ Component, pageProps }: AppProps) {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-54KLXK121W`}
+        src={`https://www.googletagmanager.com/gtag/js?id=GT-NFPF45C`}
       />
       <Script
         id="gtag-init"
@@ -17,7 +17,7 @@ export default function Website({ Component, pageProps }: AppProps) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
-          gtag('config', 'G-54KLXK121W', {
+          gtag('config', 'GT-NFPF45C', {
             page_path: window.location.pathname
           });`,
         }}
