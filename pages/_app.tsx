@@ -5,19 +5,23 @@ export default function Website({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-54KLXK121W"
         strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-54KLXK121W`}
       />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'G-54KLXK121W');
-        `}
-      </Script>
-
+        
+          gtag('config', 'G-54KLXK121W', {
+            page_path: window.location.pathname
+          });`,
+        }}
+      />
       <Component {...pageProps} />
     </>
   );
