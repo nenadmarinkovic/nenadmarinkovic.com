@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   
   html,
   body {
+    background: ${({ theme }) => theme.background};
     padding: 0;
     margin: 0;
     font-family: "Cera Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,

@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { useTheme } from "../hooks/useTheme";
 import Head from "next/head";
 import { ThemeLayout } from "../styles/components/layout";
 import Header from "../components/Header";
@@ -11,12 +10,6 @@ import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
-  const [componentMounted] = useTheme();
-
-  if (!componentMounted) {
-    return <div />;
-  }
-  
   return (
     <>
       <Head>

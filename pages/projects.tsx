@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { useTheme } from "../hooks/useTheme";
 import Head from "next/head";
 import fs from "fs";
 import { ThemeLayout } from "../styles/components/layout";
@@ -26,11 +25,7 @@ const ProjectsPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
-  const [componentMounted] = useTheme();
 
-  if (!componentMounted) {
-    return <div />;
-  }
   return (
     <>
       <Head>
