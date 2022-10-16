@@ -31,8 +31,8 @@ export default function PostPage({ source, frontMatter }: any) {
       <Head>
         <title> {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <ThemeProvider theme={themeMode}>
         <ThemeLayout>
           <Header toggleTheme={toggleTheme} theme={theme} />
