@@ -20,10 +20,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/_document.js",
-    "utils/mdx.js",
+    "pages/_document.tsx",
+    "utils/mdx.ts",
     "styles/global.ts",
-    "lib/gtm.js"
   ],
 
   "exclude": ["node_modules"]
