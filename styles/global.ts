@@ -72,7 +72,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: scroll;
     inset: 0;
     position: fixed;
-    background: ${({ theme }) => theme.backgroundModal};
+    backdrop-filter: saturate(70%) blur(5px);
     opacity: 0;
     transition: opacity 200ms ease-in-out;
     z-index: 9;

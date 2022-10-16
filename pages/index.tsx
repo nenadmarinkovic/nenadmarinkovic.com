@@ -1,22 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { GlobalStyle } from "../styles/global";
-import { ThemeProvider } from "styled-components";
-import { useTheme } from "../hooks/useTheme";
-import { lightTheme, darkTheme } from "../styles/theme";
 import { ThemeLayout } from "../styles/components/layout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HomepageContainer from "../containers/homepage-container";
 
-const Homepage: NextPage = ({ spotifyData }: any) => {
-  const [theme, toggleTheme, componentMounted] = useTheme();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
-
-  if (!componentMounted) {
-    return <div />;
-  }
-
+const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   return (
     <>
       <Head>
@@ -24,14 +13,12 @@ const Homepage: NextPage = ({ spotifyData }: any) => {
         <meta name="description" content="Web development and design." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider theme={themeMode}>
-        <GlobalStyle />
-        <ThemeLayout>
-          <Header toggleTheme={toggleTheme} theme={theme} />
-          <HomepageContainer />
-          <Footer spotifyData={spotifyData} />
-        </ThemeLayout>
-      </ThemeProvider>
+
+      <ThemeLayout>
+        <Header toggleTheme={toggleTheme} theme={theme} />
+        <HomepageContainer />
+        <Footer spotifyData={spotifyData} />
+      </ThemeLayout>
     </>
   );
 };
