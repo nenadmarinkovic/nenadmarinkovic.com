@@ -29,7 +29,6 @@ const BlogPage: NextPage = ({
       <Head>
         <title>Nenad Marinković | Blog</title>
         <meta name="description" content="Web development and design." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
