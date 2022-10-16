@@ -21,8 +21,10 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_document.js",
-    "utils/mdx.js"
-, "styles/global.js", "lib/gtm.js"  ],
+    "utils/mdx.js",
+    "styles/global.ts",
+    "lib/gtm.js"
+  ],
 
   "exclude": ["node_modules"]
 }
