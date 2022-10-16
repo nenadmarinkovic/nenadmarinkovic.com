@@ -5,12 +5,8 @@ import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 
 export default function Website({ Component, pageProps }: AppProps) {
-  const [theme, toggleTheme, componentMounted] = useTheme();
+  const [theme, toggleTheme ] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
-
-  if (!componentMounted) {
-    return <div />;
-  }
 
   return (
     <>

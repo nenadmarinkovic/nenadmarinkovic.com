@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { useTheme } from "../hooks/useTheme";
 import Head from "next/head";
 import { ThemeLayout } from "../styles/components/layout";
 import fs from "fs";
@@ -24,6 +25,12 @@ const BlogPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
+  const [componentMounted] = useTheme();
+
+  if (!componentMounted) {
+    return <div />;
+  }
+
   return (
     <>
       <Head>
