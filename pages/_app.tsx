@@ -1,26 +1,43 @@
-import { useEffect, useState } from "react";
+import Head from "next/head";
 import type { AppProps } from "next/app";
-import { useTheme } from "../hooks/useTheme";
-import { lightTheme, darkTheme } from "../styles/theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/global";
+import { useTheme } from "../hooks/useTheme";
+import { lightTheme, darkTheme } from "../styles/theme";
+
+const criticalThemeCss = `  
+.next-light-theme {  
+--background: #fff;  
+--text: #000;  
+}  
+  
+.next-dark-theme {  
+--background: #000;  
+--text: #fff;  
+}  
+  
+body {  
+  background: var(--background);  
+  color: var(--text);  
+}  
+`;
 
 export default function Website({ Component, pageProps }: AppProps) {
-  const [isMounted, setMounted] = useState(false);
-  const [theme, toggleTheme] = useTheme();
+  const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  if (!componentMounted) {
+    return <div />;
+  }
 
   return (
     <>
+      <Head>
+        <style dangerouslySetInnerHTML={{ __html: criticalThemeCss }} />
+      </Head>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        {isMounted && (
-          <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
-        )}
+        <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
       </ThemeProvider>
     </>
   );
