@@ -11,7 +11,7 @@ export const TagWrap = styled.span`
   font-weight: 700;
 
   &.green {
-    background: #589c08;
+    background: #457e03;
   }
 
   &.blue {
@@ -19,7 +19,7 @@ export const TagWrap = styled.span`
   }
 
   &.orange {
-    background: #e45a0e;
+    background: #d64c1d;
   }
 
   &.black {
