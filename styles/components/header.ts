@@ -25,12 +25,15 @@ export const Main = styled.div`
   align-items: center;
 `;
 
-export const HomeLink = styled.a`
+export const HomeLink = styled.div`
   cursor: pointer;
   color: ${({ theme }) => theme.color};
 
-  &[aria-current] {
-    font-weight: bold;
+  a {
+    color: ${({ theme }) => theme.color};
+    &[aria-current] {
+      font-weight: bold;
+    }
   }
 `;
 
@@ -41,7 +44,7 @@ export const Links = styled.div`
   width: 60%;
 `;
 
-export const HeaderLink = styled.a`
+export const HeaderLink = styled.div`
   width: 85px;
   font-size: 0.95rem;
   cursor: pointer;
@@ -49,8 +52,11 @@ export const HeaderLink = styled.a`
   justify-content: center;
   color: ${({ theme }) => theme.color};
 
-  &[aria-current] {
-    font-weight: bold;
+  a {
+    color: ${({ theme }) => theme.color};
+    &[aria-current] {
+      font-weight: bold;
+    }
   }
 `;
 

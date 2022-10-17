@@ -42,19 +42,29 @@ function Header({ theme, toggleTheme }: any) {
         <Top />
         <Container>
           <Main>
-            <ActiveLink href="/">
-              <HomeLink>Home</HomeLink>
-            </ActiveLink>
+            <HomeLink>
+              <ActiveLink href="/">
+                <a>Home</a>
+              </ActiveLink>
+            </HomeLink>
+
             <Links>
-              <ActiveLink href="/projects">
-                <HeaderLink>Projects</HeaderLink>
-              </ActiveLink>
-              <ActiveLink href="/blog">
-                <HeaderLink>Blog</HeaderLink>
-              </ActiveLink>
+              <HeaderLink>
+                <ActiveLink href="/projects">
+                  <a>Projects</a>
+                </ActiveLink>
+              </HeaderLink>
+
+              <HeaderLink>
+                <ActiveLink href="/blog">
+                  <a>Blog</a>
+                </ActiveLink>
+              </HeaderLink>
+
               <HeaderLink onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </HeaderLink>
+
               <ContactButton type="button" onClick={openModal}>
                 Contact
               </ContactButton>
