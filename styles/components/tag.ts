@@ -19,7 +19,7 @@ export const TagWrap = styled.span`
   }
 
   &.orange {
-    background: #d64c1d;
+    background: #d04313;
   }
 
   &.black {
