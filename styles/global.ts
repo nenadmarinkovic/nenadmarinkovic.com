@@ -1,6 +1,42 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+      url("../fonts/CeraPro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Black.woff2") format("woff2"),
+      url("../fonts/CeraPro-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+      url("../fonts/CeraPro-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+      url("../fonts/CeraPro-Medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+  }
+  
   * {
     box-sizing: border-box;
   }
