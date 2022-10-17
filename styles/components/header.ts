@@ -60,6 +60,15 @@ export const HeaderLink = styled.div`
   }
 `;
 
+export const ThemeButton = styled.button`
+  padding: 1.5px;
+  background: transparent;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.color};
+`;
+
 export const ContactButton = styled.button`
   padding: 8.5px 15px;
   border-radius: 7px;

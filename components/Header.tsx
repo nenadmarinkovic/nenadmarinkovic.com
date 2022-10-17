@@ -7,6 +7,7 @@ import {
   HomeLink,
   Links,
   HeaderLink,
+  ThemeButton,
   ContactButton,
 } from "../styles/components/header";
 
@@ -61,9 +62,9 @@ function Header({ theme, toggleTheme }: any) {
                 </ActiveLink>
               </HeaderLink>
 
-              <HeaderLink onClick={toggleTheme}>
+              <ThemeButton onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
-              </HeaderLink>
+              </ThemeButton>
 
               <ContactButton type="button" onClick={openModal}>
                 Contact
