@@ -4,19 +4,15 @@ import { GlobalStyle } from "../styles/global";
 import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 
-export default function Website({ Component, pageProps }: AppProps) {
-  const [theme, toggleTheme, componentMounted] = useTheme();
+export default function App({ Component, pageProps }: AppProps) {
+  const [theme, toggleTheme] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
-
-  if (!componentMounted) {
-    return <div />;
-  }
 
   return (
     <>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );

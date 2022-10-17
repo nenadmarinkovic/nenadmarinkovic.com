@@ -5,10 +5,9 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
-
 import { ServerStyleSheet } from "styled-components";
 
-class MyDocument extends Document {
+class Website extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -39,7 +38,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+        </Head>
         <body>
           <Main />
           <NextScript />
@@ -49,4 +50,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default Website;
