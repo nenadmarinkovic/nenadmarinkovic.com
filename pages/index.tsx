@@ -20,6 +20,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
 
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
+
         <Container>
           <Banner
             name="Nenad"

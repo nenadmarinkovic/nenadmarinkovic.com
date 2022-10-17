@@ -8,6 +8,10 @@ const nextConfig = {
     styledComponents: true,
   },
 
+  experimental: {
+    forceSwcTransforms: true,
+  },
+
   i18n: {
     locales: ["en"],
     defaultLocale: "en",

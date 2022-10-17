@@ -25,7 +25,6 @@ const ProjectsPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
-
   return (
     <>
       <Head>
@@ -33,7 +32,7 @@ const ProjectsPage: NextPage = ({
         <meta name="description" content="Web development and design." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>
