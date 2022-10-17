@@ -55,7 +55,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
           />
           <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
-          <Tag color="yellow" text="Firebase" />
+          <Tag color="orange" text="Firebase" />
           <Tag color="black" text="Next.js" />
           <Panel />
         </Container>
