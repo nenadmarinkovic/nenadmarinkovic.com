@@ -15,7 +15,7 @@ import {
   Description,
 } from "../styles/pages/blog";
 import Link from "next/link";
-import { Introduction } from "../styles/components/Introduction";
+import { Introduction } from "../styles/components/introduction";
 import Banner from "../components/Banner";
 import { Container } from "../styles/components/layout";
 

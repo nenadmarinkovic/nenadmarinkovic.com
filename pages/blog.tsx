@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import path from "path";
 import type { NextPage } from "next";
 import { ThemeLayout } from "../styles/components/layout";
-import { Introduction } from "../styles/components/Introduction";
+import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx";
 import Footer from "../components/Footer";
 import { Container } from "../styles/components/layout";
