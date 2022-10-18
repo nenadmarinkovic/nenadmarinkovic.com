@@ -39,7 +39,32 @@ class Website extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="manifest" href="/manifest.json" />
+          <meta name="description" content="Web development and design." />
+          {/* <link
+            rel="preload"
+            href="/fonts/CeraPro-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/CeraPro-Bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/CeraPro-Black.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          /> */}
+          <link rel="icon" href="/favicon.ico" />
+          <link href="/manifest.json" rel="manifest" />
+          <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+          <meta content="#ffffff" name="theme-color" />
         </Head>
         <body>
           <Main />

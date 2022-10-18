@@ -14,8 +14,6 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
     <>
       <Head>
         <title>Nenad Marinković | Home</title>
-        <meta name="description" content="Web development and design." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <ThemeLayout>
