@@ -1,3 +1,3 @@
 self.addEventListener("install", function (event) {
-  // PWA install
+  // PWA Success!
 });

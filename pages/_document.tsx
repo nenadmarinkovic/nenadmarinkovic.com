@@ -40,7 +40,7 @@ class Website extends Document {
       <Html lang="en">
         <Head>
           <meta name="description" content="Web development and design." />
-          {/* <link
+          <link
             rel="preload"
             href="/fonts/CeraPro-Regular.woff2"
             as="font"
@@ -60,7 +60,7 @@ class Website extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
-          /> */}
+          />
           <link rel="icon" href="/favicon.ico" />
           <link href="/manifest.json" rel="manifest" />
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
