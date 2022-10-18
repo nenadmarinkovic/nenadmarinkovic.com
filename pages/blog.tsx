@@ -1,15 +1,15 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import { ThemeLayout } from "../styles/components/layout";
+import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import Header from "../components/Header";
+import type { NextPage } from "next";
+import { ThemeLayout } from "../styles/components/layout";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx";
 import Footer from "../components/Footer";
 import { Container } from "../styles/components/layout";
+import Header from "../components/Header";
 import Banner from "../components/Banner";
-import Link from "next/link";
 import {
   PostsWrap,
   Post,

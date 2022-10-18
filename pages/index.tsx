@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
 import Head from "next/head";
+import type { NextPage } from "next";
 import { ThemeLayout } from "../styles/components/layout";
+import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Container } from "../styles/components/layout";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Tag from "../components/Tag";
