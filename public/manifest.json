@@ -22,5 +22,5 @@
     "dir": "ltr",
     "lang": "en-US",
     "orientation": "portrait-primary",
-    "start_url": "/"
+    "start_url": "/../../index.html"
 }
