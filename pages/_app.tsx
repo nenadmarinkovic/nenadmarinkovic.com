@@ -6,7 +6,7 @@ import { useTheme } from "../hooks/useTheme";
 import { lightTheme, darkTheme } from "../styles/theme";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [theme, toggleTheme] = useTheme();
+  const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   useEffect(() => {
@@ -14,6 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
       .register("/sw.js")
       .catch((err) => console.log("Service Worker registration failed: ", err));
   }, []);
+
+  if (!componentMounted) {
+    return <div />;
+  }
 
   return (
     <ThemeProvider theme={themeMode}>
