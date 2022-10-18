@@ -16,11 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <>
-      <ThemeProvider theme={themeMode}>
-        <GlobalStyle />
-        <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={themeMode}>
+      <GlobalStyle />
+      <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
+    </ThemeProvider>
   );
 }

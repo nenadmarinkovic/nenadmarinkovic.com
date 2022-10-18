@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const BannerWrap = styled.div`
-  padding-top: 1.5rem;
+  padding-top: 3rem;
   background: ${({ theme }) => theme.background};
 `;
 
-export const Title = styled.h1`
+export const Text = styled.h1`
+  margin: 0;
   font-size: 3rem;
   font-weight: 900;
   color: ${({ theme }) => theme.color};
@@ -13,11 +14,4 @@ export const Title = styled.h1`
   span {
     display: block;
   }
-`;
-
-export const Text = styled.p`
-  color: ${({ theme }) => theme.color};
-  font-size: 1.25rem;
-  line-height: 1.9;
-  width: 70%;
 `;

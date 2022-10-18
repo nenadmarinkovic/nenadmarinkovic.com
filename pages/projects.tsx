@@ -15,7 +15,7 @@ import {
   Description,
 } from "../styles/pages/blog";
 import Link from "next/link";
-
+import { Introduction } from "../styles/components/Introduction";
 import Banner from "../components/Banner";
 import { Container } from "../styles/components/layout";
 
@@ -33,11 +33,11 @@ const ProjectsPage: NextPage = ({
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>
-          <Banner
-            name="Projects"
-            text="
-              I write mostly about web development and tech. In total, I've written 51 articles on my blog. Use the search below to filter by title."
-          />
+          <Banner name="Projects" />
+          <Introduction>
+            I write mostly about web development and tech. Use the search below
+            to filter by title.
+          </Introduction>
           <PostsWrap>
             {posts.map((post: any) => (
               <Post key={post.filePath}>

@@ -5,7 +5,6 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-  optimizeFonts: true,
 
   compiler: {
     styledComponents: true,

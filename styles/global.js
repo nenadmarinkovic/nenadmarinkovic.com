@@ -40,7 +40,13 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     a {
-      color: #00dfd8;
+      color: #117abe;
+      text-decoration: none;
+    }
+
+    .a-link {
+      font-weight: bold;
+      color: #117abe;
       text-decoration: none;
     }
     
@@ -61,7 +67,7 @@ export const GlobalStyle = createGlobalStyle`
       overflow-y: scroll;
       inset: 0;
       position: fixed;
-      backdrop-filter: saturate(70%) blur(5px);
+      background: ${({ theme }) => theme.backgroundModal};
       opacity: 0;
       transition: opacity 200ms ease-in-out;
       z-index: 9;
@@ -74,5 +80,5 @@ export const GlobalStyle = createGlobalStyle`
     .overlay-close {
       opacity: 0;
     }
-    
+
 `;

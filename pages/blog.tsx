@@ -5,11 +5,13 @@ import matter from "gray-matter";
 import path from "path";
 import type { NextPage } from "next";
 import { ThemeLayout } from "../styles/components/layout";
+import { Introduction } from "../styles/components/Introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx";
 import Footer from "../components/Footer";
 import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+
 import {
   PostsWrap,
   Post,
@@ -32,11 +34,11 @@ const BlogPage: NextPage = ({
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>
-          <Banner
-            name="Blog"
-            text="
-              I write mostly about web development and tech. In total, I've written 51 articles on my blog. Use the search below to filter by title."
-          />
+          <Banner name="Blog" />
+          <Introduction>
+            I write mostly about web development and tech. Use the search below
+            to filter by title.
+          </Introduction>
           <PostsWrap>
             {posts.map((post: any) => (
               <Post key={post.filePath}>

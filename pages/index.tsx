@@ -5,11 +5,15 @@ import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
+import { Introduction } from "../styles/components/Introduction";
 import Card from "../components/Card";
 import Tag from "../components/Tag";
 import Panel from "../components/Panel";
+import { useState } from "react";
 
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
+  const [company] = useState("https://dccs.at");
+
   return (
     <>
       <Head>
@@ -19,14 +23,13 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
         <Header toggleTheme={toggleTheme} theme={theme} />
 
         <Container>
-          <Banner
-            name="Nenad"
-            surname="Marinković"
-            text="
-                Software developer at Company in Vienna,
-                Austria. Working mainly with Javascript ( React, Vue, Node) on
-                designing and developing web interafaces and APIs."
-          />
+          <Banner name="Nenad" surname="Marinković" />
+          <Introduction>
+            Software developer at
+            <a className="a-link" href="https://google.com" target="_blank" rel="noreferrer"> DCCS IT Business Solutions </a> in
+            Vienna, Austria. Working mainly with Javascript ( React, Vue, Node)
+            on designing and developing web interafaces and APIs.
+          </Introduction>
           <Card
             title="Starting with the purpose"
             description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
