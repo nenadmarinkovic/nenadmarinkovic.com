@@ -28,10 +28,7 @@ const BlogPage: NextPage = ({
     <>
       <Head>
         <title>Nenad Marinković | Blog</title>
-        <meta name="description" content="Web development and design." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>
@@ -40,7 +37,6 @@ const BlogPage: NextPage = ({
             text="
               I write mostly about web development and tech. In total, I've written 51 articles on my blog. Use the search below to filter by title."
           />
-
           <PostsWrap>
             {posts.map((post: any) => (
               <Post key={post.filePath}>

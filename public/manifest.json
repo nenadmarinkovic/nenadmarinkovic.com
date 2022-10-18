@@ -21,6 +21,5 @@
     "display": "standalone",
     "dir": "ltr",
     "lang": "en-US",
-    "orientation": "portrait-primary",
-    "start_url": "/../../index.html"
+    "orientation": "portrait-primary"
 }

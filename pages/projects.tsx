@@ -29,10 +29,7 @@ const ProjectsPage: NextPage = ({
     <>
       <Head>
         <title>Nenad Marinković | Projects</title>
-        <meta name="description" content="Web development and design." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>

@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Component {...pageProps} />
+        <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
       </ThemeProvider>
     </>
   );
