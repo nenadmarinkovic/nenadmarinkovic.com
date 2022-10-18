@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/global";
@@ -7,6 +8,18 @@ import { lightTheme, darkTheme } from "../styles/theme";
 export default function App({ Component, pageProps }: AppProps) {
   const [theme, toggleTheme] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
+
+  useEffect(() => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) =>
+        console.log(
+          "Service Worker registration successful with scope: ",
+          registration.scope
+        )
+      )
+      .catch((err) => console.log("Service Worker registration failed: ", err));
+  }, []);
 
   return (
     <>
