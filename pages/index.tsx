@@ -5,7 +5,7 @@ import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
-import { Introduction } from "../styles/components/Introduction";
+import { Introduction } from "../styles/components/introduction";
 import Card from "../components/Card";
 import Tag from "../components/Tag";
 import Panel from "../components/Panel";
