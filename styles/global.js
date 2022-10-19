@@ -39,6 +39,12 @@ export const GlobalStyle = createGlobalStyle`
       scrollbar-gutter: stable;
     }
     
+    input,
+    textarea,
+    button {
+      font-family: inherit;
+    }
+    
     a {
       color: #117abe;
       text-decoration: none;
