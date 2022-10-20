@@ -46,13 +46,13 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     a {
-      color: #117abe;
+      color: #0070f5;
       text-decoration: none;
     }
 
     .a-link {
       font-weight: bold;
-      color: #117abe;
+      color: #0070f5;
       text-decoration: none;
     }
     
