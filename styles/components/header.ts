@@ -70,7 +70,7 @@ export const ThemeButton = styled.button`
 `;
 
 export const ContactButton = styled.button`
-  padding: 8.5px 15px;
+  padding: 8.5px 15px 10px;
   border-radius: 7px;
   font-size: 0.85rem;
   border: none;
