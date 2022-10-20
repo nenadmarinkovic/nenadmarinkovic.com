@@ -30,7 +30,7 @@ export const Box = styled.div`
   justify-content: space-between;
 
   &.blue {
-    background: linear-gradient(270.48deg, #00dfd8 -4.99%, #007cf0 99.13%);
+    background: linear-gradient(270.48deg, #00dfd8 -4.99%, #0070f5 99.13%);
   }
 
   &.green {
