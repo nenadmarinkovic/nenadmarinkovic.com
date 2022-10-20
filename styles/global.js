@@ -87,10 +87,4 @@ export const GlobalStyle = createGlobalStyle`
     .overlay-close {
       opacity: 0;
     }
-
-    .active-button {
-      background: transparent;
-      border: ${({ theme }) => theme.contactButtonBorder};
-      color: ${({ theme }) => theme.contactButtonColor};
-    }
 `;

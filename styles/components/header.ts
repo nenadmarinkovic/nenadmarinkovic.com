@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface ContactButton {
+  modalIsOpen: boolean;
+}
+
 export const HeaderWrap = styled.div`
   position: sticky;
   top: 0;
@@ -69,17 +73,18 @@ export const ThemeButton = styled.button`
   color: ${({ theme }) => theme.color};
 `;
 
-export const ContactButton = styled.button`
+export const ContactButton = styled.button<ContactButton>`
+  background: ${({ modalIsOpen, theme }) =>
+    modalIsOpen ? "transparent" : theme.contactButtonBackground};
   padding: 8px 12px;
   border-radius: 7px;
   font-size: 0.95rem;
   border: ${({ theme }) => theme.contactButtonBorder};
   cursor: pointer;
   font-weight: bold;
-  background: #0070f5;
-  color: ${({ theme }) => theme.colorReverse};
+  color: ${({ modalIsOpen, theme }) =>
+    modalIsOpen ? theme.color : theme.colorReverse};
   transition: 0.3s;
-  background: ${({ theme }) => theme.contactButtonBackground};
 
   :hover {
     border: ${({ theme }) => theme.contactButtonBorder};
