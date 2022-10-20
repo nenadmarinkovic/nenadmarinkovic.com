@@ -76,9 +76,9 @@ export const ContactButton = styled.button`
   border: none;
   cursor: pointer;
   font-weight: bold;
-  background: ${({ theme }) => theme.backgroundReverse};
+  background: #0070f5;
   cursor: pointer;
-  color: ${({ theme }) => theme.colorReverse};
+  color: #fff;
 `;
 
 export const Fixed = styled.div`
