@@ -70,17 +70,16 @@ export const ThemeButton = styled.button`
 `;
 
 export const ContactButton = styled.button`
+  background: ${({ theme }) => theme.contactButtonBackground};
   padding: 8px 12px;
   border-radius: 7px;
   font-size: 0.95rem;
   border: ${({ theme }) => theme.contactButtonBorder};
   cursor: pointer;
   font-weight: bold;
-  background: #0070f5;
   color: ${({ theme }) => theme.colorReverse};
   transition: 0.3s;
-  background: ${({ theme }) => theme.contactButtonBackground};
-
+  
   :hover {
     border: ${({ theme }) => theme.contactButtonBorder};
     background: transparent;
