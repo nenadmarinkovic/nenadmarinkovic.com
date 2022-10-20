@@ -26,7 +26,7 @@ const customStyles = {
 };
 
 function Header({ theme, toggleTheme }: any) {
-  const [modalIsOpen, setIsOpen]: any = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
     setIsOpen(true);
@@ -68,7 +68,7 @@ function Header({ theme, toggleTheme }: any) {
               <ContactButton
                 type="button"
                 onClick={openModal}
-                className={modalIsOpen && "active-button"}
+                className={modalIsOpen ? "active-button" : ""}
               >
                 Contact
               </ContactButton>
