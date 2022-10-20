@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container } from "../styles/components/layout";
 import Modal from "react-modal";
 import {
@@ -10,10 +11,8 @@ import {
   ThemeButton,
   ContactButton,
 } from "../styles/components/header";
-
 import { ModalInside } from "../styles/components/modal";
 import ActiveLink from "./ActiveLink";
-import { useState } from "react";
 
 const customStyles = {
   content: {
@@ -27,7 +26,7 @@ const customStyles = {
 };
 
 function Header({ theme, toggleTheme }: any) {
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setIsOpen]: any = useState(false);
 
   function openModal() {
     setIsOpen(true);
@@ -66,7 +65,11 @@ function Header({ theme, toggleTheme }: any) {
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </ThemeButton>
 
-              <ContactButton type="button" onClick={openModal}>
+              <ContactButton
+                type="button"
+                onClick={openModal}
+                className={modalIsOpen && "active-contact-button"}
+              >
                 Contact
               </ContactButton>
             </Links>

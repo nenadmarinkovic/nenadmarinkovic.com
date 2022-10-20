@@ -63,22 +63,29 @@ export const HeaderLink = styled.div`
 export const ThemeButton = styled.button`
   padding: 1.5px;
   background: transparent;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   border: none;
   cursor: pointer;
   color: ${({ theme }) => theme.color};
 `;
 
 export const ContactButton = styled.button`
-  padding: 8.5px 15px 10px;
+  padding: 8px 12px;
   border-radius: 7px;
-  font-size: 0.85rem;
-  border: none;
+  font-size: 0.95rem;
+  border: ${({ theme }) => theme.contactButtonBorder};
   cursor: pointer;
   font-weight: bold;
   background: #0070f5;
-  cursor: pointer;
-  color: #fff;
+  color: ${({ theme }) => theme.colorReverse};
+  transition: 0.3s;
+  background: ${({ theme }) => theme.contactButtonBackground};
+
+  :hover {
+    border: ${({ theme }) => theme.contactButtonBorder};
+    background: transparent;
+    color: ${({ theme }) => theme.contactButtonColor};
+  }
 `;
 
 export const Fixed = styled.div`

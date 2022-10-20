@@ -48,6 +48,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
       color: #0070f5;
       text-decoration: none;
+      transition: .3s;
     }
 
     .a-link {
@@ -87,4 +88,9 @@ export const GlobalStyle = createGlobalStyle`
       opacity: 0;
     }
 
+    .active-contact-button {
+      background: transparent;
+      border: ${({ theme }) => theme.contactButtonBorder};
+      color: ${({ theme }) => theme.contactButtonColor};
+    }
 `;
