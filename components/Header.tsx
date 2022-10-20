@@ -68,7 +68,7 @@ function Header({ theme, toggleTheme }: any) {
               <ContactButton
                 type="button"
                 onClick={openModal}
-                className={modalIsOpen && "active-contact-button"}
+                className={modalIsOpen && "active-button"}
               >
                 Contact
               </ContactButton>

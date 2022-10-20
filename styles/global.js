@@ -88,7 +88,7 @@ export const GlobalStyle = createGlobalStyle`
       opacity: 0;
     }
 
-    .active-contact-button {
+    .active-button {
       background: transparent;
       border: ${({ theme }) => theme.contactButtonBorder};
       color: ${({ theme }) => theme.contactButtonColor};
