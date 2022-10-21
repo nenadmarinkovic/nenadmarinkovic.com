@@ -61,6 +61,12 @@ function Header({ theme, toggleTheme }: any) {
                 </ActiveLink>
               </HeaderLink>
 
+              <HeaderLink>
+                <ActiveLink href="/snippets">
+                  <a>Snippets</a>
+                </ActiveLink>
+              </HeaderLink>
+
               <ThemeButton onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </ThemeButton>

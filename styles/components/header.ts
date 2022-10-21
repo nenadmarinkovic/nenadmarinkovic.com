@@ -32,6 +32,7 @@ export const Main = styled.div`
 export const HomeLink = styled.div`
   cursor: pointer;
   color: ${({ theme }) => theme.color};
+  transition: 0.3s;
 
   a {
     color: ${({ theme }) => theme.color};
@@ -45,7 +46,7 @@ export const Links = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 65%;
 `;
 
 export const HeaderLink = styled.div`
@@ -55,6 +56,7 @@ export const HeaderLink = styled.div`
   display: flex;
   justify-content: center;
   color: ${({ theme }) => theme.color};
+  transition: 0.3s;
 
   a {
     color: ${({ theme }) => theme.color};
@@ -65,6 +67,7 @@ export const HeaderLink = styled.div`
 `;
 
 export const ThemeButton = styled.button`
+  width: 85px;
   padding: 1.5px;
   background: transparent;
   font-size: 0.95rem;
