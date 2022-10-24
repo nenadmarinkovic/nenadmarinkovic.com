@@ -13,7 +13,7 @@ import {
   Title,
   Date,
   Description,
-} from "../styles/pages/blog";
+} from "../styles/pages/notes";
 import Link from "next/link";
 import { Introduction } from "../styles/components/introduction";
 import Banner from "../components/Banner";
@@ -42,8 +42,8 @@ const ProjectsPage: NextPage = ({
             {posts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
-                  as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/blog/[slug]`}
+                  as={`/notes/${post.filePath.replace(/\.mdx?$/, "")}`}
+                  href={`/notes/[slug]`}
                 >
                   <Title>{post.data.title}</Title>
                 </Link>

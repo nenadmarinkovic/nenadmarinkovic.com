@@ -18,9 +18,9 @@ import {
   Title,
   Date,
   Description,
-} from "../styles/pages/blog";
+} from "../styles/pages/notes";
 
-const BlogPage: NextPage = ({
+const NotesPage: NextPage = ({
   posts,
   spotifyData,
   theme,
@@ -34,7 +34,7 @@ const BlogPage: NextPage = ({
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Container>
-          <Banner name="Blog" />
+          <Banner name="Notes" />
           <Introduction>
             I write mostly about web development and tech. Use the search below
             to filter by title.
@@ -43,8 +43,8 @@ const BlogPage: NextPage = ({
             {posts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
-                  as={`/blog/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/blog/[slug]`}
+                  as={`/notes/${post.filePath.replace(/\.mdx?$/, "")}`}
+                  href={`/notes/[slug]`}
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
@@ -75,4 +75,4 @@ export function getStaticProps() {
   return { props: { posts } };
 }
 
-export default BlogPage;
+export default NotesPage;

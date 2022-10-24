@@ -46,11 +46,11 @@ export const Links = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 55%;
 `;
 
 export const HeaderLink = styled.div`
-  width: 85px;
+  width: 70px;
   font-size: 0.95rem;
   cursor: pointer;
   display: flex;

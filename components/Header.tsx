@@ -56,8 +56,8 @@ function Header({ theme, toggleTheme }: any) {
               </HeaderLink>
 
               <HeaderLink>
-                <ActiveLink href="/blog">
-                  <a>Blog</a>
+                <ActiveLink href="/notes">
+                  <a>Notes</a>
                 </ActiveLink>
               </HeaderLink>
 
