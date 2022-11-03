@@ -29,7 +29,7 @@ const NotesPage: NextPage = ({
   return (
     <>
       <Head>
-        <title>Nenad Marinković | Blog</title>
+        <title>Nenad Marinković | Notes</title>
       </Head>
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
