@@ -29,4 +29,4 @@ To learn more about styled-components, visit:
 
 ## Cloning / Forking
 
-Please remove all of my personal information (name, blog posts, images, etc.).
+Please remove all of my personal information (name, links, projects, etc.).
