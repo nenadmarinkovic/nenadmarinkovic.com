@@ -43,8 +43,7 @@ const ProjectsPage: NextPage = ({
               <Post key={post.filePath}>
                 <Link
                   as={`/notes/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/notes/[slug]`}
-                >
+                  href={`/notes/[slug]`}>
                   <Title>{post.data.title}</Title>
                 </Link>
                 <Date>{post.data.date}</Date>

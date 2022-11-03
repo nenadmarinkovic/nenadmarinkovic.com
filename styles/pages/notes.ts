@@ -11,7 +11,7 @@ export const Post = styled.div`
   margin-top: 2.5rem;
 `;
 
-export const Title = styled.a`
+export const Title = styled.div`
   font-size: 2.05rem;
   font-weight: 900;
   color: ${({ theme }) => theme.color};

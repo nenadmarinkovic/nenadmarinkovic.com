@@ -36,9 +36,6 @@ export const HomeLink = styled.div`
 
   a {
     color: ${({ theme }) => theme.color};
-    &[aria-current] {
-      font-weight: bold;
-    }
   }
 `;
 
@@ -60,9 +57,6 @@ export const HeaderLink = styled.div`
 
   a {
     color: ${({ theme }) => theme.color};
-    &[aria-current] {
-      font-weight: bold;
-    }
   }
 `;
 

@@ -12,7 +12,8 @@ import {
   ContactButton,
 } from "../styles/components/header";
 import { ModalInside } from "../styles/components/modal";
-import ActiveLink from "./ActiveLink";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const customStyles = {
   content: {
@@ -26,6 +27,8 @@ const customStyles = {
 };
 
 function Header({ theme, toggleTheme }: any) {
+  const router = useRouter();
+
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -43,28 +46,25 @@ function Header({ theme, toggleTheme }: any) {
         <Container>
           <Main>
             <HomeLink>
-              <ActiveLink href="/">
-                <a>Home</a>
-              </ActiveLink>
+              <Link href="/" className={router.pathname === "/" ? "active-link" : ""}>
+                Home
+              </Link>
             </HomeLink>
-
             <Links>
               <HeaderLink>
-                <ActiveLink href="/projects">
-                  <a>Projects</a>
-                </ActiveLink>
+                <Link href="/projects" className={router.pathname === "/projects" ? "active-link" : ""}>
+                  Projects
+                </Link>
               </HeaderLink>
-
               <HeaderLink>
-                <ActiveLink href="/notes">
-                  <a>Notes</a>
-                </ActiveLink>
+                <Link
+                  href="/notes" className={router.pathname === "/notes" ? "active-link" : ""}>
+                  Notes
+                </Link>
               </HeaderLink>
-
               <ThemeButton onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </ThemeButton>
-
               <ContactButton
                 type="button"
                 onClick={openModal}

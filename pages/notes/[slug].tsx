@@ -1,20 +1,18 @@
 import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
+import Header from "../../components/Header";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
-import CustomLink from "../../components/CustomLink";
+import { ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx";
 import { Container } from "../../styles/components/layout";
 import { lightTheme, darkTheme } from "../../styles/theme";
-import Header from "../../components/Header";
-import { ThemeLayout } from "../../styles/components/layout";
 
 const components = {
-  a: CustomLink,
   Head,
 };
 
@@ -56,7 +54,6 @@ export const getStaticProps = async ({ params }: any) => {
   const { content, data } = matter(source);
 
   const mdxSource = await serialize(content, {
-    // Optionally pass remark/rehype plugins
     mdxOptions: {
       remarkPlugins: [],
       rehypePlugins: [],
@@ -74,9 +71,7 @@ export const getStaticProps = async ({ params }: any) => {
 
 export const getStaticPaths = async () => {
   const paths = postFilePaths
-    // Remove file extensions for page paths
     .map((path) => path.replace(/\.mdx?$/, ""))
-    // Map the path into the static paths object required by Next.js
     .map((slug) => ({ params: { slug } }));
 
   return {

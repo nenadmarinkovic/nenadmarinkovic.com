@@ -56,6 +56,10 @@ export const GlobalStyle = createGlobalStyle`
       color: #0070f5;
       text-decoration: none;
     }
+
+    .active-link {
+      font-weight: bold;
+    }
     
     ul {
       padding: 0;
