@@ -48,8 +48,7 @@ function Header({ theme, toggleTheme }: any) {
             <HomeLink>
               <Link
                 href="/"
-                className={router.pathname === "/" ? "active-link" : ""}
-              >
+                className={router.pathname === "/" ? "active-link" : ""}>
                 Home
               </Link>
             </HomeLink>
@@ -58,17 +57,14 @@ function Header({ theme, toggleTheme }: any) {
                 <Link
                   href="/projects"
                   className={
-                    router.pathname === "/projects" ? "active-link" : ""
-                  }
-                >
+                    router.pathname === "/projects" ? "active-link" : ""}>
                   Projects
                 </Link>
               </HeaderLink>
               <HeaderLink>
                 <Link
                   href="/notes"
-                  className={router.pathname === "/notes" ? "active-link" : ""}
-                >
+                  className={router.pathname === "/notes" ? "active-link" : ""}>
                   Notes
                 </Link>
               </HeaderLink>
@@ -78,8 +74,7 @@ function Header({ theme, toggleTheme }: any) {
               <ContactButton
                 type="button"
                 onClick={openModal}
-                modalIsOpen={modalIsOpen}
-              >
+                modalIsOpen={modalIsOpen}>
                 Contact
               </ContactButton>
             </Links>
@@ -88,11 +83,9 @@ function Header({ theme, toggleTheme }: any) {
       </HeaderWrap>
       <Modal
         closeTimeoutMS={300}
-        className="modal"
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="modal"
         ariaHideApp={false}
         bodyOpenClassName={"body-open"}
         overlayClassName={{
@@ -100,7 +93,8 @@ function Header({ theme, toggleTheme }: any) {
           afterOpen: "overlay-open",
           beforeClose: "overlay-close",
         }}
-      >
+        className="modal"
+        contentLabel="modal">
         <ModalWrap>
           <ModalInside>
             <button onClick={closeModal}>Close</button>
