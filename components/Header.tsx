@@ -11,7 +11,7 @@ import {
   ThemeButton,
   ContactButton,
 } from "../styles/components/header";
-import { ModalInside } from "../styles/components/modal";
+import { ModalWrap, ModalInside } from "../styles/components/modal";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -46,19 +46,29 @@ function Header({ theme, toggleTheme }: any) {
         <Container>
           <Main>
             <HomeLink>
-              <Link href="/" className={router.pathname === "/" ? "active-link" : ""}>
+              <Link
+                href="/"
+                className={router.pathname === "/" ? "active-link" : ""}
+              >
                 Home
               </Link>
             </HomeLink>
             <Links>
               <HeaderLink>
-                <Link href="/projects" className={router.pathname === "/projects" ? "active-link" : ""}>
+                <Link
+                  href="/projects"
+                  className={
+                    router.pathname === "/projects" ? "active-link" : ""
+                  }
+                >
                   Projects
                 </Link>
               </HeaderLink>
               <HeaderLink>
                 <Link
-                  href="/notes" className={router.pathname === "/notes" ? "active-link" : ""}>
+                  href="/notes"
+                  className={router.pathname === "/notes" ? "active-link" : ""}
+                >
                   Notes
                 </Link>
               </HeaderLink>
@@ -78,6 +88,7 @@ function Header({ theme, toggleTheme }: any) {
       </HeaderWrap>
       <Modal
         closeTimeoutMS={300}
+        className="modal"
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
@@ -90,10 +101,12 @@ function Header({ theme, toggleTheme }: any) {
           beforeClose: "overlay-close",
         }}
       >
-        <ModalInside>
-          <button onClick={closeModal}>Close</button>
-          <div>Model Inside. Change.</div>
-        </ModalInside>
+        <ModalWrap>
+          <ModalInside>
+            <button onClick={closeModal}>Close</button>
+            <div>Model Inside. Change.</div>
+          </ModalInside>
+        </ModalWrap>
       </Modal>
     </>
   );

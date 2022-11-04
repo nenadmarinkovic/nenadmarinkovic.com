@@ -73,6 +73,18 @@ export const GlobalStyle = createGlobalStyle`
     .body-open {
       overflow: hidden !important;
     }
+
+    .modal {
+      border-radius: 1rem;
+      padding: 0;
+      inset: 50% auto auto 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      background: transparent;
+      overflow: auto;
+      outline: none;
+    }
     
     .overlay {
       overflow-y: scroll;
@@ -86,6 +98,7 @@ export const GlobalStyle = createGlobalStyle`
     
     .overlay-open {
       opacity: 1;
+      border-radius: 20px;
     }
     
     .overlay-close {

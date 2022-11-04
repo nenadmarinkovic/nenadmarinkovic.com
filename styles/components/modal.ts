@@ -2,9 +2,28 @@ import styled from "styled-components";
 
 // TODO: Change
 
+export const ModalWrap = styled.div`
+  padding: 230px 350px;
+  border-radius: 1rem;
+  position: relative;
+  background: linear-gradient(
+    227.71deg,
+    #ff5b00 9.64%,
+    #60a9fc 50.62%,
+    #7ec130 89.11%
+  );
+`;
+
 export const ModalInside = styled.div`
-  padding: 30px;
-  height: 300px;
-  width: 500px;
-  background: white;
+  transition: 0.25s;
+  content: "";
+  border-radius: 8px;
+  background: #fff;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  z-index: 1;
+  padding: 1rem;
 `;
