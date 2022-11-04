@@ -26,7 +26,7 @@ export const Description = styled.div`
 
 export const Date = styled.div`
   color: ${({ theme }) => theme.color};
-  font-size: .85rem;
+  font-size: 0.85rem;
   line-height: 1.9;
   font-weight: 600;
 `;
