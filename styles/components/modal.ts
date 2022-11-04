@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// TODO: Change
-
 export const ModalWrap = styled.div`
   padding: 230px 350px;
   border-radius: 1rem;
