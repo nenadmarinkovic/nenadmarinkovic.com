@@ -15,15 +15,16 @@ export const ModalWrap = styled.div`
 `;
 
 export const ModalInside = styled.div`
-  transition: 0.25s;
+  padding: 1rem;
   content: "";
   border-radius: 8px;
-  background: #fff;
+  background: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.color};
   position: absolute;
   left: 15px;
   top: 15px;
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   z-index: 1;
-  padding: 1rem;
+
 `;
