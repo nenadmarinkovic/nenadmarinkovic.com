@@ -13,7 +13,6 @@ module.exports = {
   experimental: {
     forceSwcTransforms: true,
     legacyBrowsers: false,
-    browsersListForSwc: true,
   },
 
   i18n: {
