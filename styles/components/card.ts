@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Cards = styled.div`
+  margin-top: 5.5rem;
+`;
+
 export const Item = styled.div`
   display: flex;
   justify-content: space-between;
@@ -22,8 +26,8 @@ export const Text = styled.div`
 
 export const Box = styled.div`
   padding: 1.5rem;
-  height: 350px;
-  width: 350px;
+  height: 420px;
+  width: 418px;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -43,14 +47,15 @@ export const Box = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 2.05rem;
+  font-size: 2.15rem;
+  line-height: 1.5;
   font-weight: 900;
   color: ${({ theme }) => theme.color};
 `;
 
 export const Description = styled.div`
   color: ${({ theme }) => theme.color};
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.9;
   margin-top: 1rem;
 `;

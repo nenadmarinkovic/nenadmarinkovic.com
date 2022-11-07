@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import { Introduction } from "../styles/components/introduction";
 import Card from "../components/Card";
+import { Cards } from "../styles/components/card";
 import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 import { useState } from "react";
@@ -26,34 +27,45 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
           <Banner name="Nenad" surname="Marinković" />
           <Introduction>
             Software developer at
-            <a className="a-link" href="https://google.com" target="_blank" rel="noreferrer"> DCCS IT Business Solutions </a> in
-            Vienna, Austria. Working mainly with Javascript ( React, Vue, Node)
-            on designing and developing web interafaces and APIs.
+            <a
+              className="a-link"
+              href="https://google.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              DCCS IT Business Solutions{" "}
+            </a>{" "}
+            in Vienna, Austria. Working mainly with Javascript ( React, Vue,
+            Node) on designing and developing web interafaces and APIs.
           </Introduction>
-          <Card
-            title="Transforming ideas into amazing digital products"
-            description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
-            reversed={false}
-            boxColor="orange"
-            boxTitle="Design"
-            boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
-          <Card
-            title="Coding the best possible solution"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            reversed={true}
-            boxColor="blue"
-            boxTitle="Development"
-            boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
-          <Card
-            title="Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            reversed={false}
-            boxColor="green"
-            boxTitle="Maintenance"
-            boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
+          <Cards>
+            <Card
+              title="Transforming ideas into amazing digital products"
+              description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
+              reversed={false}
+              boxColor="orange"
+              boxTitle="Design"
+              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            />
+            <Card
+              title="Coding the best possible solution"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              reversed={true}
+              boxColor="blue"
+              boxTitle="Development"
+              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            />
+            <Card
+              title="Title"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              reversed={false}
+              boxColor="green"
+              boxTitle="Maintenance"
+              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            />
+          </Cards>
+
           <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />
