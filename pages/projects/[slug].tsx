@@ -8,7 +8,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import { ThemeLayout } from "../../styles/components/layout";
-import { postFilePaths, POSTS_PATH } from "../../utils/mdx-posts";
+import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
 import { lightTheme, darkTheme } from "../../styles/theme";
 
@@ -48,7 +48,7 @@ export default function PostPage({ source, frontMatter }: any) {
 }
 
 export const getStaticProps = async ({ params }: any) => {
-  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
+  const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
 
   const { content, data } = matter(source);

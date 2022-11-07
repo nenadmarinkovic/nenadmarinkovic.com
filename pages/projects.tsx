@@ -5,7 +5,7 @@ import { ThemeLayout } from "../styles/components/layout";
 import matter from "gray-matter";
 import path from "path";
 import Header from "../components/Header";
-import { postFilePaths, POSTS_PATH } from "../utils/mdx";
+import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import Footer from "../components/Footer";
 import {
   PostsWrap,
@@ -42,8 +42,9 @@ const ProjectsPage: NextPage = ({
             {posts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
-                  as={`/notes/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/notes/[slug]`}>
+                  as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
+                  href={`/projects/[slug]`}
+                >
                   <Title>{post.data.title}</Title>
                 </Link>
                 <Date>{post.data.date}</Date>
@@ -60,7 +61,7 @@ const ProjectsPage: NextPage = ({
 
 export function getStaticProps() {
   const posts = postFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
+    const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
     const { content, data } = matter(source);
 
     return {

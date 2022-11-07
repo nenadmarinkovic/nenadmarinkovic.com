@@ -6,7 +6,7 @@ import path from "path";
 import type { NextPage } from "next";
 import { ThemeLayout } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
-import { postFilePaths, POSTS_PATH } from "../utils/mdx";
+import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
 import Footer from "../components/Footer";
 import { Container } from "../styles/components/layout";
 import Header from "../components/Header";

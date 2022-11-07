@@ -31,7 +31,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             on designing and developing web interafaces and APIs.
           </Introduction>
           <Card
-            title="Starting with the purpose"
+            title="Transforming ideas into amazing digital products"
             description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
             reversed={false}
             boxColor="orange"
@@ -39,7 +39,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           />
           <Card
-            title="Title"
+            title="Coding the best possible solution"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             reversed={true}
             boxColor="blue"
