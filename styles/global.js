@@ -98,7 +98,6 @@ export const GlobalStyle = createGlobalStyle`
     
     .overlay-open {
       opacity: 1;
-      border-radius: 20px;
     }
     
     .overlay-close {
