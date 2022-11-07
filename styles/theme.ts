@@ -6,9 +6,9 @@ export const lightTheme = {
   headerBackground: "hsla(0, 0%, 100%, 0.75)",
   headerBorder: "1px solid #EAEAEA",
   backgroundModal: "rgb(250, 250, 250, 0.85)",
-  contactButtonBorder: "1.5px solid #0070f5",
-  contactButtonColor: "#0070f5",
-  contactButtonBackground: '#0070f5',
+  contactButtonBorder: "1.5px solid #000",
+  contactButtonColor: "#000",
+  contactButtonBackground: '#000',
 };
 
 export const darkTheme = {

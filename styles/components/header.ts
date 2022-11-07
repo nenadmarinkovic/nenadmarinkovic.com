@@ -48,7 +48,7 @@ export const Links = styled.div`
 
 export const HeaderLink = styled.div`
   width: 70px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -64,7 +64,7 @@ export const ThemeButton = styled.button`
   width: 85px;
   padding: 1.5px;
   background: transparent;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border: none;
   cursor: pointer;
   color: ${({ theme }) => theme.color};
@@ -73,12 +73,11 @@ export const ThemeButton = styled.button`
 export const ContactButton = styled.button<ContactButton>`
   background: ${({ modalIsOpen, theme }) =>
     modalIsOpen ? "transparent" : theme.contactButtonBackground};
-  padding: 8px 12px;
+  padding: 5px 10px;
   border-radius: 7px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border: ${({ theme }) => theme.contactButtonBorder};
   cursor: pointer;
-  font-weight: bold;
   color: ${({ modalIsOpen, theme }) =>
     modalIsOpen ? theme.color : theme.colorReverse};
   transition: 0.3s;
