@@ -52,7 +52,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .a-link {
-      font-weight: bold;
       color: #0070f5;
       text-decoration: none;
     }
