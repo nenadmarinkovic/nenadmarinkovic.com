@@ -8,19 +8,11 @@ export const HeaderWrap = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 1.5rem 0 1rem;
+  padding: 1rem 0;
   border-bottom: ${({ theme }) => theme.headerBorder};
   background: ${({ theme }) => theme.headerBackground};
   backdrop-filter: saturate(70%) blur(3px);
   z-index: 2;
-`;
-
-export const Top = styled.div`
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background: #000;
-  height: 0.5rem;
 `;
 
 export const Main = styled.div`

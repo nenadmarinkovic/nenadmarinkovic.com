@@ -23,7 +23,6 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
       </Head>
       <ThemeLayout>
         <Header toggleTheme={toggleTheme} theme={theme} />
-
         <Container>
           <Banner name="Nenad" surname="Marinković" />
           <Introduction>
@@ -40,7 +39,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
             Node) on designing and developing websites, web interafaces, and APIs.
           </Introduction>
-          <Section title="More on what I do"/>
+          <Section title="My working process"/>
           <Cards>
             <Card
               title="Transforming ideas into amazing digital products"

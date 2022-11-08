@@ -3,7 +3,6 @@ import { Container } from "../styles/components/layout";
 import Modal from "react-modal";
 import {
   HeaderWrap,
-  Top,
   Main,
   HomeLink,
   Links,
@@ -42,7 +41,6 @@ function Header({ theme, toggleTheme }: any) {
   return (
     <>
       <HeaderWrap>
-        <Top />
         <Container>
           <Main>
             <HomeLink>
