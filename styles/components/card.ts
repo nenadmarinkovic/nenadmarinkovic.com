@@ -5,7 +5,7 @@ export const Cards = styled.div``;
 export const Item = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
 
   &.row-reverse {
     flex-direction: row-reverse;
