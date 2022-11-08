@@ -24,5 +24,4 @@ export const ModalInside = styled.div`
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   z-index: 1;
-
 `;

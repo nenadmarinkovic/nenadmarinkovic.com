@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const Cards = styled.div`
-  margin-top: 5.5rem;
-`;
+export const Cards = styled.div``;
 
 export const Item = styled.div`
   display: flex;

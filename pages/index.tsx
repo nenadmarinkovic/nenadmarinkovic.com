@@ -10,6 +10,7 @@ import Card from "../components/Card";
 import { Cards } from "../styles/components/card";
 import Tag from "../components/Tag";
 import Panel from "../components/Panel";
+import Section from "../components/Section"
 import { useState } from "react";
 
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
@@ -37,8 +38,9 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               DCCS IT Business Solutions{" "}
             </a>{" "}
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
-            Node) on designing and developing web interafaces and APIs.
+            Node) on designing and developing websites, web interafaces, and APIs.
           </Introduction>
+          <Section title="More on what I do"/>
           <Cards>
             <Card
               title="Transforming ideas into amazing digital products"
@@ -65,7 +67,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             />
           </Cards>
-
+          <Section title="Technologies I use"/>
           <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />
