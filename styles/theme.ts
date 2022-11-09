@@ -19,7 +19,7 @@ export const darkTheme = {
   colorReverse: "#000",
   color: "#fff",
   headerBackground: "hsl(0deg 0% 0% / 50%)",
-  headerBorder: "none",
+  headerBorder: "0.1px solid rgb(45, 45, 45)",
   backgroundModal: "rgb(0, 0, 0, 0.85)",
   contactButtonBorder: "1.5px solid #fff",
   contactButtonColor: "#fff",
