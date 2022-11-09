@@ -48,7 +48,8 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               reversed={false}
               boxColor="orange"
               boxTitle="Design"
-              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              boxText="The design of a project is the backbone."
+              boxItemIcon="/icons/check.svg"
             />
             <Card
               title="Coding the best possible solution"
@@ -57,6 +58,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               boxColor="blue"
               boxTitle="Development"
               boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              boxItemIcon="/icons/check.svg"
             />
             <Card
               title="Title"
@@ -65,10 +67,11 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               boxColor="green"
               boxTitle="Maintenance"
               boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              boxItemIcon="/icons/check.svg"
             />
           </Cards>
           <Section title="Latest personal projects" />
-       
+
           <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />

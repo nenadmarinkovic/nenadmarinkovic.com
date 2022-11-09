@@ -6,10 +6,13 @@ import {
   Title,
   Description,
   BoxTitle,
-  BoxText,
   BoxIcon,
+  BoxItems,
+  BoxItem,
+  BoxItemIcon,
+  BoxItemText,
 } from "../styles/components/card";
-
+import Image from "next/image";
 interface Card {
   title: string;
   description: string;
@@ -17,6 +20,7 @@ interface Card {
   boxColor: string;
   boxTitle: string;
   boxText: string;
+  boxItemIcon: string;
 }
 
 function Card({
@@ -26,6 +30,7 @@ function Card({
   boxColor,
   boxTitle,
   boxText,
+  boxItemIcon,
 }: Card) {
   const [opened, setOpen] = useState(false);
   const setBoxColor = () =>
@@ -39,9 +44,30 @@ function Card({
       </Text>
       <Box className={setBoxColor()}>
         <div>
-          <BoxTitle>{boxTitle}</BoxTitle>
+          {!opened && <BoxTitle>{boxTitle}</BoxTitle>}
 
-          {opened && <BoxText>{boxText}</BoxText>}
+          {opened && (
+            <BoxItems>
+              <BoxItem>
+                <BoxItemIcon>
+                  <Image src={boxItemIcon} width={30} height={30} alt={""} />
+                </BoxItemIcon>
+                <BoxItemText>{boxText}</BoxItemText>
+              </BoxItem>
+              <BoxItem>
+                <BoxItemIcon>
+                  <Image src={boxItemIcon} width={30} height={30} alt={""} />
+                </BoxItemIcon>
+                <BoxItemText>{boxText}</BoxItemText>
+              </BoxItem>
+              <BoxItem>
+                <BoxItemIcon>
+                  <Image src={boxItemIcon} width={30} height={30} alt={""} />
+                </BoxItemIcon>
+                <BoxItemText>{boxText}</BoxItemText>
+              </BoxItem>
+            </BoxItems>
+          )}
         </div>
         <BoxIcon
           onClick={() => setOpen((open) => !open)}

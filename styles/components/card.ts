@@ -17,7 +17,6 @@ export const Item = styled.div`
 `;
 
 export const Text = styled.div`
-  margin-top: 1.5rem;
   width: 45%;
   color: ${({ theme }) => theme.color};
 `;
@@ -44,7 +43,26 @@ export const Box = styled.div`
   }
 `;
 
+export const BoxItems = styled.div`
+  margin-top: 2.5rem;
+`;
+
+export const BoxItem = styled.div`
+  margin-top: 2.5rem;
+  display: flex;
+`;
+
+export const BoxItemIcon = styled.div``;
+
+export const BoxItemText = styled.div`
+  color: #fff;
+  margin-top: -5px;
+  line-height: 1.6;
+  margin-left: 1rem;
+`;
+
 export const Title = styled.div`
+  margin-top: 1rem;
   font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
@@ -52,7 +70,7 @@ export const Title = styled.div`
 `;
 
 export const Description = styled.div`
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.descColor};
   font-size: 1.15rem;
   line-height: 1.9;
   margin-top: 1rem;

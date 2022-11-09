@@ -6,6 +6,6 @@ export const Title = styled.div`
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 0.2rem;
-  color: #757575;
+  color: ${({ theme }) => theme.descColor};
   font-weight: bold;
 `;
