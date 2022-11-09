@@ -12,6 +12,7 @@ import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 import Section from "../components/Section"
 import { useState } from "react";
+import Technologies from "../components/Technologies";
 
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [company] = useState("https://dccs.at");
@@ -67,10 +68,11 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             />
           </Cards>
           <Section title="Technologies I use"/>
-          <Tag color="green" text="Node.js" />
+          <Technologies/>
+          {/* <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />
-          <Tag color="black" text="Next.js" />
+          <Tag color="black" text="Next.js" /> */}
           <Panel />
         </Container>
         <Footer spotifyData={spotifyData} />
