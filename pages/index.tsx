@@ -35,7 +35,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               rel="noreferrer"
             >
               {" "}
-              DCCS IT Business Solutions
+              DCCS IT Business Solutions{" "}
             </a>
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
             Node) on designing and developing websites, web interafaces, and
