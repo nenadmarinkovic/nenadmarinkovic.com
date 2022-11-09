@@ -24,8 +24,8 @@ export const Text = styled.div`
 
 export const Box = styled.div`
   padding: 1.5rem;
-  height: 395px;
-  width: 395px;
+  height: 375px;
+  width: 375px;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
