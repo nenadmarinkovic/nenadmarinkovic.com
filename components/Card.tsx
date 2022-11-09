@@ -70,6 +70,7 @@ function Card({
           )}
         </div>
         <BoxIcon
+          aria-label="open"
           onClick={() => setOpen((open) => !open)}
           className={opened ? "opened-box" : "closed-box"}
         >
