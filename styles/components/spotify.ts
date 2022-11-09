@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const SpotifyText = styled.div`
   margin-left: 10px;
   line-height: 1.8;
+  color: ${({ theme }) => theme.color};
 
   a {
-    color: white;
+    color: ${({ theme }) => theme.color};
     margin-left: 5px;
     transition: all 0.25s linear;
 

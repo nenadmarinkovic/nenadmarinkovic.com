@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.div`
-  background: #000;
+  border-top: ${({ theme }) => theme.headerBorder};
+  background: ${({ theme }) => theme.footerBackground};
+  color: ${({ theme }) => theme.color};
   height: 400px;
   color: #fff;
   padding-top: 3rem;

@@ -10,7 +10,7 @@ import Card from "../components/Card";
 import { Cards } from "../styles/components/card";
 import Tag from "../components/Tag";
 import Panel from "../components/Panel";
-import Section from "../components/Section"
+import Section from "../components/Section";
 import { useState } from "react";
 import Technologies from "../components/Technologies";
 
@@ -33,14 +33,13 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               href="https://google.com"
               target="_blank"
               rel="noreferrer"
-            >
-              {" "}
-              DCCS IT Business Solutions{" "}
-            </a>{" "}
+            >DCCS IT Business Solutions
+            </a>
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
-            Node) on designing and developing websites, web interafaces, and APIs.
+            Node) on designing and developing websites, web interafaces, and
+            APIs.
           </Introduction>
-          <Section title="Services I offer"/>
+          <Section title="Services I offer" />
           <Cards>
             <Card
               title="Transforming ideas into amazing digital products"
@@ -67,13 +66,14 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             />
           </Cards>
-          <Section title="Technologies I use"/>
-          <Technologies/>
+          <Section title="Technologies I use" />
+          <Technologies />
           {/* <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />
           <Tag color="black" text="Next.js" /> */}
           <Panel />
+         
         </Container>
         <Footer spotifyData={spotifyData} />
       </ThemeLayout>
