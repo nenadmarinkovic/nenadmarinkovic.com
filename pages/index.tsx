@@ -33,7 +33,9 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               href="https://google.com"
               target="_blank"
               rel="noreferrer"
-            >DCCS IT Business Solutions
+            >
+              {" "}
+              DCCS IT Business Solutions
             </a>
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
             Node) on designing and developing websites, web interafaces, and
@@ -73,7 +75,6 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
           <Tag color="orange" text="Firebase" />
           <Tag color="black" text="Next.js" /> */}
           <Panel />
-         
         </Container>
         <Footer spotifyData={spotifyData} />
       </ThemeLayout>
