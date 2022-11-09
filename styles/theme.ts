@@ -9,7 +9,7 @@ export const lightTheme = {
   contactButtonBorder: "1.5px solid #000",
   contactButtonColor: "#000",
   contactButtonBackground: '#000',
-  footerBackground: '#f3f3f3',
+  footerBackground: '#FAFAFA',
 };
 
 export const darkTheme = {
