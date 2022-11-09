@@ -45,7 +45,7 @@ export const Box = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 2.05rem;
+  font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
   color: ${({ theme }) => theme.color};

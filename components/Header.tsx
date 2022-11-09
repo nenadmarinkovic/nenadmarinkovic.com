@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Container } from "../styles/components/layout";
-import Modal from "react-modal";
 import {
   HeaderWrap,
   Main,
@@ -8,35 +6,12 @@ import {
   Links,
   HeaderLink,
   ThemeButton,
-  ContactButton,
 } from "../styles/components/header";
-import { ModalWrap, ModalInside } from "../styles/components/modal";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
-
 function Header({ theme, toggleTheme }: any) {
   const router = useRouter();
-
-  const [modalIsOpen, setIsOpen] = useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
 
   return (
     <>
@@ -46,7 +21,8 @@ function Header({ theme, toggleTheme }: any) {
             <HomeLink>
               <Link
                 href="/"
-                className={router.pathname === "/" ? "active-link" : ""}>
+                className={router.pathname === "/" ? "active-link" : ""}
+              >
                 Home
               </Link>
             </HomeLink>
@@ -55,51 +31,37 @@ function Header({ theme, toggleTheme }: any) {
                 <Link
                   href="/projects"
                   className={
-                    router.pathname === "/projects" ? "active-link" : ""}>
+                    router.pathname === "/projects" ? "active-link" : ""
+                  }
+                >
                   Projects
                 </Link>
               </HeaderLink>
               <HeaderLink>
                 <Link
                   href="/notes"
-                  className={router.pathname === "/notes" ? "active-link" : ""}>
+                  className={router.pathname === "/notes" ? "active-link" : ""}
+                >
                   Notes
+                </Link>
+              </HeaderLink>
+              <HeaderLink>
+                <Link
+                  href="/contact"
+                  className={
+                    router.pathname === "/contact" ? "active-link" : ""
+                  }
+                >
+                  Contact
                 </Link>
               </HeaderLink>
               <ThemeButton onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </ThemeButton>
-              <ContactButton
-                type="button"
-                onClick={openModal}
-                modalIsOpen={modalIsOpen}>
-                Contact
-              </ContactButton>
             </Links>
           </Main>
         </Container>
       </HeaderWrap>
-      <Modal
-        closeTimeoutMS={300}
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-        ariaHideApp={false}
-        bodyOpenClassName={"body-open"}
-        overlayClassName={{
-          base: "overlay",
-          afterOpen: "overlay-open",
-          beforeClose: "overlay-close",
-        }}
-        className="modal"
-        contentLabel="modal">
-        <ModalWrap>
-          <ModalInside>
-            <button onClick={closeModal}>Close</button>
-            <div>Model Inside. Change.</div>
-          </ModalInside>
-        </ModalWrap>
-      </Modal>
     </>
   );
 }

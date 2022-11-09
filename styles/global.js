@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
       box-sizing: border-box;
     }
-    
+
     html,
     body {
       padding: 0;
@@ -37,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
       font-family: "Cera Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       scrollbar-gutter: stable;
+    
     }
     
     input,
@@ -46,13 +47,12 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     a {
-      color: #0070f5;
       text-decoration: none;
       transition: .3s;
     }
 
     .a-link {
-      color: #0070f5;
+      color: ${({ theme }) => theme.linkColor};
       text-decoration: none;
     }
 

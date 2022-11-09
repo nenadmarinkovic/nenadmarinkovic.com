@@ -10,6 +10,7 @@ export const lightTheme = {
   contactButtonColor: "#000",
   contactButtonBackground: '#000',
   footerBackground: '#FAFAFA',
+  linkColor: '#0070f5'
 };
 
 export const darkTheme = {
@@ -24,4 +25,5 @@ export const darkTheme = {
   contactButtonColor: "#fff",
   contactButtonBackground: '#fff',
   footerBackground: '#000',
+  linkColor: '#fc6d26'
 };
