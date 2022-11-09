@@ -39,7 +39,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
             Node) on designing and developing websites, web interafaces, and APIs.
           </Introduction>
-          <Section title="My working process"/>
+          <Section title="Services I offer"/>
           <Cards>
             <Card
               title="Transforming ideas into amazing digital products"
