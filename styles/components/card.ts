@@ -89,9 +89,13 @@ export const BoxText = styled.div`
   line-height: 1.8;
 `;
 
-export const BoxIcon = styled.div`
+export const BoxIcon = styled.button`
   align-self: end;
   cursor: pointer;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  height: 42px;
 
   svg {
     transition: 0.25s;
