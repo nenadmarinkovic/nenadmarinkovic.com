@@ -97,7 +97,7 @@ function Card({
       </Text>
       <Box className={setBoxColor()}>
         <div>
-          <AnimatePresence exitBeforeEnter initial={false}>
+          <AnimatePresence mode="wait" initial={false}>
             {!opened && (
               <motion.div
                 variants={titleVariants}
@@ -109,7 +109,7 @@ function Card({
               </motion.div>
             )}
           </AnimatePresence>
-          <AnimatePresence exitBeforeEnter>
+          <AnimatePresence mode="wait">
             {opened && (
               <motion.div
                 variants={itemsVariants}
@@ -131,7 +131,7 @@ function Card({
                       <BoxItemText>{boxText}</BoxItemText>
                     </BoxItem>
                   </motion.div>
-                  <motion.div key="subheading" variants={itemVariants}>
+                  <motion.div key="subheading-1" variants={itemVariants}>
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
@@ -145,7 +145,7 @@ function Card({
                     </BoxItem>
                   </motion.div>
 
-                  <motion.div key="subheading" variants={itemVariants}>
+                  <motion.div key="subheading-2" variants={itemVariants}>
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
