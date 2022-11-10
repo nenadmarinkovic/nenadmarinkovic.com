@@ -13,6 +13,8 @@ import {
   BoxItemText,
 } from "../styles/components/card";
 import Image from "next/image";
+import { motion, Variants, AnimatePresence } from "framer-motion";
+
 interface Card {
   title: string;
   description: string;
@@ -36,42 +38,134 @@ function Card({
   const setBoxColor = () =>
     boxColor === "orange" ? "orange" : boxColor === "blue" ? "blue" : "green";
 
+  const titleVariants: Variants = {
+    enter: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 1,
+      },
+    },
+
+    exit: {
+      y: -20,
+      opacity: 0,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
+
+  const containerVariants: Variants = {
+    enter: {
+      y: -20,
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+        duration: 0.3,
+        delay: 0.3,
+      },
+    },
+    exit: {
+      transition: {
+        when: "afterChildren",
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const childVariants: Variants = {
+    enter: {
+      y: 0,
+      opacity: 1,
+    },
+
+    exit: {
+      y: -20,
+      opacity: 0,
+    },
+  };
+
   return (
     <Item className={reversed ? "row-reverse" : "row"}>
       <Text>
         <Title>{title}</Title>
+
         <Description>{description}</Description>
       </Text>
       <Box className={setBoxColor()}>
         <div>
-          {!opened && <BoxTitle>{boxTitle}</BoxTitle>}
+          <AnimatePresence exitBeforeEnter initial={false}>
+            {!opened && (
+              <motion.div
+                variants={titleVariants}
+                initial="exit"
+                animate="enter"
+                exit="exit"
+              >
+                <BoxTitle>{boxTitle}</BoxTitle>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
+            {opened && (
+              <motion.div
+                variants={containerVariants}
+                initial="exit"
+                animate="enter"
+                exit="exit"
+              >
+                <BoxItems>
+                  <motion.div key="heading" variants={childVariants}>
+                    <BoxItem>
+                      <BoxItemIcon>
+                        <Image
+                          src={boxItemIcon}
+                          width={30}
+                          height={30}
+                          alt={""}
+                        />
+                      </BoxItemIcon>
+                      <BoxItemText>{boxText}</BoxItemText>
+                    </BoxItem>
+                  </motion.div>
+                  <motion.div key="subheading" variants={childVariants}>
+                    <BoxItem>
+                      <BoxItemIcon>
+                        <Image
+                          src={boxItemIcon}
+                          width={30}
+                          height={30}
+                          alt={""}
+                        />
+                      </BoxItemIcon>
+                      <BoxItemText>{boxText}</BoxItemText>
+                    </BoxItem>
+                  </motion.div>
 
-          {opened && (
-            <BoxItems>
-              <BoxItem>
-                <BoxItemIcon>
-                  <Image src={boxItemIcon} width={30} height={30} alt={""} />
-                </BoxItemIcon>
-                <BoxItemText>{boxText}</BoxItemText>
-              </BoxItem>
-              <BoxItem>
-                <BoxItemIcon>
-                  <Image src={boxItemIcon} width={30} height={30} alt={""} />
-                </BoxItemIcon>
-                <BoxItemText>{boxText}</BoxItemText>
-              </BoxItem>
-              <BoxItem>
-                <BoxItemIcon>
-                  <Image src={boxItemIcon} width={30} height={30} alt={""} />
-                </BoxItemIcon>
-                <BoxItemText>{boxText}</BoxItemText>
-              </BoxItem>
-            </BoxItems>
-          )}
+                  <motion.div key="subheading" variants={childVariants}>
+                    <BoxItem>
+                      <BoxItemIcon>
+                        <Image
+                          src={boxItemIcon}
+                          width={30}
+                          height={30}
+                          alt={""}
+                        />
+                      </BoxItemIcon>
+                      <BoxItemText>{boxText}</BoxItemText>
+                    </BoxItem>
+                  </motion.div>
+                </BoxItems>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
         <BoxIcon
           aria-label="open"
-          onClick={() => setOpen((open) => !open)}
+          onClick={() => setOpen((opened) => !opened)}
           className={opened ? "opened-box" : "closed-box"}
         >
           <svg width="40" height="40" viewBox="0 0 15 15" fill="none">

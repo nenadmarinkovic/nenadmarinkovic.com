@@ -44,19 +44,20 @@ export const Box = styled.div`
 `;
 
 export const BoxItems = styled.div`
-  margin-top: 2.5rem;
+  position: relative;
+  top: 1rem;
 `;
 
 export const BoxItem = styled.div`
-  margin-top: 2.5rem;
+  padding-top: 2.5rem;
   display: flex;
+  align-items: center;
 `;
 
 export const BoxItemIcon = styled.div``;
 
 export const BoxItemText = styled.div`
   color: #fff;
-  margin-top: -5px;
   line-height: 1.6;
   margin-left: 1rem;
 `;
@@ -77,6 +78,7 @@ export const Description = styled.div`
 `;
 
 export const BoxTitle = styled.div`
+  position: absolute;
   font-size: 1.85rem;
   font-weight: 700;
   color: #fff;
