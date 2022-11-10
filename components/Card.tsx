@@ -57,7 +57,7 @@ function Card({
     },
   };
 
-  const containerVariants: Variants = {
+  const itemsVariants: Variants = {
     enter: {
       y: -20,
       opacity: 1,
@@ -76,7 +76,7 @@ function Card({
     },
   };
 
-  const childVariants: Variants = {
+  const itemVariants: Variants = {
     enter: {
       y: 0,
       opacity: 1,
@@ -112,13 +112,13 @@ function Card({
           <AnimatePresence exitBeforeEnter>
             {opened && (
               <motion.div
-                variants={containerVariants}
+                variants={itemsVariants}
                 initial="exit"
                 animate="enter"
                 exit="exit"
               >
                 <BoxItems>
-                  <motion.div key="heading" variants={childVariants}>
+                  <motion.div key="heading" variants={itemVariants}>
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
@@ -131,7 +131,7 @@ function Card({
                       <BoxItemText>{boxText}</BoxItemText>
                     </BoxItem>
                   </motion.div>
-                  <motion.div key="subheading" variants={childVariants}>
+                  <motion.div key="subheading" variants={itemVariants}>
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
@@ -145,7 +145,7 @@ function Card({
                     </BoxItem>
                   </motion.div>
 
-                  <motion.div key="subheading" variants={childVariants}>
+                  <motion.div key="subheading" variants={itemVariants}>
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
