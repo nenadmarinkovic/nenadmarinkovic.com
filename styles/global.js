@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 400;
       font-style: normal;
       font-display: block;
+      font-display: optional;
     }
 
     @font-face {
@@ -16,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 700;
       font-style: normal;
       font-display: block;
+      font-display: optional;
     }
     
     @font-face {
@@ -24,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 900;
       font-style: normal;
       font-display: block;
+      font-display: optional;
     }
     
     * {
@@ -34,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
       padding: 0;
       margin: 0;
-      font-family: "Cera Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      font-family: "Inter", "Cera Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       scrollbar-gutter: stable;
     
