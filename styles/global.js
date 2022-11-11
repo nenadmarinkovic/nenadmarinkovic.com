@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-  /* @font-face {
+  @font-face {
       font-family: "Cera Pro";
       src: url("/fonts/CeraPro-Regular.woff2") format("woff2");
       font-weight: 400;
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
       font-style: normal;
       font-style: normal;
       font-display: optional;
-    } */
+    }
     
     * {
       box-sizing: border-box;

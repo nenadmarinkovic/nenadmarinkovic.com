@@ -45,21 +45,21 @@ class Website extends Document {
             href="/fonts/CeraPro-Regular.woff2"
             as="font"
             type="font/woff2"
-            crossOrigin="anonymous"
+            crossOrigin="crossorigin"
           />
           <link
             rel="preload"
             href="/fonts/CeraPro-Bold.woff2"
             as="font"
             type="font/woff2"
-            crossOrigin="anonymous"
+            crossOrigin="crossorigin"
           />
           <link
             rel="preload"
             href="/fonts/CeraPro-Black.woff2"
             as="font"
             type="font/woff2"
-            crossOrigin="anonymous"
+            crossOrigin="crossorigin"
           />
           <link rel="icon" href="/favicon.ico" />
           <link href="/manifest.json" rel="manifest" />
