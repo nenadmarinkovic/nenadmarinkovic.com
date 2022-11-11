@@ -3,6 +3,23 @@
  */
 
 module.exports = {
+
+  async headers() {
+    return [
+      {
+        source: '/fonts/CeraPro-Black.woff2',
+        source: '/fonts/CeraPro-Bold.woff2',
+        source: '/fonts/CeraPro-Regular.woff2',
+        headers: [
+          {
+            key: 'Cache-control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+    ]
+  },
+
   reactStrictMode: true,
   swcMinify: true,
 
