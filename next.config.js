@@ -31,11 +31,10 @@ module.exports = {
   async headers() {
     return [
       {
-        source: [
-          "/fonts/CeraPro-Regular.woff2",
-          "/fonts/CeraPro-Black.woff2",
-          "/fonts/CeraPro-Bold.woff2",
-        ],
+        source: "/fonts/CeraPro-Regular.woff2",
+        source: "/fonts/CeraPro-Black.woff2",
+        source: "/fonts/CeraPro-Bold.woff2",
+
         headers: [
           {
             key: "Cache-Control",
