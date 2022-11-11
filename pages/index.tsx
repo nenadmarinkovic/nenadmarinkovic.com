@@ -37,7 +37,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               DCCS IT Business Solutions{" "}
             </a>
             in Vienna, Austria. Working mainly with Javascript ( React, Vue,
-            Node) on designing and developing websites, web interafaces, and
+            Node) on designing and developing websites, web interfaces, and
             APIs.
           </Introduction>
           <Section title="Services I offer" />
@@ -72,10 +72,10 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
           </Cards>
           <Section title="Latest personal projects" />
 
-          <Tag color="green" text="Node.js" />
+          {/* <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />
-          <Tag color="black" text="Next.js" />
+          <Tag color="black" text="Next.js" /> */}
           <Panel />
         </Container>
         <Footer spotifyData={spotifyData} />
