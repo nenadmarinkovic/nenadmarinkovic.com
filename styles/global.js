@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
       font-style: normal;
       font-display: optional;
     }
-/* 
+
     @font-face {
       font-family: "Cera Pro";
       src: url("/fonts/CeraPro-Bold.woff2") format("woff2");
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
       font-style: normal;
       font-style: normal;
       font-display: optional;
-    } */
+    }
     
     * {
       box-sizing: border-box;
