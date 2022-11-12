@@ -43,10 +43,7 @@ export const Box = styled.div`
   }
 `;
 
-export const BoxItems = styled.div`
-  position: relative;
-  top: 1rem;
-`;
+export const BoxItems = styled.div``;
 
 export const BoxItem = styled.div`
   padding-top: 2.5rem;

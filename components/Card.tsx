@@ -44,7 +44,7 @@ function Card({
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 0.3,
+        delay: 1,
       },
     },
 
@@ -59,19 +59,20 @@ function Card({
 
   const itemsVariants: Variants = {
     enter: {
-      y: -20,
       opacity: 1,
       transition: {
-        when: "beforeChildren",
+        when: "afterChildren",
         staggerChildren: 0.3,
         duration: 0.3,
         delay: 0.3,
+        delayChildren: 0.5,
       },
     },
     exit: {
       transition: {
         when: "afterChildren",
         staggerChildren: 0.3,
+        duration: 0.3,
       },
     },
   };
