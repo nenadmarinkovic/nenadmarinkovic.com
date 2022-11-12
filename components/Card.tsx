@@ -34,7 +34,7 @@ function Card({
   boxText,
   boxItemIcon,
 }: Card) {
-  const [opened, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   const setBoxColor = () =>
     boxColor === "orange" ? "orange" : boxColor === "blue" ? "blue" : "green";
 
@@ -44,7 +44,7 @@ function Card({
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 1,
+        delay: 0.3,
       },
     },
 
@@ -92,13 +92,13 @@ function Card({
     <Item className={reversed ? "row-reverse" : "row"}>
       <Text>
         <Title>{title}</Title>
-
         <Description>{description}</Description>
       </Text>
+
       <Box className={setBoxColor()}>
         <div>
           <AnimatePresence mode="wait" initial={false}>
-            {!opened && (
+            {!isOpen && (
               <motion.div
                 variants={titleVariants}
                 initial="exit"
@@ -110,7 +110,7 @@ function Card({
             )}
           </AnimatePresence>
           <AnimatePresence mode="wait">
-            {opened && (
+            {isOpen && (
               <motion.div
                 variants={itemsVariants}
                 initial="exit"
@@ -131,7 +131,7 @@ function Card({
                       <BoxItemText>{boxText}</BoxItemText>
                     </BoxItem>
                   </motion.div>
-                  <motion.div key="subheading-1" variants={itemVariants}>
+                  <motion.div key="subheading-primary" variants={itemVariants}>
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
@@ -145,14 +145,17 @@ function Card({
                     </BoxItem>
                   </motion.div>
 
-                  <motion.div key="subheading-2" variants={itemVariants}>
+                  <motion.div
+                    key="subheading-secondary"
+                    variants={itemVariants}
+                  >
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={""}
+                          alt={"Open additional text"}
                         />
                       </BoxItemIcon>
                       <BoxItemText>{boxText}</BoxItemText>
@@ -165,8 +168,9 @@ function Card({
         </div>
         <BoxIcon
           aria-label="open"
-          onClick={() => setOpen((opened) => !opened)}
-          className={opened ? "opened-box" : "closed-box"}
+          onClick={() => setOpen((isOpen) => !isOpen)}
+          onDoubleClick={() => setOpen((isOpen) => !isOpen)}
+          className={isOpen ? "opened-box" : "closed-box"}
         >
           <svg width="40" height="40" viewBox="0 0 15 15" fill="none">
             <path
