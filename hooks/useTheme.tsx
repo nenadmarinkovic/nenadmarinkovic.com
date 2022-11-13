@@ -21,10 +21,10 @@ export const useTheme = () => {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: light)").matches &&
     !localTheme
-      ? setMode("dark")
+      ? setMode("light")
       : localTheme
       ? setTheme(localTheme)
-      : setMode("light");
+      : setMode("dark");
 
     setComponentMounted(true);
   }, []);
