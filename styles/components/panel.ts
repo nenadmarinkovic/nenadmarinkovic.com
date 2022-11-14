@@ -25,6 +25,10 @@ export const PanelInside = styled.div`
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   z-index: 1;
+
+  @media (max-width: 48rem) {
+    padding: 50px 20px;
+  }
 `;
 
 export const Title = styled.h1`

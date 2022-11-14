@@ -9,16 +9,28 @@ export const Item = styled.div`
 
   &.row-reverse {
     flex-direction: row-reverse;
+
+    @media (max-width: 48rem) {
+      flex-direction: column;
+    }
   }
 
   &.row {
     flex-direction: row;
+
+    @media (max-width: 48rem) {
+      flex-direction: column;
+    }
   }
 `;
 
 export const Text = styled.div`
   width: 45%;
   color: ${({ theme }) => theme.color};
+
+  @media (max-width: 48rem) {
+    width: 100%;
+  }
 `;
 
 export const Box = styled.div`
@@ -40,6 +52,11 @@ export const Box = styled.div`
 
   &.orange {
     background: linear-gradient(270.48deg, #ffa400 -4.99%, #ff5b00 99.13%);
+  }
+
+  @media (max-width: 48rem) {
+    margin-top: 1rem;
+    width: 100%;
   }
 `;
 
