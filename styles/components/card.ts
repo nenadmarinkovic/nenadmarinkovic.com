@@ -55,7 +55,7 @@ export const Box = styled.div`
   }
 
   @media (max-width: 48rem) {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
   }
 `;
