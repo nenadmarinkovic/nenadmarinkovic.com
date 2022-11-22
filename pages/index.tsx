@@ -12,6 +12,7 @@ import { Cards } from "../styles/components/card";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
 import { useState } from "react";
+import { Example } from "../components/Example";
 
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [company] = useState("https://dccs.at");
@@ -71,6 +72,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             />
           </Cards>
           <Section title="Latest personal projects" />
+          <Example/>
 
           {/* <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
