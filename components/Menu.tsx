@@ -7,7 +7,6 @@ type Menu = {
 };
 
 const StyledMenu = styled.nav<Menu>`
-  position: relative;
   display: flex;
   flex-direction: column;
   background: white;

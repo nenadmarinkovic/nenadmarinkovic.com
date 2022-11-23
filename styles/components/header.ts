@@ -88,7 +88,6 @@ export const ModalComponent = styled.div`
   align-items: center;
 `;
 
-
 export const MenuButton = styled.div`
   @media (min-width: 48rem) {
     display: none;
