@@ -2,11 +2,12 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-type Nav = {
+type Menu = {
   open: boolean;
 };
 
-const StyledMenu = styled.nav<Nav>`
+const StyledMenu = styled.nav<Menu>`
+  position: relative;
   display: flex;
   flex-direction: column;
   background: white;
@@ -19,6 +20,7 @@ const StyledMenu = styled.nav<Nav>`
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
+  z-index: 0;
 `;
 
 const MenuItem = styled.div`
@@ -46,12 +48,13 @@ const MenuComponent = ({ open, setOpen }: any) => {
   );
 };
 
-const StyledBurger = styled.button<Nav>`
+const StyledBurger = styled.button<Menu>`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
-  height: 2rem;
+  height: 1.3rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -63,7 +66,7 @@ const StyledBurger = styled.button<Nav>`
   }
 
   div {
-    width: 2rem;
+    width: 1.5rem;
     height: 0.15rem;
     background: ${({ open }) => (open ? "#0D0C1D" : "#0D0C1D")};
     border-radius: 10px;
@@ -72,16 +75,13 @@ const StyledBurger = styled.button<Nav>`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ open }) =>
+        open ? "translateY(2.5px)" : "translateY(0)"};
     }
 
     :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ open }) =>
+        open ? "translateY(-2.5px)" : "translateY(0)"};
     }
   }
 `;
@@ -90,7 +90,7 @@ const Burger = ({ open, setOpen }: any) => {
   return (
     <StyledBurger open={open} onClick={() => setOpen(!open)}>
       <div />
-      <div />
+
       <div />
     </StyledBurger>
   );
@@ -101,6 +101,7 @@ function Menu() {
   const node = useRef(null);
 
   useClickOutside(node, () => setOpen(false));
+
   return (
     <div>
       <div ref={node}>
