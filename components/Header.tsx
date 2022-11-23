@@ -6,6 +6,7 @@ import {
   Links,
   HeaderLink,
   ThemeButton,
+  MenuButton,
 } from "../styles/components/header";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -59,8 +60,10 @@ function Header({ theme, toggleTheme }: any) {
               <ThemeButton onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </ThemeButton>
-              <Menu/>
             </Links>
+            <MenuButton>
+              <Menu />
+            </MenuButton>
           </Main>
         </Container>
       </HeaderWrap>

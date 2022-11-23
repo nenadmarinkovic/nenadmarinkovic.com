@@ -9,7 +9,6 @@ export const HeaderWrap = styled.div`
   background: ${({ theme }) => theme.headerBackground};
   backdrop-filter: saturate(70%) blur(3px);
   z-index: 2;
-  
 `;
 
 export const Main = styled.div`
@@ -33,6 +32,10 @@ export const Links = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 55%;
+
+  @media (max-width: 48rem) {
+    display: none;
+  }
 `;
 
 export const HeaderLink = styled.div`
@@ -83,4 +86,11 @@ export const ModalComponent = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
+`;
+
+
+export const MenuButton = styled.div`
+  @media (min-width: 48rem) {
+    display: none;
+  }
 `;
