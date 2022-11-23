@@ -9,6 +9,7 @@ import {
 } from "../styles/components/header";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Menu from "./Menu";
 
 function Header({ theme, toggleTheme }: any) {
   const router = useRouter();
@@ -58,6 +59,7 @@ function Header({ theme, toggleTheme }: any) {
               <ThemeButton onClick={toggleTheme}>
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </ThemeButton>
+              <Menu/>
             </Links>
           </Main>
         </Container>
