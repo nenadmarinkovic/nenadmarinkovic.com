@@ -71,6 +71,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             />
           </Cards>
           <Section title="Latest personal projects" />
+          
 
           {/* <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />

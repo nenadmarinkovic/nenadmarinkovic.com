@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderWrap = styled.div`
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 1rem 0;

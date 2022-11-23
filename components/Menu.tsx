@@ -2,11 +2,12 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-type Menu = {
+type Nav = {
   open: boolean;
 };
 
-const StyledMenu = styled.nav<Menu>`
+const StyledMenu = styled.nav<Nav>`
+  position: absolute;
   display: flex;
   flex-direction: column;
   background: white;
@@ -15,9 +16,10 @@ const StyledMenu = styled.nav<Menu>`
   height: 120vh;
   text-align: left;
   padding: 80px 20px;
-  position: absolute;
+
   top: 0;
   right: 0;
+
   transition: transform 0.3s ease-in-out;
   z-index: 0;
 `;
@@ -47,7 +49,7 @@ const MenuComponent = ({ open, setOpen }: any) => {
   );
 };
 
-const StyledBurger = styled.button<Menu>`
+const StyledBurger = styled.button<Nav>`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -100,7 +102,6 @@ function Menu() {
   const node = useRef(null);
 
   useClickOutside(node, () => setOpen(false));
-
   return (
     <div>
       <div ref={node}>
