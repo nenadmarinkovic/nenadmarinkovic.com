@@ -40,7 +40,10 @@ const MenuComponent = ({ open, setOpen, toggleTheme, theme }: any) => {
             Contact
           </Link>
         </MenuLink>
-        <MenuThemeButton onClick={() => setOpen(!open) } onClickCapture={toggleTheme} >
+        <MenuThemeButton
+          onClick={() => setOpen(!open)}
+          onClickCapture={toggleTheme}
+        >
           {theme === "light" ? "Dark mode" : "Light mode"}
         </MenuThemeButton>
       </MenuLinks>
@@ -57,7 +60,7 @@ const Burger = ({ open, setOpen }: any) => {
   );
 };
 
-function Menu({ theme, toggleTheme }: an) {
+function Menu({ theme, toggleTheme }: any) {
   const [open, setOpen] = useState(false);
   const node = useRef(null);
   useClickOutside(node, () => setOpen(false));
