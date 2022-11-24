@@ -3,12 +3,18 @@ import styled from "styled-components";
 export const HeaderWrap = styled.div`
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   padding: 1rem 0;
   border-bottom: ${({ theme }) => theme.headerBorder};
   background: ${({ theme }) => theme.headerBackground};
   backdrop-filter: saturate(70%) blur(3px);
   z-index: 2;
+
+  @media (min-width: 47.95rem) {
+    position: sticky;
+  }
 `;
 
 export const Main = styled.div`
