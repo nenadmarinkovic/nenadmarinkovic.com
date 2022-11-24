@@ -33,7 +33,7 @@ export const Links = styled.div`
   align-items: center;
   width: 55%;
 
-  @media (max-width: 48rem) {
+  @media (max-width: 47.95rem) {
     display: none;
   }
 `;
