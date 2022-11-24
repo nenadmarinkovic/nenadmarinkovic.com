@@ -43,6 +43,7 @@ const MenuComponent = ({ open, setOpen, toggleTheme, theme }: any) => {
         <MenuThemeButton
           onClick={() => setOpen(!open)}
           onClickCapture={toggleTheme}
+          aria-label="theme"
         >
           {theme === "light" ? "Dark mode" : "Light mode"}
         </MenuThemeButton>

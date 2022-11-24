@@ -50,17 +50,12 @@ export const StyledBurger = styled.button<Menu>`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
   height: 1.3rem;
   background: transparent;
   border: none;
   padding: 0;
   z-index: 10;
   cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
 
   div {
     width: 1.5rem;
