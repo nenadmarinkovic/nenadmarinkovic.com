@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-const MenuComponent = ({ open, toggleTheme, theme }: any) => {
+const MenuComponent = ({ open, setOpen, toggleTheme, theme }: any) => {
   const router = useRouter();
 
   return (
@@ -40,7 +40,7 @@ const MenuComponent = ({ open, toggleTheme, theme }: any) => {
             Contact
           </Link>
         </MenuLink>
-        <MenuThemeButton onClick={toggleTheme}>
+        <MenuThemeButton onClick={() => setOpen(!open) } onClickCapture={toggleTheme} >
           {theme === "light" ? "Dark mode" : "Light mode"}
         </MenuThemeButton>
       </MenuLinks>
@@ -57,7 +57,7 @@ const Burger = ({ open, setOpen }: any) => {
   );
 };
 
-function Menu({ theme, toggleTheme }: any) {
+function Menu({ theme, toggleTheme }: an) {
   const [open, setOpen] = useState(false);
   const node = useRef(null);
   useClickOutside(node, () => setOpen(false));
