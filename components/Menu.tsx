@@ -5,11 +5,12 @@ import {
   MenuLinks,
   MenuLink,
   StyledBurger,
+  MenuThemeButton,
 } from "../styles/components/menu";
 import Link from "next/link";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-const MenuComponent = ({ open }: any) => {
+const MenuComponent = ({ open, toggleTheme, theme }: any) => {
   const router = useRouter();
 
   return (
@@ -39,9 +40,9 @@ const MenuComponent = ({ open }: any) => {
             Contact
           </Link>
         </MenuLink>
-        {/* <ThemeButton onClick={toggleTheme}>
+        <MenuThemeButton onClick={toggleTheme}>
           {theme === "light" ? "Dark mode" : "Light mode"}
-        </ThemeButton> */}
+        </MenuThemeButton>
       </MenuLinks>
     </StyledMenu>
   );
@@ -56,16 +57,21 @@ const Burger = ({ open, setOpen }: any) => {
   );
 };
 
-function Menu() {
+function Menu({ theme, toggleTheme }: any) {
   const [open, setOpen] = useState(false);
   const node = useRef(null);
-
   useClickOutside(node, () => setOpen(false));
+
   return (
     <div>
       <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
-        <MenuComponent open={open} setOpen={setOpen} />
+        <MenuComponent
+          open={open}
+          setOpen={setOpen}
+          theme={theme}
+          toggleTheme={toggleTheme}
+        />
       </div>
     </div>
   );

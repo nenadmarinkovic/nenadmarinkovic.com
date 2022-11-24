@@ -62,7 +62,7 @@ function Header({ theme, toggleTheme }: any) {
               </ThemeButton>
             </Links>
             <MenuButton>
-              <Menu />
+              <Menu theme={theme} toggleTheme={toggleTheme} />
             </MenuButton>
           </Main>
         </Container>

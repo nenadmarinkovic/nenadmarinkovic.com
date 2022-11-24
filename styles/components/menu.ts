@@ -28,10 +28,21 @@ export const MenuLinks = styled.div`
 export const MenuLink = styled.div`
   text-align: center;
   margin-top: 1.5rem;
+  font-size: 1rem;
 
   a {
     color: ${({ theme }) => theme.color};
   }
+`;
+
+export const MenuThemeButton = styled.button`
+  text-align: center;
+  margin-top: 1.5rem;
+  background: transparent;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: ${({ theme }) => theme.color};
 `;
 
 export const StyledBurger = styled.button<Menu>`
@@ -54,7 +65,7 @@ export const StyledBurger = styled.button<Menu>`
   div {
     width: 1.5rem;
     height: 0.15rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#0D0C1D")};
+    background: ${({ theme }) => theme.color};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
