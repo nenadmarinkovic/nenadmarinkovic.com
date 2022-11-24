@@ -1,7 +1,11 @@
 import React, { useState, useRef } from "react";
 import { useRouter } from "next/router";
-import { StyledMenu, MenuLinks, StyledBurger } from "../styles/components/menu";
-import { HeaderLink } from "../styles/components/header";
+import {
+  StyledMenu,
+  MenuLinks,
+  MenuLink,
+  StyledBurger,
+} from "../styles/components/menu";
 import Link from "next/link";
 import { useClickOutside } from "../hooks/useClickOutside";
 
@@ -11,30 +15,30 @@ const MenuComponent = ({ open }: any) => {
   return (
     <StyledMenu open={open}>
       <MenuLinks>
-        <HeaderLink>
+        <MenuLink>
           <Link
             href="/projects"
             className={router.pathname === "/projects" ? "active-link" : ""}
           >
             Projects
           </Link>
-        </HeaderLink>
-        <HeaderLink>
+        </MenuLink>
+        <MenuLink>
           <Link
             href="/notes"
             className={router.pathname === "/notes" ? "active-link" : ""}
           >
             Notes
           </Link>
-        </HeaderLink>
-        <HeaderLink>
+        </MenuLink>
+        <MenuLink>
           <Link
             href="/contact"
             className={router.pathname === "/contact" ? "active-link" : ""}
           >
             Contact
           </Link>
-        </HeaderLink>
+        </MenuLink>
         {/* <ThemeButton onClick={toggleTheme}>
           {theme === "light" ? "Dark mode" : "Light mode"}
         </ThemeButton> */}
@@ -45,7 +49,7 @@ const MenuComponent = ({ open }: any) => {
 
 const Burger = ({ open, setOpen }: any) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger open={open} onClick={() => setOpen(!open)} aria-label="menu">
       <div />
       <div />
     </StyledBurger>

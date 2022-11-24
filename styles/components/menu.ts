@@ -8,12 +8,12 @@ export const StyledMenu = styled.nav<Menu>`
   position: absolute;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: ${({ theme }) => theme.background};
   border-left: 1px solid #eaeaea;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   height: 120vh;
   text-align: left;
-  padding: 70px;
+  padding: 55px;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
@@ -25,6 +25,15 @@ export const MenuLinks = styled.div`
   flex-direction: column;
 `;
 
+export const MenuLink = styled.div`
+  text-align: center;
+  margin-top: 1.5rem;
+
+  a {
+    color: ${({ theme }) => theme.color};
+  }
+`;
+
 export const StyledBurger = styled.button<Menu>`
   position: relative;
   display: flex;
@@ -34,9 +43,9 @@ export const StyledBurger = styled.button<Menu>`
   height: 1.3rem;
   background: transparent;
   border: none;
-  cursor: pointer;
   padding: 0;
   z-index: 10;
+  cursor: pointer;
 
   &:focus {
     outline: none;
