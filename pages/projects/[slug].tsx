@@ -41,7 +41,6 @@ export default function PostPage({ source, frontMatter }: any) {
           setOpenMenu={setOpenMenu}
         />
         <ThemeLayout openMenu={openMenu}>
-          <Header toggleTheme={toggleTheme} theme={theme} />
           <Container>
             <h1>{frontMatter.title}</h1>
             {frontMatter.description && <p>{frontMatter.description}</p>}
