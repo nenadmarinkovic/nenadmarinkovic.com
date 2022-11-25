@@ -13,11 +13,8 @@ import { Cards } from "../styles/components/card";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
 
-
-
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [company] = useState("https://dccs.at");
-
   const [openMenu, setOpenMenu] = useState(false);
 
   return (

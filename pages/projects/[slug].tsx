@@ -1,4 +1,5 @@
 import fs from "fs";
+import { useState } from "react";
 import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
@@ -19,6 +20,7 @@ const components = {
 export default function PostPage({ source, frontMatter }: any) {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
+  const [openMenu, setOpenMenu] = useState(false);
 
   if (!componentMounted) {
     return <div />;
@@ -32,7 +34,13 @@ export default function PostPage({ source, frontMatter }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider theme={themeMode}>
-        <ThemeLayout>
+        <Header
+          toggleTheme={toggleTheme}
+          theme={theme}
+          openMenu={openMenu}
+          setOpenMenu={setOpenMenu}
+        />
+        <ThemeLayout openMenu={openMenu}>
           <Header toggleTheme={toggleTheme} theme={theme} />
           <Container>
             <h1>{frontMatter.title}</h1>
