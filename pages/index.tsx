@@ -42,7 +42,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               {" "}
               DCCS IT Business Solutions{" "}
             </a>
-            in Vienna, Austria. Working mainly with Javascript (React, Vue,
+            in Vienna, Austria. Working mainly with JavaScript (React, Vue,
             Node) on designing and developing websites, web interfaces, and
             APIs.
           </Introduction>
