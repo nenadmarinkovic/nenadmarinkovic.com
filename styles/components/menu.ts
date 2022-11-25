@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 type Menu = {
-  open: boolean;
+  open?: boolean;
+  openMenu?: boolean;
 };
 
 export const StyledMenu = styled.nav<Menu>`
@@ -10,7 +11,8 @@ export const StyledMenu = styled.nav<Menu>`
   flex-direction: column;
   background: ${({ theme }) => theme.background};
   border-left: 1px solid #eaeaea;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  transform: ${({ openMenu }) =>
+    openMenu ? "translateX(0)" : "translateX(100%)"};
   height: 120vh;
   text-align: left;
   padding: 55px;
@@ -67,13 +69,13 @@ export const StyledBurger = styled.button<Menu>`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) =>
-        open ? "translateY(2.5px)" : "translateY(0)"};
+      transform: ${({ openMenu }) =>
+        openMenu ? "translateY(2.5px)" : "translateY(0)"};
     }
 
     :nth-child(2) {
-      transform: ${({ open }) =>
-        open ? "translateY(-2.5px)" : "translateY(0)"};
+      transform: ${({ openMenu }) =>
+        openMenu ? "translateY(-2.5px)" : "translateY(0)"};
     }
   }
 `;

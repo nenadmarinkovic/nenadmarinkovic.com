@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
-export const ThemeLayout = styled.div`
+type Menu = {
+  openMenu?: boolean;
+};
+
+export const ThemeLayout = styled.div<Menu>`
   background: ${({ theme }) => theme.background};
+  opacity: ${({ openMenu }) => (openMenu ? "0.5" : "1")};
 `;
 
 export const Container = styled.div`

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 import type { NextPage } from "next";
 import { ThemeLayout } from "../styles/components/layout";
 import { Container } from "../styles/components/layout";
@@ -11,18 +12,26 @@ import { Cards } from "../styles/components/card";
 // import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
-import { useState } from "react";
+
+
 
 const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [company] = useState("https://dccs.at");
+
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <>
       <Head>
         <title>Nenad Marinković | Home</title>
       </Head>
-      <ThemeLayout>
-        <Header toggleTheme={toggleTheme} theme={theme} />
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
+      <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Nenad" surname="Marinković" />
           <Introduction>
@@ -71,7 +80,6 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             />
           </Cards>
           <Section title="Latest personal projects" />
-          
 
           {/* <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />

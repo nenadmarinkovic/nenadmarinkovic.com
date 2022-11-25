@@ -12,7 +12,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Menu from "./Menu";
 
-function Header({ theme, toggleTheme }: any) {
+function Header({ theme, toggleTheme, openMenu, setOpenMenu }: any) {
+
+  console.log(openMenu);
+  
   const router = useRouter();
 
   return (
@@ -62,7 +65,7 @@ function Header({ theme, toggleTheme }: any) {
               </ThemeButton>
             </Links>
             <MenuButton>
-              <Menu theme={theme} toggleTheme={toggleTheme} />
+              <Menu theme={theme} toggleTheme={toggleTheme} openMenu={openMenu} setOpenMenu={setOpenMenu} />
             </MenuButton>
           </Main>
         </Container>
