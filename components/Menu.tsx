@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import {
   StyledMenu,
