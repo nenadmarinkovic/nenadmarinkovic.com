@@ -1,6 +1,5 @@
-import { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useRouter } from "next/router";
-import { useClickOutside } from "../hooks/useClickOutside";
 import {
   StyledMenu,
   MenuLinks,
@@ -9,6 +8,7 @@ import {
   MenuThemeButton,
 } from "../styles/components/menu";
 import Link from "next/link";
+import { useClickOutside } from "../hooks/useClickOutside";
 
 const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
   const router = useRouter();
@@ -55,8 +55,8 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
 const Burger = ({ openMenu, setOpenMenu }: any) => {
   return (
     <StyledBurger
-      openMenu={openMenu}
       onClick={() => setOpenMenu(!openMenu)}
+      openMenu={openMenu}
       aria-label="menu"
     >
       <div />
@@ -65,19 +65,21 @@ const Burger = ({ openMenu, setOpenMenu }: any) => {
   );
 };
 
-function Menu({ theme, toggleTheme, setOpenMenu, openMenu }: any) {
+function Menu({ theme, toggleTheme, openMenu, setOpenMenu }: any) {
   const node = useRef(null);
   useClickOutside(node, () => setOpenMenu(false));
 
   return (
-    <div ref={node}>
-      <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <MenuComponent
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-        theme={theme}
-        toggleTheme={toggleTheme}
-      />
+    <div>
+      <div ref={node}>
+        <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <MenuComponent
+          openMenu={openMenu}
+          setOpenMenu={setOpenMenu}
+          theme={theme}
+          toggleTheme={toggleTheme}
+        />
+      </div>
     </div>
   );
 }

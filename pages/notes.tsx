@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
@@ -26,13 +27,20 @@ const NotesPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       <Head>
         <title>Nenad Marinković | Notes</title>
       </Head>
-      <ThemeLayout>
-        <Header toggleTheme={toggleTheme} theme={theme} />
+
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
+      <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Notes" />
           <Introduction>
@@ -44,7 +52,8 @@ const NotesPage: NextPage = ({
               <Post key={post.filePath}>
                 <Link
                   as={`/notes/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/notes/[slug]`}>
+                  href={`/notes/[slug]`}
+                >
                   <Title>{post.data.title}</Title>
                 </Link>
                 <Date>{post.data.date}</Date>

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { useState } from "react";
 import Head from "next/head";
 import fs from "fs";
 import { ThemeLayout } from "../styles/components/layout";
@@ -25,13 +26,19 @@ const ProjectsPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       <Head>
         <title>Nenad Marinković | Projects</title>
       </Head>
-      <ThemeLayout>
-        <Header toggleTheme={toggleTheme} theme={theme} />
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
+      <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Projects" />
           <Introduction>

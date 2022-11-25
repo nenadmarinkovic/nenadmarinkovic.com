@@ -13,9 +13,6 @@ import { useRouter } from "next/router";
 import Menu from "./Menu";
 
 function Header({ theme, toggleTheme, openMenu, setOpenMenu }: any) {
-
-  console.log(openMenu);
-  
   const router = useRouter();
 
   return (

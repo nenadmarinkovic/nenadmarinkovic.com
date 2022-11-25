@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 import type { NextPage } from "next";
 import { ThemeLayout } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
@@ -9,20 +10,26 @@ import Banner from "../components/Banner";
 import { HeightContent } from "../styles/pages/contact";
 
 const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       <Head>
         <title>Nenad Marinković | Contact</title>
       </Head>
-      <ThemeLayout>
-        <Header toggleTheme={toggleTheme} theme={theme} />
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
+      <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Contact" />
           <Introduction>
             You can contact me through the form or at:
             nenadmarinkovic@protonmail.com
           </Introduction>
-          <HeightContent/>
+          <HeightContent />
         </Container>
         <Footer spotifyData={spotifyData} />
       </ThemeLayout>
