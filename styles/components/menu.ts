@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 type Menu = {
-  open?: boolean;
   openMenu?: boolean;
 };
 

@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
   const router = useRouter();
-  
+
   return (
     <StyledMenu openMenu={openMenu}>
       <MenuLinks>
