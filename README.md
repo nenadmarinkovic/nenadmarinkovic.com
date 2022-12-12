@@ -1,7 +1,8 @@
 Personal website build with Next.js, TypeScript, styled-components.
+
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
