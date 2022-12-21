@@ -9,6 +9,7 @@ export const HeaderWrap = styled.div`
   background: ${({ theme }) => theme.headerBackground};
   backdrop-filter: saturate(70%) blur(3px);
   z-index: 2;
+  contain: layout; // Prevents width conflict with absolute positioned sidebar
 `;
 
 export const Main = styled.div`
