@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BannerWrap = styled.div`
-  padding-top: 7.5rem;
+  padding-top: 5.5rem;
   background: ${({ theme }) => theme.background};
 `;
 

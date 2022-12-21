@@ -33,11 +33,13 @@ export const GlobalStyle = createGlobalStyle`
 
     html,
     body {
+      background: ${({ theme }) => theme.background};
       padding: 0;
       margin: 0;
       font-family: "Cera Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       scrollbar-gutter: stable;
+      contain: paint;
     }
     
     input,
@@ -102,5 +104,4 @@ export const GlobalStyle = createGlobalStyle`
     .overlay-close {
       opacity: 0;
     }
-    
 `;
