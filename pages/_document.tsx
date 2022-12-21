@@ -39,7 +39,6 @@ class Website extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="Web development and design." />
           <link
             rel="preload"
             href="/fonts/CeraPro-Regular.woff2"
