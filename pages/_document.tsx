@@ -60,8 +60,19 @@ class Website extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link href="/manifest.json" rel="manifest" />
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
-          {/* <meta content="#ffffff" name="theme-color" /> */}
-          <meta name="theme-color" content="#000" />
+
+          <meta
+            key="theme-color-light"
+            name="theme-color"
+            media="(prefers-color-scheme: light)"
+            content="#fff"
+          />
+          <meta
+            key="theme-color-dark"
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content="#000"
+          />
         </Head>
         <body>
           <Main />
