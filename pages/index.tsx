@@ -21,6 +21,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
     <>
       <Head>
         <title>Nenad Marinković | Home</title>
+        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
       </Head>
       <Header
         toggleTheme={toggleTheme}
