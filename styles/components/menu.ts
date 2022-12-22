@@ -9,7 +9,7 @@ export const StyledMenu = styled.nav<Menu>`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.background};
-  border-left: 1px solid #eaeaea;
+  border-left: ${({ theme }) => theme.headerAndMenuBorder};
   transform: ${({ openMenu }) =>
     openMenu ? "translateX(0)" : "translateX(100%)"};
   height: 120vh;

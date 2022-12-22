@@ -6,7 +6,7 @@ type Menu = {
 
 export const ThemeLayout = styled.div<Menu>`
   background: ${({ theme }) => theme.background};
-  opacity: ${({ openMenu }) => (openMenu ? "0.5" : "1")};
+  opacity: ${({ openMenu }) => (openMenu ? "0.3" : "1")};
 `;
 
 export const Container = styled.div`
