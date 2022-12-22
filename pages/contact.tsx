@@ -15,6 +15,7 @@ const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
     <>
       <Head>
         <title>Nenad Marinković | Contact</title>
+        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
       </Head>
       <Header
         toggleTheme={toggleTheme}

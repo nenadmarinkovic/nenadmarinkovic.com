@@ -31,6 +31,7 @@ const ProjectsPage: NextPage = ({
     <>
       <Head>
         <title>Nenad Marinković | Projects</title>
+        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
       </Head>
       <Header
         toggleTheme={toggleTheme}

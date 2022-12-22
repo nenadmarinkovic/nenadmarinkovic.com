@@ -32,6 +32,7 @@ const NotesPage: NextPage = ({
     <>
       <Head>
         <title>Nenad Marinković | Notes</title>
+        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
       </Head>
 
       <Header
