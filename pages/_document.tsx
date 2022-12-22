@@ -62,13 +62,13 @@ class Website extends Document {
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
 
           <meta
-            key="theme-color-light"
+            key="light"
             name="theme-color"
             media="(prefers-color-scheme: light)"
             content="#fff"
           />
           <meta
-            key="theme-color-dark"
+            key="dark"
             name="theme-color"
             media="(prefers-color-scheme: dark)"
             content="#000"
