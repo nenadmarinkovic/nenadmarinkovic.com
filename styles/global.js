@@ -42,10 +42,6 @@ export const GlobalStyle = createGlobalStyle`
       -moz-osx-font-smoothing: grayscale;
     }
 
-    body {
-      min-height: 100%;
-    }
-    
     input,
     textarea,
     button {
