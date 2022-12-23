@@ -1,9 +1,9 @@
 export type Spotify = {
-  spotifyData?: any;
+  spotifyData?: {};
 };
 
 export type Theme = {
-  theme?: any;
+  theme?: string;
   toggleTheme: any;
 };
 
