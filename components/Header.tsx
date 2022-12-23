@@ -12,7 +12,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Menu from "./Menu";
 
-function Header({ theme, toggleTheme, openMenu, setOpenMenu }: any) {
+import { Theme, Spotify, MenuType } from "../lib/types";
+
+type Props = Theme & Spotify & MenuType;
+
+
+function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
   const router = useRouter();
 
   return (

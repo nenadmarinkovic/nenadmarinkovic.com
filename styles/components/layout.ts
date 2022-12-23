@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 type Menu = {
-  openMenu?: boolean;
+  openMenu: boolean;
 };
 
 export const ThemeLayout = styled.div<Menu>`

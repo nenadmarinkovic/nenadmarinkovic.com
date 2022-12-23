@@ -12,8 +12,15 @@ import { Cards } from "../styles/components/card";
 // import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
+import { Theme, Spotify, MenuType } from "../lib/types";
 
-const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
+type Props = Theme & Spotify & MenuType;
+
+const Homepage: NextPage<Props> = ({
+  spotifyData,
+  theme,
+  toggleTheme,
+}: Props) => {
   const [company] = useState("https://dccs.at");
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -21,7 +28,7 @@ const Homepage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
     <>
       <Head>
         <title>Nenad Marinković | Home</title>
-        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
       <Header
         toggleTheme={toggleTheme}
