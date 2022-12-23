@@ -24,7 +24,7 @@ const Homepage: NextPage<Props> = ({
   const [company] = useState("https://dccs.at");
   const [openMenu, setOpenMenu] = useState(false);
 
-  console.log(spotifyData);
+  console.log(theme);
   
 
   return (
