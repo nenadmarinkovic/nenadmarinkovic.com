@@ -11,11 +11,9 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Menu from "./Menu";
-
 import { Theme, Spotify, MenuType } from "../lib/types";
 
 type Props = Theme & Spotify & MenuType;
-
 
 function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
   const router = useRouter();
@@ -67,7 +65,12 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
               </ThemeButton>
             </Links>
             <MenuButton>
-              <Menu theme={theme} toggleTheme={toggleTheme} openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <Menu
+                theme={theme}
+                toggleTheme={toggleTheme}
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+              />
             </MenuButton>
           </Main>
         </Container>
