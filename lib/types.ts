@@ -3,7 +3,7 @@ export type Spotify = {
 };
 
 export type Theme = {
-  theme?: any;
+  theme?: string;
   toggleTheme: any;
 };
 
