@@ -4,7 +4,7 @@ export type Spotify = {
 
 export type Theme = {
   theme?: string | boolean | (() => void);
-  toggleTheme: () => void;
+  toggleTheme?: any;
 };
 
 export type MenuType = {
