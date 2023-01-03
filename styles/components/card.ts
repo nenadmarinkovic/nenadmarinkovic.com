@@ -66,6 +66,10 @@ export const BoxItem = styled.div`
   padding-top: 2.3rem;
   display: flex;
   align-items: center;
+
+  @media (max-width: 22.8rem) {
+    padding-top: 1.5rem;
+  }
 `;
 
 export const BoxItemIcon = styled.div``;
@@ -112,7 +116,7 @@ export const BoxIcon = styled.button`
   background: transparent;
   overflow: hidden;
   height: 42px;
-  transition: .3s;
+  transition: 0.3s;
 
   svg {
     transition: 0.25s;

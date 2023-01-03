@@ -53,7 +53,7 @@ const Homepage: NextPage<Props> = ({
               boxTitle="Design"
               boxText1="Define a project strategy, scope, and information architecture."
               boxText2="Specify customer needs and motivation in using the product."
-              boxText3="Create effective and compelling web interface design."
+              boxText3="Create effective and compelling web interface."
               boxItemIcon="/icons/check.svg"
               reversed={false}
             />
