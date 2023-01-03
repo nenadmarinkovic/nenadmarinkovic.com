@@ -63,7 +63,7 @@ export const Box = styled.div`
 export const BoxItems = styled.div``;
 
 export const BoxItem = styled.div`
-  padding-top: 2.5rem;
+  padding-top: 2.3rem;
   display: flex;
   align-items: center;
 `;

@@ -9,7 +9,7 @@ import Banner from "../components/Banner";
 import { Introduction } from "../styles/components/introduction";
 import Card from "../components/Card";
 import { Cards } from "../styles/components/card";
-// import Tag from "../components/Tag";
+import Tag from "../components/Tag";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
 import { Theme, Spotify, MenuType } from "../lib/types";
@@ -49,43 +49,43 @@ const Homepage: NextPage<Props> = ({
             <Card
               title="Transforming ideas into amazing digital products"
               description="Bring digital product to life through carefully considered design and technical know-how, using fast, secure, and reliable tools and technologies."
-              reversed={false}
               boxColor="orange"
               boxTitle="Design"
-              boxText1="The design of a project is the backbone. 1"
-              boxText2="The design of a project is the backbone. 2"
-              boxText3="The design of a project is the backbone. 3"
+              boxText1="Define a project strategy, scope, and information architecture."
+              boxText2="Specify customer needs and motivation in using the product."
+              boxText3="Create effective and compelling web interface design."
               boxItemIcon="/icons/check.svg"
+              reversed={false}
             />
             <Card
               title="Cutting-edge web solutions"
               description="From marketing websites and content-management systems to web applications and dashboards. Developed with confidence for engagement and scale."
-              reversed={true}
               boxColor="blue"
               boxTitle="Development"
-              boxText1="The design of a project is the backbone."
-              boxText2="The design of a project is the backbone."
-              boxText3="The design of a project is the backbone."
+              boxText1="Craft the look and functionality of the website or application."
+              boxText2="Ensure that it runs smootly on all screens and without a single error."
+              boxText3="Lunch website or application and make it available to the public."
               boxItemIcon="/icons/check.svg"
+              reversed={true}
             />
             <Card
               title="Performance monitoring and optimization"
               description="Constant improvements in terms of speed, responsiveness, SEO, and accessibility helps your website run smootly and ensures positive user experience."
-              reversed={false}
               boxColor="green"
               boxTitle="Maintenance"
-              boxText1="The design of a project is the backbone."
-              boxText2="The design of a project is the backbone."
-              boxText3="The design of a project is the backbone."
+              boxText1="Check for spaces where it can be improved."
+              boxText2="Update it with new requirements and bussiness needs."
+              boxText3="Make sure it stay in good shape and available to everyone."
               boxItemIcon="/icons/check.svg"
+              reversed={false}
             />
           </Cards>
-          <Section title="Latest personal projects" />
+          <Section title="Personal projects" />
 
-          {/* <Tag color="green" text="Node.js" />
+          <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />
-          <Tag color="black" text="Next.js" /> */}
+          <Tag color="black" text="Next.js" />
           <Panel />
         </Container>
         <Footer spotifyData={spotifyData} />
