@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const TagWrap = styled.span`
-  padding: 7px 20px;
+  font-family: monospace;
+  padding: 7px 15px;
   color: white;
   border-radius: 30px;
   font-weight: bold;
   margin: 10px 10px 0 0;
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   font-weight: 700;
 
   &.green {
@@ -19,7 +20,7 @@ export const TagWrap = styled.span`
   }
 
   &.orange {
-    background: #C75216;
+    background: #c75216;
   }
 
   &.black {

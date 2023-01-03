@@ -57,7 +57,7 @@ const NotesPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <Date>{post.data.date}</Date>
+                <Date>Updated: {post.data.date}</Date>
                 <Description>{post.data.description}</Description>
               </Post>
             ))}

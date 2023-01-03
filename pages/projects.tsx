@@ -31,7 +31,7 @@ const ProjectsPage: NextPage = ({
     <>
       <Head>
         <title>Nenad Marinković | Projects</title>
-        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
       <Header
         toggleTheme={toggleTheme}
@@ -55,7 +55,7 @@ const ProjectsPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <Date>{post.data.date}</Date>
+                <Date>Updated: {post.data.date}</Date>
                 <Description>{post.data.description}</Description>
               </Post>
             ))}

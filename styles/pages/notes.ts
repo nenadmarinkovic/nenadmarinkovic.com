@@ -28,5 +28,5 @@ export const Date = styled.div`
   color: ${({ theme }) => theme.color};
   font-size: 0.85rem;
   line-height: 1.9;
-  font-weight: 600;
+  font-family: monospace;
 `;
