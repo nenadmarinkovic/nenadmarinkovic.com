@@ -40,21 +40,22 @@ class Website extends Document {
       <Html lang="en">
         <Head>
           <link
-            rel="preload"
+           rel="prefetch"
             href="/fonts/CeraPro-Regular.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
-            rel="preload"
+           rel="prefetch"
             href="/fonts/CeraPro-Bold.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+      
           />
           <link
-            rel="preload"
+           rel="prefetch"
             href="/fonts/CeraPro-Black.woff2"
             as="font"
             type="font/woff2"
