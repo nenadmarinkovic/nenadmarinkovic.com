@@ -21,7 +21,9 @@ interface Card {
   reversed: boolean;
   boxColor: string;
   boxTitle: string;
-  boxText: string;
+  boxText1: string;
+  boxText2: string;
+  boxText3: string;
   boxItemIcon: string;
 }
 
@@ -31,7 +33,9 @@ function Card({
   reversed,
   boxColor,
   boxTitle,
-  boxText,
+  boxText1,
+  boxText2,
+  boxText3,
   boxItemIcon,
 }: Card) {
   const [isOpen, setOpen] = useState(false);
@@ -126,10 +130,10 @@ function Card({
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={""}
+                          alt={"Check icon"}
                         />
                       </BoxItemIcon>
-                      <BoxItemText>{boxText}</BoxItemText>
+                      <BoxItemText>{boxText1}</BoxItemText>
                     </BoxItem>
                   </motion.div>
                   <motion.div key="subheading-primary" variants={itemVariants}>
@@ -139,10 +143,10 @@ function Card({
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={""}
+                          alt={"Check icon"}
                         />
                       </BoxItemIcon>
-                      <BoxItemText>{boxText}</BoxItemText>
+                      <BoxItemText>{boxText2}</BoxItemText>
                     </BoxItem>
                   </motion.div>
 
@@ -156,10 +160,10 @@ function Card({
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={"Open additional text"}
+                          alt={"Check icon"}
                         />
                       </BoxItemIcon>
-                      <BoxItemText>{boxText}</BoxItemText>
+                      <BoxItemText>{boxText3}</BoxItemText>
                     </BoxItem>
                   </motion.div>
                 </BoxItems>

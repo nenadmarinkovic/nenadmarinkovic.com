@@ -112,9 +112,14 @@ export const BoxIcon = styled.button`
   background: transparent;
   overflow: hidden;
   height: 42px;
+  transition: .3s;
 
   svg {
     transition: 0.25s;
+  }
+
+  :hover {
+    transform: scale(1.08);
   }
 
   &.opened-box {

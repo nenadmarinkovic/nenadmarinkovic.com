@@ -41,46 +41,42 @@ const Homepage: NextPage<Props> = ({
           <Banner name="Nenad" surname="Marinković" />
           <Introduction>
             Software developer at
-            <a
-              className="a-link"
-              href="https://google.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              DCCS IT Business Solutions{" "}
-            </a>
-            in Vienna, Austria. Working mainly with JavaScript (React, Vue,
-            Node) on designing and developing websites, web interfaces, and
-            APIs.
+            <a className="a-link" href="https://google.com" target="_blank" rel="noreferrer"> DCCS IT Business Solutions </a> in Vienna, Austria. Working mainly with JavaScript
+            (React, Vue, Node) on designing and developing websites, web interfaces, and APIs.
           </Introduction>
           <Section title="Services I offer" />
           <Cards>
             <Card
               title="Transforming ideas into amazing digital products"
-              description="The design of a project is the backbone to which all other pieces are dependent. Sometimes, getting another pair of eyes on a project can spark creativity. "
+              description="Bring digital product to life through carefully considered design and technical know-how, using fast, secure, and reliable tools and technologies."
               reversed={false}
               boxColor="orange"
               boxTitle="Design"
-              boxText="The design of a project is the backbone."
+              boxText1="The design of a project is the backbone. 1"
+              boxText2="The design of a project is the backbone. 2"
+              boxText3="The design of a project is the backbone. 3"
               boxItemIcon="/icons/check.svg"
             />
             <Card
-              title="Coding the best possible solution"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              title="Cutting-edge web solutions"
+              description="From marketing websites and content-management systems to web applications and dashboards. Developed with confidence for engagement and scale."
               reversed={true}
               boxColor="blue"
               boxTitle="Development"
-              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              boxText1="The design of a project is the backbone."
+              boxText2="The design of a project is the backbone."
+              boxText3="The design of a project is the backbone."
               boxItemIcon="/icons/check.svg"
             />
             <Card
-              title="Title"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              title="Performance monitoring and optimization"
+              description="Constant improvements in terms of speed, responsiveness, SEO, and accessibility helps your website run smootly and ensures positive user experience."
               reversed={false}
               boxColor="green"
               boxTitle="Maintenance"
-              boxText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              boxText1="The design of a project is the backbone."
+              boxText2="The design of a project is the backbone."
+              boxText3="The design of a project is the backbone."
               boxItemIcon="/icons/check.svg"
             />
           </Cards>
