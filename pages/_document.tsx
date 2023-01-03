@@ -39,23 +39,23 @@ class Website extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="description" content="Web development and design" />
           <link
-           rel="prefetch"
+            rel="prefetch"
             href="/fonts/CeraPro-Regular.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
-           rel="prefetch"
+            rel="prefetch"
             href="/fonts/CeraPro-Bold.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
-      
           />
           <link
-           rel="prefetch"
+            rel="prefetch"
             href="/fonts/CeraPro-Black.woff2"
             as="font"
             type="font/woff2"
