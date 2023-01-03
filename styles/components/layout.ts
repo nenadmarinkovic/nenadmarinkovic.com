@@ -15,3 +15,7 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 15px;
 `;
+
+export const Flex = styled.div`
+  display: flex;
+`;

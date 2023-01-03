@@ -1,4 +1,4 @@
-import { TagWrap } from "../styles/components/tag";
+import { TagSpan } from "../styles/components/tag";
 
 interface Tag {
   color: string;
@@ -6,7 +6,7 @@ interface Tag {
 }
 
 function Tag({ color, text }: Tag) {
-  return <TagWrap className={color}>{text}</TagWrap>;
+  return <TagSpan className={color}>{text}</TagSpan>;
 }
 
 export default Tag;

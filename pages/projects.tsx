@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import Head from "next/head";
 import fs from "fs";
-import { ThemeLayout } from "../styles/components/layout";
+import { ThemeLayout, Flex } from "../styles/components/layout";
 import matter from "gray-matter";
 import path from "path";
 import Header from "../components/Header";
@@ -20,6 +20,7 @@ import Link from "next/link";
 import { Introduction } from "../styles/components/introduction";
 import Banner from "../components/Banner";
 import { Container } from "../styles/components/layout";
+import Tag from "../components/Tag";
 
 const ProjectsPage: NextPage = ({
   spotifyData,
@@ -56,8 +57,16 @@ const ProjectsPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <DateWrap> Updated: <Date>{post.data.date}</Date></DateWrap>
+                <DateWrap>
+                  Updated: <Date>{post.data.date}</Date>
+                </DateWrap>
                 <Description>{post.data.description}</Description>
+                <Flex>
+                  <Tag color="black" text="Next.js" />
+                  <Tag color="green" text="Node.js" />
+                  <Tag color="blue" text="Typescript" />
+                  <Tag color="orange" text="Firebase" />
+                </Flex>
               </Post>
             ))}
           </PostsWrap>

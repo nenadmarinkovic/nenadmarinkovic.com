@@ -81,7 +81,6 @@ const Homepage: NextPage<Props> = ({
             />
           </Cards>
           <Section title="Personal projects" />
-
           <Tag color="green" text="Node.js" />
           <Tag color="blue" text="Typescript" />
           <Tag color="orange" text="Firebase" />

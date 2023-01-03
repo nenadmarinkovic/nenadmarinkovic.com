@@ -60,6 +60,7 @@ const NotesPage: NextPage = ({
                 </Link>
                 <DateWrap> Updated: <Date>{post.data.date}</Date></DateWrap>
                 <Description>{post.data.description}</Description>
+                
               </Post>
             ))}
           </PostsWrap>

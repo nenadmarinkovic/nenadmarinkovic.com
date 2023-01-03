@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-export const TagWrap = styled.span`
+export const TagSpan = styled.span`
   font-family: monospace;
-  padding: 7px 15px;
+  padding: 5px 10px;
   color: white;
   border-radius: 30px;
   font-weight: bold;
   margin: 10px 10px 0 0;
-  display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
 
