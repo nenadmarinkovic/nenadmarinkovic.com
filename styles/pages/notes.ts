@@ -24,9 +24,13 @@ export const Description = styled.div`
   line-height: 1.9;
 `;
 
-export const Date = styled.div`
+export const DateWrap = styled.span`
   color: ${({ theme }) => theme.color};
   font-size: 0.85rem;
   line-height: 1.9;
+`;
+
+export const Date = styled.span`
   font-family: monospace;
+  margin-left: .25rem;
 `;

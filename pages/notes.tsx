@@ -17,6 +17,7 @@ import {
   PostsWrap,
   Post,
   Title,
+  DateWrap,
   Date,
   Description,
 } from "../styles/pages/notes";
@@ -57,7 +58,7 @@ const NotesPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <Date>Updated: {post.data.date}</Date>
+                <DateWrap> Updated: <Date>{post.data.date}</Date></DateWrap>
                 <Description>{post.data.description}</Description>
               </Post>
             ))}
