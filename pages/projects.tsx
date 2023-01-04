@@ -15,7 +15,7 @@ import {
   DateWrap,
   Date,
   Description,
-} from "../styles/pages/notes";
+} from "../styles/pages/dir";
 import Link from "next/link";
 import { Introduction } from "../styles/components/introduction";
 import Banner from "../components/Banner";

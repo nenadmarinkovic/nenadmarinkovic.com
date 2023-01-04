@@ -20,9 +20,9 @@ import {
   DateWrap,
   Date,
   Description,
-} from "../styles/pages/notes";
+} from "../styles/pages/dir";
 
-const NotesPage: NextPage = ({
+const DirPage: NextPage = ({
   posts,
   spotifyData,
   theme,
@@ -32,7 +32,7 @@ const NotesPage: NextPage = ({
   return (
     <>
       <Head>
-        <title>Nenad Marinković | Notes</title>
+        <title>Nenad Marinković | Directory</title>
         <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
       </Head>
 
@@ -44,7 +44,7 @@ const NotesPage: NextPage = ({
       />
       <ThemeLayout openMenu={openMenu}>
         <Container>
-          <Banner name="Notes" />
+          <Banner name="Directory" />
           <Introduction>
             I write mostly about web development and tech. Use the search below
             to filter by title.
@@ -53,14 +53,14 @@ const NotesPage: NextPage = ({
             {posts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
-                  as={`/notes/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/notes/[slug]`}
+                  as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                  href={`/dir/[slug]`}
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
                 <DateWrap> Updated: <Date>{post.data.date}</Date></DateWrap>
                 <Description>{post.data.description}</Description>
-                
+
               </Post>
             ))}
           </PostsWrap>
@@ -86,4 +86,4 @@ export function getStaticProps() {
   return { props: { posts } };
 }
 
-export default NotesPage;
+export default DirPage;
