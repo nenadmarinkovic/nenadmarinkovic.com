@@ -67,7 +67,7 @@ export const BoxItem = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 22.8rem) {
+  @media (max-width: 22.5rem) {
     padding-top: 1.5rem;
   }
 `;
