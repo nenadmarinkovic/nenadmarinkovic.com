@@ -49,7 +49,7 @@ const DirPage: NextPage = ({
         <Container>
           <Banner name="Directory" />
           <Introduction>
-           Personal web directory for notes, bookmarks, photos, audio, video, books, tools and technologies. Categories + filters. Regulated complexity.
+           Personal web directory for notes, bookmarks, photos, audio, video, books, tools and technologies. Categories, filters. Regulated complexity.
           </Introduction>
           <PostsWrap>
             {posts.map((post: any) => (
