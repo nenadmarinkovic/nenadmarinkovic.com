@@ -1,13 +1,13 @@
 import fs from "fs";
-import { useState } from "react";
+import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
+import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import path from "path";
 import { ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
@@ -18,6 +18,7 @@ const components = {
 };
 
 export default function PostPage({ source, frontMatter }: any) {
+
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   const [openMenu, setOpenMenu] = useState(false);
@@ -34,6 +35,7 @@ export default function PostPage({ source, frontMatter }: any) {
         <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <ThemeProvider theme={themeMode}>
         <Header
           toggleTheme={toggleTheme}
@@ -41,6 +43,7 @@ export default function PostPage({ source, frontMatter }: any) {
           openMenu={openMenu}
           setOpenMenu={setOpenMenu}
         />
+
         <ThemeLayout openMenu={openMenu}>
           <Container>
             <h1>{frontMatter.title}</h1>
@@ -56,9 +59,9 @@ export default function PostPage({ source, frontMatter }: any) {
 }
 
 export const getStaticProps = async ({ params }: any) => {
+
   const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
-
   const { content, data } = matter(source);
 
   const mdxSource = await serialize(content, {
