@@ -46,8 +46,7 @@ const DirPage: NextPage = ({
         <Container>
           <Banner name="Directory" />
           <Introduction>
-            I write mostly about web development and tech. Use the search below
-            to filter by title.
+           Personal web directory for notes, bookmarks, photos, audio, video, books, tools and technologies. Categories + filters.
           </Introduction>
           <PostsWrap>
             {posts.map((post: any) => (
