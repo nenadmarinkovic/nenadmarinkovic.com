@@ -12,8 +12,8 @@ import {
   BoxItemIcon,
   BoxItemText,
 } from "../styles/components/card";
-import Image from "next/image";
 import { motion, Variants, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface Card {
   title: string;

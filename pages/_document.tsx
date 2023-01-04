@@ -9,6 +9,7 @@ import { ServerStyleSheet } from "styled-components";
 
 class Website extends Document {
   static async getInitialProps(ctx: DocumentContext) {
+    
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 

@@ -1,18 +1,18 @@
-import Head from "next/head";
-import { useState } from "react";
 import type { NextPage } from "next";
+import { useState } from "react";
 import { ThemeLayout } from "../styles/components/layout";
 import { Container } from "../styles/components/layout";
+import { Introduction } from "../styles/components/introduction";
+import { Cards } from "../styles/components/card";
+import { Theme, Spotify, MenuType } from "../lib/types";
+import Head from "next/head";
+import Tag from "../components/Tag";
+import Panel from "../components/Panel";
+import Card from "../components/Card";
+import Section from "../components/Section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
-import { Introduction } from "../styles/components/introduction";
-import Card from "../components/Card";
-import { Cards } from "../styles/components/card";
-import Tag from "../components/Tag";
-import Panel from "../components/Panel";
-import Section from "../components/Section";
-import { Theme, Spotify, MenuType } from "../lib/types";
 
 type Props = Theme & Spotify & MenuType;
 
@@ -21,6 +21,7 @@ const Homepage: NextPage<Props> = ({
   theme,
   toggleTheme,
 }: Props) => {
+
   const [company] = useState("https://dccs.at");
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -110,6 +111,7 @@ export async function getStaticProps() {
     });
 
     spotifyData = await res.json();
+
   } catch (e: any) {
     error = e.toString();
   }

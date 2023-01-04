@@ -1,15 +1,15 @@
-import Head from "next/head";
-import { useState } from "react";
-import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import Head from "next/head";
+import Link from "next/link";
 import type { NextPage } from "next";
+import { useState } from "react";
 import { ThemeLayout } from "../styles/components/layout";
+import { Container } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
 import Footer from "../components/Footer";
-import { Container } from "../styles/components/layout";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 
@@ -28,7 +28,9 @@ const DirPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
+
   const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <>
       <Head>
@@ -42,6 +44,7 @@ const DirPage: NextPage = ({
         openMenu={openMenu}
         setOpenMenu={setOpenMenu}
       />
+
       <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Directory" />
@@ -71,7 +74,9 @@ const DirPage: NextPage = ({
 };
 
 export function getStaticProps() {
+
   const posts = postFilePaths.map((filePath) => {
+
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
     const { content, data } = matter(source);
 
