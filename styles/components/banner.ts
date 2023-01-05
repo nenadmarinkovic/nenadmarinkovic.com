@@ -4,6 +4,10 @@ export const BannerWrap = styled.div`
   padding-top: 5.5rem;
   background: ${({ theme }) => theme.background};
   margin-bottom: 1rem;
+
+  @media (max-width: 25rem) {
+    padding-top: 2.5rem;
+  }
 `;
 
 export const Text = styled.h1`
