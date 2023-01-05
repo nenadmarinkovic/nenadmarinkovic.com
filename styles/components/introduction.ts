@@ -8,7 +8,7 @@ export const Introduction = styled.p`
   width: 78.5%;
 
   @media (max-width: 48rem) {
-    margin-top: 1rem;
+    margin: 0px 1rem 0 0;
     width: 100%;
   }
 `;
