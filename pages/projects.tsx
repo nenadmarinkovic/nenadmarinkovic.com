@@ -48,11 +48,15 @@ const ProjectsPage: NextPage = ({
         <Container>
           <Banner name="Projects" />
           <Flex align="top" justify="space-between">
-          <Introduction>
+            <Introduction>
               I write mostly about web development and tech. Use the search
               below to filter by title.
             </Introduction>
-            <Qr image="/qr/projects.svg" />
+            {theme === "dark" ? (
+              <Qr image="/qr/pro-black.svg" />
+            ) : (
+              <Qr image="/qr/pro-white.svg" />
+            )}
           </Flex>
           <PostsWrap>
             {posts.map((post: any) => (
