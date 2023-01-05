@@ -1,4 +1,3 @@
-
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
@@ -14,13 +13,13 @@ import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
-import { Container } from "../styles/components/layout";
-import { ThemeLayout, Flex } from "../styles/components/layout";
+import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import Head from "next/head";
 import Header from "../components/Header";
 import Tag from "../components/Tag";
 import Banner from "../components/Banner";
 import Link from "next/link";
+import Qr from "../components/Qr";
 import Footer from "../components/Footer";
 
 const ProjectsPage: NextPage = ({
@@ -29,7 +28,6 @@ const ProjectsPage: NextPage = ({
   theme,
   toggleTheme,
 }: any) => {
-
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
@@ -49,10 +47,13 @@ const ProjectsPage: NextPage = ({
       <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Projects" />
+          <Flex align="top" justify="space-between">
           <Introduction>
-            I write mostly about web development and tech. Use the search below
-            to filter by title.
-          </Introduction>
+              I write mostly about web development and tech. Use the search
+              below to filter by title.
+            </Introduction>
+            <Qr image="/qr/projects.svg" />
+          </Flex>
           <PostsWrap>
             {posts.map((post: any) => (
               <Post key={post.filePath}>

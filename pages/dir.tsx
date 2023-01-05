@@ -5,10 +5,10 @@ import Head from "next/head";
 import Link from "next/link";
 import type { NextPage } from "next";
 import { useState } from "react";
-import { ThemeLayout } from "../styles/components/layout";
-import { Container } from "../styles/components/layout";
+import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
+import Qr from "../components/Qr";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -22,20 +22,14 @@ import {
   Description,
 } from "../styles/pages/dir";
 
-const DirPage: NextPage = ({
-  posts,
-  spotifyData,
-  theme,
-  toggleTheme,
-}: any) => {
-
+const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <>
       <Head>
         <title>Nenad Marinković | Directory</title>
-        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 
       <Header
@@ -48,9 +42,14 @@ const DirPage: NextPage = ({
       <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Directory" />
-          <Introduction>
-           Personal web directory for notes, bookmarks, photos, audio, video, books, tools and technologies. Categories, filters. German dictionary with examples. Regulated complexity.
-          </Introduction>
+          <Flex align="top" justify="space-between">
+            <Introduction>
+              Personal web directory for notes, bookmarks, photos, audio, video,
+              books, tools and technologies. Categories, filters. German
+              dictionary with examples. Regulated complexity.
+            </Introduction>
+            <Qr image="/qr/directory.svg" />
+          </Flex>
           <PostsWrap>
             {posts.map((post: any) => (
               <Post key={post.filePath}>
@@ -60,9 +59,10 @@ const DirPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <DateWrap> Updated: <Date>{post.data.date}</Date></DateWrap>
+                <DateWrap>
+                  Updated: <Date>{post.data.date}</Date>
+                </DateWrap>
                 <Description>{post.data.description}</Description>
-
               </Post>
             ))}
           </PostsWrap>
@@ -74,9 +74,7 @@ const DirPage: NextPage = ({
 };
 
 export function getStaticProps() {
-
   const posts = postFilePaths.map((filePath) => {
-
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
     const { content, data } = matter(source);
 

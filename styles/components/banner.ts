@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BannerWrap = styled.div`
   padding-top: 5.5rem;
   background: ${({ theme }) => theme.background};
+  margin-bottom: 1rem;
 `;
 
 export const Text = styled.h1`
