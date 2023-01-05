@@ -5,7 +5,7 @@ import { QrWrap } from "../styles/components/qr";
 function Qr({ image }: any) {
   return (
     <QrWrap>
-      <Image src={image} width={150} height={150} alt={"QR"} />
+      <Image src={image} width={120} height={120} alt={"QR"} />
     </QrWrap>
   );
 }

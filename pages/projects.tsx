@@ -53,9 +53,9 @@ const ProjectsPage: NextPage = ({
               below to filter by title.
             </Introduction>
             {theme === "dark" ? (
-              <Qr image="/qr/pro-black.svg" />
+              <Qr image="/qr/projects-black.svg" />
             ) : (
-              <Qr image="/qr/pro-white.svg" />
+              <Qr image="/qr/projects-white.svg" />
             )}
           </Flex>
           <PostsWrap>

@@ -48,7 +48,11 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
               books, tools and technologies. Categories, filters. German
               dictionary with examples. Regulated complexity.
             </Introduction>
-            <Qr image="/qr/directory.svg" />
+            {theme === "dark" ? (
+              <Qr image="/qr/directory-black.svg" />
+            ) : (
+              <Qr image="/qr/directory-white.svg" />
+            )}
           </Flex>
           <PostsWrap>
             {posts.map((post: any) => (
