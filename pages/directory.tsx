@@ -20,7 +20,7 @@ import {
   DateWrap,
   Date,
   Description,
-} from "../styles/pages/dir";
+} from "../styles/pages/directory";
 
 const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -58,8 +58,8 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
             {posts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
-                  as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/dir/[slug]`}
+                  as={`/directory/${post.filePath.replace(/\.mdx?$/, "")}`}
+                  href={`/directory/[slug]`}
                 >
                   <Title>{post.data.title}</Title>
                 </Link>

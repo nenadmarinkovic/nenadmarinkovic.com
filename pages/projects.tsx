@@ -8,7 +8,7 @@ import {
   DateWrap,
   Date,
   Description,
-} from "../styles/pages/dir";
+} from "../styles/pages/directory";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";

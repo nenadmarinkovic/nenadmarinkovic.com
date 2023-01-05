@@ -26,8 +26,8 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
         </MenuLink>
         <MenuLink>
           <Link
-            href="/dir"
-            className={router.pathname === "/dir" ? "active-link" : ""}
+            href="/directory"
+            className={router.pathname === "/directory" ? "active-link" : ""}
           >
             Directory
           </Link>
