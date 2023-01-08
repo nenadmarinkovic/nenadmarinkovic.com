@@ -20,6 +20,10 @@ export const Container = styled.div`
   max-width: 52.8rem;
   width: 100%;
   padding: 0 15px;
+
+  @media (max-width: 25rem) {
+    max-width: 100%;
+  }
 `;
 
 export const Flex = styled.div<Flex>`
