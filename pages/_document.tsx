@@ -40,7 +40,7 @@ class Website extends Document {
       <Html lang="en">
         <Head>
           <meta name="description" content="Web development and design" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+          <meta name="viewport" content="width=device-width" />
           <link
             as="font"
             rel="stylesheet preload prefetch"
