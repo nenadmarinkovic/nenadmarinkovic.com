@@ -9,6 +9,7 @@ import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
 import Qr from "../components/Qr";
+import Tag from "../components/Tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -53,6 +54,16 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
             ) : (
               <Qr image="/qr/directory-white.svg" />
             )}
+          </Flex>
+          <Flex>
+            <Tag color="black" text="Bookmarks" />
+            <Tag color="black" text="Audio" />
+            <Tag color="black" text="Video" />
+            <Tag color="black" text="Tools" />
+            <Tag color="black" text="Command line" />
+            <Tag color="black" text="Computer" />
+            <Tag color="black" text="Open-source software" />
+            <Tag color="black" text="Workout" />
           </Flex>
           <PostsWrap>
             {posts.map((post: any) => (
