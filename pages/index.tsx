@@ -31,12 +31,12 @@ const Homepage: NextPage<Props> = ({
         <title>Nenad Marinković | Home</title>
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
-      <Header
+      {/* <Header
         toggleTheme={toggleTheme}
         theme={theme}
         openMenu={openMenu}
         setOpenMenu={setOpenMenu}
-      />
+      /> */}
       <ThemeLayout openMenu={openMenu}>
         <Container>
           <Banner name="Nenad" surname="Marinković" />
