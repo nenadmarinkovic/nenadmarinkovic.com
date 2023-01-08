@@ -45,7 +45,7 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
               <HeaderLink>
                 <Link
                   href="/directory"
-                  className={router.pathname === "/dir" ? "active-link" : ""}
+                  className={router.pathname === "/directory" ? "active-link" : ""}
                 >
                   Directory
                 </Link>
