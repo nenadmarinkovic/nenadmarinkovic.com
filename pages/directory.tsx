@@ -56,14 +56,14 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
             )}
           </Flex>
           <Flex>
-            <Tag color="black" text="Bookmarks" />
-            <Tag color="black" text="Audio" />
-            <Tag color="black" text="Video" />
-            <Tag color="black" text="Tools" />
-            <Tag color="black" text="Command line" />
-            <Tag color="black" text="Computer" />
-            <Tag color="black" text="Open-source software" />
-            <Tag color="black" text="Workout" />
+            <Tag cursor={true} color="black" text="Bookmarks" />
+            <Tag cursor={true} color="black" text="Audio" />
+            <Tag cursor={true} color="black" text="Video" />
+            <Tag cursor={true} color="black" text="Tools" />
+            <Tag cursor={true} color="black" text="Command line" />
+            <Tag cursor={true} color="black" text="Computer" />
+            <Tag cursor={true} color="black" text="Open-source software" />
+            <Tag cursor={true} color="black" text="Workout" />
           </Flex>
           <PostsWrap>
             {posts.map((post: any) => (
