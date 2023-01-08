@@ -66,14 +66,19 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
             )}
           </Flex>
           <Flex align="center">
-            {posts.map((post: any) => (
-              <TagButton
-                key={post.filePath}
-                onClick={() => filterCategory(post.data.category)}
-              >
-                <Tag cursor={true} color="black" text={post.data.category} />
-              </TagButton>
-            ))}
+            {posts
+              .map((post: any) => (
+                <TagButton
+                  key={post.filePath}
+                  onClick={() => filterCategory(post.data.category)}
+                >
+                  <Tag cursor={true} color="black" text={post.data.category} />
+                </TagButton>
+              ))
+              .filter(
+                (item: any, index: any, posts: string | any[]) =>
+                  posts.indexOf(item) === index // not working
+              )}
           </Flex>
           <PostsWrap>
             {filteredPosts.map((post: any) => (
