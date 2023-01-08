@@ -40,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       scrollbar-gutter: stable;
       -moz-osx-font-smoothing: grayscale;
+      overflow-x: inherit;
     }
 
     input,
