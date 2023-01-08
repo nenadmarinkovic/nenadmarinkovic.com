@@ -47,7 +47,7 @@ export default function PostPage({ source, frontMatter }: any) {
         <ThemeLayout openMenu={openMenu}>
           <Container>
             <h1>{frontMatter.title}</h1>
-            {frontMatter.description && <p>{frontMatter.description}</p>}
+            <p>{frontMatter.description}</p>
             <main>
               <MDXRemote {...source} components={components} />
             </main>

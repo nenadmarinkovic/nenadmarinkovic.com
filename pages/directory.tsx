@@ -1,15 +1,16 @@
+import React, { useState, useEffect } from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import Head from "next/head";
 import Link from "next/link";
 import type { NextPage } from "next";
-import { useState } from "react";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
 import Qr from "../components/Qr";
 import Tag from "../components/Tag";
+import { TagButton } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -25,6 +26,15 @@ import {
 
 const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [filteredPosts, setFilteredPosts] = useState(posts);
+
+  const filterCategory = (category: string) => {
+    const filteredPosts = posts.filter(
+      (post: any) => post.data.category === category
+    );
+
+    setFilteredPosts(filteredPosts);
+  };
 
   return (
     <>
@@ -55,18 +65,18 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
               <Qr image="/qr/directory-white.svg" />
             )}
           </Flex>
-          <Flex>
-            <Tag cursor={true} color="black" text="Bookmarks" />
-            <Tag cursor={true} color="black" text="Audio" />
-            <Tag cursor={true} color="black" text="Video" />
-            <Tag cursor={true} color="black" text="Tools" />
-            <Tag cursor={true} color="black" text="Command line" />
-            <Tag cursor={true} color="black" text="Computer" />
-            <Tag cursor={true} color="black" text="Open-source software" />
-            <Tag cursor={true} color="black" text="Workout" />
+          <Flex align="center">
+            {posts.map((post: any) => (
+              <TagButton
+                key={post.filePath}
+                onClick={() => filterCategory(post.data.category)}
+              >
+                <Tag cursor={true} color="black" text={post.data.category} />
+              </TagButton>
+            ))}
           </Flex>
           <PostsWrap>
-            {posts.map((post: any) => (
+            {filteredPosts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
                   as={`/directory/${post.filePath.replace(/\.mdx?$/, "")}`}
@@ -75,7 +85,10 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
                   <Title>{post.data.title}</Title>
                 </Link>
                 <DateWrap>
-                  Updated: <Date>{post.data.date}</Date>
+                  Updated:{" "}
+                  <Date>
+                    {post.data.date} {post.data.category}
+                  </Date>
                 </DateWrap>
                 <Description>{post.data.description}</Description>
               </Post>

@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const TagButton = styled.button`
+  display: flex;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+`;
+
 export const TagSpan = styled.span`
   font-family: monospace;
   padding: 5px 10px;
