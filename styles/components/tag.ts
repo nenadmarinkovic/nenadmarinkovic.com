@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TagButton = styled.button`
-display: inline;
+  display: inline;
   background: transparent;
   color: inherit;
   padding: 0;

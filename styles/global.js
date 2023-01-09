@@ -104,8 +104,4 @@ export const GlobalStyle = createGlobalStyle`
     .overlay-close {
       opacity: 0;
     }
-
-    .show-cursor {
-      cursor: pointer;
-    }
 `;
