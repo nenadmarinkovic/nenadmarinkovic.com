@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
     
     a {
       text-decoration: none;
-      transition: .3s;
+      color: inherit;
     }
 
     .a-link {

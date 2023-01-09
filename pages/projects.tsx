@@ -67,7 +67,14 @@ const ProjectsPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <AdditionalInfo>{post.data.link}</AdditionalInfo>
+                <AdditionalInfo>
+                  <a
+                    href={`https://${post.data.link}`}
+                    rel="noreferrer"
+                    target="_blank">
+                    {post.data.link}
+                  </a>
+                </AdditionalInfo>
                 <AdditionalInfo>
                   Updated: <Date>{post.data.date}</Date>
                 </AdditionalInfo>
