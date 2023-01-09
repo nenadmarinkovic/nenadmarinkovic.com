@@ -108,4 +108,14 @@ export const GlobalStyle = createGlobalStyle`
     .overlay-close {
       opacity: 0;
     }
+
+    /* Markdown styles */
+
+    summary {
+      cursor: pointer;
+    }
+
+    section {
+      padding-top: 3.2rem;
+    }
 `;
