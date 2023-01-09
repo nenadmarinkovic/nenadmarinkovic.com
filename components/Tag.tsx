@@ -5,6 +5,7 @@ interface Tag {
   text: string;
   cursor?: boolean;
   filterCategory?: (...args: any[]) => any;
+  uniqueCategories?: (...args: any[]) => any;
   onClick?: (...args: any[]) => any;
 }
 

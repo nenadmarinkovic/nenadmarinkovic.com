@@ -24,9 +24,10 @@ import {
   Description,
 } from "../styles/pages/directory";
 
-const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
+const DirectoryPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [filteredPosts, setFilteredPosts] = useState(posts);
+  const [uniqueCategories, setUniqueCategories] = useState([]);
 
   const filterCategory = (category: string) => {
     const filteredPosts = posts.filter(
@@ -35,6 +36,20 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
 
     setFilteredPosts(filteredPosts);
   };
+
+  const uniqueCategoriesOnLoad = (posts: any) => {
+    const categories = posts
+      .map((post: any) => post.data.category)
+      .filter((item: any, index: any, arr: any) => arr.indexOf(item) === index);
+
+    setUniqueCategories(categories);
+  };
+
+  useEffect(() => {
+    return () => {
+      uniqueCategoriesOnLoad(posts);
+    };
+  }, [posts]);
 
   return (
     <>
@@ -66,19 +81,11 @@ const DirPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
             )}
           </Flex>
           <Flex align="center">
-            {posts
-              .map((post: any) => (
-                <TagButton
-                  key={post.filePath}
-                  onClick={() => filterCategory(post.data.category)}
-                >
-                  <Tag cursor={true} color="black" text={post.data.category} />
-                </TagButton>
-              ))
-              .filter(
-                (item: any, index: any, posts: string | any[]) =>
-                  posts.indexOf(item) === index // not working
-              )}
+            {uniqueCategories.map((post: any, index: any) => (
+              <TagButton key={index} onClick={() => filterCategory(post)}>
+                <Tag cursor={true} color="black" text={post} />
+              </TagButton>
+            ))}
           </Flex>
           <PostsWrap>
             {filteredPosts.map((post: any) => (
@@ -121,4 +128,4 @@ export function getStaticProps() {
   return { props: { posts } };
 }
 
-export default DirPage;
+export default DirectoryPage;
