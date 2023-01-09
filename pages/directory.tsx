@@ -84,9 +84,9 @@ const DirectoryPage: NextPage = ({
             )}
           </Flex>
           <Flex align="center">
-            {uniqueCategories.map((post: any, index: any) => (
-              <TagButton key={index} onClick={() => filterCategory(post)}>
-                <Tag color="black" text={post} />
+            {uniqueCategories.map((category: any, index: any) => (
+              <TagButton key={index} onClick={() => filterCategory(category)}>
+                <Tag color="black" text={category} />
               </TagButton>
             ))}
           </Flex>
