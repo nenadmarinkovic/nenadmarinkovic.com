@@ -24,8 +24,12 @@ import {
   Description,
 } from "../styles/pages/directory";
 
-const DirectoryPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
-
+const DirectoryPage: NextPage = ({
+  posts,
+  spotifyData,
+  theme,
+  toggleTheme,
+}: any) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [uniqueCategories, setUniqueCategories] = useState([]);
@@ -47,9 +51,7 @@ const DirectoryPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any
   };
 
   useEffect(() => {
-    return () => {
-      uniqueCategoriesOnLoad(posts);
-    };
+    uniqueCategoriesOnLoad(posts);
   }, [posts]);
 
   return (
