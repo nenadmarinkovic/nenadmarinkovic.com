@@ -13,13 +13,14 @@ import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
 import { lightTheme, darkTheme } from "../../styles/theme";
 import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
 
 const components = {
   Head,
 };
 
-export default function PostPage({ source, frontMatter }: any) {
+export default function PostPage({ source, frontMatter, spotifyData }: any) {
 
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -54,6 +55,7 @@ export default function PostPage({ source, frontMatter }: any) {
               <MDXRemote {...source} components={components} />
             </main>
           </Container>
+          <Footer spotifyData={spotifyData} />
         </ThemeLayout>
       </ThemeProvider>
     </>
