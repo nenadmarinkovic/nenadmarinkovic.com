@@ -12,13 +12,14 @@ import { ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx-posts";
 import { Container } from "../../styles/components/layout";
 import { lightTheme, darkTheme } from "../../styles/theme";
+import Banner from "../../components/Banner";
+import { Introduction } from "../../styles/components/introduction";
 
 const components = {
   Head,
 };
 
 export default function PostPage({ source, frontMatter }: any) {
-
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   const [openMenu, setOpenMenu] = useState(false);
@@ -32,7 +33,7 @@ export default function PostPage({ source, frontMatter }: any) {
       <Head>
         <title> {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
-        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -46,8 +47,8 @@ export default function PostPage({ source, frontMatter }: any) {
 
         <ThemeLayout openMenu={openMenu}>
           <Container>
-            <h1>{frontMatter.title}</h1>
-            {frontMatter.description && <p>{frontMatter.description}</p>}
+            <Banner name={frontMatter.title} />
+            <Introduction className="full-width">{frontMatter.description}</Introduction>
             <main>
               <MDXRemote {...source} components={components} />
             </main>
@@ -59,7 +60,6 @@ export default function PostPage({ source, frontMatter }: any) {
 }
 
 export const getStaticProps = async ({ params }: any) => {
-
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);

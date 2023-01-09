@@ -12,6 +12,8 @@ import { ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
 import { lightTheme, darkTheme } from "../../styles/theme";
+import Banner from "../../components/Banner";
+import { Introduction } from "../../styles/components/introduction";
 
 const components = {
   Head,
@@ -46,8 +48,8 @@ export default function PostPage({ source, frontMatter }: any) {
 
         <ThemeLayout openMenu={openMenu}>
           <Container>
-            <h1>{frontMatter.title}</h1>
-            {frontMatter.description && <p>{frontMatter.description}</p>}
+          <Banner name={frontMatter.title} />
+            <Introduction className="full-width">{frontMatter.description}</Introduction>
             <main>
               <MDXRemote {...source} components={components} />
             </main>

@@ -66,6 +66,10 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0;
     }
+
+    li {
+      line-height: 1.8
+    }
     
     p {
       line-height: 1.8;
