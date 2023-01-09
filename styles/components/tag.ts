@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const TagButton = styled.button`
-  display: flex;
+display: inline;
   background: transparent;
   color: inherit;
   padding: 0;
   border: none;
-  margin-right: 10px;
 `;
 
 export const TagSpan = styled.span`
@@ -15,6 +14,7 @@ export const TagSpan = styled.span`
   color: white;
   border-radius: 30px;
   font-weight: bold;
+  margin: 10px 10px 0 0;
   font-size: 0.75rem;
   font-weight: 700;
 
