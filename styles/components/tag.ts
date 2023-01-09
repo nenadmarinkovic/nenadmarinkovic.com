@@ -6,6 +6,7 @@ export const TagButton = styled.button`
   color: inherit;
   padding: 0;
   border: none;
+  cursor: pointer;
 `;
 
 export const TagSpan = styled.span`
