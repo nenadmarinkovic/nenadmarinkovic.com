@@ -25,6 +25,7 @@ import {
 } from "../styles/pages/directory";
 
 const DirectoryPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any) => {
+
   const [openMenu, setOpenMenu] = useState(false);
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [uniqueCategories, setUniqueCategories] = useState([]);
@@ -97,7 +98,7 @@ const DirectoryPage: NextPage = ({ posts, spotifyData, theme, toggleTheme }: any
                   <Title>{post.data.title}</Title>
                 </Link>
                 <DateWrap>
-                  Updated:{" "}
+                  Updated:
                   <Date>
                     {post.data.date} {post.data.category}
                   </Date>
