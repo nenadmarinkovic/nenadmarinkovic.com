@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import { ThemeLayout } from "../styles/components/layout";
-import { Container } from "../styles/components/layout";
+import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
 import { Theme, Spotify, MenuType } from "../lib/types";
@@ -21,7 +20,6 @@ const Homepage: NextPage<Props> = ({
   theme,
   toggleTheme,
 }: Props) => {
-
   const [company] = useState("https://dccs.at");
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -42,8 +40,18 @@ const Homepage: NextPage<Props> = ({
           <Banner name="Nenad" surname="Marinković" />
           <Introduction>
             Software developer at
-            <a className="a-link" href="https://google.com" target="_blank" rel="noreferrer"> DCCS IT Business Solutions </a> in Vienna, Austria. Working mainly with JavaScript
-            (React, Vue, Node) on designing and developing websites, web interfaces, and APIs.
+            <a
+              className="a-link"
+              href="https://google.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              DCCS IT Business Solutions{" "}
+            </a>{" "}
+            in Vienna, Austria. Working mainly with JavaScript (React, Vue,
+            Node) on designing and developing websites, web interfaces, and
+            APIs.
           </Introduction>
           <Section title="Services I offer" />
           <Cards>
@@ -82,10 +90,13 @@ const Homepage: NextPage<Props> = ({
             />
           </Cards>
           <Section title="Personal projects" />
-          <Tag color="green" text="Node.js" />
-          <Tag color="blue" text="Typescript" />
-          <Tag color="orange" text="Firebase" />
-          <Tag color="black" text="Next.js" />
+          <Flex>
+            <Tag color="green" text="Node.js" />
+            <Tag color="blue" text="Typescript" />
+            <Tag color="orange" text="Firebase" />
+            <Tag color="black" text="Next.js" />
+          </Flex>
+
           <Panel />
         </Container>
         <Footer spotifyData={spotifyData} />
@@ -111,7 +122,6 @@ export async function getStaticProps() {
     });
 
     spotifyData = await res.json();
-
   } catch (e: any) {
     error = e.toString();
   }
