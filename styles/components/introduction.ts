@@ -9,7 +9,12 @@ export const Introduction = styled.p`
   padding-bottom: 2.5rem;
 
   @media (max-width: 48rem) {
-    margin: 0px 1rem 0 0;
+    margin: 0 1rem 0 0;
     width: 100%;
+  }
+
+  @media (max-width: 25rem) {
+    margin: 0;
+    padding-bottom: 0;
   }
 `;
