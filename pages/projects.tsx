@@ -5,7 +5,7 @@ import {
   PostsWrap,
   Post,
   Title,
-  DateWrap,
+  AdditionalInfo,
   Date,
   Description,
 } from "../styles/pages/directory";
@@ -67,9 +67,10 @@ const ProjectsPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <DateWrap>
+                <AdditionalInfo>{post.data.link}</AdditionalInfo>
+                <AdditionalInfo>
                   Updated: <Date>{post.data.date}</Date>
-                </DateWrap>
+                </AdditionalInfo>
                 <Description>{post.data.description}</Description>
                 <Flex>
                   <Tag color="black" text="Next.js" />

@@ -19,12 +19,13 @@ export const Title = styled.div`
 `;
 
 export const Description = styled.div`
+  margin-top: .75rem;
   color: ${({ theme }) => theme.color};
   font-size: 1.15rem;
   line-height: 1.9;
 `;
 
-export const DateWrap = styled.span`
+export const AdditionalInfo = styled.span`
   color: ${({ theme }) => theme.color};
   font-size: 0.85rem;
   line-height: 1.9;

@@ -19,7 +19,7 @@ import {
   PostsWrap,
   Post,
   Title,
-  DateWrap,
+  AdditionalInfo,
   Date,
   Description,
 } from "../styles/pages/directory";
@@ -99,12 +99,12 @@ const DirectoryPage: NextPage = ({
                 >
                   <Title>{post.data.title}</Title>
                 </Link>
-                <DateWrap>
+                <AdditionalInfo>
                   Updated:
                   <Date>
                     {post.data.date} {post.data.category}
                   </Date>
-                </DateWrap>
+                </AdditionalInfo>
                 <Description>{post.data.description}</Description>
               </Post>
             ))}
