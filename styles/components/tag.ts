@@ -5,6 +5,7 @@ export const TagWrap = styled.div`
   margin-top: 1.5rem;
   flex-wrap: wrap;
   align-items: center;
+
 `;
 
 export const TagButton = styled.button`
@@ -14,7 +15,7 @@ export const TagButton = styled.button`
   padding: 0;
   border: none;
   cursor: pointer;
-  margin: 0.75rem 0.75rem 0 0;
+  margin: 0.75rem 0.75rem 0.75rem 0;
 
   @media (max-width: 25rem) {
     margin-top: 1rem
