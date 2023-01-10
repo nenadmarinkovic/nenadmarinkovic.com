@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
+import { TagWrap } from "../styles/components/tag";
 import { Theme, Spotify, MenuType } from "../lib/types";
 import Head from "next/head";
 import Tag from "../components/Tag";
@@ -90,12 +91,12 @@ const Homepage: NextPage<Props> = ({
             />
           </Cards>
           <Section title="Personal projects" />
-          <Flex>
+          <TagWrap>
             <Tag color="green" text="Node.js" />
             <Tag color="blue" text="Typescript" />
             <Tag color="orange" text="Firebase" />
             <Tag color="black" text="Next.js" />
-          </Flex>
+          </TagWrap>
 
           <Panel />
         </Container>

@@ -10,7 +10,7 @@ import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
 import Qr from "../components/Qr";
 import Tag from "../components/Tag";
-import { TagButton } from "../styles/components/tag";
+import { TagButton, TagWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -83,13 +83,13 @@ const DirectoryPage: NextPage = ({
               <Qr image="/qr/directory-white.svg" />
             )}
           </Flex>
-          <Flex align="center">
+          <TagWrap>
             {uniqueCategories.map((category: any, index: any) => (
               <TagButton key={index} onClick={() => filterCategory(category)}>
                 <Tag color="black" text={category} />
               </TagButton>
             ))}
-          </Flex>
+          </TagWrap>
           <PostsWrap>
             {filteredPosts.map((post: any) => (
               <Post key={post.filePath}>

@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const TagWrap = styled.div`
+  display: flex;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+`;
+
 export const TagButton = styled.button`
   display: inline;
   background: transparent;
@@ -7,6 +14,11 @@ export const TagButton = styled.button`
   padding: 0;
   border: none;
   cursor: pointer;
+  margin: 0.75rem 0.75rem 0 0;
+
+  @media (max-width: 25rem) {
+    margin-top: 1rem
+  }
 `;
 
 export const TagSpan = styled.span`
@@ -15,7 +27,7 @@ export const TagSpan = styled.span`
   color: white;
   border-radius: 30px;
   font-weight: bold;
-  margin: 10px 10px 0 0;
+ 
   font-size: 0.75rem;
   font-weight: 700;
 

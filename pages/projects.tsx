@@ -14,6 +14,7 @@ import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
+import { TagWrap } from "../styles/components/tag";
 import Head from "next/head";
 import Header from "../components/Header";
 import Tag from "../components/Tag";
@@ -79,12 +80,12 @@ const ProjectsPage: NextPage = ({
                   Updated: <Date>{post.data.date}</Date>
                 </AdditionalInfo>
                 <Description>{post.data.description}</Description>
-                <Flex>
+                <TagWrap>
                   <Tag color="black" text="Next.js" />
                   <Tag color="green" text="Node.js" />
                   <Tag color="blue" text="Typescript" />
                   <Tag color="orange" text="Firebase" />
-                </Flex>
+                </TagWrap>
               </Post>
             ))}
           </PostsWrap>
