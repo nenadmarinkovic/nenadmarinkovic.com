@@ -9,8 +9,8 @@ import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
 import Qr from "../components/Qr";
-import Tag from "../components/Tag";
-import { TagButton, TagWrap } from "../styles/components/tag";
+import TagButton from "../components/TagButton";
+import { TagWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -85,9 +85,12 @@ const DirectoryPage: NextPage = ({
           </Flex>
           <TagWrap>
             {uniqueCategories.map((category: any, index: any) => (
-              <TagButton key={index} onClick={() => filterCategory(category)}>
-                <Tag color="black" text={category} />
-              </TagButton>
+              <TagButton
+                key={index}
+                onClick={() => filterCategory(category)}
+                color="default"
+                text={category}
+              />
             ))}
           </TagWrap>
           <PostsWrap>

@@ -4,22 +4,6 @@ export const TagWrap = styled.div`
   display: flex;
   margin-top: 1.5rem;
   flex-wrap: wrap;
-  align-items: center;
-
-`;
-
-export const TagButton = styled.button`
-  display: inline;
-  background: transparent;
-  color: inherit;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  margin: 0.75rem 0.75rem 0.75rem 0;
-
-  @media (max-width: 25rem) {
-    margin-top: 1rem
-  }
 `;
 
 export const TagSpan = styled.span`
@@ -28,7 +12,7 @@ export const TagSpan = styled.span`
   color: white;
   border-radius: 30px;
   font-weight: bold;
- 
+  margin: 0.75rem 0.75rem 0 0;
   font-size: 0.75rem;
   font-weight: 700;
 
@@ -45,6 +29,28 @@ export const TagSpan = styled.span`
   }
 
   &.black {
+    background: ${({ theme }) => theme.backgroundReverse};
+    color: ${({ theme }) => theme.colorReverse};
+  }
+`;
+
+// Tag Button styles
+
+export const TagCategory = styled.button`
+  color: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  margin: 0.75rem 0.75rem 0 0;
+  font-family: monospace;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  &.default {
     background: ${({ theme }) => theme.backgroundReverse};
     color: ${({ theme }) => theme.colorReverse};
   }
