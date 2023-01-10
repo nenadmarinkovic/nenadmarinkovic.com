@@ -3,9 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
-import { useState } from "react";
-import { GlobalStyle } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
+import { useState } from "react";
+import { NextPage } from "next";
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
@@ -16,13 +16,13 @@ import { lightTheme, darkTheme } from "../../styles/theme";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
+import { GlobalStyle } from "../../styles/global";
 
 const components = {
   Head,
 };
 
-export default function PostPage({ source, frontMatter, spotifyData }: any) {
-
+const ProjectsPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   const [openMenu, setOpenMenu] = useState(false);
@@ -36,12 +36,12 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
       <Head>
         <title> {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
-        <meta content={theme === 'dark' ? '#000' : '#fff'} name="theme-color" />
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <ThemeProvider theme={themeMode}>
-        <GlobalStyle />
+        <GlobalStyle/>
         <Header
           toggleTheme={toggleTheme}
           theme={theme}
@@ -51,8 +51,10 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
 
         <ThemeLayout openMenu={openMenu}>
           <Container>
-          <Banner name={frontMatter.title} />
-            <Introduction className="full-width">{frontMatter.description}</Introduction>
+            <Banner name={frontMatter.title} />
+            <Introduction className="full-width">
+              {frontMatter.description}
+            </Introduction>
             <main>
               <MDXRemote {...source} components={components} />
             </main>
@@ -62,10 +64,9 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
       </ThemeProvider>
     </>
   );
-}
+};
 
 export const getStaticProps = async ({ params }: any) => {
-
   const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
@@ -96,3 +97,5 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
+
+export default ProjectsPage;

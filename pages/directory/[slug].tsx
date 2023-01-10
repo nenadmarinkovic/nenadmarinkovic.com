@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
 import { useState } from "react";
-import { GlobalStyle } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
@@ -16,12 +15,14 @@ import { lightTheme, darkTheme } from "../../styles/theme";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
+import { NextPage } from "next";
+import { GlobalStyle } from "../../styles/global";
 
 const components = {
   Head,
 };
 
-export default function PostPage({ source, frontMatter, spotifyData }: any) {
+const DirectoryPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
   const [theme, toggleTheme, componentMounted] = useTheme();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   const [openMenu, setOpenMenu] = useState(false);
@@ -47,6 +48,7 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
           openMenu={openMenu}
           setOpenMenu={setOpenMenu}
         />
+
         <ThemeLayout openMenu={openMenu}>
           <Container>
             <Banner name={frontMatter.title} />
@@ -62,7 +64,7 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
       </ThemeProvider>
     </>
   );
-}
+};
 
 export const getStaticProps = async ({ params }: any) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
@@ -95,3 +97,5 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
+
+export default DirectoryPage;
