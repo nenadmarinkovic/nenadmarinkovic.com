@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
 import { useState } from "react";
+import { GlobalStyle } from "../../styles/global";
 import { ThemeProvider } from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
@@ -39,17 +40,19 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
       </Head>
 
       <ThemeProvider theme={themeMode}>
+        <GlobalStyle />
         <Header
           toggleTheme={toggleTheme}
           theme={theme}
           openMenu={openMenu}
           setOpenMenu={setOpenMenu}
         />
-
         <ThemeLayout openMenu={openMenu}>
           <Container>
             <Banner name={frontMatter.title} />
-            <Introduction className="full-width">{frontMatter.description}</Introduction>
+            <Introduction className="full-width">
+              {frontMatter.description}
+            </Introduction>
             <main>
               <MDXRemote {...source} components={components} />
             </main>
