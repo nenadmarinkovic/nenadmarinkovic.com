@@ -4,32 +4,28 @@ import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
-import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx-posts";
 import { Container } from "../../styles/components/layout";
-import { lightTheme, darkTheme } from "../../styles/theme";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
 import { NextPage } from "next";
-import { GlobalStyle } from "../../styles/global";
 
 const components = {
   Head,
 };
 
-const DirectoryPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
-  const [theme, toggleTheme, componentMounted] = useTheme();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+const DirectoryPage: NextPage = ({
+  source,
+  frontMatter,
+  spotifyData,
+  theme,
+  toggleTheme,
+}: any) => {
   const [openMenu, setOpenMenu] = useState(false);
-
-  if (!componentMounted) {
-    return <div />;
-  }
 
   return (
     <>
@@ -40,8 +36,6 @@ const DirectoryPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ThemeProvider theme={themeMode}>
-        <GlobalStyle />
         <Header
           toggleTheme={toggleTheme}
           theme={theme}
@@ -61,7 +55,7 @@ const DirectoryPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
           </Container>
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
-      </ThemeProvider>
+      
     </>
   );
 };

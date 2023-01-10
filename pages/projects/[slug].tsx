@@ -3,33 +3,29 @@ import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
-import { ThemeProvider } from "styled-components";
 import { useState } from "react";
 import { NextPage } from "next";
-import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
-import { lightTheme, darkTheme } from "../../styles/theme";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
-import { GlobalStyle } from "../../styles/global";
 
 const components = {
   Head,
 };
 
-const ProjectsPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
-  const [theme, toggleTheme, componentMounted] = useTheme();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+const ProjectsPage: NextPage = ({
+  source,
+  frontMatter,
+  spotifyData,
+  theme,
+  toggleTheme,
+}: any) => {
   const [openMenu, setOpenMenu] = useState(false);
-
-  if (!componentMounted) {
-    return <div />;
-  }
 
   return (
     <>
@@ -40,28 +36,25 @@ const ProjectsPage: NextPage = ({ source, frontMatter, spotifyData }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ThemeProvider theme={themeMode}>
-        <GlobalStyle/>
-        <Header
-          toggleTheme={toggleTheme}
-          theme={theme}
-          openMenu={openMenu}
-          setOpenMenu={setOpenMenu}
-        />
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
 
-        <ThemeLayout openMenu={openMenu}>
-          <Container>
-            <Banner name={frontMatter.title} />
-            <Introduction className="full-width">
-              {frontMatter.description}
-            </Introduction>
-            <main>
-              <MDXRemote {...source} components={components} />
-            </main>
-          </Container>
-          <Footer spotifyData={spotifyData} />
-        </ThemeLayout>
-      </ThemeProvider>
+      <ThemeLayout openMenu={openMenu}>
+        <Container>
+          <Banner name={frontMatter.title} />
+          <Introduction className="full-width">
+            {frontMatter.description}
+          </Introduction>
+          <main>
+            <MDXRemote {...source} components={components} />
+          </main>
+        </Container>
+        <Footer spotifyData={spotifyData} />
+      </ThemeLayout>
     </>
   );
 };
