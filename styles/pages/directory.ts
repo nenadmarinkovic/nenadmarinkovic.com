@@ -8,7 +8,11 @@ export const PostsWrap = styled.div`
 export const Post = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
+
+  :first-child {
+    margin-top: 1.5rem;
+  }
 `;
 
 export const Title = styled.div`

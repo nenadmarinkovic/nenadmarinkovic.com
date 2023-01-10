@@ -2,8 +2,17 @@ import styled from "styled-components";
 
 export const TagWrap = styled.div`
   display: flex;
-  margin-top: 2.5rem;
   flex-wrap: wrap;
+`;
+
+export const TagButtonsWrap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 45rem) {
+    margin-top: 1.5rem;
+  }
 `;
 
 export const TagSpan = styled.span`
@@ -12,7 +21,7 @@ export const TagSpan = styled.span`
   color: white;
   border-radius: 30px;
   font-weight: bold;
-  margin: 0.75rem 0.75rem 0 0;
+  margin: 0.5rem 0.5rem 0 0;
   font-size: 0.75rem;
   font-weight: 700;
 
