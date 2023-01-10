@@ -7,7 +7,6 @@ type Menu = {
 type Flex = {
   align?: string;
   justify?: string;
-  mobile?: string;
 };
 
 export const ThemeLayout = styled.div<Menu>`
@@ -31,7 +30,8 @@ export const Flex = styled.div<Flex>`
   align-items: ${({ align }) => align};
   justify-content: ${({ justify }) => justify};
 
-  @media (max-width: 25rem) {
+  @media (max-width: 45rem) {
     flex-wrap: wrap;
+    flex-direction: column
   }
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TagWrap = styled.div`
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   flex-wrap: wrap;
 `;
 

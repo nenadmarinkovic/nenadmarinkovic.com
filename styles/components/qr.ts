@@ -4,7 +4,7 @@ export const QrWrap = styled.div`
   margin-top: 10px;
   pointer-events: none;
 
-  @media (max-width: 25rem) {
+  @media (max-width: 45rem) {
     margin-top: 1.5rem;
   }
 `;

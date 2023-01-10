@@ -111,6 +111,10 @@ export const GlobalStyle = createGlobalStyle`
 
     /* Markdown styles */
 
+    main {
+      overflow: hidden;
+    }
+
     summary {
       cursor: pointer;
     }
