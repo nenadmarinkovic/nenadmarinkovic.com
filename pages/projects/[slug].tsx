@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import Head from "next/head";
 import Header from "../../components/Header";
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
+
 import { useTheme } from "../../hooks/useTheme";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
@@ -39,7 +39,7 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ThemeProvider theme={themeMode}>
+    
         <Header
           toggleTheme={toggleTheme}
           theme={theme}
@@ -57,7 +57,7 @@ export default function PostPage({ source, frontMatter, spotifyData }: any) {
           </Container>
           <Footer spotifyData={spotifyData} />
         </ThemeLayout>
-      </ThemeProvider>
+    
     </>
   );
 }
