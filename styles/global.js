@@ -79,36 +79,6 @@ export const GlobalStyle = createGlobalStyle`
       overflow: hidden !important;
     }
 
-    .modal {
-      border-radius: 1rem;
-      padding: 0;
-      inset: 50% auto auto 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      background: transparent;
-      overflow: auto;
-      outline: none;
-    }
-    
-    .overlay {
-      overflow-y: scroll;
-      inset: 0;
-      position: fixed;
-      background: ${({ theme }) => theme.backgroundModal};
-      opacity: 0;
-      transition: opacity 200ms ease-in-out;
-      z-index: 9;
-    }
-    
-    .overlay-open {
-      opacity: 1;
-    }
-    
-    .overlay-close {
-      opacity: 0;
-    }
-
     /* Markdown styles */
 
     main {
