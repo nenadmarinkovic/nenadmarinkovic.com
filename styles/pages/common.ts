@@ -15,11 +15,12 @@ export const Post = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.h2`
   font-size: 2.05rem;
   font-weight: 900;
   color: ${({ theme }) => theme.color};
   cursor: pointer;
+  margin: 0;
 `;
 
 export const Description = styled.div`

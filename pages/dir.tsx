@@ -21,7 +21,7 @@ import {
   AdditionalInfo,
   Date,
   Description,
-} from "../styles/pages/dir";
+} from "../styles/pages/common";
 
 const DirectoryPage: NextPage = ({
   posts,

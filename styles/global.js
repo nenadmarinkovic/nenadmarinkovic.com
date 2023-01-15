@@ -98,9 +98,18 @@ export const GlobalStyle = createGlobalStyle`
     .leaflet-container {
       margin-top: 2.5rem;
       z-index: 0;
+      border-radius: 1.5rem;
     }
 
     .leaflet-control-attribution {
       display: none;
+    }
+
+    .leaflet-left .leaflet-control {
+      margin-left: 20px;
+    }
+
+    .leaflet-top .leaflet-control {
+      margin-top: 20px;
     }
 `;

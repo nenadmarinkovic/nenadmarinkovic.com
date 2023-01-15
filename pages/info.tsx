@@ -29,12 +29,13 @@ const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
           <Banner name="Info" />
           <Flex align="top" justify="space-between">
             <Introduction>
-              You can contact me through the form or at:
-              nenadmarinkovic@protonmail.com
+              I write mostly about web development and tech. Use the search
+              below to filter by title. You can contact me through the form or
+              at: nenadmarinkovic@protonmail.com
             </Introduction>
           </Flex>
 
-          <MapDynamic />
+          <MapDynamic theme={theme} />
         </Container>
 
         <Footer spotifyData={spotifyData} />

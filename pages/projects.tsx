@@ -8,7 +8,7 @@ import {
   AdditionalInfo,
   Date,
   Description,
-} from "../styles/pages/dir";
+} from "../styles/pages/common";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
