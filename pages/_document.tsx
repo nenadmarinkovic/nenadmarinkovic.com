@@ -42,21 +42,21 @@ class Website extends Document {
           <meta name="description" content="Web development and design" />
           <link
             as="font"
-            rel="stylesheet preload prefetch"
+            rel="preload"
             href="/fonts/CeraPro-Regular.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             as="font"
-            rel="stylesheet preload prefetch"
+            rel="preload"
             href="/fonts/CeraPro-Bold.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             as="font"
-            rel="stylesheet preload prefetch"
+            rel="preload"
             href="/fonts/CeraPro-Black.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
@@ -64,11 +64,11 @@ class Website extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link href="/manifest.json" rel="manifest" />
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
-          <meta content="#fff" name="theme-color" />
           <link
-          href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
-          rel="stylesheet"
-        />
+            href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+            rel="stylesheet"
+          />
+          <meta content="#fff" name="theme-color" />
         </Head>
         <body>
           <Main />

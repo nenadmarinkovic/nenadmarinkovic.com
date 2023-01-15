@@ -14,7 +14,7 @@ const Map = () => {
     <MapContainer
       center={[48.224794, 16.397421]}
       zoom={12}
-      scrollWheelZoom={true}
+      scrollWheelZoom={false}
       style={{ height: 400, width: "100%" }}
     >
       <TileLayer url="https://api.mapbox.com/styles/v1/mapbox/light-v11/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmVuYWRtYXJpbmtvdmljIiwiYSI6ImNrODVuYzI4ajAyNGIzbGtzbDhpOXB1MG0ifQ.5jlOark-VubVaRu-2wLLMA" />
