@@ -65,6 +65,10 @@ class Website extends Document {
           <link href="/manifest.json" rel="manifest" />
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
           <meta content="#fff" name="theme-color" />
+          <link
+          href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+          rel="stylesheet"
+        />
         </Head>
         <body>
           <Main />

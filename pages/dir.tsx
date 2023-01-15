@@ -8,7 +8,6 @@ import type { NextPage } from "next";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
-import Qr from "../components/Qr";
 import TagButton from "../components/TagButton";
 import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
@@ -22,7 +21,7 @@ import {
   AdditionalInfo,
   Date,
   Description,
-} from "../styles/pages/directory";
+} from "../styles/pages/dir";
 
 const DirectoryPage: NextPage = ({
   posts,
@@ -77,11 +76,7 @@ const DirectoryPage: NextPage = ({
               books, tools and technologies. Categories, filters. German
               dictionary with examples. Regulated complexity.
             </Introduction>
-            {theme === "dark" ? (
-              <Qr image="/qr/directory-black.svg" />
-            ) : (
-              <Qr image="/qr/directory-white.svg" />
-            )}
+    
           </Flex>
           <TagButtonsWrap>
             {uniqueCategories.map((category: any, index: any) => (
@@ -97,8 +92,8 @@ const DirectoryPage: NextPage = ({
             {filteredPosts.map((post: any) => (
               <Post key={post.filePath}>
                 <Link
-                  as={`/directory/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/directory/[slug]`}
+                  as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                  href={`/dir/[slug]`}
                 >
                   <Title>{post.data.title}</Title>
                 </Link>

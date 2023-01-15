@@ -92,4 +92,15 @@ export const GlobalStyle = createGlobalStyle`
     section {
       padding-top: 3.2rem;
     }
+
+    /* Map */
+
+    .leaflet-container {
+      margin-top: 2.5rem;
+      z-index: 0;
+    }
+
+    .leaflet-control-attribution {
+      display: none;
+    }
 `;

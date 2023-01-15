@@ -8,7 +8,7 @@ import {
   AdditionalInfo,
   Date,
   Description,
-} from "../styles/pages/directory";
+} from "../styles/pages/dir";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
@@ -20,7 +20,6 @@ import Header from "../components/Header";
 import Tag from "../components/Tag";
 import Banner from "../components/Banner";
 import Link from "next/link";
-import Qr from "../components/Qr";
 import Footer from "../components/Footer";
 
 const ProjectsPage: NextPage = ({
@@ -53,11 +52,6 @@ const ProjectsPage: NextPage = ({
               I write mostly about web development and tech. Use the search
               below to filter by title.
             </Introduction>
-            {theme === "dark" ? (
-              <Qr image="/qr/projects-black.svg" />
-            ) : (
-              <Qr image="/qr/projects-white.svg" />
-            )}
           </Flex>
           <PostsWrap>
             {posts.map((post: any) => (

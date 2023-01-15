@@ -44,20 +44,20 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
               </HeaderLink>
               <HeaderLink>
                 <Link
-                  href="/directory"
-                  className={router.pathname === "/directory" ? "active-link" : ""}
+                  href="/dir"
+                  className={router.pathname === "/dir" ? "active-link" : ""}
                 >
                   Directory
                 </Link>
               </HeaderLink>
               <HeaderLink>
                 <Link
-                  href="/contact"
+                  href="/info"
                   className={
-                    router.pathname === "/contact" ? "active-link" : ""
+                    router.pathname === "/info" ? "active-link" : ""
                   }
                 >
-                  Contact
+                  Info
                 </Link>
               </HeaderLink>
               <ThemeButton onClick={toggleTheme}>

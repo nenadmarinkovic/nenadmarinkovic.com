@@ -40,7 +40,6 @@ export const Links = styled.div`
 `;
 
 export const HeaderLink = styled.div`
-  width: 70px;
   font-size: 0.9rem;
   cursor: pointer;
   display: flex;
@@ -54,7 +53,6 @@ export const HeaderLink = styled.div`
 `;
 
 export const ThemeButton = styled.button`
-  width: 85px;
   padding: 1.5px;
   background: transparent;
   font-size: 0.9rem;
