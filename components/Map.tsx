@@ -1,4 +1,4 @@
-import { MapContainer, Marker, Popup, Tooltip, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, Tooltip, TileLayer, ZoomControl } from "react-leaflet";
 import { Introduction } from "../styles/components/introduction";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -6,8 +6,8 @@ import L from "leaflet";
 import { Title, Post } from "../styles/pages/common";
 
 const icon = new L.Icon({
-  iconUrl: "marker.svg",
-  iconRetinaUrl: "marker.svg",
+  iconUrl: "icons/marker.svg",
+  iconRetinaUrl: "icons/marker.svg",
   iconSize: [5, 5],
 });
 
@@ -25,15 +25,15 @@ const Map = ({ theme }: any) => {
       <MapContainer
         center={[48.224794, 16.397421]}
         zoom={12}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         style={{ height: 400, width: "100%" }}
+        zoomControl={false}
       >
         <TileLayer
           url={`https://api.mapbox.com/styles/v1/mapbox/${
-            theme === "light" ? "light-v11" : "cj3kbeqzo00022smj7akz3o1e"
+            theme === "light" ? "streets-v12" : "cj3kbeqzo00022smj7akz3o1e"
           }/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmVuYWRtYXJpbmtvdmljIiwiYSI6ImNrODVuYzI4ajAyNGIzbGtzbDhpOXB1MG0ifQ.5jlOark-VubVaRu-2wLLMA`}
         />
-
         <Marker position={[48.224794, 16.397421]} icon={icon}></Marker>
       </MapContainer>
     </>

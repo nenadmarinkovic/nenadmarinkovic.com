@@ -112,4 +112,44 @@ export const GlobalStyle = createGlobalStyle`
     .leaflet-top .leaflet-control {
       margin-top: 20px;
     }
+
+    .leaflet-bottom {
+      bottom: 5px !important;
+    }
+
+    .leaflet-right {
+      right: 10px !important;
+    }
+
+    .leaflet-bar {
+      border: none !important;
+    }
+
+    .leaflet-bar a {
+      background: none;
+      border: none;
+
+      :hover {
+        background-color: transparent !important;
+      }
+
+      :focus {
+        background-color: transparent !important;
+      }
+    }
+
+    .leaflet-touch .leaflet-bar a {
+      width: 25px !important;
+      height: 25px !important;
+    }
+
+    .leaflet-control-zoom-in {
+      content: url('icons/plus.svg');
+      margin-bottom: 5px;
+    }
+
+    .leaflet-control-zoom-out {
+      content: url('icons/minus.svg');
+      margin-bottom: 5px;
+    }
 `;
