@@ -73,8 +73,7 @@ const DirectoryPage: NextPage = ({
           <Flex align="top" justify="space-between">
             <Introduction>
               Personal web directory for notes, bookmarks, photos, audio, video,
-              books, tools and technologies. Categories, filters. German
-              dictionary with examples. Regulated complexity.
+              books, tools and technologies. All content is <a className="a-link">open-source</a> and free to distribute and use.
             </Introduction>
     
           </Flex>

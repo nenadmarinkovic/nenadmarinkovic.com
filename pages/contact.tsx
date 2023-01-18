@@ -30,9 +30,10 @@ const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             <Introduction>
               I write mostly about web development and tech. Use the search
               below to filter by title. You can contact me through the form or
-              at: nenadmarinkovic@protonmail.com
+              at <a className="a-link">nenadmarinkovic@protonmail.com</a> 
             </Introduction>
           </Flex>
+         
         </Container>
 
         <Footer spotifyData={spotifyData} />

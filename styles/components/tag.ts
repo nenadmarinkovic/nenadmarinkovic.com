@@ -46,7 +46,6 @@ export const TagSpan = styled.span`
 // Tag Button styles
 
 export const TagCategory = styled.button`
-  color: inherit;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -58,9 +57,14 @@ export const TagCategory = styled.button`
   font-weight: bold;
   font-size: 0.75rem;
   font-weight: 700;
+  transition: .3s;
 
   &.default {
-    background: ${({ theme }) => theme.backgroundReverse};
-    color: ${({ theme }) => theme.colorReverse};
+    background: ${({ theme }) => theme.grayButton};
+    color: #222222;
+  }
+
+  :hover {
+    transform: scale(1.08);
   }
 `;
