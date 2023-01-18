@@ -5,7 +5,6 @@ import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
-import MapDynamic from "../components/MapDynamic";
 import Footer from "../components/Footer";
 
 const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
@@ -34,8 +33,6 @@ const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               at: nenadmarinkovic@protonmail.com
             </Introduction>
           </Flex>
-
-          <MapDynamic theme={theme} />
         </Container>
 
         <Footer spotifyData={spotifyData} />
