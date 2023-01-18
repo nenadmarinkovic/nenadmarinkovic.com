@@ -8,4 +8,5 @@ export const FooterWrap = styled.div`
   color: #fff;
   padding-top: 3rem;
   margin-top: 400px;
+
 `;

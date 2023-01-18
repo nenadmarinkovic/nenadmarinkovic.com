@@ -34,10 +34,10 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
         </MenuLink>
         <MenuLink>
           <Link
-            href="/info"
-            className={router.pathname === "/info" ? "active-link" : ""}
+            href="/contact"
+            className={router.pathname === "/contact" ? "active-link" : ""}
           >
-            Info
+            Contact
           </Link>
         </MenuLink>
         <MenuThemeButton

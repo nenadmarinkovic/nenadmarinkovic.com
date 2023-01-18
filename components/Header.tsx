@@ -52,12 +52,12 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
               </HeaderLink>
               <HeaderLink>
                 <Link
-                  href="/info"
+                  href="/contact"
                   className={
-                    router.pathname === "/info" ? "active-link" : ""
+                    router.pathname === "/contact" ? "active-link" : ""
                   }
                 >
-                  Info
+                  Contact
                 </Link>
               </HeaderLink>
               <ThemeButton onClick={toggleTheme}>

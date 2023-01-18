@@ -12,7 +12,7 @@ const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   return (
     <>
       <Head>
-        <title>Nenad Marinković | Info</title>
+        <title>Nenad Marinković | Contact</title>
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 
@@ -25,7 +25,7 @@ const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
 
       <ThemeLayout openMenu={openMenu}>
         <Container>
-          <Banner name="Info" />
+          <Banner name="Contact" />
           <Flex align="top" justify="space-between">
             <Introduction>
               I write mostly about web development and tech. Use the search
