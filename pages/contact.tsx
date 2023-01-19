@@ -6,8 +6,9 @@ import { Introduction } from "../styles/components/introduction";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import ContactForm from "../components/Form";
 
-const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
+const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
@@ -33,13 +34,12 @@ const Info: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               at <a className="a-link">nenadmarinkovic@protonmail.com</a> 
             </Introduction>
           </Flex>
-         
+       <ContactForm/>
         </Container>
-
         <Footer spotifyData={spotifyData} />
       </ThemeLayout>
     </>
   );
 };
 
-export default Info;
+export default ContactPage;

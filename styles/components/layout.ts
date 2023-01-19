@@ -9,7 +9,7 @@ type Flex = {
   justify?: string;
 };
 
-export const ThemeLayout = styled.div<Menu>`
+export const ThemeLayout = styled.main<Menu>`
   background: ${({ theme }) => theme.background};
   opacity: ${({ openMenu }) => (openMenu ? "0.3" : "1")};
 `;

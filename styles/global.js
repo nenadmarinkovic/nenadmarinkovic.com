@@ -54,7 +54,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .a-link {
-      color: ${({ theme }) => theme.linkColor};
+      color: ${({ theme }) => theme.activeColor};
       text-decoration: none;
       font-weight: bold;
     }

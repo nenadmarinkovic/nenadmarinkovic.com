@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.0.3",
+    "axios": "^1.2.3",
     "framer-motion": "^7.5.4",
     "gray-matter": "^4.0.3",
     "next-mdx-remote": "^4.1.0",

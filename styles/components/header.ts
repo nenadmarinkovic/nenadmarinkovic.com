@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderWrap = styled.div`
+export const HeaderWrap = styled.header`
   position: sticky;
   top: 0;
   width: 100%;
