@@ -25,6 +25,11 @@ export const Container = styled.div`
   }
 `;
 
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Flex = styled.div<Flex>`
   display: flex;
   align-items: ${({ align }) => align};

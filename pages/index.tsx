@@ -100,7 +100,7 @@ const Homepage: NextPage<Props> = ({
 
           <Panel />
         </Container>
-        <Footer spotifyData={spotifyData} />
+        <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>
   );

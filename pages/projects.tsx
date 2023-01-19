@@ -84,7 +84,7 @@ const ProjectsPage: NextPage = ({
             ))}
           </PostsWrap>
         </Container>
-        <Footer spotifyData={spotifyData} />
+        <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>
   );

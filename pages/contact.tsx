@@ -36,7 +36,7 @@ const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
           </Flex>
        <ContactForm/>
         </Container>
-        <Footer spotifyData={spotifyData} />
+        <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>
   );
