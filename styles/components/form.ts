@@ -46,6 +46,7 @@ export const TextArea = styled.textarea`
   font-size: 1rem;
   font-family: inherit;
   height: 180px;
+  resize: vertical;
 `;
 
 export const Button = styled.button`
