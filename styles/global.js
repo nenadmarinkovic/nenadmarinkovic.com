@@ -80,6 +80,11 @@ export const GlobalStyle = createGlobalStyle`
       overflow: hidden !important;
     }
 
+    .spotify-image {
+      position: absolute;
+      left: 0
+    }
+
     /* Markdown styles */
 
     main {
@@ -93,4 +98,47 @@ export const GlobalStyle = createGlobalStyle`
     section {
       padding-top: 3.2rem;
     }
+
+.box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0px;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  display: flex;
+  margin-bottom: 30px
+}
+
+  .music {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background: black;
+    border-radius: 50px;
+  }
+
+  .one {
+    left: 0;
+    animation: music 1s ease infinite alternate;
+  }
+
+  .two {
+    left: 10px;
+    animation: music 1.3s ease infinite alternate;
+  }
+
+  .three {
+    left: 20px;
+    animation: music 1.6s ease infinite alternate;
+  }
+
+  @keyframes music {
+    0% {
+      height: 10%;
+    }
+    100% {
+      height: 40%;
+    }
+  }
 `;
