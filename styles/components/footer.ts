@@ -14,20 +14,18 @@ export const FooterItem = styled.div`
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  border:${({ theme }) => theme.headerAndMenuBorder}; 
-  padding: 18px;
+  border: ${({ theme }) => theme.headerAndMenuBorder};
+  padding: 10px;
   border-radius: 10px;
   background: ${({ theme }) => theme.background};
   width: fit-content;
 `;
 
-export const FooterItemText = styled.div`
+export const FooterItemText = styled.p`
+  font-family: monospace;
   color: ${({ theme }) => theme.color};
   line-height: 1.5;
-`;
-
-export const FooterIcon = styled.div`
-  margin-right: 10px;
+  margin-left: 10px;
 `;
 
 export const BottomText = styled.p`
@@ -36,4 +34,3 @@ export const BottomText = styled.p`
   margin-top: 7rem;
   font-size: 0.85rem;
 `;
-

@@ -13,7 +13,7 @@ function Footer({ spotifyData, theme }: any) {
       <Container>
         <FlexContainer>
           <FooterItem>
-            <FooterIcon>
+           
               <svg
                 width="31"
                 height="31"
@@ -26,21 +26,15 @@ function Footer({ spotifyData, theme }: any) {
                   fill="#1ED760"
                 />
               </svg>
-            </FooterIcon>
+           
             <FooterItemText>
               {spotifyData?.isPlaying ? (
                 `${spotifyData.artist} - ${spotifyData.title}`
-              ) : (
-                <>
-                  <span>Sometimes I listen to music while coding, </span>
-                  <br />
-                  <span>but not now.</span>
-                </>
-              )}
+              ) : 'Not playing currently.'}
             </FooterItemText>
           </FooterItem>
           <FooterItem>
-            <FooterIcon>
+        
               <svg
                 width="31"
                 height="31"
@@ -55,7 +49,7 @@ function Footer({ spotifyData, theme }: any) {
                   fill={theme === "dark" ? "white" : "#24292F"}
                 />
               </svg>
-            </FooterIcon>
+           
             <FooterItemText>This website is open-source.</FooterItemText>
           </FooterItem>
         </FlexContainer>

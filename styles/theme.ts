@@ -24,7 +24,7 @@ export const darkTheme = {
   colorReverse: "#000",
   color: "#fff",
   headerBackground: "hsl(0deg 0% 0% / 50%)",
-  headerAndMenuBorder: "0.1px solid rgb(68, 68, 68)",
+  headerAndMenuBorder: "0.1px solid rgb(72, 72, 72)",
   backgroundModal: "rgb(0, 0, 0, 0.85)",
   contactButtonBorder: "1.5px solid #fff",
   menuBorder: '0.1px solid rgb(57, 57, 57)',
