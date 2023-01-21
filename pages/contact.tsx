@@ -31,15 +31,42 @@ const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
             <Introduction>
               I write mostly about web development and tech. Use the search
               below to filter by title. You can contact me through the form or
-              at <a className="a-link">nenadmarinkovic@protonmail.com</a> 
+              at <a className="a-link">nenadmarinkovic@protonmail.com</a>
             </Introduction>
           </Flex>
-       <ContactForm/>
+          <ContactForm />
         </Container>
         <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>
   );
 };
+
+export async function getStaticProps() {
+  let spotifyData = [];
+  let error = "";
+
+  const server = "http://localhost:3000/api/playing";
+
+  try {
+    const res = await fetch(server, {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
+
+    spotifyData = await res.json();
+  } catch (e: any) {
+    error = e.toString();
+  }
+
+  return {
+    props: { spotifyData },
+    revalidate: 10,
+  };
+}
 
 export default ContactPage;

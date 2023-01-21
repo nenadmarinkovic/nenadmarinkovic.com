@@ -5,7 +5,7 @@ export const FooterWrap = styled.div`
   background: ${({ theme }) => theme.footerBackground};
   color: ${({ theme }) => theme.color};
   color: #fff;
-  padding-top: 2.5rem;
+  padding: 2.5rem;
   margin-top: 20rem;
 `;
 
@@ -15,10 +15,11 @@ export const FooterItem = styled.div`
   align-items: center;
   margin-top: 1rem;
   border: ${({ theme }) => theme.headerAndMenuBorder};
-  padding: 10px;
+  padding: 0 10px;
   border-radius: 10px;
   background: ${({ theme }) => theme.background};
   width: fit-content;
+  height: 70px;
 `;
 
 export const FooterItemText = styled.p`
@@ -33,6 +34,6 @@ export const FooterItemText = styled.p`
 export const BottomText = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.color};
-  margin-top: 3rem;
+  padding-top: 2.5rem;
   font-size: 0.85rem;
 `;

@@ -73,9 +73,10 @@ const DirectoryPage: NextPage = ({
           <Flex align="top" justify="space-between">
             <Introduction>
               Personal web directory for notes, bookmarks, photos, audio, video,
-              books, tools and technologies. All content is <a className="a-link">open-source</a> and free to distribute and use.
+              books, tools and technologies. All content is{" "}
+              <a className="a-link">open-source</a> and free to distribute and
+              use.
             </Introduction>
-    
           </Flex>
           <TagButtonsWrap>
             {uniqueCategories.map((category: any, index: any) => (
@@ -113,7 +114,27 @@ const DirectoryPage: NextPage = ({
   );
 };
 
-export function getStaticProps() {
+export async function getStaticProps() {
+  let spotifyData = [];
+  let error = "";
+
+  const server = "http://localhost:3000/api/playing";
+
+  try {
+    const res = await fetch(server, {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
+
+    spotifyData = await res.json();
+  } catch (e: any) {
+    error = e.toString();
+  }
+
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
     const { content, data } = matter(source);
@@ -125,7 +146,7 @@ export function getStaticProps() {
     };
   });
 
-  return { props: { posts } };
+  return { props: { posts, spotifyData }, revalidate: 10 };
 }
 
 export default DirectoryPage;

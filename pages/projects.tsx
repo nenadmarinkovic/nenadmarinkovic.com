@@ -66,7 +66,8 @@ const ProjectsPage: NextPage = ({
                   <a
                     href={`https://${post.data.link}`}
                     rel="noreferrer"
-                    target="_blank">
+                    target="_blank"
+                  >
                     {post.data.link}
                   </a>
                 </AdditionalInfo>
@@ -90,7 +91,27 @@ const ProjectsPage: NextPage = ({
   );
 };
 
-export function getStaticProps() {
+export async function getStaticProps() {
+  let spotifyData = [];
+  let error = "";
+
+  const server = "http://localhost:3000/api/playing";
+
+  try {
+    const res = await fetch(server, {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
+
+    spotifyData = await res.json();
+  } catch (e: any) {
+    error = e.toString();
+  }
+
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
     const { content, data } = matter(source);
@@ -102,7 +123,7 @@ export function getStaticProps() {
     };
   });
 
-  return { props: { posts } };
+  return { props: { posts, spotifyData }, revalidate: 10 };
 }
 
 export default ProjectsPage;

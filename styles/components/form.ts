@@ -14,7 +14,7 @@ export const FormContainer = styled.form`
 `;
 
 export const FormLabel = styled.label`
-  color: #757575;
+ color: ${({ theme }) => theme.color};
   font-size: 0.75rem;
   font-weight: bold;
   text-align: left;
