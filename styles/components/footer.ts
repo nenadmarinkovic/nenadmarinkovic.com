@@ -23,16 +23,16 @@ export const FooterItem = styled.div`
   border-radius: 10px;
   background: ${({ theme }) => theme.background};
   width: fit-content;
-  height: 70px;
+  min-height: 70px;
 
   svg {
     min-width: 31px;
     min-height: 31px;
   }
 
-  @media (max-width: 32rem) {
+  /* @media (max-width: 32rem) {
     height: unset;
-  }
+  } */
 `;
 
 export const FooterItemText = styled.p`
