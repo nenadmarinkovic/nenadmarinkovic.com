@@ -33,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html,
     body {
+      height: 100%;
       background: ${({ theme }) => theme.background};
       padding: 0;
       margin: 0;

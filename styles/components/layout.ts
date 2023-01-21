@@ -9,9 +9,16 @@ type Flex = {
   justify?: string;
 };
 
+export const MainSection = styled.section`
+  flex: 1;
+`;
+
 export const ThemeLayout = styled.main<Menu>`
   background: ${({ theme }) => theme.background};
   opacity: ${({ openMenu }) => (openMenu ? "0.3" : "1")};
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 
 export const Container = styled.div`
@@ -37,6 +44,6 @@ export const Flex = styled.div<Flex>`
 
   @media (max-width: 45rem) {
     flex-wrap: wrap;
-    flex-direction: column
+    flex-direction: column;
   }
 `;

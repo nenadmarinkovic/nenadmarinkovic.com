@@ -21,6 +21,8 @@ import Tag from "../components/Tag";
 import Banner from "../components/Banner";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Section from "../components/Section";
+import { MainSection } from "../styles/components/layout";
 
 const ProjectsPage: NextPage = ({
   spotifyData,
@@ -45,46 +47,48 @@ const ProjectsPage: NextPage = ({
       />
 
       <ThemeLayout openMenu={openMenu}>
-        <Container>
-          <Banner name="Projects" />
-          <Flex align="top" justify="space-between">
-            <Introduction>
-              I write mostly about web development and tech. Use the search
-              below to filter by title.
-            </Introduction>
-          </Flex>
-          <PostsWrap>
-            {posts.map((post: any) => (
-              <Post key={post.filePath}>
-                <Link
-                  as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/projects/[slug]`}
-                >
-                  <Title>{post.data.title}</Title>
-                </Link>
-                <AdditionalInfo>
-                  <a
-                    href={`https://${post.data.link}`}
-                    rel="noreferrer"
-                    target="_blank"
+        <MainSection>
+          <Container>
+            <Banner name="Projects" />
+            <Flex align="top" justify="space-between">
+              <Introduction>
+                I write mostly about web development and tech. Use the search
+                below to filter by title.
+              </Introduction>
+            </Flex>
+            <PostsWrap>
+              {posts.map((post: any) => (
+                <Post key={post.filePath}>
+                  <Link
+                    as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
+                    href={`/projects/[slug]`}
                   >
-                    {post.data.link}
-                  </a>
-                </AdditionalInfo>
-                <AdditionalInfo>
-                  Updated: <Date>{post.data.date}</Date>
-                </AdditionalInfo>
-                <Description>{post.data.description}</Description>
-                <TagWrap>
-                  <Tag color="black" text="Next.js" />
-                  <Tag color="green" text="Node.js" />
-                  <Tag color="blue" text="Typescript" />
-                  <Tag color="orange" text="Firebase" />
-                </TagWrap>
-              </Post>
-            ))}
-          </PostsWrap>
-        </Container>
+                    <Title>{post.data.title}</Title>
+                  </Link>
+                  <AdditionalInfo>
+                    <a
+                      href={`https://${post.data.link}`}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {post.data.link}
+                    </a>
+                  </AdditionalInfo>
+                  <AdditionalInfo>
+                    Updated: <Date>{post.data.date}</Date>
+                  </AdditionalInfo>
+                  <Description>{post.data.description}</Description>
+                  <TagWrap>
+                    <Tag color="black" text="Next.js" />
+                    <Tag color="green" text="Node.js" />
+                    <Tag color="blue" text="Typescript" />
+                    <Tag color="orange" text="Firebase" />
+                  </TagWrap>
+                </Post>
+              ))}
+            </PostsWrap>
+          </Container>
+        </MainSection>
         <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>

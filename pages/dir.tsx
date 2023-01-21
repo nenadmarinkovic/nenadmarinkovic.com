@@ -13,6 +13,7 @@ import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import { MainSection } from "../styles/components/layout";
 
 import {
   PostsWrap,
@@ -22,6 +23,7 @@ import {
   Date,
   Description,
 } from "../styles/pages/common";
+import Section from "../components/Section";
 
 const DirectoryPage: NextPage = ({
   posts,
@@ -68,46 +70,48 @@ const DirectoryPage: NextPage = ({
       />
 
       <ThemeLayout openMenu={openMenu}>
-        <Container>
-          <Banner name="Directory" />
-          <Flex align="top" justify="space-between">
-            <Introduction>
-              Personal web directory for notes, bookmarks, photos, audio, video,
-              books, tools and technologies. All content is{" "}
-              <a className="a-link">open-source</a> and free to distribute and
-              use.
-            </Introduction>
-          </Flex>
-          <TagButtonsWrap>
-            {uniqueCategories.map((category: any, index: any) => (
-              <TagButton
-                key={index}
-                onClick={() => filterCategory(category)}
-                color="default"
-                text={category}
-              />
-            ))}
-          </TagButtonsWrap>
-          <PostsWrap>
-            {filteredPosts.map((post: any) => (
-              <Post key={post.filePath}>
-                <Link
-                  as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
-                  href={`/dir/[slug]`}
-                >
-                  <Title>{post.data.title}</Title>
-                </Link>
-                <AdditionalInfo>
-                  Updated:
-                  <Date>
-                    {post.data.date} {post.data.category}
-                  </Date>
-                </AdditionalInfo>
-                <Description>{post.data.description}</Description>
-              </Post>
-            ))}
-          </PostsWrap>
-        </Container>
+        <MainSection>
+          <Container>
+            <Banner name="Directory" />
+            <Flex align="top" justify="space-between">
+              <Introduction>
+                Personal web directory for notes, bookmarks, photos, audio,
+                video, books, tools and technologies. All content is{" "}
+                <a className="a-link">open-source</a> and free to distribute and
+                use.
+              </Introduction>
+            </Flex>
+            <TagButtonsWrap>
+              {uniqueCategories.map((category: any, index: any) => (
+                <TagButton
+                  key={index}
+                  onClick={() => filterCategory(category)}
+                  color="default"
+                  text={category}
+                />
+              ))}
+            </TagButtonsWrap>
+            <PostsWrap>
+              {filteredPosts.map((post: any) => (
+                <Post key={post.filePath}>
+                  <Link
+                    as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                    href={`/dir/[slug]`}
+                  >
+                    <Title>{post.data.title}</Title>
+                  </Link>
+                  <AdditionalInfo>
+                    Updated:
+                    <Date>
+                      {post.data.date} {post.data.category}
+                    </Date>
+                  </AdditionalInfo>
+                  <Description>{post.data.description}</Description>
+                </Post>
+              ))}
+            </PostsWrap>
+          </Container>
+        </MainSection>
         <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterWrap = styled.div`
+export const FooterWrap = styled.footer`
   border-top: ${({ theme }) => theme.headerAndMenuBorder};
   background: ${({ theme }) => theme.footerBackground};
   color: ${({ theme }) => theme.color};

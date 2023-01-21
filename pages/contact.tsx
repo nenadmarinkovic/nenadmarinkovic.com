@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import ContactForm from "../components/Form";
+import { MainSection } from "../styles/components/layout";
 
 const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -25,17 +26,19 @@ const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
       />
 
       <ThemeLayout openMenu={openMenu}>
-        <Container>
-          <Banner name="Contact" />
-          <Flex align="top" justify="space-between">
-            <Introduction>
-              I write mostly about web development and tech. Use the search
-              below to filter by title. You can contact me through the form or
-              at <a className="a-link">nenadmarinkovic@protonmail.com</a>
-            </Introduction>
-          </Flex>
-          <ContactForm />
-        </Container>
+        <MainSection>
+          <Container>
+            <Banner name="Contact" />
+            <Flex align="top" justify="space-between">
+              <Introduction>
+                I write mostly about web development and tech. Use the search
+                below to filter by title. You can contact me through the form or
+                at <a className="a-link">nenadmarinkovic@protonmail.com</a>
+              </Introduction>
+            </Flex>
+            <ContactForm />
+          </Container>
+        </MainSection>
         <Footer spotifyData={spotifyData} theme={theme} />
       </ThemeLayout>
     </>
