@@ -29,13 +29,9 @@ export const FooterItem = styled.div`
     min-width: 31px;
     min-height: 31px;
   }
-
-  /* @media (max-width: 32rem) {
-    height: unset;
-  } */
 `;
 
-export const FooterItemText = styled.p`
+export const FooterItemText = styled.div`
   display: flex;
   align-items: center;
   font-family: monospace;

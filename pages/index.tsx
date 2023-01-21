@@ -113,7 +113,7 @@ export async function getStaticProps() {
   let error = "";
 
   const server = "http://localhost:3000/api/playing";
-
+  
   try {
     const res = await fetch(server, {
       method: "GET",
