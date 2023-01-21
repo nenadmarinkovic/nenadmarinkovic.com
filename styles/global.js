@@ -99,7 +99,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section {
-      padding-top: 3.2rem;
+      padding-top: 2.5rem;
     }
 
     .box {
