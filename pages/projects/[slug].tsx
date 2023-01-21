@@ -7,7 +7,7 @@ import { useState } from "react";
 import { NextPage } from "next";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { ThemeLayout } from "../../styles/components/layout";
+import { MainSection, ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
@@ -44,15 +44,17 @@ const ProjectsPage: NextPage = ({
       />
 
       <ThemeLayout openMenu={openMenu}>
-        <Container>
-          <Banner name={frontMatter.title} />
-          <Introduction className="full-width">
-            {frontMatter.description}
-          </Introduction>
-          <main>
-            <MDXRemote {...source} components={components} />
-          </main>
-        </Container>
+        <MainSection>
+          <Container>
+            <Banner name={frontMatter.title} />
+            <Introduction className="full-width">
+              {frontMatter.description}
+            </Introduction>
+            <main>
+              <MDXRemote {...source} components={components} />
+            </main>
+          </Container>
+        </MainSection>
         <Footer spotifyData={spotifyData} />
       </ThemeLayout>
     </>

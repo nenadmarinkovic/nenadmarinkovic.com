@@ -90,8 +90,6 @@ export const GlobalStyle = createGlobalStyle`
      margin-right: -5px;
     }
 
-    /* Markdown styles */
-
     main {
       overflow: hidden;
     }
@@ -104,45 +102,45 @@ export const GlobalStyle = createGlobalStyle`
       padding-top: 3.2rem;
     }
 
-  .box {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transform: rotate(180deg);
-    display: flex;
-    bottom: 15.5px;
-    padding-right: 30px;
-  }
+    .box {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transform: rotate(180deg);
+      display: flex;
+      bottom: 15.5px;
+      padding-right: 30px;
+    }
 
-  .music {
-    position: absolute;
-    width: 7.5%;
-    height: 10%;
-    background: ${({ theme }) => theme.color};
-  }
-
-  .one {
-    left: 0;
-    animation: music .3s ease infinite alternate;
-  }
-
-  .two {
-    left: 7.5px;
-    animation: music 1s ease infinite alternate;
-  }
-
-  .three {
-    left: 15px;
-    animation: music .5s ease infinite alternate;
-  }
-
-  @keyframes music {
-    0% {
+    .music {
+      position: absolute;
+      width: 7.5%;
       height: 10%;
+      background: ${({ theme }) => theme.color};
     }
-    100% {
-      height: 40%;
+
+    .one {
+      left: 0;
+      animation: music .3s ease infinite alternate;
     }
-  }
+
+    .two {
+      left: 7.5px;
+      animation: music 1s ease infinite alternate;
+    }
+
+    .three {
+      left: 15px;
+      animation: music .5s ease infinite alternate;
+    }
+
+    @keyframes music {
+      0% {
+        height: 10%;
+      }
+      100% {
+        height: 40%;
+      }
+    }
 `;

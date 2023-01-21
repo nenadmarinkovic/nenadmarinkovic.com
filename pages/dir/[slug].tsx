@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import { useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { ThemeLayout } from "../../styles/components/layout";
+import { MainSection, ThemeLayout } from "../../styles/components/layout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx-posts";
 import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
@@ -36,14 +36,15 @@ const DirectoryPage: NextPage = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Header
-          toggleTheme={toggleTheme}
-          theme={theme}
-          openMenu={openMenu}
-          setOpenMenu={setOpenMenu}
-        />
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
 
-        <ThemeLayout openMenu={openMenu}>
+      <ThemeLayout openMenu={openMenu}>
+        <MainSection>
           <Container>
             <Banner name={frontMatter.title} />
             <Introduction className="full-width">
@@ -53,9 +54,9 @@ const DirectoryPage: NextPage = ({
               <MDXRemote {...source} components={components} />
             </main>
           </Container>
-          <Footer spotifyData={spotifyData} />
-        </ThemeLayout>
-      
+        </MainSection>
+        <Footer spotifyData={spotifyData} />
+      </ThemeLayout>
     </>
   );
 };
