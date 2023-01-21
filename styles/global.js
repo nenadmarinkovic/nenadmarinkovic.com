@@ -85,6 +85,10 @@ export const GlobalStyle = createGlobalStyle`
       left: 0
     }
 
+    .spotify-link {
+     margin-right: -5px;
+    }
+
     /* Markdown styles */
 
     main {
@@ -106,8 +110,8 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 50%;
     transform: rotate(180deg);
     display: flex;
-    right: 5px;
-    bottom: 15px;
+    bottom: 15.5px;
+    padding-right: 30px;
   }
 
   .music {

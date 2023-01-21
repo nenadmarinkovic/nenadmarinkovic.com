@@ -66,10 +66,6 @@ export const BoxItem = styled.div`
   padding-top: 2.3rem;
   display: flex;
   align-items: center;
-
-  /* @media (max-width: 370px) {
-    padding-top: 1.5rem;
-  } */
 `;
 
 export const BoxItemIcon = styled.div``;

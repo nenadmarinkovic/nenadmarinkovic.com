@@ -7,6 +7,10 @@ export const FooterWrap = styled.div`
   color: #fff;
   padding: 2.5rem;
   margin-top: 20rem;
+
+  @media (max-width: 48rem) {
+    padding: 0 0 2.5rem 0;
+  }
 `;
 
 export const FooterItem = styled.div`
@@ -20,6 +24,15 @@ export const FooterItem = styled.div`
   background: ${({ theme }) => theme.background};
   width: fit-content;
   height: 70px;
+
+  svg {
+    min-width: 31px;
+    min-height: 31px;
+  }
+
+  @media (max-width: 32rem) {
+    height: unset;
+  }
 `;
 
 export const FooterItemText = styled.p`

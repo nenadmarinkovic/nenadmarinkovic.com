@@ -31,6 +31,7 @@ function Footer({ spotifyData, theme }: any) {
                     href={`${spotifyData.songUrl}`}
                     target="_blank"
                     rel="noreferrer"
+                    className="spotify-link"
                   >
                     {spotifyData.artist} - {spotifyData.title}
                   </a>
@@ -61,7 +62,15 @@ function Footer({ spotifyData, theme }: any) {
               />
             </svg>
 
-            <FooterItemText>This website is open-source.</FooterItemText>
+            <FooterItemText>
+              <a
+                href="https://github.com/nenadmarinkovic/nenadmarinkovic.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                This website is open-sourced.
+              </a>
+            </FooterItemText>
           </FooterItem>
         </FlexContainer>
       </Container>
