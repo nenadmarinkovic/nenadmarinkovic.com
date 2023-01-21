@@ -43,21 +43,21 @@ class Doc extends Document {
           <link
             rel="stylesheet preload"
             href="/fonts/CeraPro-Regular.woff2"
-            as="style"
+            as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="stylesheet preload"
             href="/fonts/CeraPro-Bold.woff2"
-            as="style"
+            as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="stylesheet preload"
             href="/fonts/CeraPro-Black.woff2"
-            as="style"
+            as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
