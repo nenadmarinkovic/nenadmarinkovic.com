@@ -20,7 +20,7 @@ export const FooterItem = styled.div`
   margin-top: 1rem;
   border: ${({ theme }) => theme.headerAndMenuBorder};
   padding: 0 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: ${({ theme }) => theme.background};
   width: fit-content;
   min-height: 70px;

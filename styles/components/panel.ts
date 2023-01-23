@@ -51,10 +51,10 @@ export const PanelButton = styled.button`
   padding: 0.65em 1.8em;
   color: ${({ theme }) => theme.activeButtonColor};
   border: 1px solid ${({ theme }) => theme.activeButtonColor};
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.6px;
   font-weight: bold;
 `;
