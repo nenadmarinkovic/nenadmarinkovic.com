@@ -31,18 +31,18 @@ export const FooterItem = styled.div`
   }
 `;
 
-export const FooterItemText = styled.div`
+export const FooterItemText = styled.span`
   display: flex;
   align-items: center;
-  font-family: monospace;
   color: ${({ theme }) => theme.color};
   line-height: 1.5;
   margin-left: 10px;
+  font-size: 0.9rem;
 `;
 
 export const BottomText = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.color};
   padding-top: 2.5rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 `;

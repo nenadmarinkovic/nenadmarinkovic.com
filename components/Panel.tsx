@@ -9,10 +9,11 @@ function Panel() {
   return (
     <PanelWrap>
       <PanelInside>
-        <Title> Lorem ipsum dolor sit amet</Title>
+        <Title> Let&apos;s build together.</Title>
         <Text>
-          Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-          dolor sit amet
+          Web is an unique platform for creativity, businesses, and growth.
+          Let&apos;s combine your idea with my technical know-how to build amazing
+          projects. Together.
         </Text>
       </PanelInside>
     </PanelWrap>

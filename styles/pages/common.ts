@@ -32,7 +32,7 @@ export const Description = styled.div`
 
 export const AdditionalInfo = styled.span`
   color: ${({ theme }) => theme.color};
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.9;
 `;
 
