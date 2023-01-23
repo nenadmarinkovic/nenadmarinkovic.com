@@ -17,6 +17,7 @@ function Panel() {
           Let&apos;s combine your idea with my technical know-how to build
           amazing projects. Together.
         </Text>
+
         <Link href="/contact">
           <PanelButton>Contact</PanelButton>
         </Link>

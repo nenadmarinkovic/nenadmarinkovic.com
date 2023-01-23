@@ -1,6 +1,6 @@
 export const lightTheme = {
   background: "#fff",
-  backgroundReverse: "#222",
+  backgroundReverse: "#000",
   grayButton: "#eaeaea",
   colorReverse: "#fff",
   color: "#222",
@@ -34,7 +34,7 @@ export const darkTheme = {
   footerBackground: '#000',
   activeColor: '#fc6d26',
   descColor: "#888",
-  activeButton: '#222',
+  activeButton: '#000',
   activeButtonColor: '#fff',
   labelColor: '#fff'
 };

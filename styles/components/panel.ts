@@ -47,9 +47,9 @@ export const Text = styled.p`
 `;
 
 export const PanelButton = styled.button`
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.activeButton};
   padding: 0.65em 1.8em;
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.activeButtonColor};
   border: ${({ theme }) => theme.headerAndMenuBorder};
   border-radius: 8px;
   cursor: pointer;
