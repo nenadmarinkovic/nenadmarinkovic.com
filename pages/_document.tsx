@@ -61,9 +61,9 @@ class Doc extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/images/favicon.ico" />
           <link href="/manifest.json" rel="manifest" />
-          <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+          <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
           <meta content="#fff" name="theme-color" />
         </Head>
         <body>
