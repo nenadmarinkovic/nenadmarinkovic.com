@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PanelWrap = styled.div`
   margin: 10.5rem 0;
-  padding: 200px 80px;
+  padding: 200px 75px;
   border-radius: 1rem;
   position: relative;
   background: linear-gradient(
