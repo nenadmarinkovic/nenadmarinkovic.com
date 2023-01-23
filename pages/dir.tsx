@@ -59,7 +59,7 @@ const DirectoryPage: NextPage = ({
     <>
       <Head>
         <title>Nenad Marinković | Directory</title>
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
+        <meta content={theme === "dark" ? "#222" : "#fff"} name="theme-color" />
       </Head>
 
       <Header

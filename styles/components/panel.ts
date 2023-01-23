@@ -47,10 +47,10 @@ export const Text = styled.p`
 `;
 
 export const PanelButton = styled.button`
-  background: ${({ theme }) => theme.activeButton};
+  background: ${({ theme }) => theme.background};
   padding: 0.65em 1.8em;
-  color: ${({ theme }) => theme.activeButtonColor};
-  border: 1px solid ${({ theme }) => theme.activeButtonColor};
+  color: ${({ theme }) => theme.color};
+  border: ${({ theme }) => theme.headerAndMenuBorder};
   border-radius: 8px;
   cursor: pointer;
   line-height: 1;
