@@ -84,11 +84,15 @@ export const Title = styled.div`
   color: ${({ theme }) => theme.color};
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
   color: ${({ theme }) => theme.descColor};
   font-size: 1.15rem;
   line-height: 1.9;
   margin-top: 1rem;
+
+  @media (max-width: 35rem) {
+    font-size: 1rem;
+  }
 `;
 
 export const BoxTitle = styled.div`

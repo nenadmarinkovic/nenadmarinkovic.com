@@ -50,9 +50,10 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
+  color: ${({ theme }) => theme.descColor};
   font-size: 1.15rem;
-  text-align: center;
-  color: ${({ theme }) => theme.color};
+  line-height: 1.9;
+  margin-top: 1rem;
 
   @media (max-width: 35rem) {
     font-size: 1rem;
