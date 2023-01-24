@@ -14,7 +14,7 @@ export const FormContainer = styled.form`
 `;
 
 export const FormLabel = styled.label`
- color: ${({ theme }) => theme.labelColor};
+  color: ${({ theme }) => theme.labelColor};
   font-size: 0.75rem;
   font-weight: bold;
   text-align: left;
@@ -50,7 +50,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const Button = styled.button`
-  background: ${({ theme }) => theme.activeButton};
+  background: ${({ theme }) => theme.actionButtonBackground};
   padding: 0.65em 1em;
   color: ${({ theme }) => theme.activeButtonColor};
   border: 1px solid ${({ theme }) => theme.activeButtonColor};
@@ -72,6 +72,6 @@ export const Error = styled.div`
 `;
 
 export const Message = styled.p`
-   color: ${({ theme }) => theme.color};
-   font-size: 1rem;
+  color: ${({ theme }) => theme.color};
+  font-size: 1rem;
 `;

@@ -38,7 +38,7 @@ export const TagSpan = styled.span`
   }
 
   &.black {
-    background: ${({ theme }) => theme.backgroundReverse};
+    background: ${({ theme }) => theme.backgroundLightReverse};
     color: ${({ theme }) => theme.colorReverse};
   }
 `;
@@ -61,7 +61,7 @@ export const TagCategory = styled.button`
 
   &.default {
     background: ${({ theme }) => theme.grayButton};
-    color: #222222;
+    color: #000;
   }
 
   :hover {

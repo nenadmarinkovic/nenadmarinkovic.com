@@ -32,7 +32,7 @@ const ProjectsPage: NextPage = ({
       <Head>
         <title> {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
-        <meta content={theme === "dark" ? "#222" : "#fff"} name="theme-color" />
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

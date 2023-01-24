@@ -11,6 +11,10 @@ export const PanelWrap = styled.div`
     #60a9fc 50.62%,
     #7ec130 89.11%
   );
+
+  @media (max-width: 35rem) {
+    padding: 210px 120px;
+  }
 `;
 
 export const PanelInside = styled.div`
@@ -27,8 +31,9 @@ export const PanelInside = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
 
-  @media (max-width: 48rem) {
+  @media (max-width: 35rem) {
     padding: 50px 20px;
   }
 `;
@@ -38,23 +43,36 @@ export const Title = styled.h1`
   text-align: center;
   color: ${({ theme }) => theme.color};
   margin: 0;
+
+  @media (max-width: 35rem) {
+    font-size: 2rem;
+  }
 `;
 
 export const Text = styled.p`
   font-size: 1.15rem;
   text-align: center;
   color: ${({ theme }) => theme.color};
+
+  @media (max-width: 35rem) {
+    font-size: 1rem;
+  }
 `;
 
 export const PanelButton = styled.button`
-  background: ${({ theme }) => theme.activeButton};
+  background: ${({ theme }) => theme.actionButtonBackground};
   padding: 0.65em 1.8em;
   color: ${({ theme }) => theme.activeButtonColor};
-  border: ${({ theme }) => theme.headerAndMenuBorder};
+  border: 1px solid ${({ theme }) => theme.activeButtonColor};
   border-radius: 8px;
   cursor: pointer;
   line-height: 1;
   font-size: 0.9rem;
   letter-spacing: 0.6px;
   font-weight: bold;
+  width: 135px;
+
+  @media (max-width: 25rem) {
+    width: 100%;
+  }
 `;
