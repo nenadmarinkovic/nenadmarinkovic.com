@@ -45,4 +45,5 @@ export const BottomText = styled.p`
   color: ${({ theme }) => theme.color};
   padding-top: 2.5rem;
   font-size: 0.9rem;
+  margin-bottom: 0;
 `;
