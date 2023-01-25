@@ -52,7 +52,7 @@ export const TagCategory = styled.button`
   margin: 0.75rem 0.75rem 0 0;
   font-family: monospace;
   padding: 5px 10px;
-  color: white;
+  color: #fff;
   border-radius: 30px;
   font-weight: bold;
   font-size: 0.75rem;

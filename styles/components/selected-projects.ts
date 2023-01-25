@@ -48,6 +48,7 @@ export const DescLink = styled.a`
   cursor: pointer;
   margin-top: auto;
   font-size: 1rem;
+  margin-left: auto;
 
   span {
     display: block;

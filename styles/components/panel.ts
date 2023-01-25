@@ -65,7 +65,6 @@ export const Text = styled.p`
 `;
 
 export const PanelButton = styled.button`
-  background: transparent;
   border: none;
   display: flex;
   align-items: center;
@@ -73,7 +72,14 @@ export const PanelButton = styled.button`
   cursor: pointer;
   margin-top: auto;
   text-align: center;
-  font-size: 1rem;
+  background: ${({ theme }) => theme.grayButton};
+  color: #000;
+  padding: 7.5px 30px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: .5s;
+
 
   span {
     display: block;
@@ -81,5 +87,14 @@ export const PanelButton = styled.button`
 
   svg {
     margin-left: 5px;
+    transition: .3s;
+  }
+
+  :hover {
+    transform: scale(1.08);
+
+    svg {
+      transform: translateX(10px);
+    }
   }
 `;

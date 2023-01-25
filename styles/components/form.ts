@@ -50,16 +50,36 @@ export const TextArea = styled.textarea`
 `;
 
 export const Button = styled.button`
-  background: ${({ theme }) => theme.actionButtonBackground};
+  background: ${({ theme }) => theme.grayButton};
+  color: #000;
   padding: 0.65em 1em;
-  color: ${({ theme }) => theme.activeButtonColor};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid ${({ theme }) => theme.activeButtonColor};
   border-radius: 8px;
   cursor: pointer;
   line-height: 1;
   font-size: 0.9rem;
   letter-spacing: 0.6px;
-  font-weight: bold;
+  font-weight: 700;
+
+  span {
+    display: block;
+  }
+
+  svg {
+    margin-left: 5px;
+    transition: .3s;
+  }
+
+  :hover {
+  
+
+    svg {
+      transform: translateX(10px);
+    }
+  }
 `;
 
 export const Error = styled.div`
