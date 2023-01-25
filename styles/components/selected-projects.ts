@@ -41,11 +41,17 @@ export const WindowInside = styled.div`
 `;
 
 export const DescLink = styled.a`
+  position: relative;
+  bottom: -3px;
   display: flex;
   align-items: center;
   justify-content: end;
   cursor: pointer;
   margin-top: auto;
+
+  span {
+    display: block;
+  }
 
   svg {
     margin-left: 5px;
@@ -63,6 +69,10 @@ export const LiProjects = styled.button`
   background: none;
   border: none;
   padding: 0;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 
   &.selected-project {
     color: #000;
