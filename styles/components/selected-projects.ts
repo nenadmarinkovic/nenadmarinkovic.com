@@ -13,7 +13,7 @@ export const Window = styled.div`
 
 export const Nav = styled.nav``;
 
-export const UlProjects = styled.ul`
+export const UlProjects = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -39,7 +39,7 @@ export const LiProjects = styled.button`
   font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
-  color: rgb(204 204 204);
+  color: #eaeaea;
   cursor: pointer;
   background: none;
   border: none;
