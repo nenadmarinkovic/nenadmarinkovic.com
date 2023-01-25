@@ -26,6 +26,7 @@ export const UlProjects = styled.div`
 export const Visit = styled.div`
   margin-top: auto;
   font-size: 0.9rem;
+  color: ${({ theme }) => theme.color};
 `;
 
 export const WindowInside = styled.div`
