@@ -113,6 +113,7 @@ export const GlobalStyle = createGlobalStyle`
       display: flex;
       bottom: 15.5px;
       padding-right: 30px;
+      right: 10px;
     }
 
     .music {
