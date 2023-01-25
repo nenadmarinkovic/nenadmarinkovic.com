@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import { ThemeLayout, Container, Flex } from "../styles/components/layout";
+import { ThemeLayout, Container } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
-import { TagWrap } from "../styles/components/tag";
+// import { TagWrap } from "../styles/components/tag";
 import { Theme, Spotify, MenuType } from "../lib/types";
 import Head from "next/head";
-import Tag from "../components/Tag";
+// import Tag from "../components/Tag";
 import Section from "../components/Section";
 import Panel from "../components/Panel";
 import Card from "../components/Card";
@@ -14,6 +14,7 @@ import { MainSection } from "../styles/components/layout";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
+import SelectedProjects from "../components/SelectedProjects";
 
 type Props = Theme & Spotify & MenuType;
 
@@ -93,12 +94,13 @@ const Homepage: NextPage<Props> = ({
               />
             </Cards>
             <Section title="Personal projects" />
-            <TagWrap>
+            {/* <TagWrap>
               <Tag color="green" text="Node.js" />
               <Tag color="blue" text="Typescript" />
               <Tag color="orange" text="Firebase" />
               <Tag color="black" text="Next.js" />
-            </TagWrap>
+            </TagWrap> */}
+            <SelectedProjects />
             <Panel />
           </Container>
         </MainSection>
@@ -113,7 +115,7 @@ export async function getStaticProps() {
   let error = "";
 
   const server = "http://localhost:3000/api/playing";
-  
+
   try {
     const res = await fetch(server, {
       method: "GET",
