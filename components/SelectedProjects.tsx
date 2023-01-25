@@ -27,7 +27,7 @@ export default function SelectedProjects() {
                 className={item === selectedTab ? "selected-project" : ""}
                 onClick={() => setSelectedTab(item)}
               >
-                <div>{`${item.label}`}</div>
+                {`${item.label}`}
 
                 {item === selectedTab ? (
                   <motion.div className="underline" layoutId="underline" />
@@ -51,7 +51,6 @@ export default function SelectedProjects() {
               transition={{ duration: 0.2 }}
             >
               <span>{selectedTab.description}</span>
-              <br></br>
             </motion.div>
           </AnimatePresence>
           <DescLink href={selectedTab.link} target="_blank" rel="noreferrer">
