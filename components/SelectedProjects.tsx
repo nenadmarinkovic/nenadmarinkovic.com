@@ -1,30 +1,31 @@
 import { useState } from "react";
 import { initialTabs as tabs } from "./selected-projects";
 import { motion, AnimatePresence } from "framer-motion";
+import { Window, Nav, UlProjects, LiProjects, WindowInside } from "../styles/components/selected-projects";
 
 export default function SelectedProjects() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
-    <div className="window">
-      <nav className="nav-projects">
-        <ul className="ul-projects">
+    <Window>
+      <Nav>
+        <UlProjects>
           {tabs.map((item) => (
-            <li
+            <LiProjects
               key={item.label}
-              className={item === selectedTab ? "selected-projects" : ""}
+              className={item === selectedTab ? "selected-project" : ""}
               onClick={() => setSelectedTab(item)}
             >
               {`${item.icon} ${item.label}`}
               {item === selectedTab ? (
                 <motion.div className="underline" layoutId="underline" />
               ) : null}
-            </li>
+            </LiProjects>
           ))}
-        </ul>
-      </nav>
-      <main>
-        <AnimatePresence mode='wait'>
+        </UlProjects>
+      </Nav>
+      <WindowInside>
+        <AnimatePresence mode="wait">
           <motion.div
             key={selectedTab ? selectedTab.label : "empty"}
             initial={{ y: 10, opacity: 0 }}
@@ -32,10 +33,10 @@ export default function SelectedProjects() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <span>Tab: {selectedTab.label}</span>
+            <span>Tab: {selectedTab.description}</span>
           </motion.div>
         </AnimatePresence>
-      </main>
-    </div>
+      </WindowInside>
+    </Window>
   );
 }
