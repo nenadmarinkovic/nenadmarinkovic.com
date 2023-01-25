@@ -39,14 +39,14 @@ export const LiProjects = styled.button`
   font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
-  color: #eaeaea;
+  color: rgb(234, 234, 234);
   cursor: pointer;
   background: none;
   border: none;
   padding: 0;
 
   &.selected-project {
-    color: #000;
+    color: rgb(204 204 204);
   }
 
   @media (max-width: 35rem) {

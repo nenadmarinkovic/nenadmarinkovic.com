@@ -43,6 +43,7 @@ export const Title = styled.h1`
   text-align: center;
   color: ${({ theme }) => theme.color};
   margin: 0;
+  font-weight: 900;
 
   @media (max-width: 35rem) {
     font-size: 2rem;

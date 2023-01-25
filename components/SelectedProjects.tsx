@@ -13,10 +13,14 @@ export default function SelectedProjects() {
           {tabs.map((item) => (
             <LiProjects
               key={item.label}
+              aria-disabled="true"
               className={item === selectedTab ? "selected-project" : ""}
               onClick={() => setSelectedTab(item)}
             >
-              {`${item.icon} ${item.label}`}
+              <div>
+              {`${item.label}`}
+              </div>
+             
               {item === selectedTab ? (
                 <motion.div className="underline" layoutId="underline" />
               ) : null}
