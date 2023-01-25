@@ -36,7 +36,7 @@ export default function SelectedProjects() {
             ))}
             <Visit>
               <Link href="/projects">
-                For more details, visit Project page.
+                For more details, visit Projects page.
               </Link>
             </Visit>
           </UlProjects>
@@ -54,7 +54,7 @@ export default function SelectedProjects() {
             </motion.div>
           </AnimatePresence>
           <DescLink href={selectedTab.link} target="_blank" rel="noreferrer">
-            <span>Visit website</span>
+            <span>Project&apos;s website</span>
             <svg
               width="15"
               height="15"

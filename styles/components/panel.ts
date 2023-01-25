@@ -31,7 +31,10 @@ export const PanelInside = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+
+  a {
+    margin: 0 auto;
+  }
 
   @media (max-width: 35rem) {
     padding: 50px 20px;
@@ -62,19 +65,21 @@ export const Text = styled.p`
 `;
 
 export const PanelButton = styled.button`
-  background: ${({ theme }) => theme.actionButtonBackground};
-  padding: 0.65em 1.8em;
-  color: ${({ theme }) => theme.activeButtonColor};
-  border: 1px solid ${({ theme }) => theme.activeButtonColor};
-  border-radius: 8px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  line-height: 1;
-  font-size: 0.9rem;
-  letter-spacing: 0.6px;
-  font-weight: bold;
-  width: 135px;
+  margin-top: auto;
+  text-align: center;
+  font-size: 1rem;
 
-  @media (max-width: 25rem) {
-    width: 100%;
+  span {
+    display: block;
+  }
+
+  svg {
+    margin-left: 5px;
   }
 `;

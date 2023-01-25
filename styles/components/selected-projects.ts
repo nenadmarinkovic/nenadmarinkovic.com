@@ -41,13 +41,13 @@ export const WindowInside = styled.div`
 `;
 
 export const DescLink = styled.a`
-  position: relative;
-  bottom: -3px;
+  color: ${({ theme }) => theme.color};
   display: flex;
   align-items: center;
   justify-content: end;
   cursor: pointer;
   margin-top: auto;
+  font-size: 1rem;
 
   span {
     display: block;
