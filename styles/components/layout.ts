@@ -11,6 +11,7 @@ type Flex = {
 
 export const MainSection = styled.section`
   flex: 1;
+  padding-bottom: 5.5rem;
 `;
 
 export const ThemeLayout = styled.main<Menu>`
