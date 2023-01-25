@@ -16,7 +16,8 @@ export const lightTheme = {
   descColor: "#757575",
   activeButton: '#0070f5',
   activeButtonColor: '#fff',
-  labelColor: '#888'
+  labelColor: '#888',
+  unselectedColor: '#eaeaea'
 };
 
 export const darkTheme = {
@@ -38,5 +39,6 @@ export const darkTheme = {
   descColor: "#888",
   activeButton: '#000',
   activeButtonColor: '#fff',
-  labelColor: '#fff'
+  labelColor: '#fff',
+  unselectedColor: '#555'
 };

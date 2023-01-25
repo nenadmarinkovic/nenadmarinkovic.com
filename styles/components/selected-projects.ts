@@ -65,8 +65,8 @@ export const LiProjects = styled.button`
   font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
-  color: #eaeaea;
   cursor: pointer;
+  color: ${({ theme }) => theme.unselectedColor};
   background: none;
   border: none;
   padding: 0;
@@ -76,7 +76,7 @@ export const LiProjects = styled.button`
   }
 
   &.selected-project {
-    color: #000;
+    color: ${({ theme }) => theme.color};
   }
 
   @media (max-width: 35rem) {
