@@ -5,6 +5,10 @@ export const Window = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
+
+  @media (max-width: 38rem) {
+    flex-direction: column;
+  }
 `;
 
 export const Nav = styled.nav``;
@@ -22,6 +26,10 @@ export const WindowInside = styled.div`
   font-size: 1.15rem;
   line-height: 1.9;
   margin-top: 1rem;
+
+  @media (max-width: 38rem) {
+    width: 100%;
+  }
 `;
 
 export const LiProjects = styled.button`
@@ -35,8 +43,13 @@ export const LiProjects = styled.button`
   cursor: pointer;
   background: none;
   border: none;
+  padding: 0;
 
   &.selected-project {
     color: #000;
+  }
+
+  @media (max-width: 35rem) {
+    margin-top: 0
   }
 `;
