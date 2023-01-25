@@ -32,7 +32,6 @@ export const WindowInside = styled.div`
   width: 50%;
   color: #757575;
   font-size: 1.15rem;
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 
@@ -44,7 +43,6 @@ export const WindowInside = styled.div`
 export const DescLink = styled.a`
   display: flex;
   align-items: center;
-
   justify-content: end;
   cursor: pointer;
   margin-top: auto;
@@ -57,7 +55,6 @@ export const DescLink = styled.a`
 export const LiProjects = styled.button`
   display: flex;
   width: 100%;
-  margin-top: 1rem;
   font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
