@@ -87,11 +87,6 @@ export const GlobalStyle = createGlobalStyle`
       left: 0
     }
 
-    .spotify-link {
-     margin-right: -px;
-     margin-left: 5px;
-    }
-
     main {
       overflow: hidden;
       color: ${({ theme }) => theme.color};

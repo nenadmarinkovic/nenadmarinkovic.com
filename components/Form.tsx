@@ -8,10 +8,10 @@ import {
   FormInput,
   FormText,
   TextArea,
+  FormBottom,
   Button,
   Error,
 } from "../styles/components/form";
-import { Flex } from "../styles/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ContactForm() {
@@ -90,10 +90,9 @@ export default function ContactForm() {
             required
             value={inputs.message}
           />
-          <Flex align="center">
+          <FormBottom>
             <AnimatePresence mode="wait">
               {status.info.error && <Error>Error: {status.info.msg}</Error>}
-
               {!status.info.error && status.info.msg && (
                 <motion.div
                   initial={{ y: 10, opacity: 0 }}
@@ -154,7 +153,7 @@ export default function ContactForm() {
                 </svg>
               )}
             </Button>
-          </Flex>
+          </FormBottom>
         </FormContainer>
       </FormWrap>
     </>

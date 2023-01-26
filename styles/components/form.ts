@@ -87,6 +87,20 @@ export const Button = styled.button`
       transform: translateX(10px);
     }
   }
+
+  @media (max-width: 35rem) {
+    width: 100%;
+  }
+`;
+
+export const FormBottom = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 35rem) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Error = styled.div`
@@ -104,4 +118,9 @@ export const FormText = styled.p`
   padding: 0;
   font-size: 0.9rem;
   margin: 0 5rem 0 0;
+
+  @media (max-width: 35rem) {
+    margin-top: 1rem;
+    margin: 1rem 0;
+  }
 `;

@@ -56,7 +56,7 @@ export const darkTheme = {
   activeColor: "#fc6d26",
   descColor: "#6b7786",
   activeButton: "#000",
-  activeButtonColor: "#fff",
+  activeButtonColor: "#ccc",
   labelColor: "#fff",
   unselectedColor: "#6b7786",
 
@@ -64,7 +64,7 @@ export const darkTheme = {
   mdxBackground: "#000",
   mdxMainColor: "#c9d1d9",
   mdxKeyword: "#d73a49",
-  mdxTitle: "#6f42c1",
+  mdxTitle: "#af88f7",
   mdxAttr: "#79c0ff",
   mdxMeta: "#a5d6ff",
   mdxSymbol: "#79c0ff",
