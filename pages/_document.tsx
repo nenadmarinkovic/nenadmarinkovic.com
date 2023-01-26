@@ -65,6 +65,7 @@ class Doc extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
+          <link rel="stylesheet" href="node_modules/highlight.js/styles/felipec.css"/> 
         </Head>
         <body>
           <Main />

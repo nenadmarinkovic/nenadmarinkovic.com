@@ -13,6 +13,8 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
 import { NextPage } from "next";
+import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
 
 const components = {
   Head,
@@ -69,7 +71,7 @@ export const getStaticProps = async ({ params }: any) => {
   const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [],
-      rehypePlugins: [],
+      rehypePlugins: [rehypeHighlight, remarkGfm],
     },
     scope: data,
   });
