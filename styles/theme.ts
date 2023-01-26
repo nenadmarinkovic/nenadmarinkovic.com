@@ -19,7 +19,7 @@ export const lightTheme = {
   activeButton: "#0070f5",
   activeButtonColor: "#fff",
   labelColor: "#888",
-  unselectedColor: "#E6EBF1",
+  unselectedColor: "#C2CDDB",
 
   // Code theme
   mdxBackground: "#F6F8FA",
@@ -54,11 +54,11 @@ export const darkTheme = {
   actionButtonBackground: "transparent",
   footerBackground: "#000",
   activeColor: "#fc6d26",
-  descColor: "#888",
+  descColor: "#6b7786",
   activeButton: "#000",
   activeButtonColor: "#fff",
   labelColor: "#fff",
-  unselectedColor: "#555",
+  unselectedColor: "#6b7786",
 
   // Code theme
   mdxBackground: "#000",
