@@ -65,7 +65,7 @@ export const Text = styled.p`
   }
 `;
 
-export const PanelButton = styled.button`
+export const PanelButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
