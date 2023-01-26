@@ -52,7 +52,7 @@ export const TextArea = styled.textarea`
 export const Button = styled.button`
   background: ${({ theme }) => theme.grayButton};
   color: ${({ theme }) => theme.color};
-  padding: 0.65em 1em;
+  padding: 10px 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +63,9 @@ export const Button = styled.button`
   font-size: 0.9rem;
   letter-spacing: 0.6px;
   font-weight: 700;
+  width: 35%;
+  margin-left: auto;
+  height: fit-content;
 
   span {
     display: block;
@@ -95,7 +98,10 @@ export const Error = styled.div`
   font-size: 1rem;
 `;
 
-export const Message = styled.p`
-  color: ${({ theme }) => theme.color};
-  font-size: 1rem;
+export const FormText = styled.p`
+  color: ${({ theme }) => theme.colorLight};
+  margin-top: 1rem;
+  padding: 0;
+  font-size: 0.9rem;
+  margin: 0 5rem 0 0;
 `;

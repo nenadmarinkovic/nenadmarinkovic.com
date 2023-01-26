@@ -6,11 +6,13 @@ import {
   FormContainer,
   FormLabel,
   FormInput,
+  FormText,
   TextArea,
   Button,
   Error,
-  Message,
 } from "../styles/components/form";
+import { Flex } from "../styles/components/layout";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ContactForm() {
   const [status, setStatus] = useState({
@@ -60,10 +62,7 @@ export default function ContactForm() {
       data: inputs,
     })
       .then((response) => {
-        handleServerResponse(
-          true,
-          "Thank you, your message has been submitted."
-        );
+        handleServerResponse(true, "Your message has been submitted.");
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error);
@@ -91,50 +90,72 @@ export default function ContactForm() {
             required
             value={inputs.message}
           />
-          <Button type="submit" disabled={status.submitting}>
-            <span>
-              {!status.submitting
-                ? !status.submitted
-                  ? "Send"
-                  : "Sent"
-                : "Sending..."}
-            </span>
+          <Flex align="center">
+            <AnimatePresence mode="wait">
+              {status.info.error && <Error>Error: {status.info.msg}</Error>}
 
-            <svg
-              width="13"
-              height="11"
-              viewBox="0 0 13 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              {!status.info.error && status.info.msg && (
+                <motion.div
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <FormText>{status.info.msg}</FormText>
+                </motion.div>
+              )}
+            </AnimatePresence>
+            {!status.submitted && (
+              <FormText>
+                Thanks for your interest in contacting me. I&apos;ll give my
+                best to get back to you in less than 48 hours.
+              </FormText>
+            )}
+            <Button
+              type="submit"
+              disabled={status.submitting || status.submitted}
             >
-              <mask
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="13"
-                height="11"
-                fill="black"
-              >
-                <rect fill="white" width="13" height="11" />
-                <path d="M7.14645 1.14645C7.34171 0.951182 7.65829 0.951182 7.85355 1.14645L11.8536 5.14645C12.0488 5.34171 12.0488 5.65829 11.8536 5.85355L7.85355 9.8536C7.65829 10.0488 7.34171 10.0488 7.14645 9.8536C6.95118 9.6583 6.95118 9.3417 7.14645 9.1464L10.2929 6H1.5C1.22386 6 1 5.77614 1 5.5C1 5.22386 1.22386 5 1.5 5H10.2929L7.14645 1.85355C6.95118 1.65829 6.95118 1.34171 7.14645 1.14645Z" />
-              </mask>
-              <path
-                d="M7.14645 1.14645C7.34171 0.951182 7.65829 0.951182 7.85355 1.14645L11.8536 5.14645C12.0488 5.34171 12.0488 5.65829 11.8536 5.85355L7.85355 9.8536C7.65829 10.0488 7.34171 10.0488 7.14645 9.8536C6.95118 9.6583 6.95118 9.3417 7.14645 9.1464L10.2929 6H1.5C1.22386 6 1 5.77614 1 5.5C1 5.22386 1.22386 5 1.5 5H10.2929L7.14645 1.85355C6.95118 1.65829 6.95118 1.34171 7.14645 1.14645Z"
-                fill="black"
-              />
-              <path
-                d="M7.14645 1.14645C7.34171 0.951182 7.65829 0.951182 7.85355 1.14645L11.8536 5.14645C12.0488 5.34171 12.0488 5.65829 11.8536 5.85355L7.85355 9.8536C7.65829 10.0488 7.34171 10.0488 7.14645 9.8536C6.95118 9.6583 6.95118 9.3417 7.14645 9.1464L10.2929 6H1.5C1.22386 6 1 5.77614 1 5.5C1 5.22386 1.22386 5 1.5 5H10.2929L7.14645 1.85355C6.95118 1.65829 6.95118 1.34171 7.14645 1.14645Z"
-                stroke="black"
-                strokeWidth="0.5"
-                mask="url(#path-1-outside-1_408_3)"
-              />
-            </svg>
-          </Button>
+              <span>
+                {!status.submitting
+                  ? !status.submitted
+                    ? "Send"
+                    : "Sent"
+                  : "Sending"}
+              </span>
+              {!status.submitted && (
+                <svg
+                  width="13"
+                  height="11"
+                  viewBox="0 0 13 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="13"
+                    height="11"
+                    fill="black"
+                  >
+                    <rect fill="white" width="13" height="11" />
+                    <path d="M7.14645 1.14645C7.34171 0.951182 7.65829 0.951182 7.85355 1.14645L11.8536 5.14645C12.0488 5.34171 12.0488 5.65829 11.8536 5.85355L7.85355 9.8536C7.65829 10.0488 7.34171 10.0488 7.14645 9.8536C6.95118 9.6583 6.95118 9.3417 7.14645 9.1464L10.2929 6H1.5C1.22386 6 1 5.77614 1 5.5C1 5.22386 1.22386 5 1.5 5H10.2929L7.14645 1.85355C6.95118 1.65829 6.95118 1.34171 7.14645 1.14645Z" />
+                  </mask>
+                  <path
+                    d="M7.14645 1.14645C7.34171 0.951182 7.65829 0.951182 7.85355 1.14645L11.8536 5.14645C12.0488 5.34171 12.0488 5.65829 11.8536 5.85355L7.85355 9.8536C7.65829 10.0488 7.34171 10.0488 7.14645 9.8536C6.95118 9.6583 6.95118 9.3417 7.14645 9.1464L10.2929 6H1.5C1.22386 6 1 5.77614 1 5.5C1 5.22386 1.22386 5 1.5 5H10.2929L7.14645 1.85355C6.95118 1.65829 6.95118 1.34171 7.14645 1.14645Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M7.14645 1.14645C7.34171 0.951182 7.65829 0.951182 7.85355 1.14645L11.8536 5.14645C12.0488 5.34171 12.0488 5.65829 11.8536 5.85355L7.85355 9.8536C7.65829 10.0488 7.34171 10.0488 7.14645 9.8536C6.95118 9.6583 6.95118 9.3417 7.14645 9.1464L10.2929 6H1.5C1.22386 6 1 5.77614 1 5.5C1 5.22386 1.22386 5 1.5 5H10.2929L7.14645 1.85355C6.95118 1.65829 6.95118 1.34171 7.14645 1.14645Z"
+                    stroke="black"
+                    strokeWidth="0.5"
+                    mask="url(#path-1-outside-1_408_3)"
+                  />
+                </svg>
+              )}
+            </Button>
+          </Flex>
         </FormContainer>
-        {status.info.error && <Error>Error: {status.info.msg}</Error>}
-        {!status.info.error && status.info.msg && (
-          <Message>{status.info.msg}</Message>
-        )}
       </FormWrap>
     </>
   );

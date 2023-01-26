@@ -52,7 +52,6 @@ export const TagCategory = styled.button`
   font-family: monospace;
   padding: 5px 10px;
   color: #fff;
-  transition: .2s;
   border-radius: 30px;
   font-weight: bold;
   font-size: 0.75rem;
@@ -64,6 +63,7 @@ export const TagCategory = styled.button`
   }
 
   :hover {
+    transition: .2s;
     transform: scale(1.08);
   }
 `;
