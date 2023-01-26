@@ -18,7 +18,6 @@ export const FooterItem = styled.div`
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  padding: 0 10px;
   background: ${({ theme }) => theme.background};
   width: fit-content;
   min-height: 40px;
