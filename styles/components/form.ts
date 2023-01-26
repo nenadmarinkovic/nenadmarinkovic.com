@@ -70,12 +70,10 @@ export const Button = styled.button`
 
   svg {
     margin-left: 5px;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   :hover {
-  
-
     svg {
       transform: translateX(10px);
     }

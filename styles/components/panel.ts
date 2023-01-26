@@ -78,8 +78,7 @@ export const PanelButton = styled.button`
   border-radius: 15px;
   font-size: 0.9rem;
   font-weight: 700;
-  transition: .5s;
-
+  transition: 0.5s;
 
   span {
     display: block;
@@ -87,7 +86,7 @@ export const PanelButton = styled.button`
 
   svg {
     margin-left: 5px;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   :hover {

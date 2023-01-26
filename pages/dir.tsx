@@ -14,26 +14,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import { MainSection } from "../styles/components/layout";
-import { motion, AnimatePresence, Variants, delay } from "framer-motion";
-
-const itemsVariants: Variants = {
-  enter: {
-    transition: {
-      when: "afterChildren",
-      staggerChildren: 0.3,
-      duration: 0.3,
-      delay: 0.3,
-      delayChildren: 0.5,
-    },
-  },
-  exit: {
-    transition: {
-      when: "afterChildren",
-      staggerChildren: 0.3,
-      duration: 0.3,
-    },
-  },
-};
+import { motion, AnimatePresence } from "framer-motion";
 
 import {
   PostsWrap,
@@ -111,46 +92,37 @@ const DirectoryPage: NextPage = ({
               ))}
             </TagButtonsWrap>
             <AnimatePresence mode="wait">
-              <motion.div
-                variants={itemsVariants}
-                initial="exit"
-                animate="enter"
-                exit="exit"
-              >
-                <PostsWrap>
-                  {filteredPosts.map((post: any, index: any) => (
-                    <motion.div
-                      key={post.data.title}
-                      initial={{ y: 10, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: -10, opacity: 0 }}
-                      transition={{
-                        duration: 0.2,
- 
-                     
-                        delay: index * 0.15,
-                        delayChildren: 0.5,
-                      }}
-                    >
-                      <Post key={post.filePath}>
-                        <Link
-                          as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
-                          href={`/dir/[slug]`}
-                        >
-                          <Title>{post.data.title}</Title>
-                        </Link>
-                        <AdditionalInfo>
-                          Updated:
-                          <Date>
-                            {post.data.date} {post.data.category}
-                          </Date>
-                        </AdditionalInfo>
-                        <Description>{post.data.description}</Description>
-                      </Post>
-                    </motion.div>
-                  ))}
-                </PostsWrap>
-              </motion.div>
+              <PostsWrap>
+                {filteredPosts.map((post: any, index: any) => (
+                  <motion.div
+                    key={post.data.title}
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -10, opacity: 0 }}
+                    transition={{
+                      duration: 0.2,
+                      delay: index * 0.15,
+                      delayChildren: 0.5,
+                    }}
+                  >
+                    <Post key={post.filePath}>
+                      <Link
+                        as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                        href={`/dir/[slug]`}
+                      >
+                        <Title>{post.data.title}</Title>
+                      </Link>
+                      <AdditionalInfo>
+                        Updated:
+                        <Date>
+                          {post.data.date} {post.data.category}
+                        </Date>
+                      </AdditionalInfo>
+                      <Description>{post.data.description}</Description>
+                    </Post>
+                  </motion.div>
+                ))}
+              </PostsWrap>
             </AnimatePresence>
           </Container>
         </MainSection>

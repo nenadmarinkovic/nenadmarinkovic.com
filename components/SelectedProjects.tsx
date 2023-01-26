@@ -59,7 +59,6 @@ export default function SelectedProjects() {
             rel="noreferrer"
           >
             <span>{selectedTab.link}</span>
-           
           </DescLink>
         </WindowInside>
       </Window>

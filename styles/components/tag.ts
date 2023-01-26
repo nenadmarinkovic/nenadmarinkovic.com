@@ -57,7 +57,7 @@ export const TagCategory = styled.button`
   font-weight: bold;
   font-size: 0.75rem;
   font-weight: 700;
-  transition: .3s;
+  transition: 0.3s;
 
   &.default {
     background: ${({ theme }) => theme.grayButton};

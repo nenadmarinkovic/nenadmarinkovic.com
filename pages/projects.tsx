@@ -21,7 +21,6 @@ import Tag from "../components/Tag";
 import Banner from "../components/Banner";
 import Link from "next/link";
 import Footer from "../components/Footer";
-import Section from "../components/Section";
 import { MainSection } from "../styles/components/layout";
 
 const ProjectsPage: NextPage = ({

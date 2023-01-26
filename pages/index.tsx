@@ -3,10 +3,8 @@ import { useState } from "react";
 import { ThemeLayout, Container } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
-// import { TagWrap } from "../styles/components/tag";
 import { Theme, Spotify, MenuType } from "../lib/types";
 import Head from "next/head";
-// import Tag from "../components/Tag";
 import Section from "../components/Section";
 import Panel from "../components/Panel";
 import Card from "../components/Card";
@@ -94,12 +92,6 @@ const Homepage: NextPage<Props> = ({
               />
             </Cards>
             <Section title="Personal projects" />
-            {/* <TagWrap>
-              <Tag color="green" text="Node.js" />
-              <Tag color="blue" text="Typescript" />
-              <Tag color="orange" text="Firebase" />
-              <Tag color="black" text="Next.js" />
-            </TagWrap> */}
             <SelectedProjects />
             <Panel />
           </Container>

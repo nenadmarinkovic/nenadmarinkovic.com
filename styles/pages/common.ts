@@ -25,7 +25,7 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.div`
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   color: ${({ theme }) => theme.colorLight};
   font-size: 1.15rem;
   line-height: 1.9;
@@ -39,5 +39,5 @@ export const AdditionalInfo = styled.span`
 
 export const Date = styled.span`
   font-family: monospace;
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 `;
