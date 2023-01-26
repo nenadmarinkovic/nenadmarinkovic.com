@@ -35,7 +35,7 @@ export const FooterItem = styled.div`
 export const FooterItemText = styled.span`
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.colorLight};
+  color: ${({ theme }) => theme.color};
   line-height: 1.5;
   margin-left: 10px;
   font-size: 0.9rem;
@@ -43,7 +43,7 @@ export const FooterItemText = styled.span`
 
 export const BottomText = styled.p`
   text-align: center;
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.colorLight};
   padding-top: 1.5rem;
   font-size: 0.9rem;
   margin: 0;
