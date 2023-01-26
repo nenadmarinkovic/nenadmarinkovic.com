@@ -51,7 +51,7 @@ export const TextArea = styled.textarea`
 
 export const Button = styled.button`
   background: ${({ theme }) => theme.grayButton};
-  color: #000;
+  color: ${({ theme }) => theme.color};
   padding: 0.65em 1em;
   display: flex;
   align-items: center;
@@ -71,6 +71,12 @@ export const Button = styled.button`
   svg {
     margin-left: 5px;
     transition: 0.3s;
+    fill: ${({ theme }) => theme.color};
+
+    path {
+      fill: ${({ theme }) => theme.color};
+      stroke: ${({ theme }) => theme.color};
+    }
   }
 
   :hover {

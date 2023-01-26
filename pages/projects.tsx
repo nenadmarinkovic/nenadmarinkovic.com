@@ -22,6 +22,7 @@ import Banner from "../components/Banner";
 import Link from "next/link";
 import Footer from "../components/Footer";
 import { MainSection } from "../styles/components/layout";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectsPage: NextPage = ({
   spotifyData,
@@ -55,37 +56,51 @@ const ProjectsPage: NextPage = ({
                 below to filter by title.
               </Introduction>
             </Flex>
-            <PostsWrap>
-              {posts.map((post: any) => (
-                <Post key={post.filePath}>
-                  <Link
-                    as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
-                    href={`/projects/[slug]`}
+            <AnimatePresence mode="wait">
+              <PostsWrap>
+                {posts.map((post: any, index: any) => (
+                  <motion.div
+                    key={post.data.title}
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -10, opacity: 0 }}
+                    transition={{
+                      duration: 0.2,
+                      delay: index * 0.15,
+                      delayChildren: 0.5,
+                    }}
                   >
-                    <Title>{post.data.title}</Title>
-                  </Link>
-                  <AdditionalInfo>
-                    <a
-                      href={`https://${post.data.link}`}
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      {post.data.link}
-                    </a>
-                  </AdditionalInfo>
-                  <AdditionalInfo>
-                    Updated: <Date>{post.data.date}</Date>
-                  </AdditionalInfo>
-                  <Description>{post.data.description}</Description>
-                  <TagWrap>
-                    <Tag color="black" text="Next.js" />
-                    <Tag color="green" text="Node.js" />
-                    <Tag color="blue" text="Typescript" />
-                    <Tag color="orange" text="Firebase" />
-                  </TagWrap>
-                </Post>
-              ))}
-            </PostsWrap>
+                    <Post key={post.filePath}>
+                      <Link
+                        as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
+                        href={`/projects/[slug]`}
+                      >
+                        <Title>{post.data.title}</Title>
+                      </Link>
+                      <AdditionalInfo>
+                        <a
+                          href={`https://${post.data.link}`}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          {post.data.link}
+                        </a>
+                      </AdditionalInfo>
+                      <AdditionalInfo>
+                        Updated: <Date>{post.data.date}</Date>
+                      </AdditionalInfo>
+                      <Description>{post.data.description}</Description>
+                      <TagWrap>
+                        <Tag color="black" text="Next.js" />
+                        <Tag color="green" text="Node.js" />
+                        <Tag color="blue" text="Typescript" />
+                        <Tag color="orange" text="Firebase" />
+                      </TagWrap>
+                    </Post>
+                  </motion.div>
+                ))}
+              </PostsWrap>
+            </AnimatePresence>
           </Container>
         </MainSection>
         <Footer spotifyData={spotifyData} theme={theme} />

@@ -11,6 +11,10 @@ export const FooterWrap = styled.footer`
   @media (max-width: 48rem) {
     padding: 0 0 2.5rem 0;
   }
+
+  @media (max-width: 35rem) {
+    margin-top: 0;
+  }
 `;
 
 export const FooterItem = styled.div`

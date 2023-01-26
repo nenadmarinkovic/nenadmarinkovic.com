@@ -8,7 +8,7 @@ export const TagWrap = styled.div`
 export const TagButtonsWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 
   @media (max-width: 45rem) {
     margin-top: 1.5rem;
@@ -43,25 +43,24 @@ export const TagSpan = styled.span`
   }
 `;
 
-// Tag Button styles
 
 export const TagCategory = styled.button`
   padding: 0;
-  border: none;
+  border: ${({ theme }) => theme.tagBorder};
   cursor: pointer;
   margin: 0.75rem 0.75rem 0 0;
   font-family: monospace;
   padding: 5px 10px;
   color: #fff;
+  transition: .2s;
   border-radius: 30px;
   font-weight: bold;
   font-size: 0.75rem;
   font-weight: 700;
-  transition: 0.3s;
 
   &.default {
     background: ${({ theme }) => theme.grayButton};
-    color: #000;
+    color: ${({ theme }) => theme.color};
   }
 
   :hover {

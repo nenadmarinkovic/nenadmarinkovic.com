@@ -18,7 +18,7 @@ export const PanelWrap = styled.div`
 `;
 
 export const PanelInside = styled.div`
-  padding: 80px;
+  padding: 0 50px;
   content: "";
   border-radius: 8px;
   background: ${({ theme }) => theme.background};
@@ -31,13 +31,14 @@ export const PanelInside = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
 
   a {
     margin: 0 auto;
   }
 
   @media (max-width: 35rem) {
-    padding: 50px 20px;
+    padding: 0 20px;
   }
 `;
 
@@ -65,7 +66,6 @@ export const Text = styled.p`
 `;
 
 export const PanelButton = styled.button`
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,12 +73,12 @@ export const PanelButton = styled.button`
   margin-top: auto;
   text-align: center;
   background: ${({ theme }) => theme.grayButton};
-  color: #000;
+  color: ${({ theme }) => theme.color};
   padding: 7.5px 30px;
   border-radius: 15px;
   font-size: 0.9rem;
   font-weight: 700;
-  transition: 0.5s;
+  border: 1px solid ${({ theme }) => theme.activeButtonColor};
 
   span {
     display: block;
@@ -87,11 +87,15 @@ export const PanelButton = styled.button`
   svg {
     margin-left: 5px;
     transition: 0.3s;
+    fill: ${({ theme }) => theme.color};
+
+    path {
+      fill: ${({ theme }) => theme.color};
+      stroke: ${({ theme }) => theme.color};
+    }
   }
 
   :hover {
-    transform: scale(1.08);
-
     svg {
       transform: translateX(10px);
     }

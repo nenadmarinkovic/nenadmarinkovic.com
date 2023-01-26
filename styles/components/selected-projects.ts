@@ -27,6 +27,10 @@ export const Visit = styled.div`
   margin-top: auto;
   font-size: 0.9rem;
   color: ${({ theme }) => theme.color};
+
+  @media (max-width: 38rem) {
+    margin: 1.5rem 0;
+  }
 `;
 
 export const WindowInside = styled.div`
@@ -57,6 +61,12 @@ export const DescLink = styled.a`
 
   svg {
     margin-left: 5px;
+  }
+
+  @media (max-width: 38rem) {
+    margin-top: 1rem;
+    justify-content: start;
+    margin-left: unset;
   }
 `;
 

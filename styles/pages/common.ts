@@ -3,17 +3,12 @@ import styled from "styled-components";
 export const PostsWrap = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
 `;
 
 export const Post = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 3.5rem;
-
-  :first-child {
-    margin-top: 1.5rem;
-  }
 `;
 
 export const Title = styled.h2`
