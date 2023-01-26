@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PanelWrap = styled.div`
-  margin: 10.5rem 0;
+  margin: 7.5rem 0;
   padding: 200px;
   border-radius: 1rem;
   position: relative;
