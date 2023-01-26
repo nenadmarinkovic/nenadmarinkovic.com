@@ -30,7 +30,7 @@ export const Visit = styled.div`
 `;
 
 export const WindowInside = styled.div`
-  width: 50%;
+  width: 55%;
   color: #757575;
   font-size: 1.15rem;
   display: flex;
