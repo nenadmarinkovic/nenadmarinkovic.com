@@ -5,7 +5,7 @@ export const FooterWrap = styled.footer`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.color};
   color: #fff;
-  padding: 2.5rem;
+  padding: 1.5rem;
   margin-top: 10.5rem;
 
   @media (max-width: 48rem) {

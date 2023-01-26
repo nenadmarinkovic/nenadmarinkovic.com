@@ -57,7 +57,7 @@ const DirectoryPage: NextPage = ({
             </main>
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} />
+        <Footer spotifyData={spotifyData} theme={theme}  />
       </ThemeLayout>
     </>
   );

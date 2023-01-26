@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const PostsWrap = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 1.5rem;
 `;
 
 export const Post = styled.div`
@@ -25,7 +26,7 @@ export const Title = styled.h2`
 
 export const Description = styled.div`
   margin-top: .75rem;
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.colorLight};
   font-size: 1.15rem;
   line-height: 1.9;
 `;

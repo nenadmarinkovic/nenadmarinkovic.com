@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import { MainSection } from "../styles/components/layout";
+import { motion, AnimatePresence, delay } from "framer-motion";
 
 import {
   PostsWrap,
@@ -23,7 +24,6 @@ import {
   Date,
   Description,
 } from "../styles/pages/common";
-import Section from "../components/Section";
 
 const DirectoryPage: NextPage = ({
   posts,
@@ -91,23 +91,34 @@ const DirectoryPage: NextPage = ({
                 />
               ))}
             </TagButtonsWrap>
+
             <PostsWrap>
               {filteredPosts.map((post: any) => (
-                <Post key={post.filePath}>
-                  <Link
-                    as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
-                    href={`/dir/[slug]`}
-                  >
-                    <Title>{post.data.title}</Title>
-                  </Link>
-                  <AdditionalInfo>
-                    Updated:
-                    <Date>
-                      {post.data.date} {post.data.category}
-                    </Date>
-                  </AdditionalInfo>
-                  <Description>{post.data.description}</Description>
-                </Post>
+                <motion.div
+                  key={post.data.title}
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <AnimatePresence mode="wait">
+                    <Post key={post.filePath}>
+                      <Link
+                        as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                        href={`/dir/[slug]`}
+                      >
+                        <Title>{post.data.title}</Title>
+                      </Link>
+                      <AdditionalInfo>
+                        Updated:
+                        <Date>
+                          {post.data.date} {post.data.category}
+                        </Date>
+                      </AdditionalInfo>
+                      <Description>{post.data.description}</Description>
+                    </Post>
+                  </AnimatePresence>
+                </motion.div>
               ))}
             </PostsWrap>
           </Container>

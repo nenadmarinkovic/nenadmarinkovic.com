@@ -31,7 +31,7 @@ export const Visit = styled.div`
 
 export const WindowInside = styled.div`
   width: 55%;
-  color: #757575;
+  color: #6b7786;
   font-size: 1.15rem;
   display: flex;
   flex-direction: column;
