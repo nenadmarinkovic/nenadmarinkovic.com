@@ -36,7 +36,7 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
                 <Link
                   href="/projects"
                   className={
-                    router.pathname === "/projects" ? "active-link" : ""
+                    router.pathname.includes("/projects") ? "active-link" : ""
                   }
                 >
                   Projects
@@ -45,7 +45,9 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
               <HeaderLink>
                 <Link
                   href="/dir"
-                  className={router.pathname === "/dir" ? "active-link" : ""}
+                  className={
+                    router.pathname.includes("/dir") ? "active-link" : ""
+                  }
                 >
                   Directory
                 </Link>
@@ -54,7 +56,7 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: Props) {
                 <Link
                   href="/contact"
                   className={
-                    router.pathname === "/contact" ? "active-link" : ""
+                    router.pathname.includes("/contact") ? "active-link" : ""
                   }
                 >
                   Contact

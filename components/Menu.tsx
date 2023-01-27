@@ -19,7 +19,9 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
         <MenuLink>
           <Link
             href="/projects"
-            className={router.pathname === "/projects" ? "active-link" : ""}
+            className={
+              router.pathname.includes("/projects") ? "active-link" : ""
+            }
           >
             Projects
           </Link>
@@ -27,7 +29,7 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
         <MenuLink>
           <Link
             href="/dir"
-            className={router.pathname === "/dir" ? "active-link" : ""}
+            className={router.pathname.includes("/dir") ? "active-link" : ""}
           >
             Directory
           </Link>
@@ -35,7 +37,9 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
         <MenuLink>
           <Link
             href="/contact"
-            className={router.pathname === "/contact" ? "active-link" : ""}
+            className={
+              router.pathname.includes("/contact") ? "active-link" : ""
+            }
           >
             Contact
           </Link>
