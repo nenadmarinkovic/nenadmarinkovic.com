@@ -54,7 +54,7 @@ export const TagCategory = styled.button`
   color: #fff;
   border-radius: 30px;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
 
   &.default {
