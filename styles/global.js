@@ -122,6 +122,8 @@ export const GlobalStyle = createGlobalStyle`
       width: 7.5%;
       height: 10%;
       background: ${({ theme }) => theme.color};
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
 
     .one {
