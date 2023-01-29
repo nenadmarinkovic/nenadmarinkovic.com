@@ -114,7 +114,7 @@ const DirectoryPage: NextPage = ({
                       <AdditionalInfo>
                         Updated:
                         <Date>
-                          {post.data.date} {post.data.category}
+                          {post.data.date}
                         </Date>
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
