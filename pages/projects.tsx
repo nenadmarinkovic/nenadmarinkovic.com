@@ -6,7 +6,6 @@ import {
   Post,
   Title,
   AdditionalInfo,
-  Date,
   Description,
 } from "../styles/pages/common";
 import type { NextPage } from "next";
@@ -85,9 +84,6 @@ const ProjectsPage: NextPage = ({
                         >
                           {post.data.link}
                         </a>
-                      </AdditionalInfo>
-                      <AdditionalInfo>
-                        Updated: <Date>{post.data.date}</Date>
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
                       <TagWrap>
