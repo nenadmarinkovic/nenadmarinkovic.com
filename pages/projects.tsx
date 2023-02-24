@@ -51,8 +51,8 @@ const ProjectsPage: NextPage = ({
             <Banner name="Projects" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                I write mostly about web development and tech. Use the search
-                below to filter by title.
+                An overview of personal web projects (unrelated to the company I&aposm working at) that I’m currently working on, including technical details
+                and insights.
               </Introduction>
             </Flex>
             <AnimatePresence mode="wait">
@@ -105,9 +105,12 @@ const ProjectsPage: NextPage = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps({ text }: any) {
   let spotifyData = [];
+  let translation = "";
   let error = "";
+
+  console.log(text);
 
   const server = "http://localhost:3000/api/playing";
 
@@ -126,6 +129,23 @@ export async function getStaticProps() {
     error = e.toString();
   }
 
+  let resp = {};
+
+  try {
+    const respo = await fetch("https://api-free.deepl.com/v2/translate", {
+      body: `text=${text}&target_lang=DE`,
+      headers: {
+        Authorization: "DeepL-Auth-Key 9357b1ac-5d82-49fb-80d6-73e26fb6d04d:fx",
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      method: "POST",
+    });
+
+    resp = await respo.json();
+  } catch (e: any) {
+    error = e.toString();
+  }
+
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
     const { content, data } = matter(source);
@@ -134,10 +154,11 @@ export async function getStaticProps() {
       content,
       data,
       filePath,
+      resp,
     };
   });
 
-  return { props: { posts, spotifyData }, revalidate: 10 };
+  return { props: { posts, spotifyData, resp }, revalidate: 10 };
 }
 
 export default ProjectsPage;
