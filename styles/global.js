@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
       src: url("/fonts/CeraPro-Regular.woff2") format("woff2");
       font-weight: 400;
       font-style: normal;
-      font-display: optional;
+      font-display: swap;
     }
 
     @font-face {
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
       src: url("/fonts/CeraPro-Bold.woff2") format("woff2");
       font-weight: 700;
       font-style: normal;
-      font-display: optional;
+      font-display: swap;
     }
     
     @font-face {
@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 900;
       font-style: normal;
       font-style: normal;
-      font-display: optional;
+      font-display: swap;
     }
     
     * {
