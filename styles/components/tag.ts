@@ -22,7 +22,7 @@ export const TagSpan = styled.span`
   border-radius: 30px;
   font-weight: bold;
   margin: 0.5rem 0.5rem 0 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
 
   &.green {
@@ -53,7 +53,7 @@ export const TagCategory = styled.button`
   color: #fff;
   border-radius: 30px;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
 
   &.default {
