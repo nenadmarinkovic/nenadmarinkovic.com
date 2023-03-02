@@ -75,7 +75,7 @@ const Homepage: NextPage<Props> = ({
                 boxTitle="Development"
                 boxText1="Craft the look and functionality of the website or application."
                 boxText2="Ensure that it runs on all screens and without a single error."
-                boxText3="Deploy the product and make it available to the public."
+                boxText3="Deploy the product and make it available globally."
                 boxItemIcon="/icons/check.svg"
                 reversed={true}
               />
