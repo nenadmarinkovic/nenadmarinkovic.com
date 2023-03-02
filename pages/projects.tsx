@@ -105,7 +105,7 @@ const ProjectsPage: NextPage = ({
   );
 };
 
-export async function getStaticProps({ text }: any) {
+export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
@@ -126,23 +126,6 @@ export async function getStaticProps({ text }: any) {
     error = e.toString();
   }
 
-  let resp = {};
-
-  try {
-    const respo = await fetch("https://api-free.deepl.com/v2/translate", {
-      body: `text=${text}&target_lang=DE`,
-      headers: {
-        Authorization: "DeepL-Auth-Key 9357b1ac-5d82-49fb-80d6-73e26fb6d04d:fx",
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      method: "POST",
-    });
-
-    resp = await respo.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
-
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
     const { content, data } = matter(source);
@@ -151,11 +134,10 @@ export async function getStaticProps({ text }: any) {
       content,
       data,
       filePath,
-      resp,
     };
   });
 
-  return { props: { posts, spotifyData, resp }, revalidate: 10 };
+  return { props: { posts, spotifyData }, revalidate: 10 };
 }
 
 export default ProjectsPage;
