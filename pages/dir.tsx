@@ -93,31 +93,33 @@ const DirectoryPage: NextPage = ({
             <AnimatePresence mode="wait">
               <PostsWrap>
                 {filteredPosts.map((post: any, index: any) => (
-                  <motion.div
-                    key={post.data.title}
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -10, opacity: 0 }}
-                    transition={{
-                      duration: 0.2,
-                      delay: index * 0.15,
-                      delayChildren: 0.5,
-                    }}
-                  >
+                  <React.Fragment key={index}>
                     <Post key={post.filePath}>
-                      <Link
-                        as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
-                        href={`/dir/[slug]`}
+                      <motion.div
+                        key={post.index}
+                        initial={{ y: 10, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        exit={{ y: -10, opacity: 0 }}
+                        transition={{
+                          duration: 0.2,
+                          delay: index * 0.15,
+                          delayChildren: 0.5,
+                        }}
                       >
-                        <Title>{post.data.title}</Title>
-                      </Link>
-                      <AdditionalInfo>
-                        Updated:
-                        <Date>{post.data.date}</Date>
-                      </AdditionalInfo>
-                      <Description>{post.data.description}</Description>
+                        <Link
+                          as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                          href={`/dir/[slug]`}
+                        >
+                          <Title>{post.data.title}</Title>
+                        </Link>
+                        <AdditionalInfo>
+                          Updated:
+                          <Date>{post.data.date}</Date>
+                        </AdditionalInfo>
+                        <Description>{post.data.description}</Description>
+                      </motion.div>
                     </Post>
-                  </motion.div>
+                  </React.Fragment>
                 ))}
               </PostsWrap>
             </AnimatePresence>
