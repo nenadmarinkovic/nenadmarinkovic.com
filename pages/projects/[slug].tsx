@@ -35,7 +35,6 @@ const ProjectsPage: NextPage = ({
         <title> {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header
