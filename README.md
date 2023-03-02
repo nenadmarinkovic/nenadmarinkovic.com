@@ -1,4 +1,4 @@
-Personal website build with Next.js, TypeScript, styled-components.
+Personal website build with Next.js, TypeScript, and styled-components.
 
 ## Getting Started
 
