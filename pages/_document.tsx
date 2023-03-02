@@ -45,20 +45,20 @@ class Doc extends Document {
           <link href="/manifest.json" rel="manifest" />
           <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
           <link
-            rel="stylesheet preload"
+            rel="stylesheet preload prefetch"
             href="/fonts/CeraPro-Regular.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             as="style"
-            rel="stylesheet preload"
+            rel="stylesheet preload prefetch"
             href="/fonts/CeraPro-Bold.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
-            rel="stylesheet preload"
+            rel="stylesheet preload prefetch"
             href="/fonts/CeraPro-Black.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
