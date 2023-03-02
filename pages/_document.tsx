@@ -44,7 +44,7 @@ class Doc extends Document {
           <link href="/images/favicon.ico" rel="shortcut icon" />
           <link href="/manifest.json" rel="manifest" />
           <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
-          <link
+          {/* <link
             rel="stylesheet prefetch"
             href="/fonts/CeraPro-Regular.woff2"
             as="font"
@@ -64,7 +64,7 @@ class Doc extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
-          />
+          /> */}
         </Head>
         <body>
           <Main />
