@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
@@ -111,7 +111,7 @@ const DirectoryPage: NextPage = ({
             <AnimatePresence mode="wait">
               <PostsWrap>
                 {filteredPosts.map((post: any, index: any) => (
-                  <React.Fragment key={index}>
+                  <Fragment key={index}>
                     <Post key={post.filePath}>
                       <motion.div
                         key={post.index}
@@ -137,7 +137,7 @@ const DirectoryPage: NextPage = ({
                         <Description>{post.data.description}</Description>
                       </motion.div>
                     </Post>
-                  </React.Fragment>
+                  </Fragment>
                 ))}
               </PostsWrap>
             </AnimatePresence>
