@@ -68,7 +68,7 @@ function Footer({ spotifyData, theme }: any) {
                 target="_blank"
                 rel="noreferrer"
               >
-                This website is open-sourced.
+                This website is open-source.
               </a>
             </FooterItemText>
           </FooterItem>
