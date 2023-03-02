@@ -74,10 +74,10 @@ const DirectoryPage: NextPage = ({
             <Banner name="Directory" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                Personal web directory for notes, bookmarks, photos, audio,
-                video, books, tools and technologies. All content is{" "}
-                <a className="a-link">open-source</a> and free to distribute and
-                use.
+                Web directory for notes, bookmarks, photos, snippets,
+                AI-generated texts, and all the things I’m interested in. All
+                content is <a className="a-link">open-source</a> and free to
+                distribute and use.
               </Introduction>
             </Flex>
             <TagButtonsWrap>
@@ -113,9 +113,7 @@ const DirectoryPage: NextPage = ({
                       </Link>
                       <AdditionalInfo>
                         Updated:
-                        <Date>
-                          {post.data.date}
-                        </Date>
+                        <Date>{post.data.date}</Date>
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
                     </Post>
