@@ -17,7 +17,7 @@ export const TagButtonsWrap = styled.div`
 
 export const TagSpan = styled.span`
   font-family: monospace;
-  padding: 5px 10px;
+  padding: 5px 15px;
   color: white;
   border-radius: 30px;
   font-weight: bold;
@@ -43,14 +43,13 @@ export const TagSpan = styled.span`
   }
 `;
 
-
 export const TagCategory = styled.button`
   padding: 0;
   border: ${({ theme }) => theme.tagBorder};
   cursor: pointer;
   margin: 0.75rem 0.75rem 0 0;
   font-family: monospace;
-  padding: 5px 10px;
+  padding: 5px 15px;
   color: #fff;
   border-radius: 30px;
   font-weight: bold;
@@ -63,7 +62,7 @@ export const TagCategory = styled.button`
   }
 
   :hover {
-    transition: .2s;
+    transition: 0.2s;
     transform: scale(1.08);
   }
 `;

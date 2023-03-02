@@ -33,8 +33,13 @@ const DirectoryPage: NextPage = ({
   const [openMenu, setOpenMenu] = useState(false);
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [uniqueCategories, setUniqueCategories] = useState([]);
+  const [active, setActive] = useState("");
 
   const filterCategory = (category: string) => {
+    if (category === "All") {
+      return setFilteredPosts(posts);
+    }
+
     const filteredPosts = posts.filter(
       (post: any) => post.data.category === category
     );
@@ -51,6 +56,7 @@ const DirectoryPage: NextPage = ({
   };
 
   useEffect(() => {
+    setActive("All");
     uniqueCategoriesOnLoad(posts);
   }, [posts]);
 
@@ -81,11 +87,23 @@ const DirectoryPage: NextPage = ({
               </Introduction>
             </Flex>
             <TagButtonsWrap>
+              <TagButton
+                onClick={() => {
+                  filterCategory("All"), setActive("All");
+                }}
+                color="default"
+                text="All"
+                active={active}
+              />
               {uniqueCategories.map((category: any, index: any) => (
                 <TagButton
                   key={index}
-                  onClick={() => filterCategory(category)}
+                  onClick={() => {
+                    filterCategory(category);
+                    setActive(category);
+                  }}
                   color="default"
+                  active={active}
                   text={category}
                 />
               ))}

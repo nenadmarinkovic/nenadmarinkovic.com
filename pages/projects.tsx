@@ -107,10 +107,7 @@ const ProjectsPage: NextPage = ({
 
 export async function getStaticProps({ text }: any) {
   let spotifyData = [];
-  let translation = "";
   let error = "";
-
-  console.log(text);
 
   const server = "http://localhost:3000/api/playing";
 

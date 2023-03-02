@@ -82,6 +82,12 @@ export const GlobalStyle = createGlobalStyle`
       overflow: hidden !important;
     }
 
+    .active-button {
+      color: ${({ theme }) => theme.activeTagColor} !important;
+      background: ${({ theme }) => theme.activeTagBackground} !important;
+      border: ${({ theme }) => theme.activeTagBorder} !important;
+    }
+
     .spotify-image {
       position: absolute;
       left: 0
