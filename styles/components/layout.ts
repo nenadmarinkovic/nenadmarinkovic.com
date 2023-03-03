@@ -50,8 +50,8 @@ export const Flex = styled.div<Flex>`
 `;
 
 export const MDXContent = styled.div`
-  h3 {
-    margin: 3rem 0 0rem 0;
+  h2 {
+    margin: 3.5rem 0 0rem 0;
   }
 
   p {

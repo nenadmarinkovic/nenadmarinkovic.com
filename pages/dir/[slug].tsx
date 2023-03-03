@@ -71,6 +71,26 @@ export const getStaticProps = async ({ params }: any) => {
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
 
+  let spotifyData = [];
+  let error = "";
+
+  const server = "http://localhost:3000/api/playing";
+
+  try {
+    const res = await fetch(server, {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+        Accept: "application/json; charset=UTF-8",
+      },
+    });
+
+    spotifyData = await res.json();
+  } catch (e: any) {
+    error = e.toString();
+  }
+
   const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [],
@@ -81,6 +101,8 @@ export const getStaticProps = async ({ params }: any) => {
 
   return {
     props: {
+      spotifyData: spotifyData,
+      revalidate: 10,
       source: mdxSource,
       frontMatter: data,
     },
