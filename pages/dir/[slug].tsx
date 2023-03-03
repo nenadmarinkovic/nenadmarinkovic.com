@@ -6,7 +6,11 @@ import Header from "../../components/Header";
 import { useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { MainSection, ThemeLayout } from "../../styles/components/layout";
+import {
+  MainSection,
+  ThemeLayout,
+  MDXContent,
+} from "../../styles/components/layout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdx-directory";
 import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
@@ -51,9 +55,9 @@ const DirectoryPage: NextPage = ({
             <Introduction className="full-width">
               {frontMatter.description}
             </Introduction>
-            <main>
+            <MDXContent>
               <MDXRemote {...source} components={components} />
-            </main>
+            </MDXContent>
           </Container>
         </MainSection>
         <Footer spotifyData={spotifyData} theme={theme} />

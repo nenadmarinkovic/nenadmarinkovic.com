@@ -48,3 +48,19 @@ export const Flex = styled.div<Flex>`
     flex-direction: column;
   }
 `;
+
+export const MDXContent = styled.div`
+  h3 {
+    margin: 3rem 0 0rem 0;
+  }
+
+  p {
+    margin: 0.5rem 0 0 0;
+  }
+
+  a {
+    color: ${({ theme }) => theme.color};
+    font-size: 0.9rem;
+    line-height: 1.9;
+  }
+`;

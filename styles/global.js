@@ -76,6 +76,7 @@ export const GlobalStyle = createGlobalStyle`
     
     p {
       line-height: 1.8;
+      font-size: 1.1rem;
     }
     
     .body-open {
