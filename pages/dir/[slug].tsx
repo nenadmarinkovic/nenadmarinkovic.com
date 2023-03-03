@@ -7,7 +7,7 @@ import { useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { MainSection, ThemeLayout } from "../../styles/components/layout";
-import { postFilePaths, POSTS_PATH } from "../../utils/mdx-posts";
+import { postFilePaths, POSTS_PATH } from "../../utils/mdx-directory";
 import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";

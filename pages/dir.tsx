@@ -7,7 +7,7 @@ import Link from "next/link";
 import type { NextPage } from "next";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
-import { postFilePaths, POSTS_PATH } from "../utils/mdx-posts";
+import { postFilePaths, POSTS_PATH } from "../utils/mdx-directory";
 import TagButton from "../components/TagButton";
 import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
@@ -81,9 +81,16 @@ const DirectoryPage: NextPage = ({
             <Flex align="top" justify="space-between">
               <Introduction>
                 Web directory for notes, bookmarks, photos, snippets,
-                AI-generated texts, and all the things I’m interested in. All
-                content is <a className="a-link">open-source</a> and free to
-                distribute and use.
+                AI-generated texts, and the things I’m interested in. Content is{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/nenadmarinkovic/nenadmarinkovic-new/tree/main/directory"
+                  className="a-link"
+                >
+                  open-source
+                </a>{" "}
+                and free to distribute and use.
               </Introduction>
             </Flex>
             <TagButtonsWrap>
