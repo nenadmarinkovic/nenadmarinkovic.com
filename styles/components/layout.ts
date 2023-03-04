@@ -59,7 +59,8 @@ export const MDXContent = styled.div`
   }
 
   a {
-    color: ${({ theme }) => theme.color};
+    color: ${({ theme }) => theme.activeColor};
+    font-weight: bold;
     font-size: 0.9rem;
     line-height: 1.9;
   }
