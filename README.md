@@ -27,7 +27,7 @@ To learn more about styled-components, visit:
 
 - [styled-components Documentation](https://styled-components.com/docs)
 
-To learn more about MDX, visit:
+To learn more about MDX, go to:
 
 - [MDX Documentation](https://mdxjs.com/docs/)
 
