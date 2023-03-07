@@ -27,6 +27,10 @@ To learn more about styled-components, visit:
 
 - [styled-components Documentation](https://styled-components.com/docs)
 
+To learn more about MDX, visit:
+
+- [MDX Documentation](https://mdxjs.com/docs/)
+
 ## Cloning / Forking
 
 Please remove all of my personal information (name, links, projects, etc.).
