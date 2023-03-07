@@ -35,6 +35,8 @@ const DirectoryPage: NextPage = ({
   const [uniqueCategories, setUniqueCategories] = useState([]);
   const [active, setActive] = useState("");
 
+  const sortedCategories = uniqueCategories.sort((a,b) => (a > b) ? 1 : ((b > a) ? -1 : 0))
+
   const filterCategory = (category: string) => {
     if (category === "All") {
       return setFilteredPosts(posts);
@@ -102,7 +104,7 @@ const DirectoryPage: NextPage = ({
                 text="All"
                 active={active}
               />
-              {uniqueCategories.map((category: any, index: any) => (
+              {sortedCategories.map((category: any, index: any) => (
                 <TagButton
                   key={index}
                   onClick={() => {
