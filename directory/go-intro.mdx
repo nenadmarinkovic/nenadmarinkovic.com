@@ -5,5 +5,159 @@ date: 07.03.2023
 category: Go
 ---
 
-## Core language concepts
+## Variables and Data Types
 
+In Go, variables are declared using the var keyword. Go supports several data types such as integers, floats, strings, and booleans. Here is an example:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var a int = 10
+  var b float64 = 3.14
+  var c string = "hello"
+  var d bool = true
+
+  fmt.Println(a, b, c, d)
+}
+```
+
+Output:
+
+```go
+10 3.14 hello true
+```
+
+## Control Structures
+
+Go supports control structures such as if-else statements, for loops, and switch statements. Here is an example:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  x := 10
+
+  if x < 5 {
+    fmt.Println("x is less than 5")
+  } else if x > 5 {
+    fmt.Println("x is greater than 5")
+  } else {
+    fmt.Println("x is equal to 5")
+  }
+
+  for i := 0; i < 5; i++ {
+    fmt.Println(i)
+  }
+
+  switch x {
+    case 1:
+      fmt.Println("x is 1")
+    case 5:
+      fmt.Println("x is 5")
+    default:
+      fmt.Println("x is not 1 or 5")
+  }
+}
+```
+
+Output:
+
+```go
+x is greater than 5
+0
+1
+2
+3
+4
+x is not 1 or 5
+```
+
+## Functions
+
+In Go, functions are declared using the func keyword. Go supports multiple return values and function parameters. Here is an example:
+
+```go
+package main
+
+import "fmt"
+
+func add(a, b int) int {
+  return a + b
+}
+
+func swap(a, b string) (string, string) {
+  return b, a
+}
+
+func main() {
+  fmt.Println(add(5, 10))
+
+  x, y := "hello", "world"
+  x, y = swap(x, y)
+  fmt.Println(x, y)
+}
+```
+
+Output:
+
+```go
+15
+world hello
+```
+
+## Structs
+
+Go supports structs, which are collections of fields that can be of any type. Structs are similar to classes in other object-oriented programming languages. Here is an example:
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+  name string
+  age int
+}
+
+func main() {
+  p := Person{name: "John", age: 30}
+  fmt.Println(p.name, p.age)
+}
+```
+
+Output:
+
+```go
+John 30
+```
+
+## Pointers
+
+Go supports pointers, which are variables that hold the memory address of another variable. Go also supports the & and * operators for working with pointers. Here is an example:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  x := 10
+  y := &x
+  fmt.Println(*y)
+
+  *y = 20
+  fmt.Println(x)
+}
+```
+
+Output:
+
+```go
+10
+20
+```
