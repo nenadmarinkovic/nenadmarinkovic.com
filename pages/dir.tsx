@@ -35,7 +35,9 @@ const DirectoryPage: NextPage = ({
   const [uniqueCategories, setUniqueCategories] = useState([]);
   const [active, setActive] = useState("");
 
-  const sortedCategories = uniqueCategories.sort((a,b) => (a > b) ? 1 : ((b > a) ? -1 : 0))
+  const sortedCategories = uniqueCategories.sort((a, b) =>
+    a > b ? 1 : b > a ? -1 : 0
+  );
 
   const filterCategory = (category: string) => {
     if (category === "All") {

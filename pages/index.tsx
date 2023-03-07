@@ -21,7 +21,6 @@ const Homepage: NextPage<Props> = ({
   theme,
   toggleTheme,
 }: Props) => {
-  const [company] = useState("https://dccs.at");
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
