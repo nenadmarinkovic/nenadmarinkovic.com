@@ -1,0 +1,62 @@
+---
+title: Basics of Goroutines
+description: A goroutine is a lightweight thread of execution that is managed by the Go runtime.
+date: 08.03.2023
+category: Go
+---
+
+Goroutines are created using the go keyword and are similar to threads in other programming languages, but with a much lower overhead. Goroutines are multiplexed onto a smaller number of OS threads, which means that they can be created and destroyed more quickly and consume fewer resources.
+
+Here is an example of a simple goroutine:
+
+```go
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+func sayHello() {
+    for i := 0; i < 5; i++ {
+        fmt.Println("Hello")
+        time.Sleep(time.Millisecond * 500)
+    }
+}
+
+func main() {
+    go sayHello()
+    time.Sleep(time.Second * 3)
+}
+```
+
+In this example, the sayHello() function is executed in a separate goroutine using the go keyword. The main function sleeps for 3 seconds to allow the goroutine to execute.
+
+### Channels
+
+Channels are used to communicate and synchronize between goroutines. A channel is a typed conduit through which you can send and receive values with the channel operator. Channels can be buffered or unbuffered. Buffered channels have a capacity and allow sending values without blocking until the channel is full.
+
+Here is an example of a channel that is used to communicate between two goroutines:
+
+```go
+package main
+
+import "fmt"
+
+func send(c chan string) {
+    c <- "Hello"
+}
+
+func main() {
+    c := make(chan string)
+    go send(c)
+    msg := <-c
+    fmt.Println(msg)
+}
+```
+
+In this example, the send() function sends a string value to the channel using the channel operator. The main function receives the value from the channel using the same operator.
+
+### Conclusion
+
+Concurrency is an important feature of modern programming languages, and Go provides powerful primitives for writing concurrent programs. Goroutines and channels allow for efficient and safe communication between different parts of a program, enabling developers to build scalable and responsive systems.
