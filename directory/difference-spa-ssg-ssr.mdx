@@ -1,0 +1,92 @@
+---
+title: Difference Between SPAs, SSGs, and SSR
+description: Difference between Single Page Applications, Static Site Generators, and Server-side Rendered Applications.
+date: 10.03.2023
+category: React
+---
+
+## Single-page applications (SPAs):
+
+Single-page applications (SPAs) are web applications that dynamically update the current web page without reloading the entire page. This is achieved by loading the application's code into the browser and then making requests to the server for data. The server responds with JSON data, which is then used to update the DOM dynamically. Here's an example of an SPA using the React framework:
+
+```jsx
+import React, { useState } from 'react';
+
+function App() {
+  const [counter, setCounter] = useState(0);
+
+  return (
+    <div>
+      <h1>Counter: {counter}</h1>
+      <button onClick={() => setCounter(counter + 1)}>Increment</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+In this example, the useState hook from React is used to manage the state of the counter variable. The setCounter function is called when the button is clicked to increment the counter, and the DOM is updated accordingly.
+
+## Static Site Generators (SSGs):
+
+Static Site Generators (SSGs) are tools that generate static HTML, CSS, and JavaScript files that can be served by a web server. These tools typically use templates and data files to generate the HTML pages, which can then be optimized for performance by preloading assets and caching. Here's an example of an SSG using the Gatsby framework:
+
+```jsx
+import React from 'react';
+import { graphql } from 'gatsby';
+
+export default function BlogPost({ data }) {
+  const post = data.markdownRemark;
+
+  return (
+    <div>
+      <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    </div>
+  );
+}
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`;
+```
+
+In this example, Gatsby is used to generate a blog post page from Markdown files. The graphql function is used to query for the data, which is then passed as props to the BlogPost component. The dangerouslySetInnerHTML prop is used to render the HTML content of the blog post.
+
+## Server-Side Rendering (SSR):
+
+Server-Side Rendering (SSR) is a technique that generates HTML on the server and sends it to the client as a complete HTML document. This approach can improve the initial load time of the application, as the client only needs to download the HTML, CSS, and JavaScript once. Here's an example of an SSR using the Next.js framework:
+
+```jsx
+import React from 'react';
+
+export default function Home({ data }) {
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
+    </div>
+  );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch('https://api.example.com/data');
+  const data = await res.json();
+
+  return {
+    props: {
+      data
+    }
+  };
+}
+```
+
+In this example, Next.js is used to fetch data from an external API on the server-side using the getServerSideProps function. The data object returned from the API is passed as props to the Home component, which is then rendered on the server and sent to the client as a complete HTML document.
