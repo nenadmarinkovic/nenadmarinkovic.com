@@ -1,4 +1,4 @@
-Personal portfolio website built with Next.js, TypeScript, styled-components, MDX.
+Personal portfolio website built with Next.js, TypeScript, styled-components, MDX. 🚀
 
 ## Getting Started
 
