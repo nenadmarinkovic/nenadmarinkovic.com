@@ -68,8 +68,8 @@ const Homepage: NextPage<Props> = ({
                 reversed={false}
               />
               <Card
-                title="Cutting-edge web solutions"
-                description="From marketing websites and content-management systems to web applications and dashboards. Developed with confidence for engagement and scale."
+                title="Cutting-edge development and testing"
+                description="From marketing websites and content-management systems to web applications and dashboards. Developed and tested with confidence for engagement and scale."
                 boxColor="blue"
                 boxTitle="Development"
                 boxText1="Craft the look and functionality of the website or application."
@@ -79,10 +79,10 @@ const Homepage: NextPage<Props> = ({
                 reversed={true}
               />
               <Card
-                title="Performance monitoring and optimization"
+                title="From initial idea to global reach"
                 description="Constant improvements in terms of speed, responsiveness, SEO, and accessibility helps your website run smootly and ensures positive user experience."
                 boxColor="green"
-                boxTitle="Maintenance"
+                boxTitle="Release"
                 boxText1="Check for parts that can be improved or refactored."
                 boxText2="Update it with new requirements and bussiness needs."
                 boxText3="Make sure it stay in good shape and available to everyone."
