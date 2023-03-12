@@ -80,12 +80,12 @@ const Homepage: NextPage<Props> = ({
               />
               <Card
                 title="From initial idea to global reach"
-                description="Constant improvements in terms of speed, responsiveness, SEO, and accessibility helps your website run smootly and ensures positive user experience."
+                description="With continuous monitoring and maintenance, and regular updates to your website's content and features, you'll keep your audience engaged and coming back for more."
                 boxColor="green"
                 boxTitle="Release"
-                boxText1="Check for parts that can be improved or refactored."
-                boxText2="Update it with new requirements and bussiness needs."
-                boxText3="Make sure it stay in good shape and available to everyone."
+                boxText1="Deployment to a production environment."
+                boxText2="Setting up analytics to track performance and user behavior."
+                boxText3="Continuous monitoring and maintainence."
                 boxItemIcon="/icons/check.svg"
                 reversed={false}
               />
