@@ -1,0 +1,43 @@
+---
+title: Go pointers
+description: In Go, a pointer is a variable that stores the memory address of another variable. When you have a pointer to a variable, you can indirectly access the value of the variable through the pointer.
+date: 17.03.2023
+category: Go
+---
+
+Here's an example of how to declare a pointer variable and assign it the address of another variable:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    x := 42
+    var p *int   // declare a pointer to an int
+    p = &x       // assign the address of x to p
+    fmt.Println(*p) // print the value of x indirectly through p
+}
+```
+
+In this example, x is an integer variable with the value of 42. We then declare a pointer variable p with the type _int, which means it's a pointer to an integer. We then assign the address of x to p using the & operator. Finally, we print the value of x indirectly through p using the _ operator.
+
+Another example of using pointers is when you want to modify the value of a variable inside a function. By passing a pointer to the variable as an argument to the function, you can modify the value of the variable indirectly through the pointer. Here's an example:
+
+```go
+package main
+
+import "fmt"
+
+func modify(x *int) {
+    *x = 42
+}
+
+func main() {
+    x := 0
+    modify(&x)
+    fmt.Println(x) // prints 42
+}
+```
+
+In this example, we define a function modify that takes a pointer to an integer as its argument. Inside the function, we modify the value of the integer indirectly through the pointer by assigning it the value of 42. In the main function, we declare an integer variable x with the value of 0, and then pass its address to the modify function using the & operator. After the function call, x now has the value of 42.
