@@ -55,7 +55,7 @@ export const MDXContent = styled.div`
   }
 
   p {
-    margin: 0.5rem 0 0 0;
+    margin: 0.75rem 0 0 0;
   }
 
   a {
