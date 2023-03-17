@@ -71,7 +71,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     li {
-      line-height: 1.8
+      line-height: 1.8;
+      list-style: none;
     }
     
     p {
