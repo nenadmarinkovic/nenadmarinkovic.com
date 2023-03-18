@@ -79,6 +79,10 @@ export const GlobalStyle = createGlobalStyle`
       line-height: 1.8;
       font-size: 1.1rem;
     }
+
+    .contains-task-list {
+      margin-top: 0.75rem;
+    }
     
     .body-open {
       overflow: hidden !important;
