@@ -108,6 +108,12 @@ export const GlobalStyle = createGlobalStyle`
       cursor: pointer;
     }
 
+    details {
+      a {
+        font-size: 1rem !important;
+      }
+    }
+
     section {
       padding-top: 2.5rem;
     }
