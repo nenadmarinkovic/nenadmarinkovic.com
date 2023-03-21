@@ -79,10 +79,10 @@ const Homepage: NextPage<Props> = ({
                 reversed={true}
               />
               <Card
-                title="From initial idea to global reach"
+                title="From initial idea to global deployment"
                 description="With continuous monitoring and maintenance, and regular updates to your website's content and features, you'll keep your audience engaged and coming back for more."
                 boxColor="green"
-                boxTitle="Release"
+                boxTitle="Deployment"
                 boxText1="Deployment to a production environment."
                 boxText2="Setting up analytics to track performance and user behavior."
                 boxText3="Continuous monitoring and maintainence."
