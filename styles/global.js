@@ -65,9 +65,13 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: bold;
     }
     
-    ul {
+    ul, ol {
       padding: 0;
       margin: 0;
+    }
+
+    ol {
+      margin: .75rem 1rem;
     }
 
     li {
@@ -106,6 +110,19 @@ export const GlobalStyle = createGlobalStyle`
 
     summary {
       cursor: pointer;
+    }
+
+    .bookmark-link {
+      margin-left: 1rem;
+    
+      :before {
+        content: "–";
+        display: inline-block;
+        color: var(--accents-4);
+        position: absolute;
+        margin-left: -15px;
+        color: ${({ theme }) => theme.color};
+      }
     }
 
     details {
