@@ -68,7 +68,7 @@ const Homepage: NextPage<Props> = ({
                 reversed={false}
               />
               <Card
-                title="Cutting-edge development and testing"
+                title="Cutting-edge web development"
                 description="From marketing websites and content-management systems to web applications and dashboards. Developed and tested with confidence for engagement and scale."
                 boxColor="blue"
                 boxTitle="Development"
