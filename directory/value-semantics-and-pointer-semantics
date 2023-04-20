@@ -1,1 +1,42 @@
+---
+title: Value semantics and pointer semantics in Go
+description: In Go, value semantics means creating a copy of the entire value when passing it to a function or assigning it to a new variable, while pointer semantics means creating a reference to the value, allowing modifications to affect the original value.
+date: 20.04.2023
+category: Go
+---
 
+In Go, value semantics and pointer semantics refer to different ways of handling data structures.
+
+Value semantics means that when you pass a value to a function or assign it to a new variable, a copy of the entire value is created. Any changes made to the value in the function or new variable do not affect the original value. This is similar to how primitive data types like integers and strings work in many programming languages.
+
+Pointer semantics, on the other hand, means that when you pass a value to a function or assign it to a new variable, only a reference to the value is created. Any changes made to the value in the function or new variable will affect the original value. This is similar to how objects work in many object-oriented programming languages.
+
+In Go, all basic data types, such as integers, floats, and strings, are passed by value by default. However, Go also provides pointers as a way to pass data structures by reference, allowing you to modify the original value.
+
+For example, consider the following code:
+
+```go
+func updateValue(x int) {
+    x = x + 1
+}
+
+func updatePointer(x *int) {
+    *x = *x + 1
+}
+
+func main() {
+    a := 5
+    updateValue(a)
+    fmt.Println(a) // Output: 5
+
+    b := 5
+    updatePointer(&b)
+    fmt.Println(b) // Output: 6
+}
+```
+
+In the updateValue function, the x parameter is passed by value, so any changes made to x do not affect the original value of a in the main function.
+
+In the updatePointer function, the x parameter is a pointer to an integer, so any changes made to *x will affect the original value of b in the main function.
+
+Therefore, the choice between value semantics and pointer semantics in Go depends on the specific use case and desired behavior of the data structure being used.
