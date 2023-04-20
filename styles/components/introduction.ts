@@ -11,6 +11,10 @@ export const Introduction = styled.p`
     width: 100%;
   }
 
+  &.with-margins {
+    margin: 1rem 0 3rem 0;
+  }
+
   @media (max-width: 48rem) {
     margin: 0px 1rem 0 0;
     width: 100%;

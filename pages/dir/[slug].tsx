@@ -19,6 +19,7 @@ import { Introduction } from "../../styles/components/introduction";
 import { NextPage } from "next";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
+import { Date } from "../../styles/pages/common";
 
 const components = {
   Head,
@@ -52,7 +53,9 @@ const DirectoryPage: NextPage = ({
         <MainSection>
           <Container>
             <Banner name={frontMatter.title} />
-            <Introduction className="full-width">
+            <span>Updated:</span>
+            <Date>{frontMatter.date}</Date>
+            <Introduction className="full-width with-margins">
               {frontMatter.description}
             </Introduction>
             <MDXContent>
