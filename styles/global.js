@@ -53,6 +53,10 @@ export const GlobalStyle = createGlobalStyle`
     a {
       text-decoration: none;
       color: inherit;
+      
+      :active {
+        transform: scale(95%);
+      }
     }
 
     .a-link {
