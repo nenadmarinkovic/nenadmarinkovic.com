@@ -34,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
       height: 100%;
+      min-height: 100vh;
       background: ${({ theme }) => theme.background};
       padding: 0;
       margin: 0;
@@ -41,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       scrollbar-gutter: stable;
       -moz-osx-font-smoothing: grayscale;
-      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
 
     input,
