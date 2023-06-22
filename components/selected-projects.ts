@@ -9,21 +9,21 @@ export const all = [
     label: "Dash Directory",
     link: "dash.directory",
     description:
-      "Constant improvements in terms of speed, responsiveness, SEO, and accessibility helps your website run smootly and ensures positive user experience. Developed with confidence for engagement and scale. Developed with confidence for engagement and scale.",
+      "Dash Directory is a platform for task and event management, as well as bookmark organization. With its intuitive UI, it simplifies self-management and enhances productivity. Dash Directory empowers users to stay organized and focused on their goals. In development mode.",
   },
   {
     index: 2,
     label: "Reactify",
     link: "reactify.org",
     description:
-      "From marketing websites and content-management systems to web applications and dashboards. Developed with confidence for engagement and scale. Developed with confidence for engagement and scale. Developed with confidence for engagement and scale.",
+      "Reactify is the ultimate destination for React developers and designers, providing a comprehensive suite of services. Access a wide range of design resources, leverage the power of tested headless CMSs, and foster seamless collaboration through efficient APIs.",
   },
   {
     index: 3,
     label: "Snippetbase",
     link: "snippetbase.net",
     description:
-      "Bring digital product to life through carefully considered design and technical know-how, using fast, secure, and reliable tools and technologies. Developed with confidence for engagement and scale. Developed with confidence for engagement and scale.",
+      "Snippetbase is a platform for code snippets. Discover, share, and leverage ready-to-use code across multiple programming languages and frameworks. Boost your productivity with Snippetbase's centralized repository of efficient solutions.",
   },
 ];
 
