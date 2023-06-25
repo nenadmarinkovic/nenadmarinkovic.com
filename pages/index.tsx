@@ -43,7 +43,7 @@ const Homepage: NextPage<Props> = ({
               Software developer at
               <a
                 className="a-link"
-                href="https://google.com"
+                href="https://dccs.eu"
                 target="_blank"
                 rel="noreferrer"
               >
