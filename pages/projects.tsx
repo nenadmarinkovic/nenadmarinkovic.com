@@ -108,9 +108,9 @@ const ProjectsPage: NextPage = ({
                       {index === 2 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
+                          <Tag color="velvet" text="Styled-components" />
                           <Tag color="blue" text="Typescript" />
                           <Tag color="dark-yellow" text="MDX" />
-                          <Tag color="velvet" text="Styled-components" />
                         </TagWrap>
                       )}
                     </Post>
