@@ -25,6 +25,17 @@ export const TagSpan = styled.span`
   font-size: 0.8rem;
   font-weight: 700;
 
+  &.yellow {
+    background: #ffea41;
+    color: black;
+  }
+
+  &.dark-yellow {
+    background: #ffc741;
+    color: black;
+  }
+
+
   &.green {
     background: #457e03;
   }
