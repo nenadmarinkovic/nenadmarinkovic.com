@@ -51,7 +51,12 @@ const ProjectsPage: NextPage = ({
             <Introduction className="full-width">
               {frontMatter.description}
               <br />
-              <a className="a-link" href={`https: ${frontMatter.link}`}>
+              <a
+                className="a-link"
+                target="_blank"
+                rel="noreferrer"
+                href={`https://${frontMatter.link}`}
+              >
                 {frontMatter.link}
               </a>
             </Introduction>
