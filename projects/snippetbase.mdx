@@ -6,26 +6,14 @@ category: Snippets
 link: snippetbase.net
 ---
 
-### This is an example post, with a [link](https://nextjs.org) and a React component:
+### Motivation behind the project
 
-```javascript
-        next.config.js focus=1:2,7
-        const { remarkCodeHike } = require("@code-hike/mdx");
-        const theme = require("shiki/themes/monokai.json");
+I built Snippetbase out of a personal need for a more efficient and productive coding experience. As a developer, I often found myself facing similar coding challenges or repetitive tasks across different projects. I realized that reinventing the wheel each time was not only time-consuming but also hindered my overall productivity.
 
-        const withMDX = require("@next/mdx")({
-        extension: /\.mdx?$/,
-        options: {
-            remarkPlugins: [[remarkCodeHike, { theme }]],
-            rehypePlugins: [],
-        },
-        });
+To address this issue, I wanted to create a platform where developers could easily discover and share code snippets. By building a centralized repository of efficient solutions, I aimed to provide a valuable resource that could save developers time and effort.
 
-        module.exports = withMDX({
-        pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-        });
-```
+To bring Snippetbase to life, I utilized the power of MDX, Next.js, and GitHub, creating an open-source project that allows anyone to set up the platform with ease.
 
-The title and description are pulled from the MDX file and processed using `gray-matter`. Additionally, links are rendered using a custom component passed to `next-mdx-remote`.
+First and foremost, I chose MDX (Markdown with JSX) as the foundation for Snippetbase's content. MDX provided a flexible and intuitive way to combine Markdown syntax with React components, enabling me to embed interactive code snippets seamlessly within the documentation. With MDX, developers can write code examples directly in Markdown files, making it easier to create and maintain code snippets.
 
-Go back [home](/).
+By leveraging the combination of MDX, Next.js, and GitHub, and making Snippetbase an open-source project, I strived to create an accessible and collaborative platform for developers. I believe that by sharing the source code and providing comprehensive installation instructions, Snippetbase can be easily adopted and customized by individuals and teams, fostering productivity in the developer community.
