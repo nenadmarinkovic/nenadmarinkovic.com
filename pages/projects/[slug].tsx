@@ -15,6 +15,7 @@ import Footer from "../../components/Footer";
 import { Introduction } from "../../styles/components/introduction";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
+import { Date } from "../../styles/pages/common";
 
 const components = {
   Head,
@@ -48,9 +49,8 @@ const ProjectsPage: NextPage = ({
         <MainSection>
           <Container>
             <Banner name={frontMatter.title} />
-            <Introduction className="full-width">
-              {frontMatter.description}
-              <br />
+            <span>Website:</span>
+            <Date>
               <a
                 className="a-link"
                 target="_blank"
@@ -59,8 +59,9 @@ const ProjectsPage: NextPage = ({
               >
                 {frontMatter.link}
               </a>
-              <br />
-              <br />
+            </Date>
+            <Introduction className="full-width with-margins">
+              {frontMatter.description}
             </Introduction>
             <main>
               <MDXRemote {...source} components={components} />

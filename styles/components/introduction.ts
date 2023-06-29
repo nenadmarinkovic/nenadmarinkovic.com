@@ -12,7 +12,7 @@ export const Introduction = styled.p`
   }
 
   &.with-margins {
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
   }
 
   @media (max-width: 48rem) {
