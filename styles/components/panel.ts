@@ -11,6 +11,7 @@ export const PanelWrap = styled.div`
     #60a9fc 50.62%,
     #7ec130 89.11%
   );
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   @media (max-width: 35rem) {
     padding: 210px 120px;

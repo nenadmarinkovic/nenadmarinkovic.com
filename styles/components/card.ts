@@ -41,6 +41,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   &.blue {
     background: linear-gradient(270.48deg, #00dfd8 -4.99%, #0070f5 99.13%);
