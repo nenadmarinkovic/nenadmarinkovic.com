@@ -51,8 +51,9 @@ const ProjectsPage: NextPage = ({
             <Banner name="Projects" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                An overview of personal web projects I currently work on,
-                including technical details and insights.
+                An overview of personal web projects, including technical
+                details and insights. Please note that these are ongoing projects and may
+                contain errors due to limited available time for development.
               </Introduction>
             </Flex>
             <AnimatePresence mode="wait">
