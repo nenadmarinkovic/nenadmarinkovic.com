@@ -42,7 +42,7 @@ function Footer({ spotifyData, theme }: any) {
                   </div>
                 </>
               ) : (
-                "Not playing currently."
+                "Not playing currently"
               )}
             </FooterItemText>
           </FooterItem>
