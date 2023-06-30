@@ -33,7 +33,7 @@ const ProjectsPage: NextPage = ({
   return (
     <>
       <Head>
-        <title> {frontMatter.title} </title>
+        <title> Projects | {frontMatter.title} </title>
         <meta name="description" content="Web development and design." />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
