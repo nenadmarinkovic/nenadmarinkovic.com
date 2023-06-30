@@ -64,11 +64,11 @@ function Footer({ spotifyData, theme }: any) {
 
             <FooterItemText>
               <a
-                href="https://github.com/nenadmarinkovic/nenadmarinkovic.com"
+                href="https://github.com/nenadmarinkovic"
                 target="_blank"
                 rel="noreferrer"
               >
-                This website is open-source.
+                Visit my GitHub profile
               </a>
             </FooterItemText>
           </FooterItem>
