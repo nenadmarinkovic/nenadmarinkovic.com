@@ -84,16 +84,7 @@ const DirectoryPage: NextPage = ({
             <Banner name="Directory" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                Web directory for notes, bookmarks, resources, and the things I’m interested in. Content is{" "}
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/nenadmarinkovic/nenadmarinkovic-new/tree/main/directory"
-                  className="a-link"
-                >
-                  open-source
-                </a>{" "}
-                and free to distribute and use.
+                Web directory for notes, bookmarks, resources, and the things I’m interested in.
               </Introduction>
             </Flex>
             <TagButtonsWrap>
