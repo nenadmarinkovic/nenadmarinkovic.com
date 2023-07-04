@@ -33,7 +33,7 @@ const DirectoryPage: NextPage = ({
   const [openMenu, setOpenMenu] = useState(false);
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [uniqueCategories, setUniqueCategories] = useState([]);
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("All");
 
   const sortedCategories = uniqueCategories.sort((a, b) =>
     a > b ? 1 : b > a ? -1 : 0
@@ -60,7 +60,6 @@ const DirectoryPage: NextPage = ({
   };
 
   useEffect(() => {
-    setActive("All");
     uniqueCategoriesOnLoad(posts);
   }, [posts]);
 
@@ -84,7 +83,8 @@ const DirectoryPage: NextPage = ({
             <Banner name="Directory" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                Web directory for notes, bookmarks, resources, and the things I’m interested in.
+                Web directory for notes, bookmarks, resources, and the things
+                I’m interested in.
               </Introduction>
             </Flex>
             <TagButtonsWrap>
