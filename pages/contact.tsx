@@ -33,8 +33,14 @@ const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
               <Introduction>
                 Feel free to get in touch with me through the form below or by
                 sending an email. I would love to hear from you and discuss any
-                inquiries, collaborations, or opportunities you may have.{" "}
-                <a className="a-link">nenadmarinkovic@protonmail.com</a>
+                inquiries, collaborations, or opportunities you may have.
+                <br />
+                <a
+                  href="mailto:nenadmarinkovic@protonmail.com"
+                  className="a-link"
+                >
+                  nenadmarinkovic@protonmail.com
+                </a>
               </Introduction>
             </Flex>
             <ContactForm />
