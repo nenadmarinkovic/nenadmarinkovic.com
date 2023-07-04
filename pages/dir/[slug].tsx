@@ -77,7 +77,7 @@ export const getStaticProps = async ({ params }: any) => {
   let spotifyData = [];
   let error = "";
 
-  const server = "http://localhost:3000/api/playing";
+  const server = "https://nenadmarinkovic/api/playing";
 
   try {
     const res = await fetch(server, {

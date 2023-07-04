@@ -88,7 +88,7 @@ const ProjectsPage: NextPage = ({
                         </a>
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
-                      
+
                       {index === 0 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
@@ -130,7 +130,7 @@ export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
-  const server = "http://localhost:3000/api/playing";
+  const server = "https://nenadmarinkovic/api/playing";
 
   try {
     const res = await fetch(server, {
