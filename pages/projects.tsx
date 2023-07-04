@@ -52,8 +52,9 @@ const ProjectsPage: NextPage = ({
             <Flex align="top" justify="space-between">
               <Introduction>
                 An overview of personal web projects, including technical
-                details and insights. Please note that these are ongoing projects and may
-                contain errors due to limited available time for development.
+                details and insights. Please note that these are ongoing
+                projects and may contain errors due to limited available time
+                for development.
               </Introduction>
             </Flex>
             <AnimatePresence mode="wait">
@@ -87,9 +88,7 @@ const ProjectsPage: NextPage = ({
                         </a>
                       </AdditionalInfo>
                       <Description>{post.data.description}</Description>
-
-                      {/* TODO: Integrate categories into .mdx files */}
-
+                      
                       {index === 0 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
