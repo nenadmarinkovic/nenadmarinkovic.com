@@ -154,7 +154,7 @@ export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
-  const server = "https://nenadmarinkovic/api/playing";
+  const server = "https://nenadmarinkovic.com/api/playing";
 
   try {
     const res = await fetch(server, {
