@@ -163,22 +163,16 @@ export const GlobalStyle = createGlobalStyle`
     .one {
       left: 0;
       animation: music .3s ease infinite alternate;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
     }
 
     .two {
       left: 7.5px;
       animation: music 1s ease infinite alternate;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
     }
 
     .three {
       left: 15px;
       animation: music .5s ease infinite alternate;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
     }
 
     @keyframes music {
