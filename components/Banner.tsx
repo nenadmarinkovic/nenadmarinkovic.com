@@ -9,8 +9,9 @@ interface Banner {
 function Banner({ name, surname, margin }: Banner, theme: any) {
   return (
     <BannerWrap theme={theme} style={{ marginBottom: `${margin}` }}>
-      <Text>{name}</Text>
-      <Text>{surname}</Text>
+      <Text>
+        {name} {surname}
+      </Text>
     </BannerWrap>
   );
 }

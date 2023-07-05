@@ -15,6 +15,11 @@ export const Text = styled.h1`
   font-size: 3rem;
   font-weight: 900;
   color: ${({ theme }) => theme.color};
+  max-width: 300px;
+
+  @media (max-width: 35rem) {
+    max-width: unset;
+  }
 
   span {
     display: block;
