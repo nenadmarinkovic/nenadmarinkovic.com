@@ -158,8 +158,8 @@ export const GlobalStyle = createGlobalStyle`
       width: 3.5px;
       height: 20px;
       background: ${({ theme }) => theme.color};
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
     }
 
     .one {
