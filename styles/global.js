@@ -155,8 +155,8 @@ export const GlobalStyle = createGlobalStyle`
 
     .music {
       position: absolute;
-      width: 7.5%;
-      height: 10%;
+      width: 3.5px;
+      height: 20px;
       background: ${({ theme }) => theme.color};
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
