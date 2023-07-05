@@ -39,7 +39,7 @@ const Homepage: NextPage<Props> = ({
       <ThemeLayout openMenu={openMenu}>
         <MainSection>
           <Container>
-            <Banner name="Nenad" surname="Marinković" />
+            <Banner name="Nenad" surname="Marinković" withWidth={true} />
             <Introduction>
               Software developer at
               <a

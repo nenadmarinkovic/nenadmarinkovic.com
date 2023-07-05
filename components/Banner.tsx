@@ -4,12 +4,13 @@ interface Banner {
   name: string;
   surname?: string;
   margin?: string;
+  withWidth?: Boolean;
 }
 
-function Banner({ name, surname, margin }: Banner, theme: any) {
+function Banner({ name, surname, margin, withWidth }: Banner, theme: any) {
   return (
     <BannerWrap theme={theme} style={{ marginBottom: `${margin}` }}>
-      <Text>
+      <Text className={withWidth && "with-width"}>
         {name} {surname}
       </Text>
     </BannerWrap>
