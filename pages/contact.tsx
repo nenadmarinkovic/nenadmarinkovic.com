@@ -8,6 +8,7 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import ContactForm from "../components/Form";
 import { MainSection } from "../styles/components/layout";
+import { website } from "../lib/website";
 
 const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -56,7 +57,7 @@ export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
-  const server = "https://nenadmarinkovic.com/api/playing";
+  const server = website.live;
 
   try {
     const res = await fetch(server, {

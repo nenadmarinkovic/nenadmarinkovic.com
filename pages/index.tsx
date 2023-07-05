@@ -13,6 +13,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
+import { website } from "../lib/website";
 
 type Props = Theme & Spotify & MenuType;
 
@@ -105,7 +106,7 @@ export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
-  const server = "https://nenadmarinkovic.com/api/playing";
+  const server = website.live;
 
   try {
     const res = await fetch(server, {

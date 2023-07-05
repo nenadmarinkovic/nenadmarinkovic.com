@@ -22,6 +22,7 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import { MainSection } from "../styles/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
+import { website } from "../lib/website";
 
 const ProjectsPage: NextPage = ({
   spotifyData,
@@ -130,7 +131,7 @@ export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
-  const server = "https://nenadmarinkovic.com/api/playing";
+  const server = website.live;
 
   try {
     const res = await fetch(server, {

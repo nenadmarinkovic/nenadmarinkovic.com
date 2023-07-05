@@ -23,6 +23,7 @@ import {
   Date,
   Description,
 } from "../styles/pages/common";
+import { website } from "../lib/website";
 
 const DirectoryPage: NextPage = ({
   posts,
@@ -154,7 +155,7 @@ export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
-  const server = "https://nenadmarinkovic.com/api/playing";
+  const server = website.live;
 
   try {
     const res = await fetch(server, {
