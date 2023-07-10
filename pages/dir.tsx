@@ -183,7 +183,7 @@ export async function getStaticProps() {
     };
   });
 
-  return { props: { posts, spotifyData }, revalidate: 1 };
+  return { props: { posts, spotifyData }, revalidate: 0 };
 }
 
 export default DirectoryPage;

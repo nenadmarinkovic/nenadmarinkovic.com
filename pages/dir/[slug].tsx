@@ -105,7 +105,7 @@ export const getStaticProps = async ({ params }: any) => {
   return {
     props: {
       spotifyData: spotifyData,
-      revalidate: 1,
+      revalidate: 0,
       source: mdxSource,
       frontMatter: data,
     },
