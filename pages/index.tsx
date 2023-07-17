@@ -51,8 +51,7 @@ const Homepage: NextPage<Props> = ({
                 {" "}
                 DCCS IT Business Solutions{" "}
               </a>{" "}
-              in Vienna, Austria. Working mainly with JavaScript (React, Vue,
-              Node) on designing and developing websites, web interfaces, and
+              in Vienna, Austria. Working mainly with JavaScript on designing and developing websites, web interfaces, and
               APIs.
             </Introduction>
             <Section title="Services I offer" />
