@@ -4,7 +4,6 @@ export const FooterWrap = styled.footer`
   border-top: ${({ theme }) => theme.headerAndMenuBorder};
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.color};
-  color: #fff;
   padding: 1.5rem 0;
   margin-top: 8rem;
 
