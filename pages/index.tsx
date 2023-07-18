@@ -41,7 +41,7 @@ const Homepage: NextPage<Props> = ({
           <Container>
             <Banner name="Nenad" surname="Marinković" withWidth={true} />
             <Introduction>
-              Software developer at
+              Front-end developer at
               <a
                 className="a-link"
                 href="https://dccs.eu"
@@ -51,8 +51,8 @@ const Homepage: NextPage<Props> = ({
                 {" "}
                 DCCS IT Business Solutions{" "}
               </a>{" "}
-              in Vienna, Austria. Working mainly with JavaScript on designing and developing websites, web interfaces, and
-              APIs.
+              in Vienna, Austria. Working mainly with JavaScript on designing
+              and developing websites, web interfaces, and APIs.
             </Introduction>
             <Section title="Services I offer" />
             <Cards>
