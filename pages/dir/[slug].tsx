@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
+import { Params, Source, Spotify, Frontmatter, Theme } from "../../lib/types";
 import Header from "../../components/Header";
 import { useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
@@ -21,17 +22,19 @@ import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { Date } from "../../styles/pages/common";
 
+type Props = Source & Frontmatter & Spotify & Theme;
+
 const components = {
   Head,
 };
 
-const DirectoryPage: NextPage = ({
+const DirectoryPage: NextPage<Props> = ({
   source,
   frontMatter,
   spotifyData,
   theme,
   toggleTheme,
-}: any) => {
+}: Props) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
@@ -59,7 +62,13 @@ const DirectoryPage: NextPage = ({
               {frontMatter.description}
             </Introduction>
             <MDXContent>
-              <MDXRemote {...source} components={components} />
+              <MDXRemote
+                compiledSource={""}
+                scope={undefined}
+                frontmatter={undefined}
+                {...source}
+                components={components}
+              />
             </MDXContent>
           </Container>
         </MainSection>

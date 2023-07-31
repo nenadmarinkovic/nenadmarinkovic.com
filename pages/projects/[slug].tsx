@@ -5,6 +5,7 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import { useState } from "react";
 import { NextPage } from "next";
+import { Params, Source, Spotify, Frontmatter, Theme } from "../../lib/types";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { MainSection, ThemeLayout } from "../../styles/components/layout";
@@ -17,17 +18,19 @@ import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { Date } from "../../styles/pages/common";
 
+type Props = Source & Frontmatter & Spotify & Theme;
+
 const components = {
   Head,
 };
 
-const ProjectsPage: NextPage = ({
+const ProjectsPage: NextPage<Props> = ({
   source,
   frontMatter,
   spotifyData,
   theme,
   toggleTheme,
-}: any) => {
+}: Props) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
@@ -64,7 +67,13 @@ const ProjectsPage: NextPage = ({
               {frontMatter.description}
             </Introduction>
             <main>
-              <MDXRemote {...source} components={components} />
+              <MDXRemote
+                compiledSource={""}
+                scope={undefined}
+                frontmatter={undefined}
+                {...source}
+                components={components}
+              />
             </main>
           </Container>
         </MainSection>
@@ -74,7 +83,7 @@ const ProjectsPage: NextPage = ({
   );
 };
 
-export const getStaticProps = async ({ params }: any) => {
+export const getStaticProps = async ({ params }: Params) => {
   const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
