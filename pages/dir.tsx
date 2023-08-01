@@ -15,6 +15,7 @@ import {
   ThemeType,
   FilteredPostType,
 } from "../lib/types";
+import { website } from "../lib/website";
 import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -29,7 +30,6 @@ import {
   Date,
   Description,
 } from "../styles/pages/common";
-import { website } from "../lib/website";
 
 type PropTypes = PostType & SpotifyType & ThemeType;
 

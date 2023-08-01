@@ -9,6 +9,7 @@ import {
   FrontmatterType,
   ThemeType,
 } from "../lib/types";
+import { website } from "../lib/website";
 import Head from "next/head";
 import Section from "../components/Section";
 import Panel from "../components/Panel";
@@ -18,7 +19,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
-import { website } from "../lib/website";
 
 type PropTypes = SourceType & FrontmatterType & SpotifyType & ThemeType;
 

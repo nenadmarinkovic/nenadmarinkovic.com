@@ -8,6 +8,7 @@ import {
   FrontmatterType,
   ThemeType,
 } from "../lib/types";
+import { website } from "../lib/website";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import Header from "../components/Header";
@@ -15,7 +16,6 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import ContactForm from "../components/Form";
 import { MainSection } from "../styles/components/layout";
-import { website } from "../lib/website";
 
 type PropTypes = PostType &
   SourceType &

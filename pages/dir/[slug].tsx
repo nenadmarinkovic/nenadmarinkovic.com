@@ -9,6 +9,7 @@ import {
   ThemeType,
   ParamType,
 } from "../../lib/types";
+import { website } from "../../lib/website";
 import Header from "../../components/Header";
 import { useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
@@ -92,7 +93,7 @@ export const getStaticProps = async ({ params }: ParamType) => {
   let spotifyData = [];
   let error = "";
 
-  const server = "https://nenadmarinkovic/api/playing";
+  const server = website.live;
 
   try {
     const res = await fetch(server, {

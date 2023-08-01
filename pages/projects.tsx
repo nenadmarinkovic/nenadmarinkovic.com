@@ -15,6 +15,7 @@ import {
   FrontmatterType,
   ThemeType,
 } from "../lib/types";
+import { website } from "../lib/website";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
@@ -29,7 +30,6 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import { MainSection } from "../styles/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
-import { website } from "../lib/website";
 
 type PropTypes = PostType &
   SourceType &
