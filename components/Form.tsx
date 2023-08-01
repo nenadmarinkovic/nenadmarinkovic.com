@@ -14,7 +14,7 @@ import {
 } from "../styles/components/form";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function ContactForm() {
+function ContactForm() {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -159,3 +159,5 @@ export default function ContactForm() {
     </>
   );
 }
+
+export default ContactForm;

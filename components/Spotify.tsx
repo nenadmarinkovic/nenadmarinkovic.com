@@ -1,7 +1,7 @@
 import { getNowPlaying } from "../lib/spotify";
 import { SpotifyType } from "../lib/types";
 
-export default async function Spotify(_: SpotifyType, res: any) {
+async function Spotify(_: SpotifyType, res: any) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
@@ -25,3 +25,5 @@ export default async function Spotify(_: SpotifyType, res: any) {
     title,
   });
 }
+
+export default Spotify;

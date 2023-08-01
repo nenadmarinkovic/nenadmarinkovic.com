@@ -8,6 +8,13 @@ export type MenuType = {
   setOpenMenu?: any;
 };
 
+export type BannerType = {
+  name: string;
+  surname?: string;
+  margin?: string;
+  withWidth?: Boolean;
+};
+
 export type TitleType = {
   title: string;
 };

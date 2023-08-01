@@ -12,7 +12,7 @@ import {
 } from "../styles/components/selected-projects";
 import Link from "next/link";
 
-export default function SelectedProjects() {
+function SelectedProjects() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
@@ -65,3 +65,5 @@ export default function SelectedProjects() {
     </>
   );
 }
+
+export default SelectedProjects;

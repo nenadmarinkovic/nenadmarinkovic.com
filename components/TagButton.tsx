@@ -1,12 +1,7 @@
 import { TagButtonType } from "../lib/types";
 import { TagCategory } from "../styles/components/tag";
 
-export default function TagButton({
-  onClick,
-  text,
-  color,
-  active,
-}: TagButtonType) {
+function TagButton({ onClick, text, color, active }: TagButtonType) {
   return (
     <TagCategory
       onClick={onClick}
@@ -16,3 +11,5 @@ export default function TagButton({
     </TagCategory>
   );
 }
+
+export default TagButton;
