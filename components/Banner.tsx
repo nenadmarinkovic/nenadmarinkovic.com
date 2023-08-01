@@ -1,3 +1,4 @@
+import { ThemeType } from "../lib/types";
 import { BannerWrap, Text } from "../styles/components/banner";
 
 interface Banner {
@@ -7,7 +8,10 @@ interface Banner {
   withWidth?: Boolean;
 }
 
-function Banner({ name, surname, margin, withWidth }: Banner, theme: any) {
+function Banner(
+  { name, surname, margin, withWidth }: Banner,
+  theme: ThemeType
+) {
   return (
     <BannerWrap theme={theme} style={{ marginBottom: `${margin}` }}>
       <Text className={withWidth && "with-width"}>

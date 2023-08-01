@@ -1,4 +1,5 @@
 import { Container, FlexContainer } from "../styles/components/layout";
+import { SpotifyType, ThemeType } from "../lib/types";
 import {
   FooterWrap,
   FooterItem,
@@ -6,7 +7,9 @@ import {
   BottomText,
 } from "../styles/components/footer";
 
-function Footer({ spotifyData, theme }: any) {
+type PropTypes = SpotifyType & ThemeType;
+
+function Footer({ spotifyData, theme }: PropTypes) {
   return (
     <FooterWrap>
       <Container>

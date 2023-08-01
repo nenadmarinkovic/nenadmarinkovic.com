@@ -1,7 +1,4 @@
-export interface SelectedProject {
-  index: number;
-  label: string;
-}
+import { SelectedProjectType } from "../lib/types";
 
 export const all = [
   {
@@ -30,8 +27,8 @@ export const all = [
 export const initialTabs = all;
 
 export function getNextIngredient(
-  projects: SelectedProject[]
-): SelectedProject | undefined {
+  projects: SelectedProjectType[]
+): SelectedProjectType | undefined {
   const existing = new Set(projects);
   return all.find((project) => !existing.has(project));
 }

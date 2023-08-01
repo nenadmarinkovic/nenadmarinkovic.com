@@ -40,7 +40,7 @@ export default function ContactForm() {
   };
   const handleOnChange = (e: {
     persist: () => void;
-    target: { id: any; value: any };
+    target: { id: string; value: string };
   }) => {
     e.persist();
     setInputs((prev) => ({

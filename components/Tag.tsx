@@ -1,11 +1,7 @@
+import { TagType } from "../lib/types";
 import { TagSpan } from "../styles/components/tag";
 
-interface Tag {
-  color: string;
-  text: string;
-}
-
-function Tag({ color, text }: Tag) {
+function Tag({ color, text }: TagType) {
   return <TagSpan className={color}>{text}</TagSpan>;
 }
 

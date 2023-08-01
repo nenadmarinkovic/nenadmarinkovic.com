@@ -1,6 +1,7 @@
 import { getNowPlaying } from "../lib/spotify";
+import { SpotifyType } from "../lib/types";
 
-export default async function Spotify(_: any, res: any) {
+export default async function Spotify(_: SpotifyType, res: any) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
@@ -12,7 +13,7 @@ export default async function Spotify(_: any, res: any) {
   const isPlaying = song.is_playing;
   const title = song.item.name;
   const artist = song.item.artists
-    .map((_artist: any) => _artist.name)
+    .map((_artist: SpotifyType) => _artist.name)
     .join(", ");
 
   const songUrl = song.item.external_urls.spotify;

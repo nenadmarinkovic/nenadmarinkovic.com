@@ -7,10 +7,18 @@ import {
   StyledBurger,
   MenuThemeButton,
 } from "../styles/components/menu";
+import { ThemeType, SpotifyType, MenuType } from "../lib/types";
 import Link from "next/link";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
+type PropTypes = ThemeType & SpotifyType & MenuType;
+
+const MenuComponent = ({
+  openMenu,
+  setOpenMenu,
+  toggleTheme,
+  theme,
+}: PropTypes) => {
   const router = useRouter();
 
   return (
@@ -56,7 +64,7 @@ const MenuComponent = ({ openMenu, setOpenMenu, toggleTheme, theme }: any) => {
   );
 };
 
-const Burger = ({ openMenu, setOpenMenu }: any) => {
+const Burger = ({ openMenu, setOpenMenu }: PropTypes) => {
   return (
     <StyledBurger
       onClick={() => setOpenMenu(!openMenu)}
@@ -69,7 +77,7 @@ const Burger = ({ openMenu, setOpenMenu }: any) => {
   );
 };
 
-function Menu({ theme, toggleTheme, openMenu, setOpenMenu }: any) {
+function Menu({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
   const node = useRef(null);
   useClickOutside(node, () => setOpenMenu(false));
 

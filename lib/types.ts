@@ -8,10 +8,43 @@ export type MenuType = {
   setOpenMenu?: any;
 };
 
+export type TitleType = {
+  title: string;
+};
+
+export type TagType = {
+  color: string;
+  text: string;
+};
+
+export type TagButtonType = {
+  color: string;
+  text: string;
+  onClick?: React.MouseEventHandler<HTMLElement>;
+  active?: string | boolean;
+};
+
 export type ParamType = {
   params: {
     slug: string;
   };
+};
+
+export type SelectedProjectType = {
+  index: number;
+  label: string;
+};
+
+export type CardType = {
+  title: string;
+  description: string;
+  reversed: boolean;
+  boxColor: string;
+  boxTitle: string;
+  boxText1: string;
+  boxText2: string;
+  boxText3: string;
+  boxItemIcon: string;
 };
 
 export type PostType = {
@@ -42,9 +75,14 @@ export type FilteredPostType = {
 };
 
 export type SpotifyType = {
-  spotifyData?: {};
   name?: string;
-  artist?: string;
+  spotifyData?: {
+    status?: string;
+    isPlaying?: boolean;
+    songUrl: string;
+    title: string;
+    artist?: string;
+  };
 };
 
 export type SourceType = {

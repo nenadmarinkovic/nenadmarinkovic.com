@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CardType } from "../lib/types";
 import {
   Item,
   Text,
@@ -15,18 +16,6 @@ import {
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-interface Card {
-  title: string;
-  description: string;
-  reversed: boolean;
-  boxColor: string;
-  boxTitle: string;
-  boxText1: string;
-  boxText2: string;
-  boxText3: string;
-  boxItemIcon: string;
-}
-
 function Card({
   title,
   description,
@@ -37,7 +26,7 @@ function Card({
   boxText2,
   boxText3,
   boxItemIcon,
-}: Card) {
+}: CardType) {
   const [isOpen, setOpen] = useState(false);
   const setBoxColor = () =>
     boxColor === "orange" ? "orange" : boxColor === "blue" ? "blue" : "green";
