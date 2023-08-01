@@ -9,7 +9,12 @@ import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-directory";
 import TagButton from "../components/TagButton";
-import { PostType, SpotifyType, ThemeType } from "../lib/types";
+import {
+  PostType,
+  SpotifyType,
+  ThemeType,
+  FilteredPostType,
+} from "../lib/types";
 import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -55,16 +60,22 @@ const DirectoryPage: NextPage<PropTypes> = ({
     setFilteredPosts(filteredPosts);
   };
 
-  const uniqueCategoriesOnLoad = (posts: any) => {
+  const uniqueCategoriesOnLoad = (posts: FilteredPostType) => {
     const categories = posts
-      .map((post: any) => post.data.category)
-      .filter((item: any, index: any, arr: any) => arr.indexOf(item) === index);
+      .map((post: FilteredPostType) => post.data.category)
+      .filter(
+        (
+          item: FilteredPostType,
+          index: FilteredPostType,
+          arr: FilteredPostType
+        ) => arr.indexOf(item) === index
+      );
 
     setUniqueCategories(categories);
   };
 
   useEffect(() => {
-    uniqueCategoriesOnLoad(posts);
+    return uniqueCategoriesOnLoad(posts);
   }, [posts]);
 
   return (

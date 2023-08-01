@@ -15,11 +15,23 @@ export type ParamType = {
 };
 
 export type PostType = {
+  [x: string]: any;
   posts: {
     [x: string]: any;
     content: string;
+    data: {
+      category: string;
+      date: string;
+      description: string;
+      title: string;
+      filePath: string;
+    };
   };
+};
 
+export type FilteredPostType = {
+  [x: string]: any;
+  content: string;
   data: {
     category: string;
     date: string;

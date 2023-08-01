@@ -7,6 +7,7 @@ import {
   SpotifyType,
   FrontmatterType,
   ThemeType,
+  ParamType,
 } from "../../lib/types";
 import Header from "../../components/Header";
 import { useState } from "react";
@@ -83,7 +84,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
   );
 };
 
-export const getStaticProps = async ({ params }: any) => {
+export const getStaticProps = async ({ params }: ParamType) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);

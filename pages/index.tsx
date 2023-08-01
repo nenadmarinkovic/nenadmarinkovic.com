@@ -4,7 +4,6 @@ import { ThemeLayout, Container } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
 import {
-  ParamType,
   SourceType,
   SpotifyType,
   FrontmatterType,
