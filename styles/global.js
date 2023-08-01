@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-  /* @font-face {
+  @font-face {
       font-family: "Cera Pro";
       src: url("/fonts/CeraPro-Regular.woff2") format("woff2");
       font-weight: 400;
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
       font-style: normal;
       font-style: normal;
       font-display: block;
-    } */
+    }
     
     * {
       box-sizing: border-box;
@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
       background: ${({ theme }) => theme.background};
       padding: 0;
       margin: 0;
-      font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      font-family: "Cera Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       scrollbar-gutter: stable;
       -moz-osx-font-smoothing: grayscale;
