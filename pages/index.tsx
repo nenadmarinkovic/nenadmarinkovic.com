@@ -45,7 +45,7 @@ const Homepage: NextPage<PropTypes> = ({
         <MainSection>
           <Container>
             <Banner name="Nenad" surname="Marinković" withWidth={true} />
-            {/* <Introduction>
+            <Introduction>
               Front-end developer at
               <a
                 className="a-link"
@@ -58,9 +58,9 @@ const Homepage: NextPage<PropTypes> = ({
               </a>{" "}
               in Vienna, Austria. Working mainly with JavaScript on designing
               and developing websites, web interfaces, and APIs.
-            </Introduction> */}
+            </Introduction>
             <Section title="Services I offer" />
-            {/* <Cards>
+            <Cards>
               <Card
                 title="Transforming ideas into amazing digital products"
                 description="Bring digital product to life through carefully considered design and technical know-how, using fast, secure, and reliable tools and technologies."
@@ -94,7 +94,7 @@ const Homepage: NextPage<PropTypes> = ({
                 boxItemIcon="/icons/check.svg"
                 reversed={false}
               />
-            </Cards> */}
+            </Cards>
             <Section title="Personal projects" />
             <SelectedProjects />
             <Panel />
