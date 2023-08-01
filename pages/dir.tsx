@@ -9,6 +9,7 @@ import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-directory";
 import TagButton from "../components/TagButton";
+import { PostType, SpotifyType, ThemeType } from "../lib/types";
 import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -25,12 +26,14 @@ import {
 } from "../styles/pages/common";
 import { website } from "../lib/website";
 
-const DirectoryPage: NextPage = ({
+type PropTypes = PostType & SpotifyType & ThemeType;
+
+const DirectoryPage: NextPage<PropTypes> = ({
   posts,
   spotifyData,
   theme,
   toggleTheme,
-}: any) => {
+}: PropTypes) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [uniqueCategories, setUniqueCategories] = useState([]);
@@ -46,7 +49,7 @@ const DirectoryPage: NextPage = ({
     }
 
     const filteredPosts = posts.filter(
-      (post: any) => post.data.category === category
+      (post: PropTypes) => post.data.category === category
     );
 
     setFilteredPosts(filteredPosts);

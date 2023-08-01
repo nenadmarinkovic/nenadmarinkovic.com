@@ -8,6 +8,13 @@ import {
   AdditionalInfo,
   Description,
 } from "../styles/pages/common";
+import {
+  PostType,
+  SourceType,
+  SpotifyType,
+  FrontmatterType,
+  ThemeType,
+} from "../lib/types";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
@@ -24,12 +31,18 @@ import { MainSection } from "../styles/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { website } from "../lib/website";
 
-const ProjectsPage: NextPage = ({
+type PropTypes = PostType &
+  SourceType &
+  FrontmatterType &
+  SpotifyType &
+  ThemeType;
+
+const ProjectsPage: NextPage<PropTypes> = ({
   spotifyData,
   posts,
   theme,
   toggleTheme,
-}: any) => {
+}: PropTypes) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (

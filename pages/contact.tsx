@@ -1,6 +1,13 @@
 import Head from "next/head";
 import type { NextPage } from "next";
 import { useState } from "react";
+import {
+  PostType,
+  SourceType,
+  SpotifyType,
+  FrontmatterType,
+  ThemeType,
+} from "../lib/types";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import Header from "../components/Header";
@@ -10,7 +17,17 @@ import ContactForm from "../components/Form";
 import { MainSection } from "../styles/components/layout";
 import { website } from "../lib/website";
 
-const ContactPage: NextPage = ({ spotifyData, theme, toggleTheme }: any) => {
+type PropTypes = PostType &
+  SourceType &
+  FrontmatterType &
+  SpotifyType &
+  ThemeType;
+
+const ContactPage: NextPage<PropTypes> = ({
+  spotifyData,
+  theme,
+  toggleTheme,
+}: PropTypes) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>

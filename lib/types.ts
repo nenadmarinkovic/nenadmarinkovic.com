@@ -1,8 +1,4 @@
-export type Spotify = {
-  spotifyData?: {};
-};
-
-export type Theme = {
+export type ThemeType = {
   theme?: string | boolean | (() => void);
   toggleTheme?: any;
 };
@@ -12,22 +8,38 @@ export type MenuType = {
   setOpenMenu?: any;
 };
 
-export type Params = {
+export type ParamType = {
   params: {
     slug: string;
   };
 };
 
-export type SpotifyData = {
+export type PostType = {
+  posts: {
+    [x: string]: any;
+    content: string;
+  };
+
+  data: {
+    category: string;
+    date: string;
+    description: string;
+    title: string;
+    filePath: string;
+  };
+};
+
+export type SpotifyType = {
+  spotifyData?: {};
   name?: string;
   artist?: string;
 };
 
-export type Source = {
+export type SourceType = {
   source: object;
 };
 
-export type Frontmatter = {
+export type FrontmatterType = {
   frontMatter: {
     title: string;
     description: string;
