@@ -8,13 +8,7 @@ import {
   AdditionalInfo,
   Description,
 } from "../styles/pages/common";
-import {
-  PostType,
-  SourceType,
-  SpotifyType,
-  FrontmatterType,
-  ThemeType,
-} from "../lib/types";
+import { PostType, SpotifyType, ThemeType } from "../lib/types";
 import { website } from "../lib/website";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
@@ -31,11 +25,7 @@ import Footer from "../components/Footer";
 import { MainSection } from "../styles/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
 
-type PropTypes = PostType &
-  SourceType &
-  FrontmatterType &
-  SpotifyType &
-  ThemeType;
+type PropTypes = SpotifyType & PostType & ThemeType;
 
 const ProjectsPage: NextPage<PropTypes> = ({
   spotifyData,
@@ -73,7 +63,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
             </Flex>
             <AnimatePresence mode="wait">
               <PostsWrap>
-                {posts.map((post: any, index: any) => (
+                {posts.map((post: PostType, index: number) => (
                   <motion.div
                     key={post.data.title}
                     initial={{ y: 10, opacity: 0 }}

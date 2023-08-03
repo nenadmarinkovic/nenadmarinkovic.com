@@ -1,13 +1,7 @@
 import Head from "next/head";
 import type { NextPage } from "next";
 import { useState } from "react";
-import {
-  PostType,
-  SourceType,
-  SpotifyType,
-  FrontmatterType,
-  ThemeType,
-} from "../lib/types";
+import { SpotifyType, ThemeType } from "../lib/types";
 import { website } from "../lib/website";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
@@ -17,11 +11,7 @@ import Footer from "../components/Footer";
 import ContactForm from "../components/Form";
 import { MainSection } from "../styles/components/layout";
 
-type PropTypes = PostType &
-  SourceType &
-  FrontmatterType &
-  SpotifyType &
-  ThemeType;
+type PropTypes = SpotifyType & ThemeType;
 
 const ContactPage: NextPage<PropTypes> = ({
   spotifyData,

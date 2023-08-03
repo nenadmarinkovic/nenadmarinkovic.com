@@ -3,12 +3,7 @@ import { useState } from "react";
 import { ThemeLayout, Container } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
-import {
-  SourceType,
-  SpotifyType,
-  FrontmatterType,
-  ThemeType,
-} from "../lib/types";
+import { SpotifyType, ThemeType } from "../lib/types";
 import { website } from "../lib/website";
 import Head from "next/head";
 import Section from "../components/Section";
@@ -20,7 +15,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
 
-type PropTypes = SourceType & FrontmatterType & SpotifyType & ThemeType;
+type PropTypes = SpotifyType & ThemeType;
 
 const Homepage: NextPage<PropTypes> = ({
   spotifyData,
