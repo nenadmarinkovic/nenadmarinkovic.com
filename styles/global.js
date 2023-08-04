@@ -65,6 +65,16 @@ export const GlobalStyle = createGlobalStyle`
     .active-link {
       font-weight: bold;
     }
+
+    .header-theme {
+      display: flex;
+      transition: all .15s;
+
+      &-icon {
+        width: 21px;
+        height: 21px;
+      }
+    }
     
     ul, ol {
       padding: 0;

@@ -12,13 +12,13 @@ export const HeaderWrap = styled.header`
   contain: layout;
 `;
 
-export const Main = styled.div`
+export const Main = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-export const HomeLink = styled.div`
+export const HomeLink = styled.li`
   cursor: pointer;
   color: ${({ theme }) => theme.color};
   transition: 0.3s;
@@ -28,18 +28,18 @@ export const HomeLink = styled.div`
   }
 `;
 
-export const Links = styled.div`
+export const Links = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 55%;
+  width: 45%;
 
   @media (max-width: 47.95rem) {
     display: none;
   }
 `;
 
-export const HeaderLink = styled.div`
+export const HeaderLink = styled.li`
   font-size: 0.9rem;
   cursor: pointer;
   display: flex;
