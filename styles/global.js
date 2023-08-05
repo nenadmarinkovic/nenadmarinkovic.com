@@ -75,6 +75,10 @@ export const GlobalStyle = createGlobalStyle`
         height: 21px;
       }
     }
+
+    .contact-icon {
+      width: 23px;
+    }
     
     ul, ol {
       padding: 0;
