@@ -25,7 +25,7 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
   margin: 0;
   color: ${({ theme }) => theme.color};
-  border: 1px solid #ccc;
+  border: 1px solid #CFD5DB;
   border-radius: 8px;
   padding: 0.35rem;
   vertical-align: middle;
@@ -37,7 +37,7 @@ export const FormInput = styled.input`
 
 export const TextArea = styled.textarea`
   margin: 0;
-  border: 1px solid #ccc;
+  border: 1px solid #CFD5DB;
   border-radius: 8px;
   color: ${({ theme }) => theme.color};
   padding: 0.5em;

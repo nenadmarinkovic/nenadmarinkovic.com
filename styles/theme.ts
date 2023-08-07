@@ -11,7 +11,7 @@ export const lightTheme = {
   colorLight: "#6B7786",
   headerBackground: "hsla(0, 0%, 100%, 0.75)",
   headerAndMenuBorder: "1px solid #E6EBF1",
-  tagBorder: "1.5px solid #E6EBF1",
+  tagBorder: "1px solid #D0D5DB",
   backgroundModal: "rgb(250, 250, 250, 0.85)",
   contactButtonBorder: "1.5px solid #000",
   contactButtonColor: "#000",
@@ -20,9 +20,9 @@ export const lightTheme = {
   activeColor: "#0070f5",
   descColor: "#6B7786",
   activeButton: "#0070f5",
-  activeButtonColor: "#ccc",
+  activeButtonColor: "#CFD5DB",
   labelColor: "#888",
-  unselectedColor: "#C2CDDB",
+  unselectedColor: "#CFD5DB",
 
   // Code theme
   mdxBackground: "#F6F8FA",
