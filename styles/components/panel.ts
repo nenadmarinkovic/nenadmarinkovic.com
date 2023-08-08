@@ -75,7 +75,7 @@ export const PanelButton = styled.div`
   text-align: center;
   background: ${({ theme }) => theme.grayButton};
   color: ${({ theme }) => theme.color};
-  padding: 7.5px 35px;
+  padding: 8px 35px;
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 700;

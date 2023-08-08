@@ -52,7 +52,7 @@ export const TextArea = styled.textarea`
 export const Button = styled.button`
   background: ${({ theme }) => theme.grayButton};
   color: ${({ theme }) => theme.color};
-  padding: 10px 35px;
+  padding: 8px 35px;
   display: flex;
   align-items: center;
   justify-content: center;
