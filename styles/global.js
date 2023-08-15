@@ -76,8 +76,31 @@ export const GlobalStyle = createGlobalStyle`
       }
     }
 
+    .personal-photo {
+      border-radius: 10px;
+      margin-left: 2.5rem;
+      pointer-events: none;
+    }
+
     .contact-icon {
       width: 23px;
+    }
+
+    .content-image {
+      width: 100%;
+      margin: 3rem 0;
+      border-radius: 10px;
+    }
+
+    .about-paragraph {
+      margin-top: 2.5rem;
+
+      p {
+        color: #6B7786;
+        font-size: 1rem;
+        line-height: 1.9;
+        margin-top: 1rem;
+      }
     }
     
     ul, ol {

@@ -20,9 +20,9 @@ export const lightTheme = {
   activeColor: "#0070f5",
   descColor: "#6B7786",
   activeButton: "#0070f5",
-  activeButtonColor: "#CFD5DB",
+  activeButtonColor: "#D2D6DC",
   labelColor: "#888",
-  unselectedColor: "#CFD5DB",
+  unselectedColor: "#D2D6DC",
 
   // Code theme
   mdxBackground: "#F6F8FA",

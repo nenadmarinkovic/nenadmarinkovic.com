@@ -52,6 +52,16 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                   Directory
                 </Link>
               </HeaderLink>
+              {/* <HeaderLink>
+                <Link
+                  href="/about"
+                  className={
+                    router.pathname.includes("/about") ? "active-link" : ""
+                  }
+                >
+                  About
+                </Link>
+              </HeaderLink> */}
               <HeaderLink>
                 <Link
                   href="/contact"
