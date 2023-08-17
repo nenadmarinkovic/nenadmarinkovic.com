@@ -47,12 +47,11 @@ const ProjectsPage: NextPage<PropTypes> = ({
             <Banner name="About" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                An overview of personal web projects, including technical
-                details and insights. Please note that these are ongoing
-                projects and may contain errors due to limited available time
-                for development. Please note that these are ongoing projects and
-                may contain errors due to limited available time for
-                development.
+                Hi and thanks for being here! <br />
+                I&apos;m Nenad, a front-end developer living and working in
+                Vienna, Austria. Among other things, I enjoy building nice and
+                elegant web interfaces, and fast websites and applications using
+                modern tools and technologies like React and Vue.
               </Introduction>
               <Image
                 className="personal-photo"
@@ -64,27 +63,39 @@ const ProjectsPage: NextPage<PropTypes> = ({
             </Flex>
             <div className="about-paragraph">
               <p>
-                Dash Directory is a platform for task and event management, as
-                well as bookmark organization. With its intuitive UI, it
-                simplifies self-management and enhances productivity. Dash
-                Directory empowers users to stay organized and focused on their
-                goals. In development mode.
+                Most recently, I’ve worked at the DCCS software company in
+                Vienna, Austria on a web application for measuring electricity
+                consumption for one of the leading companies operating in the
+                DACH region. I gained huge experience in building flexible
+                front-end components in Vue using SCRUM approach for building scalable
+                software solutions.
               </p>
               <p>
-                Dash Directory is a platform for task and event management, as
-                well as bookmark organization. With its intuitive UI, it
-                simplifies self-management{" "}
+                Previously, I’ve worked at different web agencies buidling
+                e-commerce websites, content-menaging systems, and marketing
+                websites where I gained invaluable experience working with
+                designers and clients in both my homecountry of Serbia and in
+                Austria.
+              </p>
+
+              <p>
+                Besides working in a compoanies, I like contributing to{" "}
                 <a className="a-link" href="https://github.com/nenadmarinkovic">
-                  open-source programming
+                  open-source software
                 </a>{" "}
-                and enhances productivity. Dash Directory empowers users to stay
-                organized and focused on their goals. In development mode.
+                whenever I can. I like buidling my own{" "}
+                <Link className="a-link" href="/dir/photography">
+                  projects
+                </Link>{" "}
+                , and you can see some of them here focused on developers and designers.
               </p>
+              <p> More then 10 years ago I studied sociology and political sciences, where I learned </p>
               <p>
-                Dash Directory is a platform for task and event management, as
-                well as bookmark organization. With its intuitive UI, it
-                simplifies self-management and enhances productivity. Dash
-                Directory empowers users{" "}
+                Besides work, I enjoy living in Vienna, 
+                
+                
+                travelling and ta
+                Dash Directory is a platform Dash Directory empowers users{" "}
                 <Link className="a-link" href="/dir/photography">
                   photography
                 </Link>{" "}
@@ -92,14 +103,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 <Link className="a-link" href="/dir/reading">
                   reading-list
                 </Link>
-                . In development mode.
-              </p>
-              <p>
-                Dash Directory is a platform for task and event management, as
-                well as bookmark organization. With its intuitive UI, it
-                simplifies self-management and enhances productivity. Dash
-                Directory empowers users to stay organized and focused on their
-                goals. In development mode.
+                . 
               </p>
             </div>
           </Container>
