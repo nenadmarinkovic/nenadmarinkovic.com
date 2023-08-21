@@ -49,9 +49,9 @@ const ProjectsPage: NextPage<PropTypes> = ({
               <Introduction>
                 Hi and thanks for being here! <br />
                 I&apos;m Nenad, a front-end developer living and working in
-                Vienna, Austria. Among other things, I enjoy building nice and
-                elegant web interfaces, and fast websites and applications using
-                modern tools and technologies like React and Vue.
+                Vienna, Austria. I enjoy building nice and elegant web
+                interfaces, and fast websites and applications using modern
+                tools and technologies like React and Vue.
               </Introduction>
               <Image
                 className="personal-photo"
@@ -67,8 +67,8 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 Vienna, Austria on a web application for measuring electricity
                 consumption for one of the leading companies operating in the
                 DACH region. I gained huge experience in building flexible
-                front-end components in Vue using SCRUM approach for building scalable
-                software solutions.
+                front-end components in Vue using SCRUM approach for building
+                scalable software solutions.
               </p>
               <p>
                 Previously, I’ve worked at different web agencies buidling
@@ -79,31 +79,38 @@ const ProjectsPage: NextPage<PropTypes> = ({
               </p>
 
               <p>
-                Besides working in a compoanies, I like contributing to{" "}
+                Besides professional work, I like contributing to{" "}
                 <a className="a-link" href="https://github.com/nenadmarinkovic">
                   open-source software
                 </a>{" "}
                 whenever I can. I like buidling my own{" "}
-                <Link className="a-link" href="/dir/photography">
+                <Link className="a-link" href="/projects">
                   projects
                 </Link>{" "}
-                , and you can see some of them here focused on developers and designers.
+                , and you can see some of them here. Mostly, the are focused on
+                developers and designers, and I like the freedom to experiment
+                with different technologies while building them.
               </p>
-              <p> More then 10 years ago I studied sociology and political sciences, where I learned </p>
               <p>
-                Besides work, I enjoy living in Vienna, 
-                
-                
-                travelling and ta
-                Dash Directory is a platform Dash Directory empowers users{" "}
+                {" "}
+                More then 10 years ago I studied sociology and political
+                sciences, where I learned
+              </p>
+              <p>
+                Besides work, I enjoy living in Vienna, travelling when I have
+                free time and taking{" "}
                 <Link className="a-link" href="/dir/photography">
-                  photography
+                  pictures of cool places
                 </Link>{" "}
-                to stay organized and focused on their goals{" "}
+                and reading{" "}
                 <Link className="a-link" href="/dir/reading">
                   reading-list
-                </Link>
-                . 
+                </Link>{" "}
+                and surfing the web looking for{" "}
+                <Link className="a-link" href="/dir/photography">
+                  interesting stuff
+                </Link>{" "}
+                .
               </p>
             </div>
           </Container>
