@@ -94,7 +94,12 @@ const ProjectsPage: NextPage<PropTypes> = ({
               <p>
                 {" "}
                 More then 10 years ago I studied sociology and political
-                sciences, where I learned
+                sciences, where I learned... Even today, I like reading
+                interesting{" "}
+                <Link className="a-link" href="/dir/reading">
+                  books
+                </Link>{" "}
+                about social topics, technology, and our fast changing world.
               </p>
               <p>
                 Besides work, I enjoy living in Vienna, travelling when I have
@@ -102,11 +107,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 <Link className="a-link" href="/dir/photography">
                   pictures of cool places
                 </Link>{" "}
-                and reading{" "}
-                <Link className="a-link" href="/dir/reading">
-                  reading-list
-                </Link>{" "}
-                and surfing the web looking for{" "}
+                and reading and surfing the web looking for{" "}
                 <Link className="a-link" href="/dir/photography">
                   interesting stuff
                 </Link>{" "}
