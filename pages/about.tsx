@@ -111,7 +111,9 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 <Link className="a-link" href="/dir/photography">
                   interesting stuff
                 </Link>{" "}
-                .
+                and learning German and Go. If you are around, want to hung out,
+                drop me a line, ou can find me in the beautiful 2nd district in
+                Vienna and we could meet.
               </p>
             </div>
           </Container>
