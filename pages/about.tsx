@@ -121,7 +121,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
               <p>
                 If you’re in the area and up for hanging out, or want to discuss
                 a project, feel free to{" "}
-                <Link className="a-link" href="/">
+                <Link className="a-link" href="/contact">
                   get in touch
                 </Link>
                 .
