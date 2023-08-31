@@ -24,7 +24,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
   return (
     <>
       <Head>
-        <title>Nenad Marinković | Projects</title>
+        <title>Nenad Marinković | About</title>
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 
