@@ -80,6 +80,16 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 10px;
       margin-left: 2.5rem;
       pointer-events: none;
+
+      @media (max-width: 48rem) {
+        margin: 1.5rem auto;
+      }
+
+      @media (max-width: 32rem) {
+        margin: 1.5rem 0;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .contact-icon {
@@ -110,8 +120,12 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.9;
         margin-top: 1rem;
       }
+
+      @media (max-width: 48rem) {
+        margin: .5rem auto;
+      }
     }
-    
+
     ul, ol {
       padding: 0;
       margin: 0;
