@@ -109,22 +109,28 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 can.
               </p>
               <p>
-                Apart from work, I enjoy living in Vienna. I like to travel
-                whenever I get the chance, taking{" "}
+                Outside of work, I find pleasure in exploring the beautiful city
+                of Vienna. I’m also dedicated to learning German and{" "}
+                <a className="a-link" href="https://github.com/nenadmarinkovic">
+                  Go
+                </a>
+                . Whenever the opportunity arises, I like to travel, taking{" "}
                 <Link className="a-link" href="/dir/photography">
                   photos
                 </Link>{" "}
-                of interesting places, and spending time exploring the web for{" "}
+                of captivating locations, or simply exploring the web for{" "}
                 <Link className="a-link" href="/dir/photography">
                   interesting stuff
                 </Link>
                 .
               </p>
               <p>
-                If you’re in the area and up for hanging out, feel free to get
-                in touch. I’m located in the 2nd district of Vienna, and it
-                would be great to meet up. Just drop me a message, and we can
-                make plans.
+                If you’re in the area and up for hanging out, or want to discuss
+                a project, feel free to{" "}
+                <Link className="a-link" href="/dir/photography">
+                  get in touch
+                </Link>
+                .
               </p>
             </div>
           </Container>
