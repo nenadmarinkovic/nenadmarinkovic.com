@@ -1,10 +1,6 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
 import { PostType, SpotifyType, ThemeType } from "../lib/types";
 import { website } from "../lib/website";
 import type { NextPage } from "next";
-import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
@@ -19,7 +15,6 @@ type PropTypes = SpotifyType & PostType & ThemeType;
 
 const ProjectsPage: NextPage<PropTypes> = ({
   spotifyData,
-  posts,
   theme,
   toggleTheme,
 }: PropTypes) => {
@@ -99,18 +94,7 @@ export async function getStaticProps() {
     error = e.toString();
   }
 
-  const posts = postFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
-    const { content, data } = matter(source);
-
-    return {
-      content,
-      data,
-      filePath,
-    };
-  });
-
-  return { props: { posts, spotifyData }, revalidate: 10 };
+  return { props: { spotifyData }, revalidate: 10 };
 }
 
 export default ProjectsPage;
