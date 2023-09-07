@@ -96,7 +96,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 This background shaped my understanding of societal dynamics and
                 their connection to technology. Unfortunately, I don’t read as
                 extensively as I once did, but I still make time for{" "}
-                <Link className="a-link" href="/projects">
+                <Link className="a-link" href="/dir/reading-list">
                   books
                 </Link>{" "}
                 on social issues, technology, and our ever-changing world when I
@@ -105,7 +105,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
               <p>
                 Outside of work, I find pleasure in exploring the beautiful city
                 of Vienna. I’m also dedicated to learning German and{" "}
-                <a className="a-link" href="https://github.com/nenadmarinkovic">
+                <a className="a-link" href="https://go.dev">
                   Go
                 </a>
                 . Whenever the opportunity arises, I like to travel, taking{" "}
@@ -113,7 +113,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                   photos
                 </Link>{" "}
                 of captivating locations, or simply exploring the web for{" "}
-                <Link className="a-link" href="/dir/photography">
+                <Link className="a-link" href="/dir/bookmarks">
                   interesting stuff
                 </Link>
                 .
@@ -121,7 +121,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
               <p>
                 If you’re in the area and up for hanging out, or want to discuss
                 a project, feel free to{" "}
-                <Link className="a-link" href="/dir/photography">
+                <Link className="a-link" href="/">
                   get in touch
                 </Link>
                 .
