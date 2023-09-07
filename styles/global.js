@@ -92,6 +92,15 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 10px;
     }
 
+    .flex-link {
+      display: flex;
+      margin-top: 1.5rem;
+
+      span {
+        margin-right: 1rem;
+      }
+    }
+
     .about-paragraph {
       margin-top: 2.5rem;
 

@@ -46,9 +46,28 @@ const ProjectsPage: NextPage<PropTypes> = ({
             <Flex align="top" justify="space-between">
               <Introduction>
                 Whoops, that page is missing! If you clicked a link that led you
-                to this page, please let me know so we can fix our mistake as
-                soon as possible. <br />
-                <Link className="a-link" href={`/`}>Go to homepage.</Link>
+                to this page, please{" "}
+                <Link className="a-link" href={`/contact`}>
+                  let me know
+                </Link>{" "}
+                so I can fix it as soon as possible. <br />
+                <Link className="a-link flex-link" href={`/`}>
+                  <span>Go to homepage.</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="contact-icon"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </Link>
               </Introduction>
             </Flex>
           </Container>
