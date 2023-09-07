@@ -97,7 +97,7 @@ export const GlobalStyle = createGlobalStyle`
 
       p {
         color: #6B7786;
-        font-size: 1rem;
+        font-size: 1.05rem;
         line-height: 1.9;
         margin-top: 1rem;
       }

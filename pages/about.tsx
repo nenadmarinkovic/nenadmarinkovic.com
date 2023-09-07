@@ -47,73 +47,84 @@ const ProjectsPage: NextPage<PropTypes> = ({
             <Banner name="About" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                Hi and thanks for being here! <br />
-                I&apos;m Nenad, a front-end developer living and working in
-                Vienna, Austria. I enjoy building nice and elegant web
-                interfaces, and fast websites and applications using modern
-                tools and technologies like React and Vue.
+                Hi! I’m Nenad, a front-end web developer based in Vienna,
+                Austria. My expertise lies in building websites and web
+                interfaces using modern technologies like React and Vue. I find
+                great joy in the field of web development — it’s a journey
+                filled with challenges, constant learning, and the chance to
+                bring a creative touch to each project.
               </Introduction>
               <Image
                 className="personal-photo"
                 src={"/Social.JPG"}
-                height={250}
-                width={250}
+                height={225}
+                width={225}
                 alt="Personal photo"
               />
             </Flex>
             <div className="about-paragraph">
               <p>
-                Most recently, I’ve worked at the DCCS software company in
-                Vienna, Austria on a web application for measuring electricity
-                consumption for one of the leading companies operating in the
-                DACH region. I gained huge experience in building flexible
-                front-end components in Vue using SCRUM approach for building
-                scalable software solutions.
+                In my most recent role, I had the opportunity to work at DCCS
+                software company. Here, I contributed to the development of a
+                web application for helping residents and property owners to
+                have insights into their energy consumption. During this
+                project, I acquired extensive expertise in constructing
+                adaptable front-end components using Vue.js, all within a
+                framework of agile SCRUM methodology. This experience further
+                solidified my skills in building scalable software solutions.
               </p>
               <p>
-                Previously, I’ve worked at different web agencies buidling
-                e-commerce websites, content-menaging systems, and marketing
-                websites where I gained invaluable experience working with
-                designers and clients in both my homecountry of Serbia and in
-                Austria.
+                Before my recent role, I had the opportunity to work with
+                various web agencies, where I specialized in crafting e-commerce
+                websites, content management systems, and marketing websites.
+                These experiences were invaluable in terms of collaborating
+                closely with designers and clients, both in my home country of
+                Serbia and here in Austria.
               </p>
 
               <p>
-                Besides professional work, I like contributing to{" "}
+                Outside of my work-related responsibilities, I have a genuine
+                interest in contributing to{" "}
                 <a className="a-link" href="https://github.com/nenadmarinkovic">
                   open-source software
                 </a>{" "}
-                whenever I can. I like buidling my own{" "}
+                whenever I can. I also take pleasure in developing my own{" "}
                 <Link className="a-link" href="/projects">
                   projects
-                </Link>{" "}
-                , and you can see some of them here. Mostly, the are focused on
-                developers and designers, and I like the freedom to experiment
-                with different technologies while building them.
+                </Link>
+                . Most of them are typically geared towards developers and
+                designers. Developing them offers me the freedom to experiment
+                with diverse technologies which is always fun thing to do.
               </p>
               <p>
-                {" "}
-                More then 10 years ago I studied sociology and political
-                sciences, where I learned... Even today, I like reading
-                interesting{" "}
-                <Link className="a-link" href="/dir/reading">
+                Over a decade ago, I studied sociology and political sciences,
+                gaining insights into human societies and political systems.
+                This background shaped my understanding of societal dynamics and
+                their connection to technology. Unfortunately, I don’t read as
+                extensively as I once did, but I still make time for{" "}
+                <Link className="a-link" href="/projects">
                   books
                 </Link>{" "}
-                about social topics, technology, and our fast changing world.
+                on social issues, technology, and our ever-changing world when I
+                can.
               </p>
               <p>
-                Besides work, I enjoy living in Vienna, travelling when I have
-                free time and taking{" "}
+                Apart from work, I enjoy living in Vienna. I like to travel
+                whenever I get the chance, taking{" "}
                 <Link className="a-link" href="/dir/photography">
-                  pictures of cool places
+                  photos
                 </Link>{" "}
-                and reading and surfing the web looking for{" "}
+                of interesting places, and spending time exploring the web for{" "}
                 <Link className="a-link" href="/dir/photography">
                   interesting stuff
-                </Link>{" "}
-                and learning German and Go. If you are around, want to hung out,
-                drop me a line, ou can find me in the beautiful 2nd district in
-                Vienna and we could meet.
+                </Link>
+                .
+              </p>
+              <p>
+                If you’re in the area and up for hanging out, feel free to get
+                in touch. I’m located in the 2nd district of Vienna, and it
+                would be great to meet up. Just drop me a message, and we can
+                make plans.
               </p>
             </div>
           </Container>
