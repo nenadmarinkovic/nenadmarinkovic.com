@@ -68,12 +68,11 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 solidified my skills in building scalable software solutions.
               </p>
               <p>
-                Before my recent role, I had the opportunity to work with
-                various web agencies, where I specialized in crafting e-commerce
-                websites, content management systems, and marketing websites.
-                These experiences were invaluable in terms of collaborating
-                closely with designers and clients, both in my home country of
-                Serbia and here in Austria.
+                Before that, I worked at various web agencies, where I
+                specialized in crafting e-commerce websites, content management
+                systems, and marketing websites. These experiences were
+                invaluable in terms of collaborating closely with designers and
+                clients, both in my home country of Serbia and here in Austria.
               </p>
 
               <p>
