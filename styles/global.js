@@ -74,6 +74,10 @@ export const GlobalStyle = createGlobalStyle`
         width: 21px;
         height: 21px;
       }
+
+      @media (max-width: 48rem) {
+       justify-content: center;
+      }
     }
 
     .personal-photo {
