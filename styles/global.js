@@ -148,6 +148,10 @@ export const GlobalStyle = createGlobalStyle`
       color: #6B7786;
       line-height: 1.9;
       font-size: 1.05rem;
+
+      img {
+        width: 100%;
+      }
     }
 
     .contains-task-list {
