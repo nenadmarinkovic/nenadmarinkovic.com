@@ -1,0 +1,36 @@
+---
+title: How to disable websites on your Mac without installing apps
+description: You can disable access to specific websites on your Mac without installing any additional apps by modifying the system's hosts file.
+date: 26.09.2023
+category: MacOS
+---
+
+<img class="content-image" src="/directory/001.PNG" alt="Terminal Example"/>
+
+Modifying the hosts file is a more advanced method and can affect all users on the Mac. It's essential to be cautious when using this method, as it can potentially disrupt the functionality of your system if not done correctly. Here's how to do it:
+
+Open the Terminal application. You can find it in the Utilities folder within the Applications folder or by searching for it using Spotlight.
+
+Type the following command and press Enter to open the hosts file in a text editor:
+
+```bash
+sudo nano /etc/hosts
+```
+
+You will be prompted to enter your admin password.
+
+Use the arrow keys to navigate to the bottom of the hosts file.
+
+To block a website, add a line with the following format:
+
+```bash
+127.0.0.1   example.com
+```
+
+To save your changes, press Control + O, then press Enter. To exit the text editor, press Control + X.
+
+To make your changes take effect, you may need to flush the DNS cache. In the Terminal, type the following command and press Enter:
+
+```bash
+sudo dscacheutil -flushcache
+```

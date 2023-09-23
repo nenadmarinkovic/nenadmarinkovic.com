@@ -102,7 +102,7 @@ export const GlobalStyle = createGlobalStyle`
 
     .content-image {
       width: 100%;
-      margin: 3rem 0;
+      margin: 1.5rem 0 3rem 0;
       border-radius: 10px;
     }
 
