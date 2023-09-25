@@ -8,6 +8,7 @@ module.exports = {
 
   images: {
     domains: ["i.scdn.co"],
+    path: "/",
   },
 
   compiler: {
