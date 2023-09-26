@@ -2,14 +2,15 @@
  * @type {import('next').NextConfig}
  */
 
-module.exports = {
+const withImages = require("next-images");
+
+module.exports = withImages({
   reactStrictMode: true,
   swcMinify: true,
   pageExtensions: ["ts", "tsx", "mdx"],
 
   images: {
     domains: ["i.scdn.co"],
-    path: "",
   },
 
   compiler: {
@@ -24,4 +25,4 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
-};
+});
