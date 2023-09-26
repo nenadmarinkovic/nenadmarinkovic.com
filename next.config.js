@@ -5,6 +5,7 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
+  pageExtensions: ["ts", "tsx", "mdx"],
 
   images: {
     domains: ["i.scdn.co"],
@@ -23,4 +24,4 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
-}
+};
