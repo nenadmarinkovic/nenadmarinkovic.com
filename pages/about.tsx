@@ -72,7 +72,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 specialized in crafting e-commerce websites, content management
                 systems, and marketing websites. These experiences were
                 invaluable in terms of collaborating closely with designers and
-                clients, both in my home country of Serbia and here in Austria.
+                clients, both in my home country of Serbia and in Austria.
               </p>
 
               <p>
@@ -85,29 +85,22 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 <Link className="a-link" href="/projects">
                   projects
                 </Link>
-                . Most of them are typically geared towards developers and
-                designers. Developing them offers me the freedom to experiment
-                with diverse technologies which is always fun thing to do.
+                , primarily using React and TypeScript. Developing them offers
+                me the freedom to experiment with design, or just to test
+                different approaches and technologies, which is always fun thing
+                to do.
               </p>
               <p>
                 Over a decade ago, I studied sociology and political sciences,
                 gaining insights into human societies and political systems.
                 This background shaped my understanding of societal dynamics and
-                their connection to technology. Unfortunately, I don’t read as
-                extensively as I once did, but I still make time for{" "}
-                <Link className="a-link" href="/dir/reading-list">
-                  books
-                </Link>{" "}
-                on social issues, technology, and our ever-changing world when I
-                can.
+                their connection to technology.
               </p>
               <p>
                 Outside of work, I find pleasure in exploring the beautiful city
-                of Vienna. I’m also dedicated to learning German and{" "}
-                <a className="a-link" href="https://go.dev">
-                  Go
-                </a>
-                . Whenever the opportunity arises, I like to travel, taking{" "}
+                of Vienna. I’m also dedicated to learning German and Go
+                programming language. Whenever the opportunity arises, I like
+                to travel, taking{" "}
                 <Link className="a-link" href="/dir/photography">
                   photos
                 </Link>{" "}
