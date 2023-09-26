@@ -7,7 +7,7 @@ module.exports = {
   swcMinify: true,
 
   images: {
-    domains: ["i.scdn.co"],
+    domains: ["i.scdn.co", "nenadmarinkovic.com"],
   },
 
   compiler: {
