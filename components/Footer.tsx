@@ -71,7 +71,7 @@ function Footer({ spotifyData, theme }: PropTypes) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Visit my GitHub profile
+                GitHub
               </a>
             </FooterItemText>
           </FooterItem>
