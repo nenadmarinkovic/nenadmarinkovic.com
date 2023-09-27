@@ -49,17 +49,17 @@ const PhotographyPage: NextPage<PropTypes> = ({
             </Flex>
             <div className="about-paragraph">
               {photos.map((photo, index) => (
-                <>
-                  <div className={`${index > 0 && "photo-container"} `}>
-                    <Photo
-                      key={photo.id}
-                      id={photo.id}
-                      alt={`Image - ${photo.title}`}
-                      title={photo.title}
-                      text={photo.text}
-                    />
-                  </div>
-                </>
+                <div
+                  key={index}
+                  className={`${index > 0 && "photo-container"} `}
+                >
+                  <Photo
+                    id={photo.id}
+                    alt={`Image - ${photo.title}`}
+                    title={photo.title}
+                    text={photo.text}
+                  />
+                </div>
               ))}
             </div>
           </Container>
