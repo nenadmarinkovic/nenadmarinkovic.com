@@ -102,7 +102,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 beautiful city of Vienna. Whenever the opportunity arises, I
                 like to travel or go hiking, occasionally seizing moments to
                 capture the beauty of my journeys through{" "}
-                <Link className="a-link" href="/dir/photography">
+                <Link className="a-link" href="/photography">
                   photography
                 </Link>
                 .
