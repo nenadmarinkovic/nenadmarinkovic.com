@@ -52,7 +52,7 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                   Directory
                 </Link>
               </HeaderLink>
-              {/* <HeaderLink>
+              <HeaderLink>
                 <Link
                   href="/about"
                   className={
@@ -61,7 +61,7 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                 >
                   About
                 </Link>
-              </HeaderLink> */}
+              </HeaderLink>
               <HeaderLink>
                 <Link
                   href="/contact"

@@ -32,7 +32,7 @@ export const Links = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 55%;
 
   @media (max-width: 47.95rem) {
     display: none;
