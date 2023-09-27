@@ -139,6 +139,27 @@ const PhotographyPage: NextPage<PropTypes> = ({
                         </p>
                       </div>
                     )}
+                    {index === 7 && (
+                      <div>
+                        <h2>Helsinki from Seurasaari</h2>
+                        <p>
+                          The sunset view of Helsinki from Seurasaari island was
+                          undeniably breathtaking, and it made for an incredibly
+                          enjoyable experience.
+                        </p>
+                      </div>
+                    )}
+                    {index === 8 && (
+                      <div>
+                        <h2>Passing ship on the Archipelago Sea</h2>
+                        <p>
+                          Capturing a photo of a passing ship from a bridge
+                          connecting two islands was a delightful highlight
+                          during my cycling adventure through the picturesque
+                          Archipelago Sea region in southwestern Finland.
+                        </p>
+                      </div>
+                    )}
                   </div>
                   <Photo key={index} src={photo.src} alt={photo.alt} />
                 </>
