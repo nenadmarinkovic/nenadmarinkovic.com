@@ -173,6 +173,25 @@ export const GlobalStyle = createGlobalStyle`
       left: 0
     }
 
+    .photo-container {
+      margin-top: 5rem;
+    }
+
+    .photo-text {
+      margin-top: 3.5rem;
+    }
+
+    .photo {
+      margin: 1rem 0;
+      width: 100%;
+      border-radius: 10px;
+
+      p {
+        margin: 0.5rem 0 3rem 0;
+
+      }
+    }
+
     main {
       overflow: hidden;
       color: ${({ theme }) => theme.color};

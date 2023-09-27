@@ -97,16 +97,13 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 their connection to technology.
               </p>
               <p>
-                Outside of work, I find pleasure in exploring the beautiful city
-                of Vienna. I’m also dedicated to learning German and Go
-                programming language. Whenever the opportunity arises, I like
-                to travel, taking{" "}
+                Outside of work, I’m also dedicated to learning German and Go
+                programming language. I also find pleasure in exploring the
+                beautiful city of Vienna. Whenever the opportunity arises, I
+                like to travel or go hiking, occasionally seizing moments to
+                capture the beauty of my journeys through{" "}
                 <Link className="a-link" href="/dir/photography">
-                  photos
-                </Link>{" "}
-                of captivating locations, or simply exploring the web for{" "}
-                <Link className="a-link" href="/dir/bookmarks">
-                  interesting stuff
+                  photography
                 </Link>
                 .
               </p>
