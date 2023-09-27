@@ -44,6 +44,14 @@ const MenuComponent = ({
         </MenuLink>
         <MenuLink>
           <Link
+            href="/about"
+            className={router.pathname.includes("/about") ? "active-link" : ""}
+          >
+            About
+          </Link>
+        </MenuLink>
+        <MenuLink>
+          <Link
             href="/contact"
             className={
               router.pathname.includes("/contact") ? "active-link" : ""
