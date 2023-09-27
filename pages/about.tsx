@@ -87,12 +87,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                   open-source software
                 </a>{" "}
                 whenever I can. I also take pleasure in developing my own{" "}
-                <Link
-                  className="a-link"
-                  href="/projects"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <Link className="a-link" href="/projects">
                   projects
                 </Link>
                 , primarily using React and TypeScript. Developing them offers
@@ -112,12 +107,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 beautiful city of Vienna. Whenever the opportunity arises, I
                 like to travel or go hiking, occasionally seizing moments to
                 capture the beauty of my journeys through{" "}
-                <Link
-                  className="a-link"
-                  href="/photography"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <Link className="a-link" href="/photography">
                   photography
                 </Link>
                 .
@@ -125,12 +115,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
               <p>
                 If you’re in the area and up for hanging out, or want to discuss
                 a project, feel free to{" "}
-                <Link
-                  className="a-link"
-                  href="/contact"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <Link className="a-link" href="/contact">
                   get in touch
                 </Link>
                 .
