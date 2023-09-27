@@ -75,6 +75,7 @@ function ContactForm() {
         <FormContainer onSubmit={handleOnSubmit}>
           <FormLabel htmlFor="email">Your Email</FormLabel>
           <FormInput
+            autoComplete="on"
             id="email"
             type="email"
             name="_replyto"
@@ -84,6 +85,7 @@ function ContactForm() {
           />
           <FormLabel htmlFor="message">Your Message</FormLabel>
           <TextArea
+            autoComplete="on"
             id="message"
             name="message"
             onChange={handleOnChange}
