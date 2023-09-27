@@ -8,4 +8,8 @@ export const Title = styled.div`
   letter-spacing: 0.2rem;
   color: ${({ theme }) => theme.descColor};
   font-weight: bold;
+
+  @media (max-width: 48rem) {
+    padding: 3.5rem 0 0.5rem 0;
+  }
 `;

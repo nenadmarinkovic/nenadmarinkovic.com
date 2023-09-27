@@ -8,6 +8,10 @@ export const BannerWrap = styled.div`
   &.no-margin {
     margin: 0;
   }
+
+  @media (max-width: 48rem) {
+    padding-top: 0;
+  }
 `;
 
 export const Text = styled.h1`
@@ -22,6 +26,10 @@ export const Text = styled.h1`
     @media (max-width: 35rem) {
       max-width: unset;
     }
+  }
+
+  @media (max-width: 48rem) {
+    font-size: 2.5rem;
   }
 
   span {
