@@ -1,17 +1,17 @@
 import Image from "next/image";
+import { PhotoProps } from "../lib/types";
 
-interface PhotoProps {
-  src: string;
-  alt: string;
-}
-
-const Photo: React.FC<PhotoProps> = ({ src, alt }) => {
+const Photo = ({ id, alt, title, text }: PhotoProps) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
+      <div>
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
       <Image
         alt={alt}
         className="photo"
-        src={`/photography/${src}.JPG`}
+        src={`/photography/${id}.JPG`}
         layout="responsive"
         width={0}
         height={0}
@@ -21,7 +21,6 @@ const Photo: React.FC<PhotoProps> = ({ src, alt }) => {
         }}
         quality={100}
       />
-     
     </div>
   );
 };

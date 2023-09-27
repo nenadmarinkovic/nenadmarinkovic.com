@@ -104,3 +104,10 @@ export type FrontmatterType = {
     date: string;
   };
 };
+
+export type PhotoProps = {
+  id: string;
+  alt: string;
+  title: string,
+  text: string
+}
