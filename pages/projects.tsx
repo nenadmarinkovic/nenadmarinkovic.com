@@ -35,99 +35,97 @@ const ProjectsPage: NextPage<PropTypes> = ({
 }: PropTypes) => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  return (
-    <>
-      <Head>
-        <title>Nenad Marinković | Projects</title>
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+  return <>
+    <Head>
+      <title>Nenad Marinković | Projects</title>
+      <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
+    </Head>
 
-      <Header
-        toggleTheme={toggleTheme}
-        theme={theme}
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-      />
+    <Header
+      toggleTheme={toggleTheme}
+      theme={theme}
+      openMenu={openMenu}
+      setOpenMenu={setOpenMenu}
+    />
 
-      <ThemeLayout openMenu={openMenu}>
-        <MainSection>
-          <Container>
-            <Banner name="Projects" />
-            <Flex align="top" justify="space-between">
-              <Introduction>
-                An overview of personal web projects, including technical
-                details and insights. Please note that these are ongoing
-                projects and may contain errors due to limited available time
-                for development.
-              </Introduction>
-            </Flex>
-            <AnimatePresence mode="wait">
-              <PostsWrap>
-                {posts.map((post: PostType, index: number) => (
-                  <motion.div
-                    key={post.data.title}
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -10, opacity: 0 }}
-                    transition={{
-                      duration: 0.2,
-                      delay: index * 0.15,
-                      delayChildren: 0.5,
-                    }}
-                  >
-                    <Post key={post.filePath}>
-                      <Link
-                        as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
-                        href={`/projects/[slug]`}
+    <ThemeLayout openMenu={openMenu}>
+      <MainSection>
+        <Container>
+          <Banner name="Projects" />
+          <Flex align="top" justify="space-between">
+            <Introduction>
+              An overview of personal web projects, including technical
+              details and insights. Please note that these are ongoing
+              projects and may contain errors due to limited available time
+              for development.
+            </Introduction>
+          </Flex>
+          <AnimatePresence mode="wait">
+            <PostsWrap>
+              {posts.map((post: PostType, index: number) => (
+                <motion.div
+                  key={post.data.title}
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{
+                    duration: 0.2,
+                    delay: index * 0.15,
+                    delayChildren: 0.5,
+                  }}
+                >
+                  <Post key={post.filePath}>
+                    <Link
+                      as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
+                      href={`/projects/[slug]`}
+                    >
+                      <Title>{post.data.title}</Title>
+                    </Link>
+                    <AdditionalInfo>
+                      <a
+                        href={`https://${post.data.link}`}
+                        rel="noreferrer"
+                        target="_blank"
                       >
-                        <Title>{post.data.title}</Title>
-                      </Link>
-                      <AdditionalInfo>
-                        <a
-                          href={`https://${post.data.link}`}
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          {post.data.link}
-                        </a>
-                      </AdditionalInfo>
-                      <Description>{post.data.description}</Description>
+                        {post.data.link}
+                      </a>
+                    </AdditionalInfo>
+                    <Description>{post.data.description}</Description>
 
-                      {index === 0 && (
-                        <TagWrap>
-                          <Tag color="black" text="Next.js" />
-                          <Tag color="orange" text="Firebase" />
-                          <Tag color="velvet" text="Styled-components" />
-                        </TagWrap>
-                      )}
+                    {index === 0 && (
+                      <TagWrap>
+                        <Tag color="black" text="Next.js" />
+                        <Tag color="orange" text="Firebase" />
+                        <Tag color="velvet" text="Styled-components" />
+                      </TagWrap>
+                    )}
 
-                      {index === 1 && (
-                        <TagWrap>
-                          <Tag color="black" text="Next.js" />
-                          <Tag color="green" text="Headless CMS" />
-                          <Tag color="velvet" text="Styled-components" />
-                        </TagWrap>
-                      )}
+                    {index === 1 && (
+                      <TagWrap>
+                        <Tag color="black" text="Next.js" />
+                        <Tag color="green" text="Headless CMS" />
+                        <Tag color="velvet" text="Styled-components" />
+                      </TagWrap>
+                    )}
 
-                      {index === 2 && (
-                        <TagWrap>
-                          <Tag color="black" text="Next.js" />
-                          <Tag color="blue" text="Typescript" />
-                          <Tag color="dark-yellow" text="MDX" />
-                          <Tag color="velvet" text="Styled-components" />
-                        </TagWrap>
-                      )}
-                    </Post>
-                  </motion.div>
-                ))}
-              </PostsWrap>
-            </AnimatePresence>
-          </Container>
-        </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
-      </ThemeLayout>
-    </>
-  );
+                    {index === 2 && (
+                      <TagWrap>
+                        <Tag color="black" text="Next.js" />
+                        <Tag color="blue" text="Typescript" />
+                        <Tag color="dark-yellow" text="MDX" />
+                        <Tag color="velvet" text="Styled-components" />
+                      </TagWrap>
+                    )}
+                  </Post>
+                </motion.div>
+              ))}
+            </PostsWrap>
+          </AnimatePresence>
+        </Container>
+      </MainSection>
+      <Footer spotifyData={spotifyData} theme={theme} />
+    </ThemeLayout>
+  </>;
 };
 
 export async function getStaticProps() {

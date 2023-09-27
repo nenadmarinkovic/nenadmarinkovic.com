@@ -175,7 +175,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .photo-container {
-      margin-top: 3.5rem;
+      margin-top: 5rem;
     }
 
     .photo {
