@@ -84,6 +84,7 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 10px;
       margin-left: 2.5rem;
       pointer-events: none;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
       @media (max-width: 48rem) {
         margin: 1.5rem auto;
