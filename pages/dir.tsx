@@ -99,7 +99,16 @@ const DirectoryPage: NextPage<PropTypes> = ({
             <Flex align="top" justify="space-between">
               <Introduction>
                 Web directory for notes, bookmarks, resources, and the things
-                I’m interested in.
+                I’m interested in. All the content is{" "}
+                <a
+                  className="a-link"
+                  href="https://github.com/nenadmarinkovic/nenadmarinkovic.com/tree/main/directory"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  open-source
+                </a>
+                .
               </Introduction>
             </Flex>
             <TagButtonsWrap>
