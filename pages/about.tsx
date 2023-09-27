@@ -9,7 +9,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import { MainSection } from "../styles/components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 type PropTypes = SpotifyType & PostType & ThemeType;

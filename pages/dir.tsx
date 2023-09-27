@@ -78,89 +78,91 @@ const DirectoryPage: NextPage<PropTypes> = ({
     return uniqueCategoriesOnLoad(posts);
   }, [posts]);
 
-  return <>
-    <Head>
-      <title>Nenad Marinković | Directory</title>
-      <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-    </Head>
+  return (
+    <>
+      <Head>
+        <title>Nenad Marinković | Directory</title>
+        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
+      </Head>
 
-    <Header
-      toggleTheme={toggleTheme}
-      theme={theme}
-      openMenu={openMenu}
-      setOpenMenu={setOpenMenu}
-    />
+      <Header
+        toggleTheme={toggleTheme}
+        theme={theme}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
 
-    <ThemeLayout openMenu={openMenu}>
-      <MainSection>
-        <Container>
-          <Banner name="Directory" />
-          <Flex align="top" justify="space-between">
-            <Introduction>
-              Web directory for notes, bookmarks, resources, and the things
-              I’m interested in.
-            </Introduction>
-          </Flex>
-          <TagButtonsWrap>
-            <TagButton
-              onClick={() => {
-                filterCategory("All"), setActive("All");
-              }}
-              color="default"
-              text="All"
-              active={active}
-            />
-            {sortedCategories.map((category: any, index: any) => (
+      <ThemeLayout openMenu={openMenu}>
+        <MainSection>
+          <Container>
+            <Banner name="Directory" />
+            <Flex align="top" justify="space-between">
+              <Introduction>
+                Web directory for notes, bookmarks, resources, and the things
+                I’m interested in.
+              </Introduction>
+            </Flex>
+            <TagButtonsWrap>
               <TagButton
-                key={index}
                 onClick={() => {
-                  filterCategory(category);
-                  setActive(category);
+                  filterCategory("All"), setActive("All");
                 }}
                 color="default"
+                text="All"
                 active={active}
-                text={category}
               />
-            ))}
-          </TagButtonsWrap>
-          <AnimatePresence mode="wait">
-            <PostsWrap>
-              {filteredPosts.map((post: any, index: any) => (
-                <Fragment key={index}>
-                  <Post key={post.filePath}>
-                    <motion.div
-                      key={post.index}
-                      initial={{ y: 10, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: -10, opacity: 0 }}
-                      transition={{
-                        duration: 0.2,
-                        delay: index * 0.15,
-                        delayChildren: 0.5,
-                      }}
-                    >
-                      <Link
-                        as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
-                        href={`/dir/[slug]`}
-                      >
-                        <Title>{post.data.title}</Title>
-                      </Link>
-                      <AdditionalInfo>
-                        Updated:
-                        <Date>{post.data.date}</Date>
-                      </AdditionalInfo>
-                      <Description>{post.data.description}</Description>
-                    </motion.div>
-                  </Post>
-                </Fragment>
+              {sortedCategories.map((category: any, index: any) => (
+                <TagButton
+                  key={index}
+                  onClick={() => {
+                    filterCategory(category);
+                    setActive(category);
+                  }}
+                  color="default"
+                  active={active}
+                  text={category}
+                />
               ))}
-            </PostsWrap>
-          </AnimatePresence>
-        </Container>
-      </MainSection>
-      <Footer spotifyData={spotifyData} theme={theme} />
-    </ThemeLayout>
-  </>;
+            </TagButtonsWrap>
+            <AnimatePresence mode="wait">
+              <PostsWrap>
+                {filteredPosts.map((post: any, index: any) => (
+                  <Fragment key={index}>
+                    <Post key={post.filePath}>
+                      <motion.div
+                        key={post.index}
+                        initial={{ y: 10, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        exit={{ y: -10, opacity: 0 }}
+                        transition={{
+                          duration: 0.2,
+                          delay: index * 0.15,
+                          delayChildren: 0.5,
+                        }}
+                      >
+                        <Link
+                          as={`/dir/${post.filePath.replace(/\.mdx?$/, "")}`}
+                          href={`/dir/[slug]`}
+                        >
+                          <Title>{post.data.title}</Title>
+                        </Link>
+                        <AdditionalInfo>
+                          Updated:
+                          <Date>{post.data.date}</Date>
+                        </AdditionalInfo>
+                        <Description>{post.data.description}</Description>
+                      </motion.div>
+                    </Post>
+                  </Fragment>
+                ))}
+              </PostsWrap>
+            </AnimatePresence>
+          </Container>
+        </MainSection>
+        <Footer spotifyData={spotifyData} theme={theme} />
+      </ThemeLayout>
+    </>
+  );
 };
 
 export async function getStaticProps() {

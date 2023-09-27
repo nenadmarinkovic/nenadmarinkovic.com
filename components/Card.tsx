@@ -14,7 +14,7 @@ import {
   BoxItemText,
 } from "../styles/components/card";
 import { motion, Variants, AnimatePresence } from "framer-motion";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 function Card({
   title,
