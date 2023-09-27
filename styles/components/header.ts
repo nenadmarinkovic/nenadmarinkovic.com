@@ -18,7 +18,7 @@ export const Main = styled.nav`
   align-items: center;
 `;
 
-export const HomeLink = styled.li`
+export const HomeLink = styled.span`
   cursor: pointer;
   color: ${({ theme }) => theme.color};
   transition: 0.3s;
