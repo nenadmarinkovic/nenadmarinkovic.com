@@ -36,7 +36,7 @@ function Footer({ spotifyData, theme }: PropTypes) {
                     rel="noreferrer"
                     className="spotify-link"
                   >
-                    {spotifyData.artist} - {spotifyData.title}
+                    Playing: {spotifyData.artist} - {spotifyData.title}
                   </a>
                   <div className="box">
                     <div className="music one"></div>
