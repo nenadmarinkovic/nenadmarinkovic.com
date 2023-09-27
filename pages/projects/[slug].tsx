@@ -44,7 +44,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title> Projects | {frontMatter.title} </title>
-        <meta name="description" content="Web development and design." />
+        <meta name="description" content={frontMatter.title} />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 

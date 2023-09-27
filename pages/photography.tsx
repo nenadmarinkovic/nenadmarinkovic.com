@@ -25,6 +25,10 @@ const PhotographyPage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title>Nenad Marinković | Photography</title>
+        <meta
+          name="description"
+          content="Experienced front-end developer specializing in creating fast and responsive websites. Proficient in all modern web development tools. Let's bring your web projects to life!"
+        />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 

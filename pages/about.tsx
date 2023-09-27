@@ -25,6 +25,10 @@ const ProjectsPage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title>Nenad Marinković | About</title>
+        <meta
+          name="description"
+          content="Learn more about me and my passion for web development and design."
+        />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 

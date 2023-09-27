@@ -23,6 +23,10 @@ const ContactPage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title>Nenad Marinković | Contact</title>
+        <meta
+          name="description"
+          content="Connect with me for inquiries, collaborations, or a friendly chat."
+        />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 

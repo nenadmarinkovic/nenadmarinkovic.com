@@ -82,6 +82,11 @@ const DirectoryPage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title>Nenad Marinković | Directory</title>
+        <meta
+          name="description"
+          content="Web directory for notes, bookmarks, resources, and the things
+          I’m interested in."
+        />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 

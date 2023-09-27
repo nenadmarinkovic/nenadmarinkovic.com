@@ -14,6 +14,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
+import { structuredData } from "../lib/structured-data";
 
 type PropTypes = SpotifyType & ThemeType;
 
@@ -28,7 +29,15 @@ const Homepage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title>Nenad Marinković | Home</title>
+        <meta
+          name="description"
+          content="Experienced front-end developer specializing in creating fast and responsive websites. Proficient in all modern web development tools. Let's bring your web projects to life!"
+        />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <Header
         toggleTheme={toggleTheme}

@@ -48,7 +48,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
     <>
       <Head>
         <title> Directory | {frontMatter.title} </title>
-        <meta name="description" content="Web development and design." />
+        <meta name="description" content={frontMatter.title} />
         <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
       </Head>
 
