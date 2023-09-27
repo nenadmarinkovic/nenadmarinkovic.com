@@ -109,6 +109,12 @@ const DirectoryPage: NextPage<PropTypes> = ({
                   open-source
                 </a>
                 .
+                <br />
+                For my travel photos, check out the{" "}
+                <Link className="a-link" href={"/photography"}>
+                  Photography{" "}
+                </Link>
+                page.
               </Introduction>
             </Flex>
             <TagButtonsWrap>
