@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrap = styled.footer`
   border-top: ${({ theme }) => theme.headerAndMenuBorder};
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.footerBackground};
   color: ${({ theme }) => theme.color};
   padding: 1.5rem 0;
   margin-top: 8rem;
@@ -17,7 +17,7 @@ export const FooterItem = styled.div`
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.footerBackground};
   width: fit-content;
   min-height: 40px;
 
