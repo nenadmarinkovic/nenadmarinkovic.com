@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import type { NextPage } from "next";
 import { useState } from "react";
 import { SpotifyType, ThemeType } from "../lib/types";
@@ -21,14 +21,14 @@ const ContactPage: NextPage<PropTypes> = ({
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
-      <Head>
-        <title>Nenad Marinković | Contact</title>
-        <meta
-          name="description"
-          content="Connect with me for inquiries, collaborations, or a friendly chat."
-        />
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title="Contact | Nenad Marinković"
+        canonical="https://nenadmarinkovic.com/contact"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/contact",
+          title: "Contact | Nenad Marinković",
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}

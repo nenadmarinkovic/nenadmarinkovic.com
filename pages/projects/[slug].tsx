@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Head from "next/head";
 import { useState } from "react";
 import { NextPage } from "next";
+import { NextSeo } from "next-seo";
 import {
   SourceType,
   SpotifyType,
@@ -42,11 +43,14 @@ const ProjectsPage: NextPage<PropTypes> = ({
 
   return (
     <>
-      <Head>
-        <title> Projects | {frontMatter.title} </title>
-        <meta name="description" content={frontMatter.title} />
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title={`${frontMatter.title} | Nenad Marinković`}
+        canonical="https://nenadmarinkovic.com/projects"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/projects",
+          title: `${frontMatter.title} | Nenad Marinković`,
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}

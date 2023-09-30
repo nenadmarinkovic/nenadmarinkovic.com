@@ -16,7 +16,7 @@ import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { TagWrap } from "../styles/components/tag";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Header from "../components/Header";
 import Tag from "../components/Tag";
 import Banner from "../components/Banner";
@@ -37,14 +37,14 @@ const ProjectsPage: NextPage<PropTypes> = ({
 
   return (
     <>
-      <Head>
-        <title>Nenad Marinković | Projects</title>
-        <meta
-          name="description"
-          content="Browse through my personal web development projects."
-        />
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title="Projects | Nenad Marinković"
+        canonical="https://nenadmarinkovic.com/projects"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/projects",
+          title: "Projects | Nenad Marinković",
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}

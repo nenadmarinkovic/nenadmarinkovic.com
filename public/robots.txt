@@ -1,0 +1,2 @@
+robots.txtUser-agent: *
+Sitemap: https://nenadmarinkovic.com/sitemap.xml

@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
@@ -23,14 +23,14 @@ const ProjectsPage: NextPage<PropTypes> = ({
 
   return (
     <>
-      <Head>
-        <title>Nenad Marinković | About</title>
-        <meta
-          name="description"
-          content="Learn more about me and my passion for web development and design."
-        />
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title="About | Nenad Marinković"
+        canonical="https://nenadmarinkovic.com/about"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/about",
+          title: "About | Nenad Marinković",
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}
@@ -54,7 +54,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
               </Introduction>
               <Image
                 className="personal-photo"
-                src={"/Social.JPG"}
+                src={"/photo.jpg"}
                 height={225}
                 width={225}
                 alt="Personal photo"

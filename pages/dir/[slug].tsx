@@ -9,6 +9,7 @@ import {
   ThemeType,
   ParamType,
 } from "../../lib/types";
+import { NextSeo } from "next-seo";
 import { website } from "../../lib/website";
 import Header from "../../components/Header";
 import { useState } from "react";
@@ -46,11 +47,14 @@ const DirectoryPage: NextPage<PropTypes> = ({
 
   return (
     <>
-      <Head>
-        <title> Directory | {frontMatter.title} </title>
-        <meta name="description" content={frontMatter.title} />
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title={`${frontMatter.title} | Nenad Marinković`}
+        canonical="https://nenadmarinkovic.com/dir"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/dir",
+          title: `${frontMatter.title} | Nenad Marinković`,
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}

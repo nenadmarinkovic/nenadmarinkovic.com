@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
@@ -22,10 +22,14 @@ const ProjectsPage: NextPage<PropTypes> = ({
 
   return (
     <>
-      <Head>
-        <title>Nenad Marinković | 404</title>
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title="404 | Nenad Marinković"
+        canonical="https://nenadmarinkovic.com/404"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/404",
+          title: "404 | Nenad Marinković",
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}

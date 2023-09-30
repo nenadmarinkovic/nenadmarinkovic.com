@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 import type { NextPage } from "next";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
@@ -80,15 +80,14 @@ const DirectoryPage: NextPage<PropTypes> = ({
 
   return (
     <>
-      <Head>
-        <title>Nenad Marinković | Directory</title>
-        <meta
-          name="description"
-          content="Web directory for notes, bookmarks, resources, and the things
-          I’m interested in."
-        />
-        <meta content={theme === "dark" ? "#000" : "#fff"} name="theme-color" />
-      </Head>
+      <NextSeo
+        title="Directory | Nenad Marinković"
+        canonical="https://nenadmarinkovic.com/dir"
+        openGraph={{
+          url: "https://nenadmarinkovic.com/dir",
+          title: "Directory | Nenad Marinković",
+        }}
+      />
 
       <Header
         toggleTheme={toggleTheme}
