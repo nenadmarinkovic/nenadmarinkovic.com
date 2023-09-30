@@ -39,7 +39,7 @@ class Doc extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link href="/images/favicon.ico" rel="shortcut icon" />
+          <link href="/images/favicon.ico" rel="icon" />
           <link href="/manifest.json" rel="manifest" />
           <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
         </Head>
