@@ -21,12 +21,12 @@ export const StyledMenu = styled.nav<Menu>`
   z-index: 0;
 `;
 
-export const MenuLinks = styled.div`
+export const MenuLinks = styled.ul`
   display: flex;
   flex-direction: column;
 `;
 
-export const MenuLink = styled.div`
+export const MenuLink = styled.li`
   text-align: center;
   margin-top: 1.5rem;
   font-size: 1rem;
@@ -38,7 +38,6 @@ export const MenuLink = styled.div`
 
 export const MenuThemeButton = styled.button`
   text-align: center;
-  margin-top: 1.5rem;
   background: transparent;
   font-size: 1rem;
   border: none;
