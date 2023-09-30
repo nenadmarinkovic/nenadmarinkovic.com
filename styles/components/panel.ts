@@ -73,8 +73,8 @@ export const PanelButton = styled.div`
   cursor: pointer;
   margin-top: auto;
   text-align: center;
-  background: ${({ theme }) => theme.grayButton};
-  color: ${({ theme }) => theme.color};
+  background: ${({ theme }) => theme.buttonBackground};
+  color: ${({ theme }) => theme.buttonColor};
   padding: 8px 35px;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -88,11 +88,11 @@ export const PanelButton = styled.div`
   svg {
     margin-left: 5px;
     transition: 0.3s;
-    fill: ${({ theme }) => theme.color};
+    fill: ${({ theme }) => theme.buttonColor};
 
     path {
-      fill: ${({ theme }) => theme.color};
-      stroke: ${({ theme }) => theme.color};
+      fill: ${({ theme }) => theme.buttonColor};
+      stroke: ${({ theme }) => theme.buttonColor};
     }
   }
 

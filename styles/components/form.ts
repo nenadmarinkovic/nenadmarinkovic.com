@@ -25,7 +25,7 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
   margin: 0;
   color: ${({ theme }) => theme.color};
-  border: 1px solid #CFD5DB;
+  border: 1px solid #cfd5db;
   border-radius: 8px;
   padding: 0.35rem;
   vertical-align: middle;
@@ -37,7 +37,7 @@ export const FormInput = styled.input`
 
 export const TextArea = styled.textarea`
   margin: 0;
-  border: 1px solid #CFD5DB;
+  border: 1px solid #cfd5db;
   border-radius: 8px;
   color: ${({ theme }) => theme.color};
   padding: 0.5em;
@@ -50,8 +50,8 @@ export const TextArea = styled.textarea`
 `;
 
 export const Button = styled.button`
-  background: ${({ theme }) => theme.grayButton};
-  color: ${({ theme }) => theme.color};
+  background: ${({ theme }) => theme.buttonBackground};
+  color: ${({ theme }) => theme.buttonColor};
   padding: 8px 35px;
   display: flex;
   align-items: center;
@@ -74,11 +74,11 @@ export const Button = styled.button`
   svg {
     margin-left: 5px;
     transition: 0.3s;
-    fill: ${({ theme }) => theme.color};
+    fill: ${({ theme }) => theme.buttonColor};
 
     path {
-      fill: ${({ theme }) => theme.color};
-      stroke: ${({ theme }) => theme.color};
+      fill: ${({ theme }) => theme.buttonColor};
+      stroke: ${({ theme }) => theme.buttonColor};
     }
   }
 

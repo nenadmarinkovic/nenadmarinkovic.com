@@ -23,6 +23,8 @@ export const lightTheme = {
   activeButtonColor: "#D2D6DC",
   labelColor: "#888",
   unselectedColor: "#D2D6DC",
+  buttonBackground: "#000",
+  buttonColor: "#FFF",
 
   // Code theme
   mdxBackground: "#F6F8FA",
@@ -65,6 +67,8 @@ export const darkTheme = {
   activeButtonColor: "#ccc",
   labelColor: "#fff",
   unselectedColor: "#6b7786",
+  buttonBackground: "#000",
+  buttonColor: "#FFF",
 
   // Code theme
   mdxBackground: "#000",
