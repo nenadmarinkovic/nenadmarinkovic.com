@@ -42,6 +42,7 @@ class Doc extends Document {
           <link href="/images/favicon.ico" rel="icon" />
           <link href="/manifest.json" rel="manifest" />
           <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
+          <meta content="#ffffff" name="theme-color" />
         </Head>
         <body>
           <Main />
