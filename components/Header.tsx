@@ -11,9 +11,9 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Menu from "./Menu";
-import { ThemeType, SpotifyType, MenuType } from "../lib/types";
+import { ThemeType, MenuType } from "../lib/types";
 
-type PropTypes = ThemeType & SpotifyType & MenuType;
+type PropTypes = ThemeType & MenuType;
 
 function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
   const router = useRouter();

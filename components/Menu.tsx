@@ -7,11 +7,11 @@ import {
   StyledBurger,
   MenuThemeButton,
 } from "../styles/components/menu";
-import { ThemeType, SpotifyType, MenuType } from "../lib/types";
+import { ThemeType, MenuType } from "../lib/types";
 import Link from "next/link";
 import { useClickOutside } from "../hooks/useClickOutside";
 
-type PropTypes = ThemeType & SpotifyType & MenuType;
+type PropTypes = ThemeType & MenuType;
 
 const MenuComponent = ({
   openMenu,

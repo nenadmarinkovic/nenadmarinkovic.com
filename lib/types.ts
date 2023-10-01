@@ -101,7 +101,7 @@ export type PhotoProps = {
   text: string;
 };
 
-export type SpotifyData = {
+export type SpotifyType = {
   isPlaying: boolean;
   songUrl: string;
   artist: string;
