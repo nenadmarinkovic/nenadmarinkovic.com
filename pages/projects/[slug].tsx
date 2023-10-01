@@ -17,7 +17,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Header from "../../components/Header";
 import { MainSection, ThemeLayout } from "../../styles/components/layout";
-import { PROJECTS_PATH } from "../../utils/mdx-projects";
+import { postFilePaths, PROJECTS_PATH } from "../../utils/mdx-projects";
 import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
@@ -94,7 +94,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
   );
 };
 
-export const getServerSideProps = async ({ params }: ParamType) => {
+export const getStaticProps = async ({ params }: ParamType) => {
   const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
@@ -133,7 +133,18 @@ export const getServerSideProps = async ({ params }: ParamType) => {
       source: mdxSource,
       frontMatter: data,
     },
-    revalidate: 1
+    revalidate: 1,
+  };
+};
+
+export const getStaticPaths = async () => {
+  const paths = postFilePaths
+    .map((path) => path.replace(/\.mdx?$/, ""))
+    .map((slug) => ({ params: { slug } }));
+
+  return {
+    paths,
+    fallback: false,
   };
 };
 
