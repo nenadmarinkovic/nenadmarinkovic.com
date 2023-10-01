@@ -94,7 +94,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
   );
 };
 
-export const getServerSideProps = async ({ params }: ParamType) => {
+export const getStaticProps = async ({ params }: ParamType) => {
   const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);

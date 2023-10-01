@@ -89,7 +89,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
   );
 };
 
-export const getServerSideProps = async ({ params }: ParamType) => {
+export const getStaticProps = async ({ params }: ParamType) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
@@ -125,6 +125,7 @@ export const getServerSideProps = async ({ params }: ParamType) => {
   return {
     props: {
       spotifyData,
+      revalidate: 0,
       source: mdxSource,
       frontMatter: data,
     },
