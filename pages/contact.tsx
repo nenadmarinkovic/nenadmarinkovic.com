@@ -64,7 +64,7 @@ const ContactPage: NextPage<PropTypes> = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let spotifyData = [];
   let error = "";
 
@@ -87,7 +87,6 @@ export async function getStaticProps() {
 
   return {
     props: { spotifyData },
-    revalidate: 10,
   };
 }
 

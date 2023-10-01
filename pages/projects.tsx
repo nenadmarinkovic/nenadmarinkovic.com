@@ -134,7 +134,7 @@ const ProjectsPage: NextPage<PropTypes> = ({
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let spotifyData = [];
   let error = "";
 
