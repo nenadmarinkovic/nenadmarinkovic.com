@@ -20,7 +20,7 @@ export const lightTheme = {
   activeColor: "#0070f5",
   descColor: "#626D7B",
   activeButton: "#0070f5",
-  activeButtonColor: "#D2D6DC",
+  activeButtonColor: "#000",
   labelColor: "#888",
   unselectedColor: "#D2D6DC",
   buttonBackground: "#000",
