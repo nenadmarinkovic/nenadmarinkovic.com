@@ -3,8 +3,7 @@ import { useState } from "react";
 import { ThemeLayout, Container } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { Cards } from "../styles/components/card";
-import { SpotifyType, ThemeType } from "../lib/types";
-import { website } from "../lib/website";
+import { ThemeType } from "../lib/types";
 import Section from "../components/Section";
 import Panel from "../components/Panel";
 import Card from "../components/Card";
@@ -13,14 +12,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
+import SpotifyPlay from "../components/SpotifyPlaying";
 
-type PropTypes = SpotifyType & ThemeType;
+type PropTypes = ThemeType;
 
-const Homepage: NextPage<PropTypes> = ({
-  spotifyData,
-  theme,
-  toggleTheme,
-}: PropTypes) => {
+const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
@@ -87,40 +83,14 @@ const Homepage: NextPage<PropTypes> = ({
             </Cards>
             <Section title="Personal projects" />
             <SelectedProjects />
+            <SpotifyPlay />
             <Panel />
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
+        <Footer theme={theme} />
       </ThemeLayout>
     </>
   );
 };
-
-export async function getStaticProps() {
-  let spotifyData = [];
-  let error = "";
-
-  const server = website.live;
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    spotifyData = await res.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
-
-  return {
-    props: { spotifyData },
-    revalidate: 1,
-  };
-}
 
 export default Homepage;

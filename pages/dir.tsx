@@ -9,13 +9,7 @@ import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import { postFilePaths, POSTS_PATH } from "../utils/mdx-directory";
 import TagButton from "../components/TagButton";
-import {
-  PostType,
-  SpotifyType,
-  ThemeType,
-  FilteredPostType,
-} from "../lib/types";
-import { website } from "../lib/website";
+import { PostType, ThemeType, FilteredPostType } from "../lib/types";
 import { TagButtonsWrap } from "../styles/components/tag";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -31,11 +25,10 @@ import {
   Description,
 } from "../styles/pages/common";
 
-type PropTypes = PostType & SpotifyType & ThemeType;
+type PropTypes = PostType & ThemeType;
 
 const DirectoryPage: NextPage<PropTypes> = ({
   posts,
-  spotifyData,
   theme,
   toggleTheme,
 }: PropTypes) => {
@@ -178,33 +171,13 @@ const DirectoryPage: NextPage<PropTypes> = ({
             </AnimatePresence>
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
+        <Footer theme={theme} />
       </ThemeLayout>
     </>
   );
 };
 
 export async function getStaticProps() {
-  let spotifyData = [];
-  let error = "";
-
-  const server = website.live;
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    spotifyData = await res.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
-
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
     const { content, data } = matter(source);
@@ -216,8 +189,7 @@ export async function getStaticProps() {
     };
   });
 
-  return { props: { posts, spotifyData }, revalidate: 1 };
-
+  return { props: { posts }, revalidate: 10 };
 }
 
 export default DirectoryPage;

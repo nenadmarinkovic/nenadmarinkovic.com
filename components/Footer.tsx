@@ -1,15 +1,16 @@
 import { Container, FlexContainer } from "../styles/components/layout";
-import { SpotifyType, ThemeType } from "../lib/types";
+import { ThemeType } from "../lib/types";
 import {
   FooterWrap,
   FooterItem,
   FooterItemText,
   BottomText,
 } from "../styles/components/footer";
+import SpotifyPlay from "./SpotifyPlaying";
 
-type PropTypes = SpotifyType & ThemeType;
+type PropTypes = ThemeType;
 
-function Footer({ spotifyData, theme }: PropTypes) {
+function Footer({ theme }: PropTypes) {
   return (
     <FooterWrap>
       <Container>
@@ -27,27 +28,7 @@ function Footer({ spotifyData, theme }: PropTypes) {
                 fill="#1ED760"
               />
             </svg>
-            <FooterItemText>
-              {spotifyData?.isPlaying ? (
-                <>
-                  <a
-                    href={`${spotifyData.songUrl}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="spotify-link"
-                  >
-                    Playing: {spotifyData.artist} - {spotifyData.title}
-                  </a>
-                  <div className="box">
-                    <div className="music one"></div>
-                    <div className="music two"></div>
-                    <div className="music three"></div>
-                  </div>
-                </>
-              ) : (
-                "Not playing currently"
-              )}
-            </FooterItemText>
+            <SpotifyPlay />
           </FooterItem>
           <FooterItem>
             <svg

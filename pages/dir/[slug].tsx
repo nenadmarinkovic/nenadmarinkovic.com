@@ -4,13 +4,11 @@ import matter from "gray-matter";
 import Head from "next/head";
 import {
   SourceType,
-  SpotifyType,
   FrontmatterType,
   ThemeType,
   ParamType,
 } from "../../lib/types";
 import { NextSeo } from "next-seo";
-import { website } from "../../lib/website";
 import Header from "../../components/Header";
 import { useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
@@ -30,7 +28,7 @@ import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { Date } from "../../styles/pages/common";
 
-type PropTypes = SourceType & FrontmatterType & SpotifyType & ThemeType;
+type PropTypes = SourceType & FrontmatterType & ThemeType;
 
 const components = {
   Head,
@@ -39,7 +37,6 @@ const components = {
 const DirectoryPage: NextPage<PropTypes> = ({
   source,
   frontMatter,
-  spotifyData,
   theme,
   toggleTheme,
 }: PropTypes) => {
@@ -83,7 +80,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
             </MDXContent>
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
+        <Footer theme={theme} />
       </ThemeLayout>
     </>
   );
@@ -93,26 +90,6 @@ export const getStaticProps = async ({ params }: ParamType) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
-
-  let spotifyData = [];
-  let error = "";
-
-  const server = website.live;
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    spotifyData = await res.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
 
   const mdxSource = await serialize(content, {
     mdxOptions: {
@@ -124,11 +101,10 @@ export const getStaticProps = async ({ params }: ParamType) => {
 
   return {
     props: {
-      spotifyData,
       source: mdxSource,
       frontMatter: data,
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 };
 

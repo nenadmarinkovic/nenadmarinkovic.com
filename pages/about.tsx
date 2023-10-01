@@ -1,5 +1,4 @@
-import { PostType, SpotifyType, ThemeType } from "../lib/types";
-import { website } from "../lib/website";
+import { PostType, ThemeType } from "../lib/types";
 import type { NextPage } from "next";
 import { useState } from "react";
 import { Introduction } from "../styles/components/introduction";
@@ -12,10 +11,9 @@ import { MainSection } from "../styles/components/layout";
 import Image from "next/image";
 import Link from "next/link";
 
-type PropTypes = SpotifyType & PostType & ThemeType;
+type PropTypes = PostType & ThemeType;
 
 const ProjectsPage: NextPage<PropTypes> = ({
-  spotifyData,
   theme,
   toggleTheme,
 }: PropTypes) => {
@@ -127,34 +125,10 @@ const ProjectsPage: NextPage<PropTypes> = ({
             </div>
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
+        <Footer theme={theme} />
       </ThemeLayout>
     </>
   );
 };
-
-export async function getStaticProps() {
-  let spotifyData = [];
-  let error = "";
-
-  const server = website.live;
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    spotifyData = await res.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
-
-  return { props: { spotifyData }, revalidate: 1 };
-}
 
 export default ProjectsPage;

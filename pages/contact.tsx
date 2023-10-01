@@ -1,8 +1,7 @@
 import { NextSeo } from "next-seo";
 import type { NextPage } from "next";
 import { useState } from "react";
-import { SpotifyType, ThemeType } from "../lib/types";
-import { website } from "../lib/website";
+import { ThemeType } from "../lib/types";
 import { ThemeLayout, Container, Flex } from "../styles/components/layout";
 import { Introduction } from "../styles/components/introduction";
 import Header from "../components/Header";
@@ -11,10 +10,9 @@ import Footer from "../components/Footer";
 import ContactForm from "../components/Form";
 import { MainSection } from "../styles/components/layout";
 
-type PropTypes = SpotifyType & ThemeType;
+type PropTypes = ThemeType;
 
 const ContactPage: NextPage<PropTypes> = ({
-  spotifyData,
   theme,
   toggleTheme,
 }: PropTypes) => {
@@ -58,37 +56,10 @@ const ContactPage: NextPage<PropTypes> = ({
             <ContactForm />
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
+        <Footer theme={theme} />
       </ThemeLayout>
     </>
   );
 };
-
-export async function getStaticProps() {
-  let spotifyData = [];
-  let error = "";
-
-  const server = website.live;
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    spotifyData = await res.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
-
-  return {
-    props: { spotifyData },
-    revalidate: 1,
-  };
-}
 
 export default ContactPage;

@@ -81,17 +81,6 @@ export type FilteredPostType = {
   };
 };
 
-export type SpotifyType = {
-  name?: string;
-  spotifyData?: {
-    status?: string;
-    isPlaying?: boolean;
-    songUrl: string;
-    title: string;
-    artist?: string;
-  };
-};
-
 export type SourceType = {
   source: object;
 };
@@ -108,6 +97,13 @@ export type FrontmatterType = {
 export type PhotoProps = {
   id: string;
   alt: string;
-  title: string,
-  text: string
-}
+  title: string;
+  text: string;
+};
+
+export type SpotifyData = {
+  isPlaying: boolean;
+  songUrl: string;
+  artist: string;
+  title: string;
+};

@@ -8,8 +8,7 @@ import {
   AdditionalInfo,
   Description,
 } from "../styles/pages/common";
-import { PostType, SpotifyType, ThemeType } from "../lib/types";
-import { website } from "../lib/website";
+import { PostType, ThemeType } from "../lib/types";
 import type { NextPage } from "next";
 import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
 import { useState } from "react";
@@ -25,10 +24,9 @@ import Footer from "../components/Footer";
 import { MainSection } from "../styles/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
 
-type PropTypes = SpotifyType & PostType & ThemeType;
+type PropTypes = PostType & ThemeType;
 
 const ProjectsPage: NextPage<PropTypes> = ({
-  spotifyData,
   posts,
   theme,
   toggleTheme,
@@ -128,33 +126,13 @@ const ProjectsPage: NextPage<PropTypes> = ({
             </AnimatePresence>
           </Container>
         </MainSection>
-        <Footer spotifyData={spotifyData} theme={theme} />
+        <Footer theme={theme} />
       </ThemeLayout>
     </>
   );
 };
 
 export async function getStaticProps() {
-  let spotifyData = [];
-  let error = "";
-
-  const server = website.live;
-
-  try {
-    const res = await fetch(server, {
-      method: "GET",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-        Accept: "application/json; charset=UTF-8",
-      },
-    });
-
-    spotifyData = await res.json();
-  } catch (e: any) {
-    error = e.toString();
-  }
-
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
     const { content, data } = matter(source);
@@ -165,8 +143,8 @@ export async function getStaticProps() {
       filePath,
     };
   });
-  
-  return { props: { posts, spotifyData }, revalidate: 1 };
+
+  return { props: { posts }, revalidate: 10 };
 }
 
 export default ProjectsPage;
