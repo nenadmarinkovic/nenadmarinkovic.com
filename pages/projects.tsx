@@ -166,7 +166,7 @@ export async function getServerSideProps() {
     };
   });
 
-  return { props: { posts, spotifyData }, revalidate: 10 };
+  return { props: { posts, spotifyData } };
 }
 
 export default ProjectsPage;
