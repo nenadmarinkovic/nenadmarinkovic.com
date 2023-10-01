@@ -25,6 +25,7 @@ import remarkGfm from "remark-gfm";
 import { Date } from "../../styles/pages/common";
 
 type PropTypes = SourceType & FrontmatterType & ThemeType;
+
 const components = {
   Head,
 };
