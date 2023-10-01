@@ -64,7 +64,7 @@ const ContactPage: NextPage<PropTypes> = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 

@@ -74,7 +74,7 @@ const PhotographyPage: NextPage<PropTypes> = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
@@ -95,7 +95,7 @@ export async function getServerSideProps() {
     error = e.toString();
   }
 
-  return { props: { spotifyData } };
+  return { props: { spotifyData }, revalidate: 1 };
 }
 
 export default PhotographyPage;

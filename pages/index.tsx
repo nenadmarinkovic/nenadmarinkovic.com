@@ -96,7 +96,7 @@ const Homepage: NextPage<PropTypes> = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
@@ -119,6 +119,7 @@ export async function getServerSideProps() {
 
   return {
     props: { spotifyData },
+    revalidate: 1,
   };
 }
 

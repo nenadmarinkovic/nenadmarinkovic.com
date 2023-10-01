@@ -128,6 +128,7 @@ export const getServerSideProps = async ({ params }: ParamType) => {
       source: mdxSource,
       frontMatter: data,
     },
+    revalidate: 1,
   };
 };
 

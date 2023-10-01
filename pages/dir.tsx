@@ -184,7 +184,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let spotifyData = [];
   let error = "";
 
@@ -216,7 +216,8 @@ export async function getServerSideProps() {
     };
   });
 
-  return { props: { posts, spotifyData } };
+  return { props: { posts, spotifyData }, revalidate: 1 };
+
 }
 
 export default DirectoryPage;
