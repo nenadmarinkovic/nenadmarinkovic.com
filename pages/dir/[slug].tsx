@@ -20,7 +20,7 @@ import {
   ThemeLayout,
   MDXContent,
 } from "../../styles/components/layout";
-import { postFilePaths, POSTS_PATH } from "../../utils/mdx-directory";
+import { POSTS_PATH } from "../../utils/mdx-directory";
 import { Container } from "../../styles/components/layout";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
@@ -89,7 +89,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
   );
 };
 
-export const getStaticProps = async ({ params }: ParamType) => {
+export const getServerSideProps = async ({ params }: ParamType) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
@@ -129,17 +129,6 @@ export const getStaticProps = async ({ params }: ParamType) => {
       frontMatter: data,
     },
     revalidate: 1,
-  };
-};
-
-export const getStaticPaths = async () => {
-  const paths = postFilePaths
-    .map((path) => path.replace(/\.mdx?$/, ""))
-    .map((slug) => ({ params: { slug } }));
-
-  return {
-    paths,
-    fallback: false,
   };
 };
 

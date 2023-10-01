@@ -165,7 +165,7 @@ export async function getStaticProps() {
       filePath,
     };
   });
-
+  
   return { props: { posts, spotifyData }, revalidate: 1 };
 }
 

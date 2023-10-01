@@ -13,7 +13,7 @@ import Link from "next/link";
 
 type PropTypes = SpotifyType & PostType & ThemeType;
 
-const ProjectsPage: NextPage<PropTypes> = ({
+const NotFoundPage: NextPage<PropTypes> = ({
   spotifyData,
   theme,
   toggleTheme,
@@ -101,4 +101,4 @@ export async function getStaticProps() {
   return { props: { spotifyData }, revalidate: 1 };
 }
 
-export default ProjectsPage;
+export default NotFoundPage;
