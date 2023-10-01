@@ -6,4 +6,5 @@ export const SpotifyWrap = styled.span`
   color: ${({ theme }) => theme.color};
   line-height: 1.5;
   font-size: 0.9rem;
+  margin-left: 10px;
 `;
