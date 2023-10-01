@@ -87,7 +87,7 @@ export async function getStaticProps() {
 
   return {
     props: { spotifyData },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 

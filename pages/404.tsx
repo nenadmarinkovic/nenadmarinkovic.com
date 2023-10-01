@@ -98,7 +98,7 @@ export async function getStaticProps() {
     error = e.toString();
   }
 
-  return { props: { spotifyData }, revalidate: 10 };
+  return { props: { spotifyData }, revalidate: 1 };
 }
 
 export default ProjectsPage;
