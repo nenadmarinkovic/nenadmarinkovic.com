@@ -1,11 +1,28 @@
-import useSWR from "swr";
-import fetcher from "../lib/fetcher";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SpotifyType } from "../lib/types";
 import { SpotifyWrap } from "../styles/components/spotify";
 
-function SpotifyPlay() {
-  const { data } = useSWR<SpotifyType>("/api/playing", fetcher);
+export default function SpotifyPlay() {
+  const [data, setData] = useState<SpotifyType | null>(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch("/api/playing");
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <SpotifyWrap>
@@ -31,5 +48,3 @@ function SpotifyPlay() {
     </SpotifyWrap>
   );
 }
-
-export default SpotifyPlay;
