@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { PhotoProps } from "../lib/types";
+import { PhotoType } from "../lib/types";
 
-const Photo = ({ id, alt, title, text }: PhotoProps) => {
+const Photo = ({ id, alt, title, text }: PhotoType) => {
   return (
     <>
       <div>

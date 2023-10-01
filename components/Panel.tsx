@@ -11,11 +11,11 @@ function Panel() {
   return (
     <PanelWrap>
       <PanelInside>
-        <Title> Let&apos;s build together.</Title>
+        <Title> Let’s build together.</Title>
         <Text>
           Web is an unique platform for creativity, businesses, and growth.
-          Let&apos;s combine your idea with my technical know-how to build
-          amazing projects. Together.
+          Let’s combine your idea with my technical know-how to build amazing
+          projects. Together.
         </Text>
 
         <Link href="/contact">

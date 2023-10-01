@@ -126,7 +126,7 @@ function Menu({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
   useClickOutside(node, () => setOpenMenu(false));
 
   return (
-    <div>
+    <>
       <div ref={node}>
         <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
         <MenuComponent
@@ -136,7 +136,7 @@ function Menu({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
           toggleTheme={toggleTheme}
         />
       </div>
-    </div>
+    </>
   );
 }
 

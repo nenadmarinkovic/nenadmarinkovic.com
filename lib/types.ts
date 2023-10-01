@@ -94,7 +94,7 @@ export type FrontmatterType = {
   };
 };
 
-export type PhotoProps = {
+export type PhotoType = {
   id: string;
   alt: string;
   title: string;

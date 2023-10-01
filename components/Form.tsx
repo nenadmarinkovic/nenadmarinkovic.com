@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-
 import {
   FormWrap,
   FormContainer,
@@ -20,10 +19,12 @@ function ContactForm() {
     submitting: false,
     info: { error: false, msg: null },
   });
+
   const [inputs, setInputs] = useState({
     email: "",
     message: "",
   });
+
   const handleServerResponse = (ok: boolean, msg: any) => {
     if (ok) {
       setStatus({
@@ -38,6 +39,7 @@ function ContactForm() {
     } else {
     }
   };
+
   const handleOnChange = (e: {
     persist: () => void;
     target: { id: string; value: string };
@@ -53,6 +55,7 @@ function ContactForm() {
       info: { error: false, msg: null },
     });
   };
+
   const handleOnSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
