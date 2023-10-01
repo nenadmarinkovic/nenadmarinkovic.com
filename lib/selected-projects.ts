@@ -1,4 +1,4 @@
-import { SelectedProjectType } from "../lib/types";
+import { SelectedProjectType } from "./types";
 
 export const all = [
   {

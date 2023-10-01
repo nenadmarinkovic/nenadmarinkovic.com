@@ -12,7 +12,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
-import SpotifyPlay from "../components/SpotifyPlaying";
 
 type PropTypes = ThemeType;
 

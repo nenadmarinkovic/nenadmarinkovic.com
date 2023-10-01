@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { initialTabs as tabs } from "./selected-projects";
+import { initialTabs as tabs } from "../lib/selected-projects";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Window,
