@@ -83,7 +83,6 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
             </Cards>
             <Section title="Personal projects" />
             <SelectedProjects />
-            <SpotifyPlay />
             <Panel />
           </Container>
         </MainSection>
