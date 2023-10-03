@@ -77,8 +77,8 @@ export const BoxItemText = styled.div`
   margin-left: 1rem;
 `;
 
-export const Title = styled.div`
-  margin-top: 1rem;
+export const Title = styled.h2`
+  margin: 1rem 0 0;
   font-size: 1.95rem;
   line-height: 1.5;
   font-weight: 900;
