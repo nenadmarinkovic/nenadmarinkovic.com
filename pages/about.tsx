@@ -122,6 +122,15 @@ const ProjectsPage: NextPage<PropTypes> = ({
                 </Link>
                 .
               </p>
+              <p>
+                <a
+                  className="a-link"
+                  href="./CV.pdf"
+                  download="CV-Nenad-Marinkovic"
+                >
+                  Download my full CV in PDF format
+                </a>
+              </p>
             </div>
           </Container>
         </MainSection>
