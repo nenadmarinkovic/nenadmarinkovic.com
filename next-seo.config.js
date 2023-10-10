@@ -1,4 +1,4 @@
-const title = "Nenad Marinković – Web development and design.";
+const title = "Nenad Marinkovic – Web development and design.";
 const description =
   "Front-end developer specializing in creating fast and responsive websites and applications. Proficient in all modern web development tools. Let’s bring your web projects to life!";
 
