@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 
-export const useTheme = () => {
-  const [theme, setTheme] = useState("light");
+type Theme = "light" | "dark";
+
+export const useTheme = (): [Theme, () => void, boolean] => {
+  const [theme, setTheme] = useState<Theme>("light");
   const [componentMounted, setComponentMounted] = useState(false);
-  const setMode = (mode: any) => {
+
+  const setMode = (mode: Theme) => {
     window.localStorage.setItem("theme", mode);
     setTheme(mode);
   };
@@ -18,13 +21,15 @@ export const useTheme = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: light)").matches &&
-    !localTheme
-      ? setMode("light")
-      : localTheme
-      ? setTheme(localTheme)
-      : setMode("dark");
+    const prefersLightMode = window.matchMedia(
+      "(prefers-color-scheme: light)"
+    ).matches;
+
+    if (!localTheme) {
+      setMode(prefersLightMode ? "light" : "dark");
+    } else {
+      setTheme(localTheme as Theme);
+    }
 
     setComponentMounted(true);
   }, []);

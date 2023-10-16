@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { SpotifyType } from "../lib/types";
+import { SpotifySongType } from "../lib/types";
 import { SpotifyWrap } from "../styles/components/spotify";
 
 export default function SpotifyPlay() {
-  const [data, setData] = useState<SpotifyType | null>(null);
+  const [data, setData] = useState<SpotifySongType | null>(null);
 
   useEffect(() => {
     async function fetchData() {

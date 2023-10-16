@@ -123,7 +123,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
                 text="All"
                 active={active}
               />
-              {sortedCategories.map((category: any, index: any) => (
+              {sortedCategories.map((category: string, index: number) => (
                 <TagButton
                   key={index}
                   onClick={() => {
@@ -138,7 +138,7 @@ const DirectoryPage: NextPage<PropTypes> = ({
             </TagButtonsWrap>
             <AnimatePresence mode="wait">
               <PostsWrap>
-                {filteredPosts.map((post: any, index: any) => (
+                {filteredPosts.map((post: FilteredPostType, index: number) => (
                   <Fragment key={index}>
                     <Post key={post.filePath}>
                       <motion.div
