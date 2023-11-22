@@ -20,7 +20,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <title>Nenad Marinković</title>
       </Head>
       <DefaultSeo {...SEO} />
       <Component {...pageProps} theme={theme} toggleTheme={toggleTheme} />
