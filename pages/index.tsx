@@ -12,6 +12,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import SelectedProjects from "../components/SelectedProjects";
+import { NextSeo } from "next-seo";
 
 type PropTypes = ThemeType;
 
@@ -20,6 +21,14 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
 
   return (
     <>
+      <NextSeo
+        title="Home | Nenad Marinković"
+        canonical="https://nenadmarinkovic.com"
+        openGraph={{
+          url: "https://nenadmarinkovic.com",
+          title: "Home | Nenad Marinković",
+        }}
+      />
       <Header
         toggleTheme={toggleTheme}
         theme={theme}
