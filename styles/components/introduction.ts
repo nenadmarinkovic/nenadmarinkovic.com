@@ -5,7 +5,7 @@ export const Introduction = styled.p`
   font-size: 1.25rem;
   margin: 0;
   line-height: 1.9;
-  width: 80%;
+  width: 70%;
 
   &.full-width {
     width: 100%;
