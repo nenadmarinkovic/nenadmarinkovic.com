@@ -1,0 +1,37 @@
+---
+title: How to Toggle Desktop Icons on macOS with Terminal
+description: For macOS users who prefer a clutter-free desktop, managing the visibility of desktop icons can be achieved with a couple of Terminal commands.
+date: 25.11.2023
+category: MacOS
+---
+
+If you seek a quick way to toggle desktop icon visibility, creating aliases in your shell configuration file (.zshrc for Zsh or .bashrc and .bash_profile for Bash) offers a streamlined solution. Below, If'll explain the process of making aliases for the showdesk and hidedesk commands.
+
+Depending on your shell, locate and open the respective configuration file. For Zsh, it's typically ~/.zshrc, and for Bash, it can be either ~/.bashrc or ~/.bash_profile.
+
+To create aliases for showdesk and hidedesk, add this in your shell configuration file:
+
+```bash
+alias showdesk='defaults write com.apple.finder CreateDesktop true && killall Finder'
+alias hidedesk='defaults write com.apple.finder CreateDesktop false && killall Finder'
+```
+
+Save the changes to the respective configuration file and restart your terminal or run source ~/.zshrc (for Zsh) or source ~/.bashrc / source ~/.bash_profile (for Bash) to apply the changes immediately.
+
+With the aliases in place, using them is straightforward:
+
+```bash
+showdesk
+```
+
+```bash
+hidedesk
+```
+
+To view a list of defined aliases:
+
+```bash
+alias
+```
+
+These aliases serve as shortcuts, enhancing your command-line experience and providing a quick solution to toggle desktop icons based on your preferences.
