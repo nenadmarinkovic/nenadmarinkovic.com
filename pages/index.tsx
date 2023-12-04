@@ -40,9 +40,18 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
           <Container>
             <Banner name="Nenad" surname="Marinković" withWidth={true} />
             <Introduction>
-              Front-end developer based in Vienna, Austria. Working mainly with
-              JavaScript on designing and developing websites, web interfaces,
-              and APIs.
+              Front-end developer at
+              <a
+                className="a-link"
+                href="https://nexxar.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                nexxar{" "}
+              </a>{" "}
+              in Vienna, Austria. Working mainly with JavaScript on designing
+              and developing websites, web interfaces, and APIs.
             </Introduction>
             <Section title="Services I offer" />
             <Cards>
