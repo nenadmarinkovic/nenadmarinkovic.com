@@ -50,8 +50,9 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
                 {" "}
                 nexxar{" "}
               </a>{" "}
-              in Vienna, Austria. Working mainly with JavaScript on designing
-              and developing websites, web interfaces, and APIs.
+              in Vienna, Austria. Experienced in designing and developing
+              websites, web interfaces, and APIs, with a versatile skill set in
+              various web technologies.
             </Introduction>
             <Section title="Services I offer" />
             <Cards>

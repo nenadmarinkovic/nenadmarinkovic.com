@@ -40,7 +40,7 @@ const ContactPage: NextPage<PropTypes> = ({
           <Container>
             <Banner name="Contact" />
             <Flex align="top" justify="space-between">
-              <Introduction>
+              <Introduction className="add-width">
                 Feel free to get in touch with me through the form below or by
                 sending an email. I would love to hear from you and discuss any
                 inquiries, collaborations, or opportunities you may have.

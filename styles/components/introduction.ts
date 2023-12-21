@@ -7,6 +7,10 @@ export const Introduction = styled.p`
   line-height: 1.9;
   width: 75%;
 
+  &.add-width {
+    width: 85%;
+  }
+
   &.full-width {
     width: 100%;
   }

@@ -42,7 +42,7 @@ const PhotographyPage: NextPage<PropTypes> = ({
           <Container>
             <Banner name="Photography" />
             <Flex align="top" justify="space-between">
-              <Introduction>
+              <Introduction className="add-width">
                 I enjoy using photography to capture memories and share moments
                 from my travels, allowing others to see the world through my
                 perspective. All these photos were captured with the Sony RX100
