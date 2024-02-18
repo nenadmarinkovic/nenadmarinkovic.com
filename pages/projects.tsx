@@ -1,28 +1,32 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
+import fs from 'fs';
+import matter from 'gray-matter';
+import path from 'path';
 import {
   PostsWrap,
   Post,
   Title,
   AdditionalInfo,
   Description,
-} from "../styles/pages/common";
-import { PostType, ThemeType } from "../lib/types";
-import type { NextPage } from "next";
-import { postFilePaths, PROJECTS_PATH } from "../utils/mdx-projects";
-import { useState } from "react";
-import { Introduction } from "../styles/components/introduction";
-import { ThemeLayout, Container, Flex } from "../styles/components/layout";
-import { TagWrap } from "../styles/components/tag";
-import { NextSeo } from "next-seo";
-import Header from "../components/Header";
-import Tag from "../components/Tag";
-import Banner from "../components/Banner";
-import Link from "next/link";
-import Footer from "../components/Footer";
-import { MainSection } from "../styles/components/layout";
-import { motion, AnimatePresence } from "framer-motion";
+} from '../styles/pages/common';
+import { PostType, ThemeType } from '../lib/types';
+import type { NextPage } from 'next';
+import { postFilePaths, PROJECTS_PATH } from '../utils/mdx-projects';
+import { useState } from 'react';
+import { Introduction } from '../styles/components/introduction';
+import {
+  ThemeLayout,
+  Container,
+  Flex,
+} from '../styles/components/layout';
+import { TagWrap } from '../styles/components/tag';
+import { NextSeo } from 'next-seo';
+import Header from '../components/Header';
+import Tag from '../components/Tag';
+import Banner from '../components/Banner';
+import Link from 'next/link';
+import Footer from '../components/Footer';
+import { MainSection } from '../styles/components/layout';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type PropTypes = PostType & ThemeType;
 
@@ -39,8 +43,8 @@ const ProjectsPage: NextPage<PropTypes> = ({
         title="Projects | Nenad Marinković"
         canonical="https://nenadmarinkovic.com/projects"
         openGraph={{
-          url: "https://nenadmarinkovic.com/projects",
-          title: "Projects | Nenad Marinković",
+          url: 'https://nenadmarinkovic.com/projects',
+          title: 'Projects | Nenad Marinković',
         }}
       />
 
@@ -57,10 +61,10 @@ const ProjectsPage: NextPage<PropTypes> = ({
             <Banner name="Projects" />
             <Flex align="top" justify="space-between">
               <Introduction>
-                An overview of personal web projects, including technical
-                details and insights. Please note that these are ongoing
-                projects and may contain errors due to limited available time
-                for development.
+                An overview of personal web projects, including
+                technical details and insights. Please note that these
+                are ongoing projects and may contain errors due to
+                limited available time for development.
               </Introduction>
             </Flex>
             <AnimatePresence mode="wait">
@@ -79,7 +83,10 @@ const ProjectsPage: NextPage<PropTypes> = ({
                   >
                     <Post key={post.filePath}>
                       <Link
-                        as={`/projects/${post.filePath.replace(/\.mdx?$/, "")}`}
+                        as={`/projects/${post.filePath.replace(
+                          /\.mdx?$/,
+                          ''
+                        )}`}
                         href={`/projects/[slug]`}
                       >
                         <Title>{post.data.title}</Title>
@@ -93,13 +100,18 @@ const ProjectsPage: NextPage<PropTypes> = ({
                           {post.data.link}
                         </a>
                       </AdditionalInfo>
-                      <Description>{post.data.description}</Description>
+                      <Description>
+                        {post.data.description}
+                      </Description>
 
                       {index === 0 && (
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
                           <Tag color="orange" text="Firebase" />
-                          <Tag color="velvet" text="Styled-components" />
+                          <Tag
+                            color="velvet"
+                            text="Styled-components"
+                          />
                         </TagWrap>
                       )}
 
@@ -107,7 +119,10 @@ const ProjectsPage: NextPage<PropTypes> = ({
                         <TagWrap>
                           <Tag color="black" text="Next.js" />
                           <Tag color="green" text="Headless CMS" />
-                          <Tag color="velvet" text="Styled-components" />
+                          <Tag
+                            color="velvet"
+                            text="Styled-components"
+                          />
                         </TagWrap>
                       )}
 
@@ -116,7 +131,10 @@ const ProjectsPage: NextPage<PropTypes> = ({
                           <Tag color="black" text="Next.js" />
                           <Tag color="blue" text="Typescript" />
                           <Tag color="dark-yellow" text="MDX" />
-                          <Tag color="velvet" text="Styled-components" />
+                          <Tag
+                            color="velvet"
+                            text="Styled-components"
+                          />
                         </TagWrap>
                       )}
                     </Post>
@@ -134,7 +152,9 @@ const ProjectsPage: NextPage<PropTypes> = ({
 
 export async function getStaticProps() {
   const posts = postFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(PROJECTS_PATH, filePath));
+    const source = fs.readFileSync(
+      path.join(PROJECTS_PATH, filePath)
+    );
     const { content, data } = matter(source);
 
     return {

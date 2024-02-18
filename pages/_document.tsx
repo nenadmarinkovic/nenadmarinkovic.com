@@ -4,8 +4,8 @@ import Document, {
   Head,
   Main,
   NextScript,
-} from "next/document";
-import { ServerStyleSheet } from "styled-components";
+} from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 class Doc extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -41,7 +41,10 @@ class Doc extends Document {
         <Head>
           <link href="/images/favicon.ico" rel="icon" />
           <link href="/manifest.json" rel="manifest" />
-          <link href="/images/apple-touch-icon.png" rel="apple-touch-icon" />
+          <link
+            href="/images/apple-touch-icon.png"
+            rel="apple-touch-icon"
+          />
           <meta content="#ffffff" name="theme-color" />
         </Head>
         <body>

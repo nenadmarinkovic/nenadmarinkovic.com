@@ -1,22 +1,25 @@
-import type { NextPage } from "next";
-import { useState } from "react";
-import { ThemeLayout, Container } from "../styles/components/layout";
-import { Introduction } from "../styles/components/introduction";
-import { Cards } from "../styles/components/card";
-import { ThemeType } from "../lib/types";
-import Section from "../components/Section";
-import Panel from "../components/Panel";
-import Card from "../components/Card";
-import { MainSection } from "../styles/components/layout";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Banner from "../components/Banner";
-import SelectedProjects from "../components/SelectedProjects";
-import { NextSeo } from "next-seo";
+import type { NextPage } from 'next';
+import { useState } from 'react';
+import { ThemeLayout, Container } from '../styles/components/layout';
+import { Introduction } from '../styles/components/introduction';
+import { Cards } from '../styles/components/card';
+import { ThemeType } from '../lib/types';
+import Section from '../components/Section';
+import Panel from '../components/Panel';
+import Card from '../components/Card';
+import { MainSection } from '../styles/components/layout';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Banner from '../components/Banner';
+import SelectedProjects from '../components/SelectedProjects';
+import { NextSeo } from 'next-seo';
 
 type PropTypes = ThemeType;
 
-const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
+const Homepage: NextPage<PropTypes> = ({
+  theme,
+  toggleTheme,
+}: PropTypes) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
@@ -25,8 +28,8 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
         title="Home | Nenad Marinković"
         canonical="https://nenadmarinkovic.com"
         openGraph={{
-          url: "https://nenadmarinkovic.com",
-          title: "Home | Nenad Marinković",
+          url: 'https://nenadmarinkovic.com',
+          title: 'Home | Nenad Marinković',
         }}
       />
       <Header
@@ -38,7 +41,11 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
       <ThemeLayout openMenu={openMenu}>
         <MainSection>
           <Container>
-            <Banner name="Nenad" surname="Marinković" withWidth={true} />
+            <Banner
+              name="Nenad"
+              surname="Marinković"
+              withWidth={true}
+            />
             <Introduction>
               Front-end developer at
               <a
@@ -47,12 +54,12 @@ const Homepage: NextPage<PropTypes> = ({ theme, toggleTheme }: PropTypes) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {" "}
-                nexxar{" "}
-              </a>{" "}
-              in Vienna, Austria. Experienced in designing and developing
-              websites, web interfaces, and APIs, with a versatile skill set in
-              various web technologies.
+                {' '}
+                nexxar{' '}
+              </a>{' '}
+              in Vienna, Austria. Experienced in designing and
+              developing websites, web interfaces, and APIs, with a
+              versatile skill set in various web technologies.
             </Introduction>
             <Section title="Services I offer" />
             <Cards>

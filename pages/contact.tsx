@@ -1,14 +1,18 @@
-import { NextSeo } from "next-seo";
-import type { NextPage } from "next";
-import { useState } from "react";
-import { ThemeType } from "../lib/types";
-import { ThemeLayout, Container, Flex } from "../styles/components/layout";
-import { Introduction } from "../styles/components/introduction";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import ContactForm from "../components/Form";
-import { MainSection } from "../styles/components/layout";
+import { NextSeo } from 'next-seo';
+import type { NextPage } from 'next';
+import { useState } from 'react';
+import { ThemeType } from '../lib/types';
+import {
+  ThemeLayout,
+  Container,
+  Flex,
+} from '../styles/components/layout';
+import { Introduction } from '../styles/components/introduction';
+import Header from '../components/Header';
+import Banner from '../components/Banner';
+import Footer from '../components/Footer';
+import ContactForm from '../components/Form';
+import { MainSection } from '../styles/components/layout';
 
 type PropTypes = ThemeType;
 
@@ -23,8 +27,8 @@ const ContactPage: NextPage<PropTypes> = ({
         title="Contact | Nenad Marinković"
         canonical="https://nenadmarinkovic.com/contact"
         openGraph={{
-          url: "https://nenadmarinkovic.com/contact",
-          title: "Contact | Nenad Marinković",
+          url: 'https://nenadmarinkovic.com/contact',
+          title: 'Contact | Nenad Marinković',
         }}
       />
 
@@ -41,9 +45,10 @@ const ContactPage: NextPage<PropTypes> = ({
             <Banner name="Contact" />
             <Flex align="top" justify="space-between">
               <Introduction className="add-width">
-                Feel free to get in touch with me through the form below or by
-                sending an email. I would love to hear from you and discuss any
-                inquiries, collaborations, or opportunities you may have.
+                Feel free to get in touch with me through the form
+                below or by sending an email. I would love to hear
+                from you and discuss any inquiries, collaborations, or
+                opportunities you may have.
                 <br />
                 <a
                   href="mailto:nenadmarinkovic@protonmail.com"
