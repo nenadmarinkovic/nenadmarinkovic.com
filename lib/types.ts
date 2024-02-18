@@ -101,7 +101,7 @@ export type PhotoType = {
   text: string;
 };
 
-export type SpotifyDataType ={
+export type SpotifyDataType = {
   is_playing: boolean;
   item: {
     name: string;
@@ -110,17 +110,14 @@ export type SpotifyDataType ={
       spotify: string;
     };
   } | null;
-}
-
+};
 
 export type SpotifySongType = {
   isPlaying: boolean;
   songUrl: string;
   artist: string;
   title: string;
-  
 };
-
 
 export type ErrorResponse = {
   error: string;
