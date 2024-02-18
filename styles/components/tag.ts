@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TagWrap = styled.div`
   display: flex;
@@ -35,7 +35,6 @@ export const TagSpan = styled.span`
     background: #ffc741;
     color: black;
   }
-
 
   &.green {
     background: #457e03;

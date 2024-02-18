@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { CardType } from "../lib/types";
+import { useState } from 'react';
+import { CardType } from '../lib/types';
 import {
   Item,
   Text,
@@ -12,9 +12,9 @@ import {
   BoxItem,
   BoxItemIcon,
   BoxItemText,
-} from "../styles/components/card";
-import { motion, Variants, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+} from '../styles/components/card';
+import { motion, Variants, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 function Card({
   title,
@@ -29,7 +29,11 @@ function Card({
 }: CardType) {
   const [isOpen, setOpen] = useState(false);
   const setBoxColor = () =>
-    boxColor === "orange" ? "orange" : boxColor === "blue" ? "blue" : "green";
+    boxColor === 'orange'
+      ? 'orange'
+      : boxColor === 'blue'
+      ? 'blue'
+      : 'green';
 
   const titleVariants: Variants = {
     enter: {
@@ -54,7 +58,7 @@ function Card({
     enter: {
       opacity: 1,
       transition: {
-        when: "afterChildren",
+        when: 'afterChildren',
         staggerChildren: 0.3,
         duration: 0.3,
         delay: 0.3,
@@ -63,7 +67,7 @@ function Card({
     },
     exit: {
       transition: {
-        when: "afterChildren",
+        when: 'afterChildren',
         staggerChildren: 0.3,
         duration: 0.3,
       },
@@ -83,7 +87,7 @@ function Card({
   };
 
   return (
-    <Item className={reversed ? "row-reverse" : "row"}>
+    <Item className={reversed ? 'row-reverse' : 'row'}>
       <Text>
         <Title>{title}</Title>
         <Description>{description}</Description>
@@ -119,20 +123,23 @@ function Card({
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={"Check icon"}
+                          alt={'Check icon'}
                         />
                       </BoxItemIcon>
                       <BoxItemText>{boxText1}</BoxItemText>
                     </BoxItem>
                   </motion.div>
-                  <motion.div key="subheading-primary" variants={itemVariants}>
+                  <motion.div
+                    key="subheading-primary"
+                    variants={itemVariants}
+                  >
                     <BoxItem>
                       <BoxItemIcon>
                         <Image
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={"Check icon"}
+                          alt={'Check icon'}
                         />
                       </BoxItemIcon>
                       <BoxItemText>{boxText2}</BoxItemText>
@@ -149,7 +156,7 @@ function Card({
                           src={boxItemIcon}
                           width={30}
                           height={30}
-                          alt={"Check icon"}
+                          alt={'Check icon'}
                         />
                       </BoxItemIcon>
                       <BoxItemText>{boxText3}</BoxItemText>
@@ -164,7 +171,7 @@ function Card({
           aria-label="open"
           onClick={() => setOpen((isOpen) => !isOpen)}
           onDoubleClick={() => setOpen((isOpen) => !isOpen)}
-          className={isOpen ? "opened-box" : "closed-box"}
+          className={isOpen ? 'opened-box' : 'closed-box'}
         >
           <svg width="40" height="40" viewBox="0 0 15 15" fill="none">
             <path

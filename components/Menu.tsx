@@ -1,15 +1,15 @@
-import React, { useRef } from "react";
-import { useRouter } from "next/router";
+import React, { useRef } from 'react';
+import { useRouter } from 'next/router';
 import {
   StyledMenu,
   MenuLinks,
   MenuLink,
   StyledBurger,
   MenuThemeButton,
-} from "../styles/components/menu";
-import { ThemeType, MenuType } from "../lib/types";
-import Link from "next/link";
-import { useClickOutside } from "../hooks/useClickOutside";
+} from '../styles/components/menu';
+import { ThemeType, MenuType } from '../lib/types';
+import Link from 'next/link';
+import { useClickOutside } from '../hooks/useClickOutside';
 
 type PropTypes = ThemeType & MenuType;
 
@@ -28,7 +28,9 @@ const MenuComponent = ({
           <Link
             href="/projects"
             className={
-              router.pathname.includes("/projects") ? "active-link" : ""
+              router.pathname.includes('/projects')
+                ? 'active-link'
+                : ''
             }
           >
             Projects
@@ -37,7 +39,9 @@ const MenuComponent = ({
         <MenuLink>
           <Link
             href="/dir"
-            className={router.pathname.includes("/dir") ? "active-link" : ""}
+            className={
+              router.pathname.includes('/dir') ? 'active-link' : ''
+            }
           >
             Directory
           </Link>
@@ -45,7 +49,9 @@ const MenuComponent = ({
         <MenuLink>
           <Link
             href="/about"
-            className={router.pathname.includes("/about") ? "active-link" : ""}
+            className={
+              router.pathname.includes('/about') ? 'active-link' : ''
+            }
           >
             About
           </Link>
@@ -54,7 +60,9 @@ const MenuComponent = ({
           <Link
             href="/contact"
             className={
-              router.pathname.includes("/contact") ? "active-link" : ""
+              router.pathname.includes('/contact')
+                ? 'active-link'
+                : ''
             }
           >
             Contact
@@ -66,7 +74,7 @@ const MenuComponent = ({
             onClickCapture={toggleTheme}
             aria-label="Toggle theme"
           >
-            {theme === "light" ? (
+            {theme === 'light' ? (
               <span className="header-theme">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +129,12 @@ const Burger = ({ openMenu, setOpenMenu }: PropTypes) => {
   );
 };
 
-function Menu({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
+function Menu({
+  theme,
+  toggleTheme,
+  openMenu,
+  setOpenMenu,
+}: PropTypes) {
   const node = useRef(null);
   useClickOutside(node, () => setOpenMenu(false));
 

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Menu = {
   openMenu: boolean;
@@ -16,7 +16,7 @@ export const MainSection = styled.section`
 
 export const ThemeLayout = styled.main<Menu>`
   background: ${({ theme }) => theme.background};
-  opacity: ${({ openMenu }) => (openMenu ? "0.3" : "1")};
+  opacity: ${({ openMenu }) => (openMenu ? '0.3' : '1')};
   display: flex;
   flex-direction: column;
   min-height: 100vh;

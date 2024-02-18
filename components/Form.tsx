@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState } from 'react';
+import axios from 'axios';
 import {
   FormWrap,
   FormContainer,
@@ -10,8 +10,8 @@ import {
   FormBottom,
   Button,
   Error,
-} from "../styles/components/form";
-import { motion, AnimatePresence } from "framer-motion";
+} from '../styles/components/form';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function ContactForm() {
   const [status, setStatus] = useState({
@@ -21,8 +21,8 @@ function ContactForm() {
   });
 
   const [inputs, setInputs] = useState({
-    email: "",
-    message: "",
+    email: '',
+    message: '',
   });
 
   const handleServerResponse = (ok: boolean, msg: any) => {
@@ -33,8 +33,8 @@ function ContactForm() {
         info: { error: false, msg: msg },
       });
       setInputs({
-        email: "",
-        message: "",
+        email: '',
+        message: '',
       });
     } else {
     }
@@ -60,12 +60,15 @@ function ContactForm() {
     e.preventDefault();
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
     axios({
-      method: "POST",
-      url: "https://formspree.io/f/mlepzoay",
+      method: 'POST',
+      url: 'https://formspree.io/f/mlepzoay',
       data: inputs,
     })
       .then((response) => {
-        handleServerResponse(true, "Your message has been submitted.");
+        handleServerResponse(
+          true,
+          'Your message has been submitted.'
+        );
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error);
@@ -97,7 +100,9 @@ function ContactForm() {
           />
           <FormBottom>
             <AnimatePresence mode="wait">
-              {status.info.error && <Error>Error: {status.info.msg}</Error>}
+              {status.info.error && (
+                <Error>Error: {status.info.msg}</Error>
+              )}
               {!status.info.error && status.info.msg && (
                 <motion.div
                   initial={{ y: 10, opacity: 0 }}
@@ -111,8 +116,8 @@ function ContactForm() {
             </AnimatePresence>
             {!status.submitted && (
               <FormText>
-                Thanks for your interest in contacting me. I&apos;ll give my
-                best to get back to you in less than 48 hours.
+                Thanks for your interest in contacting me. I&apos;ll
+                give my best to get back to you in less than 48 hours.
               </FormText>
             )}
             <Button
@@ -122,9 +127,9 @@ function ContactForm() {
               <span>
                 {!status.submitting
                   ? !status.submitted
-                    ? "Send"
-                    : "Sent"
-                  : "Sending"}
+                    ? 'Send'
+                    : 'Sent'
+                  : 'Sending'}
               </span>
               {!status.submitted && (
                 <svg

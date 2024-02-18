@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Title = styled.div`
   padding: 8rem 0 1.5rem 0;

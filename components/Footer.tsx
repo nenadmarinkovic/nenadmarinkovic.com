@@ -1,12 +1,15 @@
-import { Container, FlexContainer } from "../styles/components/layout";
-import { ThemeType } from "../lib/types";
+import {
+  Container,
+  FlexContainer,
+} from '../styles/components/layout';
+import { ThemeType } from '../lib/types';
 import {
   FooterWrap,
   FooterItem,
   FooterItemText,
   BottomText,
-} from "../styles/components/footer";
-import SpotifyPlay from "./SpotifyPlaying";
+} from '../styles/components/footer';
+import SpotifyPlay from './SpotifyPlaying';
 
 type PropTypes = ThemeType;
 
@@ -42,7 +45,7 @@ function Footer({ theme }: PropTypes) {
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M15.3277 0C6.85187 0 0 6.90238 0 15.4416C0 22.2674 4.39023 28.0453 10.4806 30.0903C11.2421 30.244 11.521 29.758 11.521 29.3492C11.521 28.9912 11.4959 27.7642 11.4959 26.4857C7.23212 27.4062 6.34423 24.6449 6.34423 24.6449C5.65901 22.8553 4.64373 22.3954 4.64373 22.3954C3.2482 21.4495 4.74538 21.4495 4.74538 21.4495C6.2934 21.5517 7.10568 23.0345 7.10568 23.0345C8.47581 25.3863 10.6836 24.7218 11.5718 24.3127C11.6986 23.3156 12.1049 22.6254 12.5363 22.242C9.13561 21.884 5.55767 20.5547 5.55767 14.6233C5.55767 12.936 6.16633 11.5555 7.13078 10.4819C6.97862 10.0985 6.44557 8.51314 7.28326 6.39129C7.28326 6.39129 8.57746 5.98217 11.4956 7.97633C12.745 7.63832 14.0334 7.46637 15.3277 7.46492C16.6219 7.46492 17.9412 7.64407 19.1594 7.97633C22.0779 5.98217 23.3721 6.39129 23.3721 6.39129C24.2098 8.51314 23.6764 10.0985 23.5242 10.4819C24.5141 11.5555 25.0977 12.936 25.0977 14.6233C25.0977 20.5547 21.5197 21.8583 18.0936 22.242C18.6521 22.7276 19.134 23.6479 19.134 25.1052C19.134 27.1759 19.1089 28.8378 19.1089 29.3489C19.1089 29.758 19.3882 30.244 20.1493 30.0906C26.2397 28.045 30.6299 22.2674 30.6299 15.4416C30.655 6.90238 23.7781 0 15.3277 0Z"
-                fill={theme === "dark" ? "white" : "#24292F"}
+                fill={theme === 'dark' ? 'white' : '#24292F'}
               />
             </svg>
 
@@ -58,7 +61,9 @@ function Footer({ theme }: PropTypes) {
           </FooterItem>
         </FlexContainer>
       </Container>
-      <BottomText>{new Date().getFullYear()} © Nenad Marinković</BottomText>
+      <BottomText>
+        {new Date().getFullYear()} © Nenad Marinković
+      </BottomText>
     </FooterWrap>
   );
 }

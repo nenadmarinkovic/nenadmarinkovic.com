@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
-export const POSTS_PATH = path.join(process.cwd(), "directory");
+import fs from 'fs';
+import path from 'path';
+export const POSTS_PATH = path.join(process.cwd(), 'directory');
 
 export const postFilePaths = fs
   .readdirSync(POSTS_PATH)

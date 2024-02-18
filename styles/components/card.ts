@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Cards = styled.div``;
 
@@ -44,15 +44,27 @@ export const Box = styled.div`
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   &.blue {
-    background: linear-gradient(270.48deg, #00dfd8 -4.99%, #0070f5 99.13%);
+    background: linear-gradient(
+      270.48deg,
+      #00dfd8 -4.99%,
+      #0070f5 99.13%
+    );
   }
 
   &.green {
-    background: linear-gradient(270.48deg, #7ec130 -4.99%, #45671f 99.13%);
+    background: linear-gradient(
+      270.48deg,
+      #7ec130 -4.99%,
+      #45671f 99.13%
+    );
   }
 
   &.orange {
-    background: linear-gradient(270.48deg, #ffa400 -4.99%, #ff5b00 99.13%);
+    background: linear-gradient(
+      270.48deg,
+      #ffa400 -4.99%,
+      #ff5b00 99.13%
+    );
   }
 
   @media (max-width: 48rem) {

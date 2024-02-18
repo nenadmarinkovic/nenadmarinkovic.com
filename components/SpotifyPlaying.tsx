@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { SpotifySongType } from "../lib/types";
-import { SpotifyWrap } from "../styles/components/spotify";
+import React, { useEffect, useState } from 'react';
+import { SpotifySongType } from '../lib/types';
+import { SpotifyWrap } from '../styles/components/spotify';
 
 export default function SpotifyPlay() {
   const [data, setData] = useState<SpotifySongType | null>(null);
@@ -8,10 +8,10 @@ export default function SpotifyPlay() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("/api/playing");
+        const response = await fetch('/api/playing');
 
         if (!response.ok) {
-          throw new Error("Failed to fetch data");
+          throw new Error('Failed to fetch data');
         }
 
         const data = await response.json();
@@ -43,7 +43,7 @@ export default function SpotifyPlay() {
           </div>
         </>
       ) : (
-        "Not playing currently"
+        'Not playing currently'
       )}
     </SpotifyWrap>
   );

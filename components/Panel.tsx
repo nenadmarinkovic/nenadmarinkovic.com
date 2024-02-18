@@ -4,8 +4,8 @@ import {
   Title,
   Text,
   PanelButton,
-} from "../styles/components/panel";
-import Link from "next/link";
+} from '../styles/components/panel';
+import Link from 'next/link';
 
 function Panel() {
   return (
@@ -13,9 +13,9 @@ function Panel() {
       <PanelInside>
         <Title> Let’s build together.</Title>
         <Text>
-          Web is an unique platform for creativity, businesses, and growth.
-          Let’s combine your idea with my technical know-how to build amazing
-          projects. Together.
+          Web is an unique platform for creativity, businesses, and
+          growth. Let’s combine your idea with my technical know-how
+          to build amazing projects. Together.
         </Text>
 
         <Link href="/contact">

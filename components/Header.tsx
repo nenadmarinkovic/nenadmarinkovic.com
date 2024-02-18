@@ -1,4 +1,4 @@
-import { Container } from "../styles/components/layout";
+import { Container } from '../styles/components/layout';
 import {
   HeaderWrap,
   Main,
@@ -7,15 +7,20 @@ import {
   HeaderLink,
   ThemeButton,
   MenuButton,
-} from "../styles/components/header";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Menu from "./Menu";
-import { ThemeType, MenuType } from "../lib/types";
+} from '../styles/components/header';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Menu from './Menu';
+import { ThemeType, MenuType } from '../lib/types';
 
 type PropTypes = ThemeType & MenuType;
 
-function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
+function Header({
+  theme,
+  toggleTheme,
+  openMenu,
+  setOpenMenu,
+}: PropTypes) {
   const router = useRouter();
 
   return (
@@ -26,7 +31,9 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
             <HomeLink>
               <Link
                 href="/"
-                className={router.pathname === "/" ? "active-link" : ""}
+                className={
+                  router.pathname === '/' ? 'active-link' : ''
+                }
               >
                 Home
               </Link>
@@ -36,7 +43,9 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                 <Link
                   href="/projects"
                   className={
-                    router.pathname.includes("/projects") ? "active-link" : ""
+                    router.pathname.includes('/projects')
+                      ? 'active-link'
+                      : ''
                   }
                 >
                   Projects
@@ -46,7 +55,9 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                 <Link
                   href="/dir"
                   className={
-                    router.pathname.includes("/dir") ? "active-link" : ""
+                    router.pathname.includes('/dir')
+                      ? 'active-link'
+                      : ''
                   }
                 >
                   Directory
@@ -56,7 +67,9 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                 <Link
                   href="/about"
                   className={
-                    router.pathname.includes("/about") ? "active-link" : ""
+                    router.pathname.includes('/about')
+                      ? 'active-link'
+                      : ''
                   }
                 >
                   About
@@ -66,15 +79,20 @@ function Header({ theme, toggleTheme, openMenu, setOpenMenu }: PropTypes) {
                 <Link
                   href="/contact"
                   className={
-                    router.pathname.includes("/contact") ? "active-link" : ""
+                    router.pathname.includes('/contact')
+                      ? 'active-link'
+                      : ''
                   }
                 >
                   Contact
                 </Link>
               </HeaderLink>
               <HeaderLink>
-                <ThemeButton aria-label="Toggle theme" onClick={toggleTheme}>
-                  {theme === "light" ? (
+                <ThemeButton
+                  aria-label="Toggle theme"
+                  onClick={toggleTheme}
+                >
+                  {theme === 'light' ? (
                     <span className="header-theme">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { PhotoType } from "../lib/types";
+import Image from 'next/image';
+import { PhotoType } from '../lib/types';
 
 const Photo = ({ id, alt, title, text }: PhotoType) => {
   return (
@@ -8,7 +8,7 @@ const Photo = ({ id, alt, title, text }: PhotoType) => {
         <h2>{title}</h2>
         <p>{text}</p>
       </div>
-      <div style={{ width: "100%" }}>
+      <div style={{ width: '100%' }}>
         <Image
           alt={alt}
           className="photo"

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PanelWrap = styled.div`
   margin: 8rem 0px 5rem;
@@ -20,7 +20,7 @@ export const PanelWrap = styled.div`
 
 export const PanelInside = styled.div`
   padding: 0 50px;
-  content: "";
+  content: '';
   border-radius: 8px;
   background: ${({ theme }) => theme.background};
   position: absolute;

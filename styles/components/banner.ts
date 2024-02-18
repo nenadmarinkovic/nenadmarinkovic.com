@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BannerWrap = styled.div`
   padding-top: 2.5rem;
